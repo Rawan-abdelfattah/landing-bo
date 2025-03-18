@@ -1,6 +1,5 @@
 import React, { useRef } from 'react';
 import { motion, useInView } from 'framer-motion';
-
 import { Navbar } from '../components/Navbar';
 import { HeroSection } from '../components/HeroSection';
 import { FeaturesSection } from '../components/FeaturesSection';
@@ -33,12 +32,13 @@ const AnimatedSection = ({ children }) => {
   );
 };
 
-const HomePage = () => {
+
+const HomePage = ({ darkMode, setDarkMode }) => {
   return (
-    <div> 
-      
+    <div>
+ 
       <AnimatedSection>
-        <HeroSection />
+        <HeroSection darkMode={darkMode} setDarkMode={setDarkMode} />
       </AnimatedSection>
 
       <AnimatedSection>

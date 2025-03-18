@@ -4,25 +4,19 @@
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
-
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
-
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-
 @layer utilities {
   .bg-darkGray {
     background: linear-gradient(
       45deg,
-       rgba(81, 91, 212, 0.7)  14.61%,
-       rgba(149, 55, 176, 0.7)39.38%,
-      rgba(221, 42, 123, 0.7)  58.49%,
-      rgba(250, 173, 79, 0.7)85.39%
+      rgba(81, 91, 212, 0.7) 14.61%,
+      rgba(149, 55, 176, 0.7) 39.38%,
+      rgba(221, 42, 123, 0.7) 58.49%,
+      rgba(250, 173, 79, 0.7) 85.39%
     );
   }
   .nav-bg {
@@ -33,9 +27,8 @@
       rgba(149, 55, 176, 0.7) 58.49%,
       rgba(81, 91, 212, 0.7) 85.39%
     );
-   
-  } 
-  .primary{
-    color:  rgba(1, 124, 212, 1) !important
+  }
+  .primary {
+    color: rgba(1, 124, 212, 1) !important;
   }
 }
