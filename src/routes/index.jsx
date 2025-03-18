@@ -4,7 +4,7 @@ import HomePage from '../pages/HomePage';
 
 const AppRoutes = () => {
   const [darkMode, setDarkMode] = useState(
-    // localStorage.getItem('theme') === 'light'
+    localStorage.getItem('theme') === 'light'
   );
 
   // useEffect(() => {

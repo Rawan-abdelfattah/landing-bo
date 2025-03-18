@@ -7,7 +7,8 @@ import {
   FaMoon,
   FaSun,
 } from "react-icons/fa6";
-export const HeroSection = ({ darkMode, setDarkMode }) => {
+import TextScroll from "./TextScroll";
+  export const HeroSection = ({ darkMode, setDarkMode }) => {
   return (
     <header className="bg-darkGray from-gray-900 via-purple-900 to-black rounded-3xl mx-5 my-5 px-6 pt-6">
       {/* Navbar */}
@@ -71,15 +72,21 @@ export const HeroSection = ({ darkMode, setDarkMode }) => {
           </p>
         </div>
 
-        <div className="max-w-sm overflow-hidden">
-          <div className="transition-transform duration-500 ease-in-out hover:-translate-x-2 hover:-translate-y-1 hover:-rotate-30">
-            <img
-              src="https://s3-alpha-sig.figma.com/img/4469/9bcf/5a27735fbcd25afea2f865f52078ddd0?Expires=1743379200&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=NL50GLgwgAJ5SO3VAGl013wydv9PSWzWwWjWU2AGs6JAzrtzaDlsaLT4WesfF~0-3K2PRe189Si7AByUHhnqSoT5-kvQxxPuVxv8~Ctu3hI~~rr2dqsmnGP2hf2RKy~gVakjzqGHe751euq7iKyWscx9Y6YT0DhcErRnGemjRwoI09qilQ~7l5G1NDcii1pcft~rixNMuhV-wPQ8ZGIGbJNI8F1nqXT8YJVIlqzLab76eGY3v1MTyjcCXEh0HK3hSd2Z3H3nNaFzIhM8a80PyWkr~MfMDiXJ1qOVks8TtuGjQqeHSGn6UY-umUpM5TmDYFNozqBUInLlI1L2KjDOxA__"
-              alt="Robot hand pointing"
-              className="  w-[473px]"
-            />
-          </div>
-        </div>
+        <div className="relative max-w-sm overflow-hidden flex flex-col items-center">
+  {/* Image Wrapper */}
+  <div className="z-10 transition-transform duration-500 ease-in-out hover:-translate-x-2 hover:-translate-y-1 hover:-rotate-30">
+    <img
+      src="https://s3-alpha-sig.figma.com/img/4469/9bcf/5a27735fbcd25afea2f865f52078ddd0?Expires=1743379200&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=NL50GLgwgAJ5SO3VAGl013wydv9PSWzWwWjWU2AGs6JAzrtzaDlsaLT4WesfF~0-3K2PRe189Si7AByUHhnqSoT5-kvQxxPuVxv8~Ctu3hI~~rr2dqsmnGP2hf2RKy~gVakjzqGHe751euq7iKyWscx9Y6YT0DhcErRnGemjRwoI09qilQ~7l5G1NDcii1pcft~rixNMuhV-wPQ8ZGIGbJNI8F1nqXT8YJVIlqzLab76eGY3v1MTyjcCXEh0HK3hSd2Z3H3nNaFzIhM8a80PyWkr~MfMDiXJ1qOVks8TtuGjQqeHSGn6UY-umUpM5TmDYFNozqBUInLlI1L2KjDOxA__"
+      alt="Robot hand pointing"
+      className="w-[473px]"
+    />
+  </div>
+
+  {/* Scrolling Text Below */}
+  <div className="w-full z-5">
+    <TextScroll text="One Link To Rule Them All – Connect, Share." />
+  </div>
+</div>
 
         <div className="max-w-lg mb-8 p-6 md:mb-0   space-y-4">
           <p className="leading-relaxed">

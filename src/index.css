@@ -32,3 +32,40 @@
     color: rgba(1, 124, 212, 1) !important;
   }
 }
+
+.text-outline {
+  -webkit-text-stroke: 1px black;
+  font-family: Arimo;
+  font-weight: 700;
+  font-size: 66px;
+  line-height: 100%;
+  letter-spacing: 0px;
+  text-transform: capitalize;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+
+.text-outline-h1 {
+  -webkit-text-stroke: 1px black;
+  font-family: Arimo;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 100%;
+  letter-spacing: 0px;
+  text-transform: capitalize;  
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    
+}
+
+.text-outline-h2 {
+  -webkit-text-stroke: 1px black;
+  font-family: Arimo;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 30px;
+  letter-spacing: 0px;
+  text-transform: capitalize;
+  
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+

@@ -7,31 +7,26 @@ const features = [
     title: "AUTO-SYNC",
     description:
       "Keep your content always fresh and up-to-date without the extra effort. Boltr automatically syncs with your social media and platforms so your audience always sees the latest.",
-    img: "https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_1280.jpg",
+    img: "1.png",
   },
   {
     id: "02",
     title: "Organize With Folders",
     description:
       "Easily manage and categorize your content by using folders, making it simpler to organize your links.",
-    img: "https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_1280.jpg",
+    img: "2.png",
   },
 ];
 
 export const FeaturesSection = () => {
   const [hoveredFeature, setHoveredFeature] = useState(null);
-  const [randomPosition, setRandomPosition] = useState({ x: 0, y: 0 });
-
-  const handleMouseEnter = (id) => {
-    setHoveredFeature(id);
-    setRandomPosition({
-      x: Math.random() * 40 - 20, // Smaller movement for subtle effect
-      y: Math.random() * 40 - 20,
-    });
-  };
+  const [hoveredImg, setHoveredImg] = useState(false);
 
   return (
     <section className="mx-auto max-w-6xl py-10 relative">
+      <div className="md:flex-row pl-5">
+        <span className="text-outline-h1"> 01</span>
+      </div>
       <div className="flex justify-between flex-col md:flex-row gap-6">
         <div className="max-w-lg p-6 space-y-4">
           <h2 className="text-3xl font-bold">
@@ -46,11 +41,10 @@ export const FeaturesSection = () => {
 
           <a
             href="#"
-            className="bg-blue-500 hover:bg-blue-600 px-4 py-2 rounded-full text-sm font-bold inline-block transition"
+            className="bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded-full text-sm font-bold inline-block transition"
           >
-            Create Your Boltr Now →
+            Discover Our Features →
           </a>
-          <p className="text-xs mt-4">We have 100k+ customers worldwide</p>
         </div>
       </div>
 
@@ -58,48 +52,50 @@ export const FeaturesSection = () => {
         {features.map((feature) => (
           <div
             key={feature.id}
-            className="relative border border-gray-700 rounded-lg p-4 py-10 my-10 cursor-pointer overflow-visible transition-all duration-700 ease-in-out hover:bg-gradient-to-r from-indigo-700 to-pink-500"
-            onMouseEnter={() => handleMouseEnter(feature.id)}
+            className="relative border-b border-gray-700 p-4 py-10 my-10 cursor-pointer transition-all duration-700
+            hover:text-white
+ hover:border-[#00B7EF]              hover:rounded-lg hover:border ease-in-out bg-transparent"
+            style={{
+              background:
+                hoveredFeature === feature.id
+                  ? "linear-gradient(45deg, rgba(250, 173, 79, 0.7) 14.61%, rgba(221, 42, 123, 0.7) 39.38%, rgba(149, 55, 176, 0.7) 58.49%, rgba(81, 91, 212, 0.7) 85.39%)"
+                  : "transparent",
+            }}
+            onMouseEnter={() => setHoveredFeature(feature.id)}
             onMouseLeave={() => setHoveredFeature(null)}
           >
             <div className="flex items-center justify-between relative">
-              <h3 className="text-lg font-semibold">
-                <span className="text-lg font-bold px-2">{feature.id}</span>
+              <h1 className="text-xl font-semibold">
+                <span className="text-xl font-bold px-2 text-outline-h2">
+                  {feature.id}
+                </span>
                 {feature.title}
-              </h3>
-
-              {/* Smooth fade-in text */}
+              </h1>
               <p
-                className={`text-sm leading-relaxed w-full max-w-lg transition-opacity duration-500 ease-in-out ${
+                className={`w-[400px] text-sm leading-relaxed max-w-lg transition-opacity duration-500 ease-in-out ${
                   hoveredFeature === feature.id ? "opacity-100" : "opacity-0"
                 }`}
               >
                 {feature.description}
               </p>
-
-              {/* Arrow rotation on hover */}
               <FaArrowUp
                 className={`transition-transform duration-500 ease-in-out ${
-                  hoveredFeature === feature.id ? "rotate-180" : ""
+                  hoveredFeature === feature.id ? "rotate-90" : ""
                 }`}
               />
-
-              {/* Smooth floating image effect */}
-              <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 flex justify-end items-center w-full">
+              <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 flex justify-end items-center w-full p-5">
                 <img
                   src={feature.img}
                   alt={feature.title}
-                  className={`w-[50%] md:w-[25%] rounded-lg shadow-lg transition-transform duration-700 ease-in-out ${
-                    hoveredFeature === feature.id
-                      ? "scale-100 opacity-100 translate-x-0 translate-y-0"
-                      : "scale-95 opacity-0 translate-x-10"
+                  className={`w-[30%] md:w-[25%] rounded-lg shadow-lg transition-transform duration-700 ease-in-out ${
+                    hoveredFeature === feature.id ? "opacity-100" : "opacity-0"
                   }`}
+                  onMouseEnter={() => setHoveredImg(true)}
+                  onMouseLeave={() => setHoveredImg(false)}
                   style={{
-                    transform:
-                      hoveredFeature === feature.id
-                        ? `translate(${randomPosition.x}px, ${randomPosition.y}px)`
-                        : "translateX(10px)",
-                    zIndex: 10,
+                    animation: hoveredImg
+                      ? "vibrate 0.3s ease-in-out infinite"
+                      : "none",
                   }}
                 />
               </div>
@@ -107,6 +103,18 @@ export const FeaturesSection = () => {
           </div>
         ))}
       </div>
+
+      <style>
+        {`
+          @keyframes vibrate {
+            0% { transform: translate(0); }
+            25% { transform: translate(-1px, 1px); }
+            50% { transform: translate(1px, -1px); }
+            75% { transform: translate(-1px, 1px); }
+            100% { transform: translate(0); }
+          }
+        `}
+      </style>
     </section>
   );
 };
