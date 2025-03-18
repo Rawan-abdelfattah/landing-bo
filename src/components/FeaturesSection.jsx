@@ -53,8 +53,7 @@ export const FeaturesSection = () => {
           <div
             key={feature.id}
             className="relative border-b border-gray-700 p-4 py-10 my-10 cursor-pointer transition-all duration-700
-            hover:text-white
- hover:border-[#00B7EF]              hover:rounded-lg hover:border ease-in-out bg-transparent"
+            hover:text-white hover:border-[#00B7EF] hover:rounded-lg hover:border ease-in-out bg-transparent"
             style={{
               background:
                 hoveredFeature === feature.id

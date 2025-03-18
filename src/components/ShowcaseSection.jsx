@@ -1,13 +1,12 @@
 import React from "react";
 import { FiGrid, FiSettings, FiBarChart, FiZap } from "react-icons/fi";
 
-export const ShowcaseSection = () => {
+export const ShowcaseSection = ({darkMode}) => {
   return (
     <section
-       className=" pt-12 px-6 md:px-16"
+       className= {`pt-12 px-6 md:px-16 ${darkMode ?'bg-[#161616]' :''}`}
     >
-      {/* bg-[#161616] */}
-      <div className="max-w-6xl mx-auto">
+       <div className="max-w-6xl mx-auto">
         {/* Section Header */}
         <div className="flex flex-col md:flex-row justify-between items-start md:items-center mb-12">
           <div>
@@ -24,7 +23,7 @@ export const ShowcaseSection = () => {
             </p>
             <a
               href="#"
-              className="bg-blue-500 hover:bg-blue-600   px-6 py-3 rounded-full text-sm font-bold inline-block transition duration-300"
+              className="bg-blue-500 hover:bg-blue-600  text-white px-6 py-3 rounded-full text-sm font-bold inline-block transition duration-300"
             >
               Contact Us Now →
             </a>
@@ -36,11 +35,17 @@ export const ShowcaseSection = () => {
           {features.map((feature, index) => (
             <div
               key={index}
-              className="text-center bg-gray-900 p-6 rounded-xl transition duration-300 hover:bg-gray-800"
+              className={`text-center ${darkMode ?'bg-gray-900 hover:bg-gray-800' :'bg-gray-100 hover:bg-gray-200 '} p-6 rounded-xl transition duration-300 `}
             >
               <div className="relative inline-block mb-4">
-                <div className="absolute inset-0 bg-gradient-to-r from-pink-500 to-purple-500 blur-xl opacity-30 transition duration-300 group-hover:opacity-50"></div>
-                <feature.icon className="text-4xl mx-auto   relative z-10" />
+              <div
+  className="absolute inset-0 blur-xl opacity-30 transition duration-300 group-hover:opacity-50"
+  style={{
+    backgroundImage:
+      "linear-gradient(45deg, rgba(250, 173, 79, 0.7) 14.61%, rgba(221, 42, 123, 0.7) 39.38%, rgba(149, 55, 176, 0.7) 58.49%, rgba(81, 91, 212, 0.7) 85.39%)",
+  }}
+></div>
+              <feature.icon className="text-4xl mx-auto   relative z-10" />
               </div>
               <h3 className="text-lg font-semibold">{feature.title}</h3>
               <p className="  text-sm mt-2">

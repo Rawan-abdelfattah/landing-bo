@@ -45,11 +45,11 @@ const HomePage = ({ darkMode, setDarkMode }) => {
         <FeaturesSection />
       </AnimatedSection>
 
-      {/* <AnimatedSection>
-        <ShowcaseSection />
+      <AnimatedSection>
+        <ShowcaseSection  darkMode={darkMode} />
       </AnimatedSection>
 
-      <AnimatedSection>
+      {/* <AnimatedSection>
         <AnalyticsSection />
       </AnimatedSection>
 
