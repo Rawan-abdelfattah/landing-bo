@@ -76,7 +76,7 @@ export const HeroSection = ({ darkMode, setDarkMode }) => {
             <img
               src="https://s3-alpha-sig.figma.com/img/4469/9bcf/5a27735fbcd25afea2f865f52078ddd0?Expires=1743379200&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=NL50GLgwgAJ5SO3VAGl013wydv9PSWzWwWjWU2AGs6JAzrtzaDlsaLT4WesfF~0-3K2PRe189Si7AByUHhnqSoT5-kvQxxPuVxv8~Ctu3hI~~rr2dqsmnGP2hf2RKy~gVakjzqGHe751euq7iKyWscx9Y6YT0DhcErRnGemjRwoI09qilQ~7l5G1NDcii1pcft~rixNMuhV-wPQ8ZGIGbJNI8F1nqXT8YJVIlqzLab76eGY3v1MTyjcCXEh0HK3hSd2Z3H3nNaFzIhM8a80PyWkr~MfMDiXJ1qOVks8TtuGjQqeHSGn6UY-umUpM5TmDYFNozqBUInLlI1L2KjDOxA__"
               alt="Robot hand pointing"
-              className="w-full"
+              className="  w-[473px]"
             />
           </div>
         </div>
@@ -88,6 +88,7 @@ export const HeroSection = ({ darkMode, setDarkMode }) => {
             social media, content, and links together in one beautiful,
             customizable page.
           </p>
+          <img src="/users.png" className="w-[110px]" alt="users" />
 
           <a
             href="#"
