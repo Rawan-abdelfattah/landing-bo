@@ -6,7 +6,8 @@ export const Footer = () => {
       <div className="flex flex-col md:flex-row justify-between mb-12">
         <div className="max-w-md mb-8 md:mb-0">
           <a href="#" className="text-2xl font-bold  mb-4 inline-block">
-            Boltr
+          <img src="/logo.png" className="w-[158px]" alt="logo" />
+
           </a>
           <p className="text-xs  my-4">
             Boltr is collecting links and effortlessly displaying them, to
@@ -15,7 +16,7 @@ export const Footer = () => {
           </p>
           <a
             href="#"
-            className="bg-primary   px-4 py-2 rounded-full text-sm font-bold mt-2 inline-block"
+            className="bg-blue-500 hover:bg-blue-600  text-white px-4 py-2 rounded-full text-sm font-bold mt-2 inline-block"
           >
             Get Started Now →
           </a>
@@ -61,16 +62,16 @@ export const Footer = () => {
               <input
                 type="email"
                 placeholder="Email Address"
-                className="bg-gray-800 rounded-l-full px-4 py-2 text-sm w-48"
+                className="bg-white rounded-l-full px-4 py-2 text-sm w-48"
               />
-              <button className="bg-primary rounded-r-full px-4">
+              <button className="bg-blue-500 hover:bg-blue-600  text-white rounded-r-full px-4">
                 Subscribe →
               </button>
             </div>
             <div className="flex gap-3 mt-6">
               <a
                 href="#"
-                className="w-8 h-8 bg-gray-800 rounded-full flex items-center justify-center"
+                className="w-8 h-8 bg-white rounded-full flex items-center justify-center"
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -89,19 +90,19 @@ export const Footer = () => {
               </a>
               <a
                 href="#"
-                className="w-8 h-8 bg-gray-800 rounded-full flex items-center justify-center"
+                className="w-8 h-8 bg-white rounded-full flex items-center justify-center"
               >
                 f
               </a>
               <a
                 href="#"
-                className="w-8 h-8 bg-gray-800 rounded-full flex items-center justify-center"
+                className="w-8 h-8 bg-white rounded-full flex items-center justify-center"
               >
                 X
               </a>
               <a
                 href="#"
-                className="w-8 h-8 bg-gray-800 rounded-full flex items-center justify-center"
+                className="w-8 h-8 bg-white rounded-full flex items-center justify-center"
               >
                 in
               </a>

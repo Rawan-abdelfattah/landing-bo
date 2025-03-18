@@ -13,7 +13,7 @@ export const HeroSection = ({ darkMode, setDarkMode }) => {
       {/* Navbar */}
       <div className="flex bg-[rgba(0,0,0,0.4)] flex-col md:flex-row justify-between items-center px-6 py-5 rounded-full">
         <a href="#" className="text-2xl font-bold  ">
-          Boltr
+          <img src="/logo.png" className="w-[100px]" alt="logo" />
         </a>
         <div className="flex gap-8 mt-4 md:mt-0  -300">
           <a href="#" className="text-sm hover:  transition">
@@ -29,8 +29,8 @@ export const HeroSection = ({ darkMode, setDarkMode }) => {
             Support
           </a>
         </div>
-        <div>
-          <button
+        <div className="flex gap-3">
+          {/* <button
             // onClick={() => setDarkMode(!darkMode)}
             className="p-2 rounded-full bg-gray-300 dark:bg-gray-700 hover:bg-gray-400 dark:hover:bg-gray-600 transition"
           >
@@ -39,10 +39,10 @@ export const HeroSection = ({ darkMode, setDarkMode }) => {
             ) : (
               <FaMoon className="text-gray-800" />
             )}
-          </button>{" "}
+          </button>{" "} */}
           <a
             href="#"
-            className="bg-blue-500 hover:bg-blue-600   px-4 py-2 rounded-full text-sm font-bold mt-4 md:mt-0 transition"
+            className="bg-blue-500 hover:bg-blue-600  text-white  px-4 py-2 rounded-full text-sm font-bold mt-4 md:mt-0 transition"
           >
             Get Started Now →
           </a>
@@ -91,7 +91,7 @@ export const HeroSection = ({ darkMode, setDarkMode }) => {
 
           <a
             href="#"
-            className="bg-blue-500 hover:bg-blue-600   px-4 py-2 rounded-full text-sm font-bold inline-block transition"
+            className="bg-blue-500 hover:bg-blue-600 text-white  px-4 py-2 rounded-full text-sm font-bold inline-block transition"
           >
             Create Your Boltr Now →
           </a>

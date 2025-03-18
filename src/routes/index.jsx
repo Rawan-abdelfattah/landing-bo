@@ -4,18 +4,18 @@ import HomePage from '../pages/HomePage';
 
 const AppRoutes = () => {
   const [darkMode, setDarkMode] = useState(
-    localStorage.getItem('theme') === 'light'
+    // localStorage.getItem('theme') === 'light'
   );
 
-  useEffect(() => {
-    if (darkMode) {
-      document.documentElement.classList.add('dark');
-      localStorage.setItem('theme', 'dark');
-    } else {
-      document.documentElement.classList.remove('dark');
-      localStorage.setItem('theme', 'light');
-    }
-  }, [darkMode]);
+  // useEffect(() => {
+  //   if (darkMode) {
+  //     document.documentElement.classList.add('dark');
+  //     localStorage.setItem('theme', 'dark');
+  //   } else {
+  //     document.documentElement.classList.remove('dark');
+  //     localStorage.setItem('theme', 'light');
+  //   }
+  // }, [darkMode]);
 
   return (
     <Router>

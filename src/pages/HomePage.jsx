@@ -41,7 +41,7 @@ const HomePage = ({ darkMode, setDarkMode }) => {
         <HeroSection darkMode={darkMode} setDarkMode={setDarkMode} />
       </AnimatedSection>
 
-      <AnimatedSection>
+      {/* <AnimatedSection>
         <FeaturesSection />
       </AnimatedSection>
 
@@ -55,7 +55,7 @@ const HomePage = ({ darkMode, setDarkMode }) => {
 
       <AnimatedSection>
         <UserSays />
-      </AnimatedSection>
+      </AnimatedSection> */}
 
       {/* Footer (No animation needed) */}
       <Footer />
