@@ -52,7 +52,7 @@ export const ShowcaseSection = () => {
 
         {/* Profile Cards */}
         <div className="pt-20">
-          <img src="./public/Frame.png" alt="" />
+          <img src="public/Frame.png" alt="" />
         </div>
       </div>
     </section>

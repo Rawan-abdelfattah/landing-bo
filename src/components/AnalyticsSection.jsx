@@ -53,12 +53,12 @@ export const AnalyticsSection = () => {
         <div className="relative w-full md:w-1/2 flex justify-center">
           <div className="relative w-[300px] md:w-[450px]">
             <img
-              src="./public/Frame4.png" // Replace with actual path
+              src="public/Frame4.png" // Replace with actual path
               alt="Main Dashboard"
               className="w-full rounded-lg shadow-lg"
             />
             <img
-              src="./public/Frame5.png" // Replace with actual path
+              src="public/Frame5.png" // Replace with actual path
               alt="Secondary Dashboard"
               className="absolute -bottom-8 -right-8 w-2/3 md:w-1/2 rounded-lg shadow-lg"
             />
