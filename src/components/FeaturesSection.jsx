@@ -24,11 +24,11 @@ export const FeaturesSection = () => {
 
   return (
     <section className="mx-auto max-w-6xl py-10 relative">
-      <div className="md:flex-row pl-5">
-        <span className="text-outline-h1"> 01</span>
-      </div>
+
+
       <div className="flex justify-between flex-col md:flex-row gap-6">
         <div className="max-w-lg p-6 space-y-4">
+        <span className="text-outline-h1"> 01</span>
           <h2 className="text-3xl font-bold">
             Powerful Features To Elevate Your Digital Presence
           </h2>
