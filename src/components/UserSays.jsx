@@ -27,9 +27,9 @@ export const UserSays = () => {
   ];
 
   return (
-    <section className=" py-16 px-6 md:px-20 text-white">
+    <section className=" py-16 px-6 md:px-20  ">
       <div className="max-w-6xl mx-auto">
-        <p className="text-sm text-gray-400 uppercase tracking-wide">02</p>
+        <p className="text-sm  -400 uppercase tracking-wide">02</p>
         <h2 className="text-3xl font-bold mb-8">What Our Users Are Saying</h2>
 
         {/* Testimonials Grid */}
@@ -50,21 +50,21 @@ export const UserSays = () => {
                   testimonial.highlighted ? "bg-gradient-to-r from-purple-500 to-pink-500" : "bg-blue-500"
                 }`}
               >
-                <BsQuote size={28} className="text-white" />
+                <BsQuote size={28} className=" " />
               </div>
 
               {/* Testimonial Content */}
-              <p className="text-gray-300 mb-4">{testimonial.text}</p>
+              <p className=" -300 mb-4">{testimonial.text}</p>
 
               {/* Rating Stars */}
               <div className="flex mb-2">
                 {Array.from({ length: testimonial.rating }, (_, i) => (
-                  <span key={i} className="text-yellow-400 text-lg">★</span>
+                  <span key={i} className="  text-lg">★</span>
                 ))}
               </div>
 
               {/* User Name */}
-              <p className="text-gray-400 font-semibold">{testimonial.name}</p>
+              <p className=" -400 font-semibold">{testimonial.name}</p>
             </div>
           ))}
         </div>

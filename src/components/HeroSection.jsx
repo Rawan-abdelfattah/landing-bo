@@ -10,26 +10,26 @@ export const HeroSection = () => {
     <header className="bg-darkGray from-gray-900 via-purple-900 to-black rounded-3xl mx-5 my-5 px-6 pt-6">
       {/* Navbar */}
       <div className="flex bg-[rgba(0,0,0,0.4)] flex-col md:flex-row justify-between items-center px-6 py-5 rounded-full">
-        <a href="#" className="text-2xl font-bold text-white">
+        <a href="#" className="text-2xl font-bold  ">
           Boltr
         </a>
-        <div className="flex gap-8 mt-4 md:mt-0 text-gray-300">
-          <a href="#" className="text-sm hover:text-white transition">
+        <div className="flex gap-8 mt-4 md:mt-0  -300">
+          <a href="#" className="text-sm hover:  transition">
             Features
           </a>
-          <a href="#" className="text-sm hover:text-white transition">
+          <a href="#" className="text-sm hover:  transition">
             Pricing
           </a>
-          <a href="#" className="text-sm hover:text-white transition">
+          <a href="#" className="text-sm hover:  transition">
             Gallery
           </a>
-          <a href="#" className="text-sm hover:text-white transition">
+          <a href="#" className="text-sm hover:  transition">
             Support
           </a>
         </div>
         <a
           href="#"
-          className="bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded-full text-sm font-bold mt-4 md:mt-0 transition"
+          className="bg-blue-500 hover:bg-blue-600   px-4 py-2 rounded-full text-sm font-bold mt-4 md:mt-0 transition"
         >
           Get Started Now →
         </a>
@@ -38,18 +38,18 @@ export const HeroSection = () => {
       {/* Hero Content */}
       <div className="flex flex-col md:flex-row justify-between items-center px-6 pt-12">
         {/* Left Side */}
-        <div className="max-w-lg mb-8 md:mb-0 text-white">
+        <div className="max-w-lg mb-8 md:mb-0  ">
           <h1 className="text-5xl font-bold mb-6">
             Your Digital Identity, One Smart Link!
           </h1>
           {/* Social Icons */}
           <div className="flex gap-4 my-5">
-            <FaXTwitter className="text-2xl cursor-pointer hover:text-gray-400 transition" />
-            <FaLinkedin className="text-2xl cursor-pointer hover:text-gray-400 transition" />
-            <FaFacebook className="text-2xl cursor-pointer hover:text-gray-400 transition" />
-            <FaInstagram className="text-2xl cursor-pointer hover:text-gray-400 transition" />
+            <FaXTwitter className="text-2xl cursor-pointer hover: -400 transition" />
+            <FaLinkedin className="text-2xl cursor-pointer hover: -400 transition" />
+            <FaFacebook className="text-2xl cursor-pointer hover: -400 transition" />
+            <FaInstagram className="text-2xl cursor-pointer hover: -400 transition" />
           </div>
-          <p className="text-base mb-6 text-gray-300">
+          <p className="text-base mb-6  -300">
             Take control of your digital presence with Boltr — the ultimate
             platform to showcase everything that makes you, you. Bring all your
             social media, content, and links together in one beautiful,
@@ -64,7 +64,7 @@ export const HeroSection = () => {
             className="w-full"
           />
         </div>
-        <div className="max-w-lg mb-8 p-6 md:mb-0 text-white space-y-4">
+        <div className="max-w-lg mb-8 p-6 md:mb-0   space-y-4">
           <p className="leading-relaxed">
             Take control of your digital presence with Boitr — the ultimate
             platform to showcase everything that makes you, you. Bring all your
@@ -74,12 +74,12 @@ export const HeroSection = () => {
 
           <a
             href="#"
-            className="bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded-full text-sm font-bold inline-block transition"
+            className="bg-blue-500 hover:bg-blue-600   px-4 py-2 rounded-full text-sm font-bold inline-block transition"
           >
             Create Your Boltr Now →
           </a>
 
-          <p className="text-xs text-gray-400 mt-4">
+          <p className="text-xs  -400 mt-4">
             We have 100k+ customers worldwide
           </p>
         </div>

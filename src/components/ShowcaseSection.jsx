@@ -4,9 +4,9 @@ import { FiGrid, FiSettings, FiBarChart, FiZap } from "react-icons/fi";
 export const ShowcaseSection = () => {
   return (
     <section
-      style={{ backgroundColor: "rgba(35, 35, 35, 1)" }}
-      className=" pt-12 px-6 md:px-16"
+       className=" pt-12 px-6 md:px-16"
     >
+      {/* bg-[#161616] */}
       <div className="max-w-6xl mx-auto">
         {/* Section Header */}
         <div className="flex flex-col md:flex-row justify-between items-start md:items-center mb-12">

@@ -1,8 +1,10 @@
-import React from 'react'
+import React from "react";
 
 export const AnalyticsSection = () => {
   return (
-<section className="relative bg-[#161616] py-16 px-6 md:px-20 my-20">
+    <section
+      className="relative py-16 px-6 md:px-20 my-20">
+      {/* bg-[#161616] */}
       <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-10">
         {/* Left Side - Text Content */}
         <div className="  max-w-lg">
@@ -63,5 +65,6 @@ export const AnalyticsSection = () => {
           </div>
         </div>
       </div>
-    </section>  )
-}
+    </section>
+  );
+};
