@@ -8,55 +8,13 @@ import {
   FaRegMoon,
 } from "react-icons/fa6";
 import TextScroll from "./TextScroll";
+import { Navbar } from "./Navbar";
 
 export const HeroSection = ({ darkMode, setDarkMode }) => {
   return (
     <header className="border-[#00B7EF] border relative overflow-hidden bg-darkGray from-gray-900 via-purple-900 to-black rounded-3xl mx-5 my-5 px-6 pt-6">
-      <div
-        className={`flex flex-col md:flex-row justify-between items-center px-6 py-5 rounded-full transition ${
-          darkMode ? "bg-[rgba(0,0,0,0.4)]" : "bg-[rgba(255,255,255,0.4)]"
-        }`}
-      >
-        <a href="#" className="text-2xl font-bold">
-          <img
-            src={darkMode ? "/logo.png" : "/dark-logo.png"}
-            className="w-[100px] "
-            alt="logo"
-          />
-        </a>
-        <div className="flex gap-8 mt-4 md:mt-0">
-          <a href="#" className="text-sm transition">
-            Features
-          </a>
-          <a href="#" className="text-sm transition">
-            Pricing
-          </a>
-          <a href="#" className="text-sm transition">
-            Gallery
-          </a>
-          <a href="#" className="text-sm transition">
-            Support
-          </a>
-        </div>
-        <div className="flex gap-3">
-          <button
-            onClick={() => setDarkMode(!darkMode)}
-            className="px-3 py-3 rounded-full text-xl bg-transparent border hover:bg-gray-400 dark:hover:bg-gray-600 transition"
-          >
-            {darkMode ? (
-              <FaSun className="text-white-500" />
-            ) : (
-              <FaRegMoon className="text-gray-800" />
-            )}
-          </button>
-          <a
-            href="#"
-            className="text-white bg-blue-500 hover:bg-blue-600   px-4 py-2 rounded-full text-sm font-bold transition"
-          >
-            Get Started Now →
-          </a>
-        </div>
-      </div>
+    <Navbar darkMode={darkMode} setDarkMode={setDarkMode}/>
+ 
  
       <div className=" md:mb-20 mb-0 xl:mb-0 relative z-10 flex flex-col md:flex-row justify-between items-center px-6 pt-12 lg:pt-2">
          <div className="max-w-lg mb-8 md:mb-0">
