@@ -7,15 +7,19 @@ const AppRoutes = () => {
     localStorage.getItem("theme") === "light"
   );
 
-  // useEffect(() => {
-  //   if (darkMode) {
-  //     document.documentElement.classList.add('dark');
-  //     localStorage.setItem('theme', 'dark');
-  //   } else {
-  //     document.documentElement.classList.remove('dark');
-  //     localStorage.setItem('theme', 'light');
-  //   }
-  // }, [darkMode]);
+  useEffect(() => {
+    const root = document.documentElement; // Select the <html> element
+
+    if (darkMode) {
+      root.classList.add("dark", "bg-black", "text-white");
+      root.classList.remove("bg-white", "text-gray-900");
+      localStorage.setItem("theme", "dark");
+    } else {
+      root.classList.remove("dark", "bg-black", "text-white");
+      root.classList.add("bg-white", "text-gray-900");
+      localStorage.setItem("theme", "light");
+    }
+  }, [darkMode]);
 
   return (
     <Router>
