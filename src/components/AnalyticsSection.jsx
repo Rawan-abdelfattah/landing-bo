@@ -1,15 +1,20 @@
 import React from "react";
+import TextScroll from "./TextScroll";
 
 export const AnalyticsSection = ({ darkMode }) => {
   return (
-    <section className="relative py-16 px-6 md:px-20 my-20">
-      {/* bg-[#161616] */}
-      <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-10">
+    <> <section className="relative overflow-hidden py-16 px-6 md:px-20 my-20"> <div className="relative z-0 w-full">
+    <TextScroll 
+      darkMode={darkMode}
+      text="One Link To Rule Them All – Connect, Share."
+    />
+  </div>  
+       <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-10">
         {/* Left Side - Text Content */}
         <div className="  max-w-lg">
           <p
             className={
-              darkMode ? "text-outline-dark-h2" : "text-outline-light-h2"
+              darkMode ? "text-outline-dark-h1" : "text-outline-light-h1"
             }
           >
             03
@@ -54,5 +59,7 @@ export const AnalyticsSection = ({ darkMode }) => {
         </div>
       </div>
     </section>
+    </>
+  
   );
 };

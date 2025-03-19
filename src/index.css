@@ -35,22 +35,22 @@
 
 .text-light-outline {
   font-weight: 1000;
+  font-size: 66px; 
+  color: white;
+  text-shadow: -2px -2px 0 black, 2px -2px 0 black, -2px 2px 0 black,
+    2px 2px 0 black;
+}
+.text-dark-outline {
+  font-weight: 1000;
   font-size: 66px;
   color: black;
   text-shadow: -2px -2px 0 white, 2px -2px 0 white, -2px 2px 0 white,
     2px 2px 0 white;
 }
-.text-dark-outline {
-  font-weight: 1000;
-  font-size: 66px;
-  color: white;
-  text-shadow: -2px -2px 0 black, 2px -2px 0 black, -2px 2px 0 black,
-    2px 2px 0 black;
-}
 
 .text-outline-dark-h1 {
+   font-size: 32px;
   font-weight: 1000;
-  font-size: 32px;
   color: black;
   text-shadow: -2px -2px 0 white, 2px -2px 0 white, -2px 2px 0 white,
     2px 2px 0 white;

@@ -51,7 +51,7 @@ const HomePage = ({ darkMode, setDarkMode }) => {
       <AnimatedSection>
         <UserSays />
       </AnimatedSection>    */}
-      <Footer />
+      <Footer darkMode={darkMode} />
     </div>
   );
 };

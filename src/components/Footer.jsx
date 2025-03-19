@@ -1,19 +1,20 @@
 import React from "react";
+import TextScroll from "./TextScroll";
 
-export const Footer = () => {
+export const Footer = ({ darkMode }) => {
   return (
-    <footer className="bg-darkGray rounded-3xl mx-5 my-5 py-10 px-6">
-      <div className="flex flex-col md:flex-row justify-between mb-12">
-        <div className="max-w-md mb-8 md:mb-0">
+    <footer className="relative overflow-hidden  bg-darkGray rounded-3xl mx-5 my-5 py-10 px-6">
+      <div className=" lg:flex lg:flex-row  lg:text-left lg:justify-between md:flex md:flex-col md:items-center md:justify-center md:text-center text-center  justify-between mb-3">
+        <div className="mb-8 md:mb-0 ">
           <a href="#" className="text-2xl font-bold  mb-4 inline-block">
-          <img src="/logo.png" className="w-[158px]" alt="logo" />
-
+            <img src="/logo.png" className="w-[158px]" alt="logo" />
           </a>
-          <p className="text-xs  my-4">
+          <p className="text-xs my-4 w-full lg:w-auto">
             Boitr is collecting links and effortlessly displaying them, to
             enhance presence, fix growth, and stay, and get the word out. Get
             started today!
           </p>
+
           <a
             href="#"
             className="bg-blue-500 hover:bg-blue-600  text-white px-4 py-2 rounded-full text-sm font-bold mt-2 inline-block"
@@ -56,9 +57,9 @@ export const Footer = () => {
               </li>
             </ul>
           </div>
-          <div>
+          <div className="">
             <h4 className="font-bold mb-4">Subscribe To Our Newsletter</h4>
-            <div className="flex mt-4">
+            <div className="flex mt-4 flex justify-center">
               <input
                 type="email"
                 placeholder="Email Address"
@@ -68,7 +69,7 @@ export const Footer = () => {
                 Subscribe →
               </button>
             </div>
-            <div className="flex gap-3 mt-6">
+            <div className="flex justify-center gap-3 mt-6">
               <a
                 href="#"
                 className="w-8 h-8 bg-white rounded-full flex items-center justify-center"
@@ -109,6 +110,12 @@ export const Footer = () => {
             </div>
           </div>
         </div>
+      </div> 
+      <div className="relative z-0 w-full">
+        <TextScroll
+          darkMode={darkMode}
+          text="One Link To Rule Them All – Connect, Share."
+        />
       </div>
       <div className="text-center text-xs pt-6 border-t border-gray-800">
         Boitr © Copyright 2025. All rights reserved

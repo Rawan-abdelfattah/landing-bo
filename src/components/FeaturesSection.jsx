@@ -19,17 +19,22 @@ const features = [
   },
 ];
 
-export const FeaturesSection = ({darkMode}) => {
+export const FeaturesSection = ({ darkMode }) => {
   const [hoveredFeature, setHoveredFeature] = useState(null);
   const [hoveredImg, setHoveredImg] = useState(false);
 
   return (
     <section className="mx-auto max-w-6xl py-10 relative">
-
-
-<div className="  lg:flex lg:flex-row  lg:text-left lg:justify-between md:flex md:flex-col md:items-center md:justify-center md:text-center text-center">        
-<div className="max-w-lg p-6 space-y-4">
-        <span className={`${darkMode ? "text-outline-dark-h1" : "text-outline-light-h1"} `}> 01</span>
+      <div className="  lg:flex lg:flex-row  lg:text-left lg:justify-between md:flex md:flex-col md:items-center md:justify-center md:text-center text-center">
+        <div className="max-w-lg p-6 space-y-4">
+          <span
+            className={`${
+              darkMode ? "text-outline-dark-h1" : "text-outline-light-h1"
+            } `}
+          >
+            {" "}
+            01
+          </span>
           <h2 className="text-3xl font-bold">
             Powerful Features To Elevate Your Digital Presence
           </h2>
@@ -66,7 +71,11 @@ export const FeaturesSection = ({darkMode}) => {
           >
             <div className="flex items-center justify-between relative">
               <h1 className="text-xl font-semibold">
-                <span   className={`${darkMode ? "text-outline-dark-h2" : 'text-outline-light-h2'} text-xl font-bold px-2`}>
+                <span
+                  className={`${
+                    darkMode ? "text-outline-dark-h2" : "text-outline-light-h2"
+                  } text-xl font-bold px-2`}
+                >
                   {feature.id}
                 </span>
                 {feature.title}
@@ -78,7 +87,7 @@ export const FeaturesSection = ({darkMode}) => {
               >
                 {feature.description}
               </p>
-              <FaArrowUpLong 
+              <FaArrowUpLong
                 className={`transition-transform duration-500 ease-in-out ${
                   hoveredFeature === feature.id ? "rotate-90" : ""
                 }`}

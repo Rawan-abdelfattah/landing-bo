@@ -40,7 +40,7 @@ export const HeroSection = ({ darkMode, setDarkMode }) => {
         </div>
         <div className="flex gap-3">
           <button
-            // onClick={() => setDarkMode(!darkMode)}
+            onClick={() => setDarkMode(!darkMode)}
             className="p-2 rounded-full bg-gray-300 dark:bg-gray-700 hover:bg-gray-400 dark:hover:bg-gray-600 transition"
           >
             {darkMode ? (
@@ -109,8 +109,9 @@ export const HeroSection = ({ darkMode, setDarkMode }) => {
       </div>
 
       {/* Text Scroll (Ensured it's always below) */}
-      <div className="relative z-0 w-full">
+      <div className="absolute z-0 w-full">
         <TextScroll
+        className='absolute'
           darkMode={darkMode}
           text="One Link To Rule Them All – Connect, Share."
         />

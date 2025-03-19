@@ -1,6 +1,6 @@
 import React, { useEffect, useRef } from "react";
 
-const TextScroll = ({ text, darkMode }) => {
+const TextScroll = ({ text, darkMode, className }) => {
   const scrollRef = useRef(null);
 
   useEffect(() => {
@@ -30,7 +30,7 @@ const TextScroll = ({ text, darkMode }) => {
   }, []);
 
   return (
-    <div className=" text-white py-5 absolute bottom-0 left-0">
+    <div className={`text-white ${className} py-5  bottom-0 left-0`}>
       <div
         ref={scrollRef}
         className={`whitespace-nowrap ${
