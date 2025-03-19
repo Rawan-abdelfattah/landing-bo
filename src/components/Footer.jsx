@@ -3,11 +3,11 @@ import TextScroll from "./TextScroll";
 
 export const Footer = ({ darkMode }) => {
   return (
-    <footer className="relative overflow-hidden  bg-darkGray rounded-3xl mx-5 my-5 py-10 px-6">
+    <footer className="border-[#00B7EF] border relative overflow-hidden  bg-darkGray rounded-3xl mx-5 my-5 py-10 px-6">
       <div className=" lg:flex lg:flex-row  lg:text-left lg:justify-between md:flex md:flex-col md:items-center md:justify-center md:text-center text-center  justify-between mb-3">
         <div className="mb-8 md:mb-0 ">
           <a href="#" className="text-2xl font-bold  mb-4 inline-block">
-            <img src="/logo.png" className="w-[158px]" alt="logo" />
+            <img src={darkMode ?"/logo.png" :"/dark-logo.png"} className="w-[158px]" alt="logo" />
           </a>
           <p className="text-xs my-4 w-full lg:w-auto">
             Boitr is collecting links and effortlessly displaying them, to

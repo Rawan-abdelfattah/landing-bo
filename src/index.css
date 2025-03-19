@@ -12,25 +12,15 @@
 @layer utilities {
   .bg-darkGray {
     background: linear-gradient(
-      45deg,
-      rgba(81, 91, 212, 0.7) 14.61%,
-      rgba(149, 55, 176, 0.7) 39.38%,
-      rgba(221, 42, 123, 0.7) 58.49%,
-      rgba(250, 173, 79, 0.7) 85.39%
+      45deg, 
+      rgba(81, 91, 212, 0.2) 14.61%,
+      rgba(149, 55, 176, 0.3) 39.38%,
+      rgba(221, 42, 123, 0.4) 58.49%,
+      rgba(250, 173, 79, 0.5) 85.39%
     );
-  }
-  .nav-bg {
-    background: linear-gradient(
-      45deg,
-      rgba(250, 173, 79, 0.7) 14.61%,
-      rgba(221, 42, 123, 0.7) 39.38%,
-      rgba(149, 55, 176, 0.7) 58.49%,
-      rgba(81, 91, 212, 0.7) 85.39%
-    );
-  }
-  .primary {
-    color: rgba(1, 124, 212, 1) !important;
-  }
+    backdrop-filter: blur(270px)
+
+  }  
 }
 
 .text-light-outline {

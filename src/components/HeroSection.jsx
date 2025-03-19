@@ -11,7 +11,7 @@ import TextScroll from "./TextScroll";
 
 export const HeroSection = ({ darkMode, setDarkMode }) => {
   return (
-    <header className="relative overflow-hidden bg-darkGray from-gray-900 via-purple-900 to-black rounded-3xl mx-5 my-5 px-6 pt-6">
+    <header className="border-[#00B7EF] border relative overflow-hidden bg-darkGray from-gray-900 via-purple-900 to-black rounded-3xl mx-5 my-5 px-6 pt-6">
       <div
         className={`flex flex-col md:flex-row justify-between items-center px-6 py-5 rounded-full transition ${
           darkMode ? "bg-[rgba(0,0,0,0.4)]" : "bg-[rgba(255,255,255,0.4)]"
