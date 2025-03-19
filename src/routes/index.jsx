@@ -2,13 +2,12 @@ import React, { useState, useEffect } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import HomePage from "../pages/HomePage";
 
-const AppRoutes = () => {
-  // Default to dark mode if no theme is set in localStorage
+const AppRoutes = () => { 
   const storedTheme = localStorage.getItem("theme");
   const [darkMode, setDarkMode] = useState(storedTheme ? storedTheme === "dark" : true);
 
   useEffect(() => {
-    const root = document.documentElement; // Select the <html> element
+    const root = document.documentElement; 
 
     if (darkMode) {
       root.classList.add("dark", "bg-black", "text-white");

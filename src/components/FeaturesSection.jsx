@@ -93,20 +93,19 @@ export const FeaturesSection = ({ darkMode }) => {
                 }`}
               />
               <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 flex justify-end items-center w-full p-5">
-                <img
-                  src={feature.img}
-                  alt={feature.title}
-                  className={`w-[30%] md:w-[25%] rounded-lg shadow-lg transition-transform duration-700 ease-in-out ${
-                    hoveredFeature === feature.id ? "opacity-100" : "opacity-0"
-                  }`}
-                  onMouseEnter={() => setHoveredImg(true)}
-                  onMouseLeave={() => setHoveredImg(false)}
-                  style={{
-                    animation: hoveredImg
-                      ? "vibrate 0.3s ease-in-out infinite"
-                      : "none",
-                  }}
-                />
+              <img
+  src={feature.img}
+  alt={feature.title}
+  className={`hidden md:block w-[25%] rounded-lg shadow-lg transition-transform duration-700 ease-in-out ${
+    hoveredFeature === feature.id ? "opacity-100" : "opacity-0"
+  }`}
+  onMouseEnter={() => setHoveredImg(true)}
+  onMouseLeave={() => setHoveredImg(false)}
+  style={{
+    animation: hoveredImg ? "vibrate 0.3s ease-in-out infinite" : "none",
+  }}
+/>
+
               </div>
             </div>
           </div>

@@ -4,7 +4,6 @@ import {
   FaLinkedin,
   FaFacebook,
   FaInstagram,
-  FaMoon,
   FaSun,
   FaRegMoon,
 } from "react-icons/fa6";
@@ -21,7 +20,7 @@ export const HeroSection = ({ darkMode, setDarkMode }) => {
         <a href="#" className="text-2xl font-bold">
           <img
             src={darkMode ? "/logo.png" : "/dark-logo.png"}
-            className="w-[100px]"
+            className="w-[100px] "
             alt="logo"
           />
         </a>
@@ -45,9 +44,9 @@ export const HeroSection = ({ darkMode, setDarkMode }) => {
             className="px-3 py-3 rounded-full text-xl bg-transparent border hover:bg-gray-400 dark:hover:bg-gray-600 transition"
           >
             {darkMode ? (
-              <FaSun  className="text-white-500" />
+              <FaSun className="text-white-500" />
             ) : (
-              <FaRegMoon  className="text-gray-800" />
+              <FaRegMoon className="text-gray-800" />
             )}
           </button>
           <a
@@ -58,11 +57,9 @@ export const HeroSection = ({ darkMode, setDarkMode }) => {
           </a>
         </div>
       </div>
-
-      {/* Hero Section */}
-      <div className="relative z-10 flex flex-col md:flex-row justify-between items-center px-6 pt-12 lg:pt-2">
-        {/* Left Content */}
-        <div className="max-w-lg mb-8 md:mb-0">
+ 
+      <div className=" md:mb-20 mb-0 xl:mb-0 relative z-10 flex flex-col md:flex-row justify-between items-center px-6 pt-12 lg:pt-2">
+         <div className="max-w-lg mb-8 md:mb-0">
           <h1 className="text-5xl font-bold mb-6">
             Your Digital Identity, One Smart Link!
           </h1>
@@ -80,18 +77,17 @@ export const HeroSection = ({ darkMode, setDarkMode }) => {
           </p>
         </div>
 
-        <div className="relative z-10 flex flex-col items-center max-w-full order-last md:order-none">
+        <div className="relative xl:mt-30 z-10 flex flex-col items-center max-w-full order-last md:order-none">
           <div className="z-20 transition-transform duration-500 ease-in-out hover:-translate-x-2 hover:-translate-y-1 hover:-rotate-20">
             <img
               src="/hand.png"
               alt="Robot hand pointing"
-              className="w-[300px] sm:w-[400px] md:w-[461px]"
+              className=" block xl:block md:hidden w-[300px] sm:w-[400px] md:w-[461px]"
             />
           </div>
         </div>
 
-        {/* Right Content */}
-        <div className="max-w-lg mb-8 p-6 md:mb-0 z-10 space-y-4">
+         <div className="max-w-lg mb-8 p-6 md:mb-0 z-10 space-y-4">
           <p className="leading-relaxed ">
             Take control of your digital presence with Boitr — the ultimate
             platform to showcase everything that makes you, you. Bring all your
@@ -109,10 +105,9 @@ export const HeroSection = ({ darkMode, setDarkMode }) => {
         </div>
       </div>
 
-      {/* Text Scroll (Ensured it's always below) */}
-      <div className="absolute z-0 w-full">
+       <div className="absolute z-0w-full">
         <TextScroll
-        className='absolute'
+          className="absolute  "
           darkMode={darkMode}
           text="One Link To Rule Them All – Connect, Share."
         />

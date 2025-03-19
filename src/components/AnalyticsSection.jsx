@@ -3,9 +3,11 @@ import TextScroll from "./TextScroll";
 
 export const AnalyticsSection = ({ darkMode }) => {
   return (
-    <> <section className="relative overflow-hidden py-16 px-6 md:px-20 my-20"> <div className="relative z-0 w-full">
+    <> <section className="relative overflow-hidden py-16 px-6 md:px-20 my-20"> 
+    <div className="relative z-0 w-full">
     <TextScroll 
       darkMode={darkMode}
+      className={'mb-30'}
       text="One Link To Rule Them All – Connect, Share."
     />
   </div>  
