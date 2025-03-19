@@ -3,9 +3,9 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import HomePage from "../pages/HomePage";
 
 const AppRoutes = () => {
-  const [darkMode, setDarkMode] = useState(
-    localStorage.getItem("theme") === "light"
-  );
+  // Default to dark mode if no theme is set in localStorage
+  const storedTheme = localStorage.getItem("theme");
+  const [darkMode, setDarkMode] = useState(storedTheme ? storedTheme === "dark" : true);
 
   useEffect(() => {
     const root = document.documentElement; // Select the <html> element
@@ -24,7 +24,7 @@ const AppRoutes = () => {
   return (
     <Router>
       <div
-        className={`root min-h-screen transition-colors duration-300 ${
+        className={`min-h-screen transition-colors duration-300 ${
           darkMode ? "bg-black text-white" : "bg-white text-gray-900"
         }`}
       >
