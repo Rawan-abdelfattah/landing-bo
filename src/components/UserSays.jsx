@@ -30,8 +30,11 @@ export const UserSays = ({darkMode}) => {
   return (
     <section className=" py-16 px-6 md:px-20  ">
       <div className="max-w-6xl mx-auto">
-        <p className="text-sm  -400 uppercase tracking-wide">02</p>
-        <h2 className="text-3xl font-bold mb-8">What Our Users Are Saying</h2>
+        <p  className={
+              darkMode ? "text-outline-dark-h1" : "text-outline-light-h1"
+            }>04</p>
+          <h2 className="text-3xl font-bold leading-tight mb-20 ">
+          What Our Users Are Saying</h2>
 
         {/* Testimonials Grid */}
         <div className="grid md:grid-cols-3 gap-8">
