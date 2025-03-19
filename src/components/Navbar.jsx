@@ -43,7 +43,7 @@ export const Navbar = ({ darkMode, setDarkMode }) => {
             {darkMode ? (
               <FaSun className="text-white" />
             ) : (
-              <FaRegMoon className="text-gray-200" />
+              <FaRegMoon className="text-gray-800" />
             )}
           </button>
           <a
