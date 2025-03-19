@@ -6,11 +6,17 @@ export const ShowcaseSection = ({ darkMode }) => {
     <section
       className={`pt-12 px-6 md:px-16 ${darkMode ? "bg-[#161616]" : ""}`}
     >
-      <div className="max-w-6xl mx-auto">
-        {/* Section Header */}
-        <div className="flex flex-col md:flex-row justify-between items-start md:items-center mb-12">
+      <div className="max-w-6xl  mx-auto">
+        <div className="  lg:flex lg:flex-row  lg:text-left lg:justify-between md:flex md:flex-col md:items-center md:justify-center md:text-center text-center">
+            
           <div>
-            <p className=" text-outline-h1">02</p>
+            <p
+              className={`${
+                darkMode ? "text-outline-dark-h1" : "text-outline-light-h1"
+              } `}
+            >
+              02
+            </p>
             <h2 className="text-3xl md:text-4xl font-bold mt-2">
               Your All-In-One Digital Showcase
             </h2>
@@ -35,18 +41,14 @@ export const ShowcaseSection = ({ darkMode }) => {
           {features.map((feature, index) => (
             <div
               key={index}
-              className={`text-center ${
-                darkMode
-                  ? "bg-gray-900 hover:bg-gray-800"
-                  : "bg-gray-100 hover:bg-gray-200 "
-              } p-6 rounded-xl transition duration-300 `}
+              className={`text-center p-6 rounded-xl transition duration-300 `}
             >
               <div className="relative inline-block mb-4">
                 <div
-                  className="absolute inset-0 blur-xl opacity-30 transition duration-300 group-hover:opacity-50"
+                  className="absolute inset-0 blur-xl opacity-100 transition duration-300 group-hover:opacity-50"
                   style={{
                     background:
-                      "linear-gradient(45deg, rgba(250, 173, 79, 0.7) 14.61%, rgba(221, 42, 123, 0.7) 39.38%, rgba(149, 55, 176, 0.7) 58.49%, rgba(81, 91, 212, 0.7) 85.39%)",
+                      " linear-gradient(45deg, rgba(250, 173, 79, 0.8) 14.61%, rgba(221, 42, 123, 0.8) 39.38%, rgba(149, 55, 176, 0.8) 58.49%, rgba(81, 91, 212, 0.8) 85.39%)",
                   }}
                 ></div>
                 <feature.icon className="text-4xl mx-auto   relative z-10" />

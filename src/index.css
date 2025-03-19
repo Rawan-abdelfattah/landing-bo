@@ -33,39 +33,49 @@
   }
 }
 
-.text-outline {
-  -webkit-text-stroke: 1px black;
-  font-family: Arimo;
-  font-weight: 700;
+.text-light-outline {
+  font-weight: 1000;
   font-size: 66px;
-  line-height: 100%;
-  letter-spacing: 0px;
-  text-transform: capitalize;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  color: black;
+  text-shadow: -2px -2px 0 white, 2px -2px 0 white, -2px 2px 0 white,
+    2px 2px 0 white;
+}
+.text-dark-outline {
+  font-weight: 1000;
+  font-size: 66px;
+  color: white;
+  text-shadow: -2px -2px 0 black, 2px -2px 0 black, -2px 2px 0 black,
+    2px 2px 0 black;
 }
 
-
-.text-outline-h1 {
-  -webkit-text-stroke: 1px black;
-  font-family: Arimo;
-  font-weight: 700;
+.text-outline-dark-h1 {
+  font-weight: 1000;
   font-size: 32px;
-  line-height: 100%;
-  letter-spacing: 0px;
-  text-transform: capitalize;  
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-    
+  color: black;
+  text-shadow: -2px -2px 0 white, 2px -2px 0 white, -2px 2px 0 white,
+    2px 2px 0 white;
 }
 
-.text-outline-h2 {
-  -webkit-text-stroke: 1px black;
-  font-family: Arimo;
-  font-weight: 700;
-  font-size: 22px;
-  line-height: 30px;
-  letter-spacing: 0px;
-  text-transform: capitalize;
-  
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+.text-outline-light-h1 {
+  font-weight: 1000;
+  font-size: 32px;
+  color: white;
+  text-shadow: -2px -2px 0 black, 2px -2px 0 black, -2px 2px 0 black,
+    2px 2px 0 black;
 }
 
+.text-outline-dark-h2 {
+  font-size: 28px; /* Adjust as needed */
+  font-weight: 1000;
+  color: black;
+  text-shadow: -2px -2px 0 white, 2px -2px 0 white, -2px 2px 0 white,
+    2px 2px 0 white;
+}
+
+.text-outline-light-h2 {
+  font-size: 28px; /* Adjust as needed */
+  font-weight: 1000;
+  color: white;
+  text-shadow: -2px -2px 0 black, 2px -2px 0 black, -2px 2px 0 black,
+    2px 2px 0 black;
+}

@@ -10,7 +10,7 @@ export const Footer = () => {
 
           </a>
           <p className="text-xs  my-4">
-            Boltr is collecting links and effortlessly displaying them, to
+            Boitr is collecting links and effortlessly displaying them, to
             enhance presence, fix growth, and stay, and get the word out. Get
             started today!
           </p>
@@ -111,7 +111,7 @@ export const Footer = () => {
         </div>
       </div>
       <div className="text-center text-xs pt-6 border-t border-gray-800">
-        Boltr © Copyright 2025. All rights reserved
+        Boitr © Copyright 2025. All rights reserved
       </div>
     </footer>
   );

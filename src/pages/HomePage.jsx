@@ -1,12 +1,10 @@
-import React, { useRef } from 'react';
-import { motion, useInView } from 'framer-motion';
-import { Navbar } from '../components/Navbar';
-import { HeroSection } from '../components/HeroSection';
-import { FeaturesSection } from '../components/FeaturesSection';
-import { ShowcaseSection } from '../components/ShowcaseSection';
-import { AnalyticsSection } from '../components/AnalyticsSection';
-import { UserSays } from '../components/UserSays';
-import { Footer } from '../components/Footer';
+import React, { useRef } from "react";
+import { motion, useInView } from "framer-motion";
+import { HeroSection } from "../components/HeroSection";
+import { FeaturesSection } from "../components/FeaturesSection";
+import { ShowcaseSection } from "../components/ShowcaseSection";
+import { AnalyticsSection } from "../components/AnalyticsSection";
+import { Footer } from "../components/Footer";
 
 // Animation settings
 const fadeInUp = {
@@ -23,7 +21,7 @@ const AnimatedSection = ({ children }) => {
     <motion.section
       ref={ref}
       initial="hidden"
-      animate={isInView ? 'visible' : 'hidden'}
+      animate={isInView ? "visible" : "hidden"}
       variants={fadeInUp}
       className="opacity-0"
     >
@@ -32,30 +30,27 @@ const AnimatedSection = ({ children }) => {
   );
 };
 
-
 const HomePage = ({ darkMode, setDarkMode }) => {
   return (
     <div>
- 
       <AnimatedSection>
         <HeroSection darkMode={darkMode} setDarkMode={setDarkMode} />
       </AnimatedSection>
 
-       <AnimatedSection>
+      <AnimatedSection>
         <FeaturesSection />
       </AnimatedSection>
 
       <AnimatedSection>
-        <ShowcaseSection  darkMode={darkMode} />
+        <ShowcaseSection darkMode={darkMode} />
       </AnimatedSection>
-
-      {/* <AnimatedSection>
-        <AnalyticsSection />
+      <AnimatedSection>
+        <AnalyticsSection darkMode={darkMode} />
       </AnimatedSection>
-
+      {/* 
       <AnimatedSection>
         <UserSays />
-      </AnimatedSection>  */}
+      </AnimatedSection>    */}
       <Footer />
     </div>
   );

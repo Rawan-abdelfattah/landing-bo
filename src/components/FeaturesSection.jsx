@@ -1,12 +1,13 @@
 import React, { useState } from "react";
 import { FaArrowUp } from "react-icons/fa";
+import { FaArrowUpLong } from "react-icons/fa6";
 
 const features = [
   {
     id: "01",
     title: "AUTO-SYNC",
     description:
-      "Keep your content always fresh and up-to-date without the extra effort. Boltr automatically syncs with your social media and platforms so your audience always sees the latest.",
+      "Keep your content always fresh and up-to-date without the extra effort. Boitr automatically syncs with your social media and platforms so your audience always sees the latest.",
     img: "1.png",
   },
   {
@@ -18,7 +19,7 @@ const features = [
   },
 ];
 
-export const FeaturesSection = () => {
+export const FeaturesSection = ({darkMode}) => {
   const [hoveredFeature, setHoveredFeature] = useState(null);
   const [hoveredImg, setHoveredImg] = useState(false);
 
@@ -26,16 +27,16 @@ export const FeaturesSection = () => {
     <section className="mx-auto max-w-6xl py-10 relative">
 
 
-      <div className="flex justify-between flex-col md:flex-row gap-6">
-        <div className="max-w-lg p-6 space-y-4">
-        <span className="text-outline-h1"> 01</span>
+<div className="  lg:flex lg:flex-row  lg:text-left lg:justify-between md:flex md:flex-col md:items-center md:justify-center md:text-center text-center">        
+<div className="max-w-lg p-6 space-y-4">
+        <span className={`${darkMode ? "text-outline-dark-h1" : "text-outline-light-h1"} `}> 01</span>
           <h2 className="text-3xl font-bold">
             Powerful Features To Elevate Your Digital Presence
           </h2>
         </div>
         <div className="max-w-lg p-6 space-y-4">
           <p className="leading-relaxed">
-            Take control of your digital presence with Boltr — the ultimate
+            Take control of your digital presence with Boitr — the ultimate
             platform to showcase everything that makes you, you.
           </p>
 
@@ -65,7 +66,7 @@ export const FeaturesSection = () => {
           >
             <div className="flex items-center justify-between relative">
               <h1 className="text-xl font-semibold">
-                <span className="text-xl font-bold px-2 text-outline-h2">
+                <span   className={`${darkMode ? "text-outline-dark-h2" : 'text-outline-light-h2'} text-xl font-bold px-2`}>
                   {feature.id}
                 </span>
                 {feature.title}
@@ -77,7 +78,7 @@ export const FeaturesSection = () => {
               >
                 {feature.description}
               </p>
-              <FaArrowUp
+              <FaArrowUpLong 
                 className={`transition-transform duration-500 ease-in-out ${
                   hoveredFeature === feature.id ? "rotate-90" : ""
                 }`}
