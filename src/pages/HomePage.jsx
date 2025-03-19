@@ -5,6 +5,7 @@ import { FeaturesSection } from "../components/FeaturesSection";
 import { ShowcaseSection } from "../components/ShowcaseSection";
 import { AnalyticsSection } from "../components/AnalyticsSection";
 import { Footer } from "../components/Footer";
+import { UserSays } from "../components/UserSays";
 
 // Animation settings
 const fadeInUp = {
@@ -47,10 +48,10 @@ const HomePage = ({ darkMode, setDarkMode }) => {
       <AnimatedSection>
         <AnalyticsSection darkMode={darkMode} />
       </AnimatedSection>
-      {/* 
+      
       <AnimatedSection>
-        <UserSays />
-      </AnimatedSection>    */}
+        <UserSays darkMode={darkMode} />
+      </AnimatedSection>   
       <Footer darkMode={darkMode} />
     </div>
   );

@@ -6,6 +6,7 @@ import {
   FaInstagram,
   FaMoon,
   FaSun,
+  FaRegMoon,
 } from "react-icons/fa6";
 import TextScroll from "./TextScroll";
 
@@ -41,12 +42,12 @@ export const HeroSection = ({ darkMode, setDarkMode }) => {
         <div className="flex gap-3">
           <button
             onClick={() => setDarkMode(!darkMode)}
-            className="p-2 rounded-full bg-gray-300 dark:bg-gray-700 hover:bg-gray-400 dark:hover:bg-gray-600 transition"
+            className="px-3 py-3 rounded-full text-xl bg-transparent border hover:bg-gray-400 dark:hover:bg-gray-600 transition"
           >
             {darkMode ? (
-              <FaSun className="text-yellow-500" />
+              <FaSun  className="text-white-500" />
             ) : (
-              <FaMoon className="text-gray-800" />
+              <FaRegMoon  className="text-gray-800" />
             )}
           </button>
           <a

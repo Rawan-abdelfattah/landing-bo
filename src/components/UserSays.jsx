@@ -1,7 +1,8 @@
 import React from "react";
 import { BsQuote } from "react-icons/bs";
  
-export const UserSays = () => {
+export const UserSays = ({darkMode}) => {
+  
   const testimonials = [
     {
       id: 1,
@@ -35,35 +36,39 @@ export const UserSays = () => {
         {/* Testimonials Grid */}
         <div className="grid md:grid-cols-3 gap-8">
           {testimonials.map((testimonial, index) => (
-            <div
-              key={testimonial.id}
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: index * 0.2 }}
-              className={`relative p-6 rounded-xl shadow-lg ${
-                testimonial.highlighted ? "bg-gray-800" : "bg-transparent"
-              }`}
-            >
-              {/* Quote Icon */}
+         <div
+         key={testimonial.id}
+         initial={{ opacity: 0, y: 20 }}
+         animate={{ opacity: 1, y: 0 }}
+         transition={{ duration: 0.6, delay: index * 0.2 }}
+         className={`relative p-6 rounded-xl shadow-lg transition duration-300 ${
+          testimonial.highlighted
+            ? darkMode
+              ? "bg-gray-900 hover:bg-gray-800"
+              : "bg-gray-300 hover:bg-gray-400"
+            : darkMode
+            ? "bg-transparent"
+            : "bg-gray-100 hover:bg-gray-200"
+        }`}
+        
+       >
+        
               <div
-                className={`absolute -top-5 left-4 p-2 rounded-full ${
-                  testimonial.highlighted ? "bg-gradient-to-r from-purple-500 to-pink-500" : "bg-blue-500"
+                className={`absolute -top-5 left-4 p-2 bg-darkGray text-white rounded-xl ${
+                  testimonial.highlighted ? " bg-gradient-to-r from-purple-500 to-pink-500 text" : "bg-blue-500"
                 }`}
               >
                 <BsQuote size={28} className=" " />
               </div>
-
-              {/* Testimonial Content */}
+ 
               <p className=" -300 mb-4">{testimonial.text}</p>
-
-              {/* Rating Stars */}
+ 
               <div className="flex mb-2">
                 {Array.from({ length: testimonial.rating }, (_, i) => (
                   <span key={i} className="  text-lg">★</span>
                 ))}
               </div>
-
-              {/* User Name */}
+ 
               <p className=" -400 font-semibold">{testimonial.name}</p>
             </div>
           ))}

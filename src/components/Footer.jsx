@@ -59,20 +59,23 @@ export const Footer = ({ darkMode }) => {
           </div>
           <div className="">
             <h4 className="font-bold mb-4">Subscribe To Our Newsletter</h4>
-            <div className="flex mt-4 flex justify-center">
+            <div className=" mt-4   justify-center">
               <input
                 type="email"
                 placeholder="Email Address"
-                className="bg-white rounded-l-full px-4 py-2 text-sm w-48"
+                className={`bg-white w-full  rounded-full px-4 py-2 text-sm w-48 placeholder-gray-500`}
               />
-              <button className="bg-blue-500 hover:bg-blue-600  text-white rounded-r-full px-4">
-                Subscribe →
-              </button>
+              <a
+                href="#"
+                className="w-full bg-blue-500 hover:bg-blue-600  text-white px-4 py-2 rounded-full text-sm font-bold mt-2 inline-block"
+              >
+                Subscribe →{" "}
+              </a>
             </div>
             <div className="flex justify-center gap-3 mt-6">
               <a
                 href="#"
-                className="w-8 h-8 bg-white rounded-full flex items-center justify-center"
+                className={` ${darkMode ? 'bg-black':'bg-white'} w-8 h-8  rounded-full flex items-center justify-center`}
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -91,26 +94,26 @@ export const Footer = ({ darkMode }) => {
               </a>
               <a
                 href="#"
-                className="w-8 h-8 bg-white rounded-full flex items-center justify-center"
+                className={` ${darkMode ? 'bg-black':'bg-white'} w-8 h-8  rounded-full flex items-center justify-center`}
               >
                 f
               </a>
               <a
                 href="#"
-                className="w-8 h-8 bg-white rounded-full flex items-center justify-center"
+                className={` ${darkMode ? 'bg-black':'bg-white'} w-8 h-8  rounded-full flex items-center justify-center`}
               >
                 X
               </a>
               <a
                 href="#"
-                className="w-8 h-8 bg-white rounded-full flex items-center justify-center"
+                className={` ${darkMode ? 'bg-black':'bg-white'} w-8 h-8  rounded-full flex items-center justify-center`}
               >
                 in
               </a>
             </div>
           </div>
         </div>
-      </div> 
+      </div>
       <div className="relative z-0 w-full">
         <TextScroll
           darkMode={darkMode}
