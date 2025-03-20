@@ -35,7 +35,7 @@ export default function FeatureGrid({ darkMode }) {
     {
       title: "Email Marketing? Simplified",
       description:
-      "Blogging just got easy. Keep your audience engaged with updates, and stories all hosted on your page ",
+        "Blogging just got easy. Keep your audience engaged with updates, and stories all hosted on your page ",
       image: "6.png",
     },
   ];
@@ -51,35 +51,38 @@ export default function FeatureGrid({ darkMode }) {
           01
         </h2>
         <div className="md:flex justify-between font-bold mb-6 py-5">
-          <h2 className="text-2xl md:text-4xl ">Turn Your Passion into Profit with These Our Features</h2>
-          <h4>Simplify your digital world — connect, share, and grow with ease.</h4>
+          <h2 className="text-2xl md:text-4xl ">
+            Turn Your Passion into Profit with These Our Features
+          </h2>
+          <h4>
+            Simplify your digital world — connect, share, and grow with ease.
+          </h4>
         </div>
 
         <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
           {features.map((feature, index) => (
             <div
-  key={index}
-  className={`my-10 relative p-6 rounded-2xl shadow-lg text-left flex flex-col items-start transition-all duration-500 transform
-    ${
-      darkMode
-        ? "bg-[#232323] text-white hover:bg-gradient-to-r from-gray-700 to-gray-900"
-        : "bg-gray-200 text-black hover:bg-gradient-to-r from-gray-100 to-gray-300"
-    }
-    hover:-translate-y-2 hover:shadow-lg hover:shadow-black/30`}
->
-  <h3 className="text-xl font-semibold mb-2">{feature.title}</h3>
-  <p className="opacity-80">{feature.description}</p>
+              key={index}
+              className={`   p-6 rounded-2xl shadow-lg text-left flex flex-col transition-all duration-500 transform
+               ${
+                 darkMode
+                   ? "bg-[#232323] text-white hover:bg-gradient-to-r from-gray-700 to-gray-900"
+                   : "bg-gray-200 text-black hover:bg-gradient-to-r from-gray-100 to-gray-300"
+               }
+               hover:-translate-y-2 hover:shadow-lg hover:shadow-black/30 flex-1`}
+              style={{ minHeight: "100%" }} // Ensures equal height
+            >
+              <h3 className="text-xl font-semibold mb-2">{feature.title}</h3>
+              <p className="opacity-80 flex-grow">{feature.description}</p>
 
-  {/* Image Wrapper for better positioning */}
-  <div className="relative w-full h-[180px]">
-    <img 
-      src={feature.image} 
-      className="absolute right-0 -translate-y-1/2 top-[140px] rounded-xl shadow-md" 
-      alt={feature.title} 
-    />
-  </div>
-</div>
-
+              <div className="  mt-auto">
+                <img
+                  src={feature.image}
+                  className="w-full mt-3  object-cover rounded-xl shadow-md"
+                  alt={feature.title}
+                />
+              </div>
+            </div>
           ))}
         </div>
       </div>
