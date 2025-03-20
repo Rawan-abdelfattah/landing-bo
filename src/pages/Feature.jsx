@@ -36,16 +36,16 @@ const Feature = ({ darkMode, setDarkMode }) => {
         <Header darkMode={darkMode} setDarkMode={setDarkMode} />
       </AnimatedSection>
 
-      {/* <AnimatedSection>
+        <AnimatedSection>
         <FeatureGrid darkMode={darkMode} setDarkMode={setDarkMode} />
       </AnimatedSection>
 
-      <AnimatedSection>
+      {/* <AnimatedSection>
         <Showcase darkMode={darkMode} setDarkMode={setDarkMode} />
       </AnimatedSection>
       <AnimatedSection>
         <FAQ darkMode={darkMode} setDarkMode={setDarkMode} />
-      </AnimatedSection> */}
+      </AnimatedSection>   */}
 
       <AnimatedSection>
         <UserSays darkMode={darkMode} setDarkMode={setDarkMode} />
