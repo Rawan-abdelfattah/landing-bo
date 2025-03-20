@@ -118,7 +118,7 @@ export const Footer = ({ darkMode }) => {
           text="One Link To Rule Them All – Connect, Share."
         />
       </div>
-      <div className="text-center text-xs pt-6 border-t border-gray-800">
+      <div className="text-center text-xs pt-6 border-t  ">
         Boitr © Copyright 2025. All rights reserved
       </div>
     </footer>
