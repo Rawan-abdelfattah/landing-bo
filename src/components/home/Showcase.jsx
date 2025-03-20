@@ -1,74 +1,7 @@
 import React from "react";
 import { FiGrid, FiSettings, FiBarChart, FiZap } from "react-icons/fi";
+import { Link } from "react-router-dom";
 
-export const ShowcaseSection = ({ darkMode }) => {
-  return (
-    <section
-      className={`pt-12 px-6 md:px-16 ${darkMode ? "bg-[#161616]" : ""}`}
-    >
-      <div className="max-w-6xl  mx-auto">
-        <div className="  lg:flex lg:flex-row  lg:text-left lg:justify-between md:flex md:flex-col md:items-center md:justify-center md:text-center text-center">
-            
-          <div>
-            <p
-              className={`${
-                darkMode ? "text-outline-dark-h1" : "text-outline-light-h1"
-              } `}
-            >
-              02
-            </p>
-            <h2 className="text-3xl md:text-4xl font-bold mt-2">
-              Your All-In-One Digital Showcase
-            </h2>
-          </div>
-          <div className="mt-6 md:mt-0 max-w-md">
-            <p className="  mb-4">
-              Boitr is your all-in-one digital hub — a single, shareable link
-              that brings together your social media, websites, and content on a
-              sleek, customizable page.
-            </p>
-            <a
-              href="#"
-              className="bg-blue-500 hover:bg-blue-600  text-white px-6 py-3 rounded-full text-sm font-bold inline-block transition duration-300"
-            >
-              Contact Us Now →
-            </a>
-          </div>
-        </div>
-
-        {/* Features Section */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
-          {features.map((feature, index) => (
-            <div
-              key={index}
-              className={`text-center p-6 rounded-xl transition duration-300 `}
-            >
-              <div className="relative inline-block mb-4">
-                <div
-                  className="absolute inset-0 blur-xl opacity-100 transition duration-300 group-hover:opacity-50"
-                  style={{
-                    background:
-                      " linear-gradient(45deg, rgba(250, 173, 79, 0.8) 14.61%, rgba(221, 42, 123, 0.8) 39.38%, rgba(149, 55, 176, 0.8) 58.49%, rgba(81, 91, 212, 0.8) 85.39%)",
-                  }}
-                ></div>
-                <feature.icon className="text-4xl mx-auto   relative z-10" />
-              </div>
-              <h3 className="text-lg font-semibold">{feature.title}</h3>
-              <p className="  text-sm mt-2">{feature.description}</p>
-            </div>
-          ))}
-        </div>
-
-        {/* Profile Cards */}
-        <div className="pt-20">
-          <img src="/Frame.png" alt="" />
-        </div>
-      </div>
-    </section>
-  );
-};
-
-// Features Data
 const features = [
   {
     title: "Unified Presence",
@@ -92,3 +25,64 @@ const features = [
     icon: FiZap,
   },
 ];
+
+export const Showcase = ({ darkMode }) => {
+  return (
+    <section
+      className={`pt-12 px-6 md:px-16 ${darkMode ? "bg-[#161616]" : ""}`}
+    >
+      <div className="max-w-6xl mx-auto text-center lg:text-left">
+        <h2
+          className={`${
+            darkMode ? "text-outline-dark-h1" : "text-outline-light-h1"
+          } `}
+        >
+          02
+        </h2>
+        <div className="md:flex justify-between font-bold mb-6 py-5">
+          <h2 className="text-2xl md:text-4xl ">
+            {" "}
+            Your All-In-One Digital Showcase
+          </h2>
+          <div className="mt-6 md:mt-0 md:max-w-md ">
+            <p className="  mb-4">
+              Boitr is your all-in-one digital hub — a single, shareable link
+              that brings together your social media, websites, and content on a
+              sleek, customizable page.
+            </p>
+            <Link
+              to="/support"
+              className="bg-blue-500 hover:bg-blue-600  text-white px-6 py-3 rounded-full text-sm font-bold inline-block transition duration-300"
+            >
+              Contact Us Now →
+            </Link>
+          </div>
+        </div> 
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
+          {features.map((feature, index) => (
+            <div
+              key={index}
+              className={`text-center p-6 rounded-xl transition duration-300 `}
+            >
+              <div className="relative inline-block mb-4">
+                <div
+                  className="absolute inset-0 blur-xl opacity-100 transition duration-300 group-hover:opacity-50"
+                  style={{
+                    background:
+                      " linear-gradient(45deg, rgba(250, 173, 79, 0.8) 14.61%, rgba(221, 42, 123, 0.8) 39.38%, rgba(149, 55, 176, 0.8) 58.49%, rgba(81, 91, 212, 0.8) 85.39%)",
+                  }}
+                ></div>
+                <feature.icon className="text-4xl mx-auto   relative z-10" />
+              </div>
+              <h3 className="text-lg font-semibold">{feature.title}</h3>
+              <p className="  text-sm mt-2">{feature.description}</p>
+            </div>
+          ))}
+        </div> 
+        <div className="pt-20">
+          <img src="/Frame.png" alt="" />
+        </div>
+      </div>
+    </section>
+  );
+}; 

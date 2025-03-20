@@ -1,37 +1,38 @@
 import React, { useState } from "react";
 import { FaSun, FaRegMoon } from "react-icons/fa6";
+import { Link } from "react-router-dom";
 
 export const Navbar = ({ darkMode, setDarkMode }) => {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
-<nav
-  className={`${
-    darkMode ? "bg-[rgba(0,0,0,0.4)]" : "bg-[rgba(255,255,255,0.4)]"
-  } px-6 py-4 transition md:rounded-full rounded-xl`}
->
+    <nav
+      className={`${
+        darkMode ? "bg-[rgba(0,0,0,0.4)]" : "bg-[rgba(255,255,255,0.4)]"
+      } px-6 py-4 transition md:rounded-full rounded-xl`}
+    >
       <div className="mx-auto max-w-7xl flex items-center justify-between">
-          <a href="#" className="text-2xl font-bold">
-            <img
-              src={darkMode ? "/logo.png" : "/dark-logo.png"}
-              className="w-[100px]"
-              alt="logo"
-            />
-          </a><div className="flex items-center gap-6">
-        
+        <Link to="/" className="text-2xl font-bold">
+          <img
+            src={darkMode ? "/logo.png" : "/dark-logo.png"}
+            className="w-[100px]"
+            alt="logo"
+          />
+        </Link>
+        <div className="flex items-center gap-6">
           <div className="hidden sm:flex space-x-6 text-white  ">
-            <a href="#" className="hover:text-gray-300">
+            <Link to="/feature" className="hover:text-gray-300">
               Features
-            </a>
-            <a href="#" className="hover:text-gray-300">
+            </Link>
+            <Link to="/pricing" className="hover:text-gray-300">
               Pricing
-            </a>
-            <a href="#" className="hover:text-gray-300">
+            </Link>
+            <Link to="/gallery" className="hover:text-gray-300">
               Gallery
-            </a>
-            <a href="#" className="hover:text-gray-300">
+            </Link>
+            <Link to="/support" className="hover:text-gray-300">
               Support
-            </a>
+            </Link>
           </div>
         </div>
 
@@ -46,12 +47,12 @@ export const Navbar = ({ darkMode, setDarkMode }) => {
               <FaRegMoon className="text-gray-800" />
             )}
           </button>
-          <a
-            href="#"
+          <Link
+            to="https://user.boitr.com/"
             className="text-white bg-blue-500 hover:bg-blue-600 px-4 py-2 md:block hidden rounded-full text-sm font-bold transition"
           >
             Get Started Now →
-          </a>
+          </Link>
           <button
             className="sm:hidden p-2 text-white focus:outline-none"
             onClick={() => setMenuOpen(!menuOpen)}
@@ -91,24 +92,24 @@ export const Navbar = ({ darkMode, setDarkMode }) => {
 
       {menuOpen && (
         <div className="sm:hidden mt-3 flex flex-col space-y-2 text-white text-center   py-4">
-          <a href="#" className="hover:text-gray-300">
+          <Link to="/feature" className="hover:text-gray-300">
             Features
-          </a>
-          <a href="#" className="hover:text-gray-300">
+          </Link>
+          <Link to="/pricing" className="hover:text-gray-300">
             Pricing
-          </a>
-          <a href="#" className="hover:text-gray-300">
+          </Link>
+          <Link to="/gallery" className="hover:text-gray-300">
             Gallery
-          </a>
-          <a href="#" className="hover:text-gray-300">
+          </Link>
+          <Link to="/support" className="hover:text-gray-300">
             Support
-          </a>
-          <a
-            href="#"
+          </Link>
+          <Link
+            to="https://user.boitr.com/"
             className="mt-3 inline-block text-white bg-blue-500 hover:bg-blue-600 px-4 py-2 rounded-full text-sm font-bold transition"
           >
             Get Started Now →
-          </a>
+          </Link>
         </div>
       )}
     </nav>

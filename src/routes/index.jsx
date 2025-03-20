@@ -1,13 +1,19 @@
 import React, { useState, useEffect } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import HomePage from "../pages/HomePage";
+ import Gallery  from "../pages/Gallery";
+import Feature  from "../pages/Feature";
+import Pricing  from "../pages/Pricing";
+import Support  from "../pages/Support";
+import Home from "../pages/Home";
 
-const AppRoutes = () => { 
+const AppRoutes = () => {
   const storedTheme = localStorage.getItem("theme");
-  const [darkMode, setDarkMode] = useState(storedTheme ? storedTheme === "dark" : true);
+  const [darkMode, setDarkMode] = useState(
+    storedTheme ? storedTheme === "dark" : true
+  );
 
   useEffect(() => {
-    const root = document.documentElement; 
+    const root = document.documentElement;
 
     if (darkMode) {
       root.classList.add("dark", "bg-black", "text-white");
@@ -30,7 +36,23 @@ const AppRoutes = () => {
         <Routes>
           <Route
             path="/"
-            element={<HomePage darkMode={darkMode} setDarkMode={setDarkMode} />}
+            element={<Home  darkMode={darkMode} setDarkMode={setDarkMode} />}
+          />{" "}
+          <Route
+            path="/feature"
+            element={<Feature  darkMode={darkMode} setDarkMode={setDarkMode} />}
+          />
+          <Route
+            path="/gallery"
+            element={<Gallery  darkMode={darkMode} setDarkMode={setDarkMode} />}
+          />
+          <Route
+            path="/pricing"
+            element={<Pricing  darkMode={darkMode} setDarkMode={setDarkMode} />}
+          />
+          <Route
+            path="/support"
+            element={<Support  darkMode={darkMode} setDarkMode={setDarkMode} />}
           />
           <Route path="*" element={<>404</>} />
         </Routes>

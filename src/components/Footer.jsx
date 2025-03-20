@@ -1,4 +1,5 @@
 import React from "react";
+ import { Link } from "react-router-dom";
 import TextScroll from "./TextScroll";
 
 export const Footer = ({ darkMode }) => {
@@ -6,44 +7,41 @@ export const Footer = ({ darkMode }) => {
     <footer className="border-[#00B7EF] border relative overflow-hidden  bg-darkGray rounded-3xl mx-5 my-5 py-10 px-6">
       <div className=" lg:flex lg:flex-row  lg:text-left lg:justify-between md:flex md:flex-col md:items-center md:justify-center md:text-center text-center  justify-between mb-3">
         <div className="mb-8 md:mb-0 ">
-          <a href="#" className="text-2xl font-bold  mb-4 inline-block">
+          <Link to="/" className="text-2xl font-bold  mb-4 inline-block">
             <img src={darkMode ?"/logo.png" :"/dark-logo.png"} className="w-[158px]" alt="logo" />
-          </a>
+          </Link>
           <p className="text-xs my-4 w-full lg:w-auto">
             Boitr is collecting links and effortlessly displaying them, to
             enhance presence, fix growth, and stay, and get the word out. Get
             started today!
           </p>
 
-          <a
-            href="#"
+          <Link
+            to="https://user.boitr.com/"
             className="bg-blue-500 hover:bg-blue-600  text-white px-4 py-2 rounded-full text-sm font-bold mt-2 inline-block"
           >
             Get Started Now →
-          </a>
+          </Link>
         </div>
         <div className="flex flex-col md:flex-row gap-12">
           <div>
             <h4 className="font-bold mb-4">Pages</h4>
             <ul>
               <li className="mb-2">
-                <a href="#">Home</a>
+                <Link to="/">Home</Link>
               </li>
               <li className="mb-2">
-                <a href="#">Features</a>
+                <Link to="/feature">Features</Link>
               </li>
               <li className="mb-2">
-                <a href="#">Pricing</a>
+                <Link to="/pricing">Pricing</Link>
               </li>
               <li className="mb-2">
-                <a href="#">Gallery</a>
+                <Link to="/gallery">Gallery</Link>
               </li>
               <li className="mb-2">
-                <a href="#">Support</a>
-              </li>
-              <li className="mb-2">
-                <a href="#">Blog</a>
-              </li>
+                <Link to="/support">Support</Link>
+              </li> 
             </ul>
           </div>
           <div>

@@ -1,7 +1,8 @@
 import React from "react";
-import TextScroll from "./TextScroll";
+ import { Link } from "react-router-dom";
+import TextScroll from "../TextScroll";
 
-export const AnalyticsSection = ({ darkMode }) => {
+export const Analytics = ({ darkMode }) => {
   return (
     <>
       {" "}
@@ -17,7 +18,7 @@ export const AnalyticsSection = ({ darkMode }) => {
           className="max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-10"
         
         >
-          <div className="  max-w-lg">
+          <div className="max-w-lg text-center md:text-left ">
             <p
               className={
                 darkMode ? "text-outline-dark-h1" : "text-outline-light-h1"
@@ -33,12 +34,12 @@ export const AnalyticsSection = ({ darkMode }) => {
               that brings together your social media, websites, and content on a
               sleek, customizable page.
             </p>
-            <a
-              href="#"
+         <Link
+            to="/feature"
               className="text-white bg-blue-500 hover:bg-blue-600   px-6 py-3 rounded-full text-sm font-bold inline-block transition-all duration-300 ease-in-out"
             >
               Discover Our Features →
-            </a>
+            </Link>
             <img
               src={darkMode ? "/dark-icons.png" : "/light-icons.png"}
               alt="icons"

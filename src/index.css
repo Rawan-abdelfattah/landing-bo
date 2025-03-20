@@ -69,3 +69,11 @@
   text-shadow: -2px -2px 0 black, 2px -2px 0 black, -2px 2px 0 black,
     2px 2px 0 black;
 }
+.head-line{ 
+font-weight: 700;
+font-size: 52px;
+line-height: 100%;
+letter-spacing: 0px;
+text-transform: capitalize;
+
+}

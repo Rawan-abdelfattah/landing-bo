@@ -1,17 +1,16 @@
 import React, { useRef } from "react";
 import { motion, useInView } from "framer-motion";
-import { HeroSection } from "../components/HeroSection";
-import { FeaturesSection } from "../components/FeaturesSection";
-import { ShowcaseSection } from "../components/ShowcaseSection";
-import { AnalyticsSection } from "../components/AnalyticsSection";
 import { Footer } from "../components/Footer";
-import { UserSays } from "../components/UserSays";
- 
+import { Header } from "../components/pricing/Header";
+import Plans from "../components/pricing/Plans";
+import SocialMediaIcons from "../components/pricing/SocialMediaIcons";
+import FAQ from "../components/pricing/FAQ ";
+
 const fadeInUp = {
   hidden: { opacity: 0, y: 40 },
   visible: { opacity: 1, y: 0, transition: { duration: 0.6 } },
 };
- 
+
 const AnimatedSection = ({ children }) => {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true, margin: "-100px" });
@@ -29,30 +28,24 @@ const AnimatedSection = ({ children }) => {
   );
 };
 
-const HomePage = ({ darkMode, setDarkMode }) => {
+const Pricing = ({ darkMode, setDarkMode }) => {
   return (
     <div>
       <AnimatedSection>
-        <HeroSection darkMode={darkMode} setDarkMode={setDarkMode} />
-      </AnimatedSection>
-
+        <Header darkMode={darkMode} setDarkMode={setDarkMode} />
+      </AnimatedSection> 
+      {/* <AnimatedSection>
+        <Plans darkMode={darkMode}   />
+      </AnimatedSection> 
       <AnimatedSection>
-        <FeaturesSection />
-      </AnimatedSection>
-
-      <AnimatedSection>
-        <ShowcaseSection darkMode={darkMode} />
+        <SocialMediaIcons darkMode={darkMode}   />
       </AnimatedSection>
       <AnimatedSection>
-        <AnalyticsSection darkMode={darkMode} />
-      </AnimatedSection>
-      
-      <AnimatedSection>
-        <UserSays darkMode={darkMode} />
-      </AnimatedSection>   
+        <FAQ darkMode={darkMode}   />
+      </AnimatedSection>  */}
       <Footer darkMode={darkMode} />
     </div>
   );
 };
 
-export default HomePage;
+export default Pricing;

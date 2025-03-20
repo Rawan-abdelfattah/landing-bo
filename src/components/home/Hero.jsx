@@ -7,10 +7,11 @@ import {
   FaSun,
   FaRegMoon,
 } from "react-icons/fa6";
-import TextScroll from "./TextScroll";
-import { Navbar } from "./Navbar";
+import TextScroll from "../TextScroll";
+import { Navbar } from "../Navbar";
+import { Link } from "react-router-dom";
 
-export const HeroSection = ({ darkMode, setDarkMode }) => {
+export const Hero = ({ darkMode, setDarkMode }) => {
   return (
     <header className="border-[#00B7EF] border relative overflow-hidden bg-darkGray from-gray-900 via-purple-900 to-black rounded-3xl mx-5 my-5 px-6 pt-6">
     <Navbar darkMode={darkMode} setDarkMode={setDarkMode}/>
@@ -45,7 +46,7 @@ export const HeroSection = ({ darkMode, setDarkMode }) => {
           </div>
         </div>
 
-         <div className="max-w-lg mb-8 p-6 md:mb-0 z-10 space-y-4">
+         <div className="max-w-lg mb-8 md:mb-0 z-10 space-y-4">
           <p className="leading-relaxed ">
             Take control of your digital presence with Boitr — the ultimate
             platform to showcase everything that makes you, you. Bring all your
@@ -53,12 +54,12 @@ export const HeroSection = ({ darkMode, setDarkMode }) => {
             customizable page.
           </p>
           <img src="/users.png" className="w-[110px]" alt="users" />
-          <a
-            href="#"
+          <Link
+            to="https://user.boitr.com/"
             className="text-white bg-blue-500 hover:bg-blue-600 px-4 py-2 rounded-full text-sm font-bold inline-block transition"
           >
             Create Your Boitr Now →
-          </a>
+          </Link>
           <p className="text-xs  mt-4">We have 100k+ customers worldwide</p>
         </div>
       </div>

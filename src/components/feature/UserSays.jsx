@@ -29,16 +29,19 @@ export const UserSays = ({ darkMode }) => {
   return (
     <section className=" py-16 px-6 md:px-20  ">
       <div className="max-w-6xl mx-auto">
-        <p
-          className={
-            darkMode ? "text-outline-dark-h1" : "text-outline-light-h1"
-          }
-        >
-          04
-        </p>
-        <h2 className="text-3xl font-bold leading-tight mb-20 ">
-          What Our Users Are Saying
-        </h2>
+        <div className="text-center md:text-left">
+          {" "}
+          <p
+            className={
+              darkMode ? "text-outline-dark-h1" : "text-outline-light-h1"
+            }
+          >
+            04
+          </p>
+          <h2 className="text-3xl font-bold leading-tight mb-20 ">
+            What Our Users Are Saying
+          </h2>
+        </div>
 
         <div className="grid md:grid-cols-3 gap-8">
           {testimonials.map((testimonial, index) => (
@@ -47,7 +50,7 @@ export const UserSays = ({ darkMode }) => {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: index * 0.2 }}
-              className={`relative p-6 rounded-xl shadow-lg transition duration-300 ${
+              className={`relative p-6 rounded-xl shadow-lg transition duration-300 hover:-translate-y-2 hover:shadow-lg hover:shadow-black/30 ${
                 testimonial.highlighted
                   ? darkMode
                     ? "bg-gray-900 hover:bg-gray-800"
