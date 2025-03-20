@@ -20,17 +20,17 @@ export const Navbar = ({ darkMode, setDarkMode }) => {
           />
         </Link>
         <div className="flex items-center gap-6">
-          <div className="hidden sm:flex space-x-6 text-white  ">
-            <Link to="/feature" className="hover:text-gray-300">
+          <div className="hidden sm:flex space-x-6 ">
+            <Link to="/feature">
               Features
             </Link>
-            <Link to="/pricing" className="hover:text-gray-300">
+            <Link to="/pricing">
               Pricing
             </Link>
-            <Link to="/gallery" className="hover:text-gray-300">
+            <Link to="/gallery">
               Gallery
             </Link>
-            <Link to="/support" className="hover:text-gray-300">
+            <Link to="/support">
               Support
             </Link>
           </div>
@@ -91,17 +91,17 @@ export const Navbar = ({ darkMode, setDarkMode }) => {
       </div>
 
       {menuOpen && (
-        <div className="sm:hidden mt-3 flex flex-col space-y-2 text-white text-center   py-4">
-          <Link to="/feature" className="hover:text-gray-300">
+        <div className="sm:hidden mt-3 flex flex-col space-y-2 text-center py-4">
+          <Link to="/feature">
             Features
           </Link>
-          <Link to="/pricing" className="hover:text-gray-300">
+          <Link to="/pricing">
             Pricing
           </Link>
-          <Link to="/gallery" className="hover:text-gray-300">
+          <Link to="/gallery">
             Gallery
           </Link>
-          <Link to="/support" className="hover:text-gray-300">
+          <Link to="/support">
             Support
           </Link>
           <Link
