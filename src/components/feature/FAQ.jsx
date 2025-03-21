@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { FaArrowRight, FaChevronUp } from "react-icons/fa";
+import { FaArrowUp } from "react-icons/fa6";
 
 export default function FAQSection({ darkMode }) {
   const [openIndex, setOpenIndex] = useState(null);
@@ -49,7 +50,7 @@ export default function FAQSection({ darkMode }) {
               features can be added based on your needs.
             </p>
           </div>
-          <FaArrowRight className="text-xl" />
+          <FaArrowRight className="text-xl mt-[16px]" />
         </div>
 
         {faqs.map((faq, index) => (
@@ -64,9 +65,9 @@ export default function FAQSection({ darkMode }) {
     >
       <div className="flex justify-between items-center">
         <h3 className="text-lg font-semibold">{faq.question}</h3>
-        <FaChevronUp
+        <FaArrowUp
           className={`text-xl transition-transform duration-300 ${
-            openIndex === index ? "rotate-180" : ""
+            openIndex === index ? "rotate-90" : ""
           }`}
         />
       </div>
