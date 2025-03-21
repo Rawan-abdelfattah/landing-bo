@@ -32,9 +32,9 @@ const Gallery = ({ darkMode, setDarkMode }) => {
       <AnimatedSection>
         <Header darkMode={darkMode} setDarkMode={setDarkMode} />
       </AnimatedSection>
-      {/* <AnimatedSection>
+      <AnimatedSection>
         <GalleryGridSection darkMode={darkMode}   />
-      </AnimatedSection> */}
+      </AnimatedSection>
       <Footer darkMode={darkMode} />
     </div>
   );
