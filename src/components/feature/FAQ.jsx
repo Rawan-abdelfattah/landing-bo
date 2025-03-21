@@ -50,7 +50,7 @@ export default function FAQSection({ darkMode }) {
               features can be added based on your needs.
             </p>
           </div>
-          <FaArrowRight className="text-xl mt-[16px]" />
+          <FaArrowRight className="text-xl mt-[16px] hidden md:block" />
         </div>
 
         {faqs.map((faq, index) => (
