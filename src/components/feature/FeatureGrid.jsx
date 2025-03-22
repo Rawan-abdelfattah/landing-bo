@@ -43,7 +43,7 @@ export default function FeatureGrid({ darkMode }) {
   return (
     <div className="relative overflow-hidden">
       {" "}
-      <section className=" container  m-auto">
+      <section className=" max-w-screen-xl mx-auto   m-auto">
         <div className="text-center lg:text-left">
           <h2
             className={`${

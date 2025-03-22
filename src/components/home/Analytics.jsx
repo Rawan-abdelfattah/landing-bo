@@ -81,7 +81,7 @@ export const Analytics = ({ darkMode }) => {
             text="One Link To Rule Them All – Connect, Share."
           />
         </div>
-      <section className=" container  m-auto ">
+      <section className=" max-w-screen-xl mx-auto   m-auto ">
     
         <div
           className={`bg-cover bg-center 

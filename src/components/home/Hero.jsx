@@ -20,7 +20,7 @@ export const Hero = ({ darkMode, setDarkMode }) => {
     >
       <Navbar darkMode={darkMode} setDarkMode={setDarkMode} />
 
-      <div className="container m-auto md:mb-20 mb-0 xl:mb-0 relative z-10 flex flex-col md:flex-row justify-between items-center  pt-12 lg:pt-12">
+      <div className="max-w-screen-xl mx-auto  m-auto md:mb-20 mb-0 xl:mb-0 relative z-10 flex flex-col md:flex-row justify-between items-center  pt-12 lg:pt-12">
         <div className="max-w-[511px] mb-8   ">
           <h1 className="text-5xl font-bold mb-6">
           Your Digital Identity, One Smart Link!          </h1>

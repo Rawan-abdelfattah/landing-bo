@@ -7,7 +7,7 @@ export const Showcase = ({ darkMode }) => {
     <section
       className={`${darkMode ? "bg-[#161616]" : ""}`}
     >
-      <div className=" pt-10 container  m-auto  text-center lg:text-left">
+      <div className=" pt-10 max-w-screen-xl mx-auto   m-auto  text-center lg:text-left">
         <h2
           className={`${
             darkMode ? "text-outline-dark-h1" : "text-outline-light-h1"

@@ -122,7 +122,7 @@ const GalleryGridSection = ({ darkMode }) => {
   ];
 
   return (
-    <div className="container  m-auto">
+    <div className="max-w-screen-xl mx-auto   m-auto">
       <div className=" text-center lg:text-left">
         <h2
           className={`${

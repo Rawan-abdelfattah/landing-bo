@@ -9,7 +9,7 @@ export const Footer = ({ darkMode }) => {
         darkMode ? "bg-[url('/dark-bg.png')]" : "bg-[url('/light-bg.png')]"
       }  bg-cover bg-center  rounded-3xl mx-5 my-5 py-10 px-20`}
     >
-      <div className=" lg:flex lg:flex-row container  m-auto lg:text-left lg:justify-between md:flex md:flex-col md:items-center md:justify-center md:text-center text-center  justify-between mb-3">
+      <div className=" lg:flex lg:flex-row max-w-screen-xl mx-auto   m-auto lg:text-left lg:justify-between md:flex md:flex-col md:items-center md:justify-center md:text-center text-center  justify-between mb-3">
         <div className="mb-8 md:mb-0 ">
           <Link to="/" className="text-2xl font-bold  mb-4 inline-block">
             <img
@@ -128,7 +128,7 @@ export const Footer = ({ darkMode }) => {
           </div>
         </div>
       </div>
-<div className="container  relative overflow-hidden">   <TextScroll
+<div className="max-w-screen-xl mx-auto   relative overflow-hidden">   <TextScroll
             darkMode={darkMode} 
             text="One Link To Rule Them All – Connect, Share."
           /> </div>

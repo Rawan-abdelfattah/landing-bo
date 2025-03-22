@@ -29,7 +29,7 @@ export default function FAQSection({ darkMode }) {
   ];
 
   return (
-    <section className={`container py-10  m-auto`}>
+    <section className={`max-w-screen-xl mx-auto  py-10  m-auto`}>
       <div className="  text-center lg:text-left">
         <h2
           className={`${

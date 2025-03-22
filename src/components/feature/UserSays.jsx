@@ -26,7 +26,7 @@ export const UserSays = ({ darkMode }) => {
   ];
 
   return (
-    <section className=" container  m-auto py-10">
+    <section className=" max-w-screen-xl mx-auto   m-auto py-10">
          <div className="text-center md:text-left">
           {" "}
           <p

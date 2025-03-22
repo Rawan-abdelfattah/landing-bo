@@ -12,7 +12,7 @@ export const Header = ({ darkMode, setDarkMode }) => {
     >
       {" "}
       <Navbar darkMode={darkMode} setDarkMode={setDarkMode} />
-      <div className="container  m-auto flex flex-col gap-5  pt-10 pb-20">
+      <div className="max-w-screen-xl mx-auto   m-auto flex flex-col gap-5  pt-10 pb-20">
         <h3>Home / Pricing</h3>
         <h1 className="head-line">Pricing</h1>
       </div>
