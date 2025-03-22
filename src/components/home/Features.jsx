@@ -25,8 +25,8 @@ export const Features = ({ darkMode }) => {
   const [hoveredImg, setHoveredImg] = useState(false);
 
   return (
-<section className="mx-auto max-w-6xl py-10 px-4 relative">
-<div className="max-w-6xl mx-auto text-center lg:text-left">
+    <section className="container  m-auto relative">
+      <div className="   text-center lg:text-left">
         <h2
           className={`${
             darkMode ? "text-outline-dark-h1" : "text-outline-light-h1"
@@ -34,20 +34,20 @@ export const Features = ({ darkMode }) => {
         >
           01
         </h2>
-        <div className="md:flex justify-between font-bold mb-6 py-5">
-          <h2 className="text-2xl md:text-4xl pr-5">
+        <div className=" md:flex justify-between font-bold mb-6 py-5">
+          <h2 className="max-w-[588px] text-2xl md:text-4xl pr-5">
             {" "}
             Powerful Features To Elevate Your Digital Presence
           </h2>
-          <div className="md:max-w-md pl-6 space-y-4">
-            <p className="leading-relaxed">
+          <div className="  space-y-4">
+            <p className="max-w-[482px] leading-relaxed">
               Take control of your digital presence with Boitr — the ultimate
               platform to showcase everything that makes you, you.
             </p>
 
             <Link
               to="/feature"
-              className="bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded-full text-sm font-bold inline-block transition"
+              className="bg-[#2c1662] hover:bg-[#2c136f] text-white px-4 py-2 rounded-full text-sm font-bold inline-block transition"
             >
               Discover Our Features →
             </Link>
@@ -58,14 +58,13 @@ export const Features = ({ darkMode }) => {
         {features.map((feature) => (
           <div
             key={feature.id}
-            className="relative border-b border-gray-700 p-4 py-10 my-10 cursor-pointer transition-all duration-700
-            hover:text-white hover:border-[#00B7EF] hover:rounded-lg hover:border ease-in-out bg-transparent"
-            style={{
-              background:
-                hoveredFeature === feature.id
-                  ? "linear-gradient(45deg, rgba(250, 173, 79, 0.7) 14.61%, rgba(221, 42, 123, 0.7) 39.38%, rgba(149, 55, 176, 0.7) 58.49%, rgba(81, 91, 212, 0.7) 85.39%)"
-                  : "transparent",
-            }}
+            className={`relative border-b border-gray-700 p-4 py-10 my-10 cursor-pointer transition-all duration-700
+       hover:text-white hover:border-[#2c1662] hover:rounded-2xl hover:border ease-in-out bg-transparent bg-cover bg-center
+       ${
+         hoveredFeature === feature.id
+           ? "bg-[url('/dark-faq.png')]"
+           : "bg-[url('/light-faq.png')]  "
+       }`}
             onMouseEnter={() => setHoveredFeature(feature.id)}
             onMouseLeave={() => setHoveredFeature(null)}
           >
@@ -78,10 +77,11 @@ export const Features = ({ darkMode }) => {
                 >
                   {feature.id}
                 </span>
+                <br />
                 {feature.title}
               </h1>
               <p
-                className={`w-[400px] text-sm leading-relaxed max-w-lg transition-opacity duration-500 ease-in-out md:pr-20 ${
+                className={`w-[400px] text-sm leading-relaxed max-w-lg transition-opacity duration-500 ease-in-out  ${
                   hoveredFeature === feature.id ? "opacity-100" : "opacity-0"
                 }`}
               >
@@ -96,7 +96,7 @@ export const Features = ({ darkMode }) => {
                 <img
                   src={feature.img}
                   alt={feature.title}
-                  className={`hidden md:block w-[25%] rounded-lg shadow-lg transition-transform duration-700 ease-in-out ${
+                  className={`hidden md:block w-[18%] rounded-lg shadow-lg transition-transform duration-700 ease-in-out ${
                     hoveredFeature === feature.id ? "opacity-100" : "opacity-0"
                   }`}
                   onMouseEnter={() => setHoveredImg(true)}
@@ -112,18 +112,6 @@ export const Features = ({ darkMode }) => {
           </div>
         ))}
       </div>
-
-      <style>
-        {`
-          @keyframes vibrate {
-            0% { transform: translate(0); }
-            25% { transform: translate(-1px, 1px); }
-            50% { transform: translate(1px, -1px); }
-            75% { transform: translate(-1px, 1px); }
-            100% { transform: translate(0); }
-          }
-        `}
-      </style>
     </section>
   );
 };

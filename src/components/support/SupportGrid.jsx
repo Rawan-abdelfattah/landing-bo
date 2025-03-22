@@ -53,8 +53,8 @@ const sections = [
 
 const SupportGrid = ({ darkMode }) => {
   return (
-    <section className=" py-16 px-6">
-      <div className="max-w-6xl mx-auto text-center lg:text-left">
+    <section className="container  m-auto py-10">
+      <div className="  text-center lg:text-left">
         <h2
           className={`${
             darkMode ? "text-outline-dark-h1" : "text-outline-light-h1"

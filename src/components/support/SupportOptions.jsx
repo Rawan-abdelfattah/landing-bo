@@ -30,8 +30,8 @@ const supportOptions = [
 
 const SupportOptions = ({ darkMode }) => {
   return (
-    <section className=" py-16 px-6">
-      <div className="max-w-6xl mx-auto text-center lg:text-left">
+    <section className="container  m-auto">
+      <div className="  text-center lg:text-left">
         <h2
           className={`${
             darkMode ? "text-outline-dark-h1" : "text-outline-light-h1"
@@ -49,7 +49,7 @@ const SupportOptions = ({ darkMode }) => {
       </div>
 
       {/* Support Cards */}
-      <div className="mt-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
+      <div className="mt-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6  ">
         {supportOptions.map((option, index) => (
           <div
             key={index}
@@ -67,7 +67,7 @@ const SupportOptions = ({ darkMode }) => {
             <h3 className="text-xl font-semibold">{option.title}</h3>
             <p className="  mt-2">{option.description}</p>
             <button
-              className={`mt-4 px-4 py-2  text-white bg-blue-500 hover:bg-blue-600 rounded-lg transition-all duration-300 ${option.buttonColor}`}
+              className={`mt-4 px-4 py-2  text-white bg-[#2c1662] hover:bg-[#2c136f] rounded-lg transition-all duration-300 ${option.buttonColor}`}
             >
               {option.buttonLabel} →
             </button>

@@ -29,9 +29,9 @@ const features = [
 export const Showcase = ({ darkMode }) => {
   return (
     <section
-      className={`pt-12 px-6 md:px-16 ${darkMode ? "bg-[#161616]" : ""}`}
+      className={` ${darkMode ? "bg-[#161616]" : ""}`}
     >
-      <div className="max-w-6xl mx-auto text-center lg:text-left">
+      <div className=" container  m-auto pt-10 text-center lg:text-left">
         <h2
           className={`${
             darkMode ? "text-outline-dark-h1" : "text-outline-light-h1"
@@ -40,11 +40,11 @@ export const Showcase = ({ darkMode }) => {
           02
         </h2>
         <div className="md:flex justify-between font-bold mb-6 py-5">
-          <h2 className="text-2xl md:text-4xl ">
+          <h2 className="max-w-[550px] text-2xl md:text-4xl ">
             {" "}
             Your All-In-One Digital Showcase
           </h2>
-          <div className="mt-6 md:mt-0 md:max-w-md ">
+          <div className="mt-6 md:mt-0 max-w-[482px] ">
             <p className="  mb-4">
               Boitr is your all-in-one digital hub — a single, shareable link
               that brings together your social media, websites, and content on a
@@ -52,17 +52,17 @@ export const Showcase = ({ darkMode }) => {
             </p>
             <Link
               to="/support"
-              className="bg-blue-500 hover:bg-blue-600  text-white px-6 py-3 rounded-full text-sm font-bold inline-block transition duration-300"
+              className="bg-[#2c1662] hover:bg-[#2c136f]  text-white px-[20px] py-[10px] rounded-full text-sm font-bold inline-block transition duration-300"
             >
               Contact Us Now →
             </Link>
           </div>
-        </div> 
+        </div>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
           {features.map((feature, index) => (
             <div
               key={index}
-              className={`text-center p-6 rounded-xl transition duration-300 `}
+              className={`  p-6 rounded-xl transition duration-300 `}
             >
               <div className="relative inline-block mb-4">
                 <div
@@ -78,11 +78,26 @@ export const Showcase = ({ darkMode }) => {
               <p className="  text-sm mt-2">{feature.description}</p>
             </div>
           ))}
-        </div> 
-        <div className="pt-20">
-          <img src="/Frame.png" alt="" />
         </div>
+        <div className="flex flex-col sm:flex-row gap-5">
+  {["profile1.png", "profile2.png", "profile3.png", "profile4.png"].map((src, index) => (
+    <div
+      key={index}
+      className="group h-[180px] sm:h-[220px] md:h-[250px] relative rounded-t sm:rounded-t-3xl shadow-lg overflow-hidden transition-all duration-500 cursor-pointer hover:shadow-2xl w-full mb-4 sm:mb-0"
+    >
+      <div className="relative w-full overflow-hidden">
+        <img
+          src={src}
+          className="w-full h-full object-cover transform transition-transform duration-500 group-hover:-translate-y-1/3"
+          alt="Profile"
+        />
+      </div>
+    </div>
+  ))}
+</div>
+
+
       </div>
     </section>
   );
-}; 
+};

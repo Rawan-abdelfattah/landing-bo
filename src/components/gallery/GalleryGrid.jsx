@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 const GalleryGridCard = ({ name, role, profileImg, mainImg, darkMode }) => {
   return (
-    <div className="group h-[446px] relative  rounded-lg shadow-lg overflow-hidden transition-all duration-500 cursor-pointer hover:shadow-2xl w-72">
+    <div className="group h-[446px] relative  rounded-lg shadow-lg overflow-hidden transition-all duration-500 cursor-pointer hover:shadow-2xl w-[282px]">
       <div
         className={` rounded-t-2xl ${
           darkMode
@@ -67,28 +67,28 @@ const GalleryGridSection = ({ darkMode }) => {
       name: "Emma Clarke",
       role: "Digital Marketer",
       profileImg: "/user.jpg",
-      mainImg: "/profile1.png",
+      mainImg: "/profile5.png",
       followers: "15K",
     },
     {
       name: "Sophia Lane",
       role: "Content Creator",
       profileImg: "/user.jpg",
-      mainImg: "/profile2.png",
+      mainImg: "/profile6.png",
       followers: "12K",
     },
     {
       name: "Liam Carter",
       role: "Fitness Coach",
       profileImg: "/user.jpg",
-      mainImg: "/profile3.png",
+      mainImg: "/profile7.png",
       followers: "20K",
     },
     {
       name: "Liam Carter",
       role: "Fitness Coach",
       profileImg: "/user.jpg",
-      mainImg: "/profile4.png",
+      mainImg: "/profile8.png",
       followers: "20K",
     },
     {
@@ -122,33 +122,36 @@ const GalleryGridSection = ({ darkMode }) => {
   ];
 
   return (
-    <div className="  px-6 md:px-34 pt-5 text-center lg:text-left">
-      <h2
-        className={`${
-          darkMode ? "text-outline-dark-h1" : "text-outline-light-h1"
-        } `}
-      >
-        01
-      </h2>
-      <div className="md:flex justify-between font-bold mb-6 py-5">
-        <h2 className="text-2xl md:text-4xl ">See How Others Shine</h2>
-        <div className="mt-6 md:mt-0 md:max-w-md ">
-          <p className="  mb-4">
-            Discover how creators, brands, and businesses are using our platform
-            to shine. Get inspired by real-world creativity and style.
-          </p>
-          <Link
-            to="https://user.boitr.com/"
-            className="bg-blue-500 hover:bg-blue-600  text-white px-6 py-3 rounded-full text-sm font-bold inline-block transition duration-300"
-          >
-            Join Us Now →
-          </Link>
+    <div className="container  m-auto">
+      <div className=" text-center lg:text-left">
+        <h2
+          className={`${
+            darkMode ? "text-outline-dark-h1" : "text-outline-light-h1"
+          } `}
+        >
+          01
+        </h2>
+        <div className="md:flex justify-between font-bold mb-6 py-X5">
+          <h2 className="text-2xl md:text-4xl ">See How Others Shine</h2>
+          <div className="mt-6 md:mt-0 md:max-w-xl ">
+            <p className="  mb-4">
+              Discover how creators, brands, and businesses are using our
+              platform to shine. Get inspired by real-world creativity and
+              style.
+            </p>
+            <Link
+              to="https://user.boitr.com/"
+              className="bg-[#2c1662] hover:bg-[#2c136f]  text-white px-[20px] py-[10px] rounded-full text-sm font-bold inline-block transition duration-300"
+            >
+              Join Us Now →
+            </Link>
+          </div>
+        </div>{" "}
+        <div className="flex flex-wrap gap-6 xl:justify-between  justify-center  shadow  py-10">
+          {profiles.map((profile, index) => (
+            <GalleryGridCard darkMode={darkMode} key={index} {...profile} />
+          ))}
         </div>
-      </div>{" "}
-      <div className="flex flex-wrap gap-6 justify-center shadow py-10">
-        {profiles.map((profile, index) => (
-          <GalleryGridCard darkMode={darkMode} key={index} {...profile} />
-        ))}
       </div>
     </div>
   );

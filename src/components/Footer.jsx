@@ -1,16 +1,24 @@
 import React from "react";
- import { Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 import TextScroll from "./TextScroll";
 
 export const Footer = ({ darkMode }) => {
   return (
-    <footer className="border-[#00B7EF] border relative overflow-hidden  bg-darkGray rounded-3xl mx-5 my-5 py-10 px-6">
-      <div className=" lg:flex lg:flex-row  lg:text-left lg:justify-between md:flex md:flex-col md:items-center md:justify-center md:text-center text-center  justify-between mb-3">
+    <footer
+      className={`border-[#2c1662] border relative overflow-hidden ${
+        darkMode ? "bg-[url('/dark-bg.png')]" : "bg-[url('/light-bg.png')]"
+      }  bg-cover bg-center  rounded-3xl mx-5 my-5 py-10 px-20`}
+    >
+      <div className=" lg:flex lg:flex-row container  m-auto lg:text-left lg:justify-between md:flex md:flex-col md:items-center md:justify-center md:text-center text-center  justify-between mb-3">
         <div className="mb-8 md:mb-0 ">
           <Link to="/" className="text-2xl font-bold  mb-4 inline-block">
-            <img src={darkMode ?"/logo.png" :"/dark-logo.png"} className="w-[158px]" alt="logo" />
+            <img
+              src={darkMode ? "/logo.png" : "/dark-logo.png"}
+              className="w-[158px]"
+              alt="logo"
+            />
           </Link>
-          <p className="text-xs my-4 w-full lg:w-auto">
+          <p className="text-xs my-4 max-w-[460px] ">
             Boitr is collecting links and effortlessly displaying them, to
             enhance presence, fix growth, and stay, and get the word out. Get
             started today!
@@ -18,7 +26,7 @@ export const Footer = ({ darkMode }) => {
 
           <Link
             to="https://user.boitr.com/"
-            className="bg-blue-500 hover:bg-blue-600  text-white px-4 py-2 rounded-full text-sm font-bold mt-2 inline-block"
+            className="bg-[#2c1662] hover:bg-[#2c136f]  text-white px-4 py-2 rounded-full text-sm font-bold mt-2 inline-block"
           >
             Get Started Now →
           </Link>
@@ -41,7 +49,7 @@ export const Footer = ({ darkMode }) => {
               </li>
               <li className="mb-2">
                 <Link to="/support">Support</Link>
-              </li> 
+              </li>
             </ul>
           </div>
           <div>
@@ -57,15 +65,15 @@ export const Footer = ({ darkMode }) => {
           </div>
           <div className="">
             <h4 className="font-bold mb-4">Subscribe To Our Newsletter</h4>
-            <div className=" mt-4   justify-center">
+            <div className=" border-b my-4  pb-5 justify-center">
               <input
                 type="email"
                 placeholder="Email Address"
-                className={`bg-white w-full  rounded-full px-4 py-2 text-sm w-48 placeholder-gray-500`}
+                className={`border w-full  rounded-full px-4 py-2 text-sm w-48 placeholder-gray-500`}
               />
               <a
                 href="#"
-                className="w-full bg-blue-500 hover:bg-blue-600  text-white px-4 py-2 rounded-full text-sm font-bold mt-2 inline-block"
+                className=" w-full bg-[#2c1662] hover:bg-[#2c136f]  text-white px-4 py-2 rounded-full text-sm font-bold mt-2 inline-block"
               >
                 Subscribe →{" "}
               </a>
@@ -73,7 +81,9 @@ export const Footer = ({ darkMode }) => {
             <div className="flex justify-center gap-3 mt-6">
               <a
                 href="#"
-                className={` ${darkMode ? 'bg-black':'bg-white'} w-8 h-8  rounded-full flex items-center justify-center`}
+                className={` ${
+                  darkMode ? "bg-white text-gray-900" : "bg-dark text-white"
+                } w-8 h-8  rounded-full flex items-center justify-center`}
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -92,19 +102,25 @@ export const Footer = ({ darkMode }) => {
               </a>
               <a
                 href="#"
-                className={` ${darkMode ? 'bg-black':'bg-white'} w-8 h-8  rounded-full flex items-center justify-center`}
+                className={` ${
+                  darkMode ? "bg-white text-gray-900" : "bg-dark text-white"
+                } w-8 h-8  rounded-full flex items-center justify-center`}
               >
                 f
               </a>
               <a
                 href="#"
-                className={` ${darkMode ? 'bg-black':'bg-white'} w-8 h-8  rounded-full flex items-center justify-center`}
+                className={` ${
+                  darkMode ? "bg-white text-gray-900" : "bg-dark text-white"
+                } w-8 h-8  rounded-full flex items-center justify-center`}
               >
                 X
               </a>
               <a
                 href="#"
-                className={` ${darkMode ? 'bg-black':'bg-white'} w-8 h-8  rounded-full flex items-center justify-center`}
+                className={` ${
+                  darkMode ? "bg-white text-gray-900" : "bg-dark text-white"
+                } w-8 h-8  rounded-full flex items-center justify-center`}
               >
                 in
               </a>
@@ -112,12 +128,11 @@ export const Footer = ({ darkMode }) => {
           </div>
         </div>
       </div>
-      <div className="relative z-0 w-full">
-        <TextScroll
-          darkMode={darkMode}
-          text="One Link To Rule Them All – Connect, Share."
-        />
-      </div>
+<div className="container  relative overflow-hidden">   <TextScroll
+            darkMode={darkMode} 
+            text="One Link To Rule Them All – Connect, Share."
+          /> </div>
+   
       <div className="text-center text-xs pt-6 border-t  ">
         Boitr © Copyright 2025. All rights reserved
       </div>

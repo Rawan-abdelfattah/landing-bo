@@ -80,7 +80,7 @@ const Plans = ({ darkMode }) => {
         {plans.map((plan, index) => (
           <div
             key={index}
-            className="rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 border border-[#00B7EF] overflow-hidden flex flex-col"
+            className="rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 border border-[#2c1662] overflow-hidden flex flex-col"
           > 
             <div className={`p-6 text-white ${plan.gradient}`}>
               <h3 className="text-lg font-semibold">{plan.name}</h3>
@@ -104,7 +104,7 @@ const Plans = ({ darkMode }) => {
             </div>
 
             <div className="p-4  text-center">
-              <button className="w-full bg-blue-500 hover:bg-blue-600 text-white font-semibold py-2 rounded-full transition-all duration-300">
+              <button className="w-full bg-[#2c1662] hover:bg-[#2c136f] text-white font-semibold py-2 rounded-full transition-all duration-300">
                 Get Started Now →
               </button>
             </div>

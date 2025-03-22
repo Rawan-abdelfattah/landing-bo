@@ -5,9 +5,9 @@ import { Link } from "react-router-dom";
 export const Showcase = ({ darkMode }) => {
   return (
     <section
-      className={`pt-12 px-6 md:px-16 ${darkMode ? "bg-[#161616]" : ""}`}
+      className={`${darkMode ? "bg-[#161616]" : ""}`}
     >
-      <div className="max-w-6xl mx-auto text-center lg:text-left">
+      <div className=" pt-10 container  m-auto  text-center lg:text-left">
         <h2
           className={`${
             darkMode ? "text-outline-dark-h1" : "text-outline-light-h1"
@@ -28,7 +28,7 @@ export const Showcase = ({ darkMode }) => {
             </p>
             <Link
               to="/support"
-              className="bg-blue-500 hover:bg-blue-600  text-white px-6 py-3 rounded-full text-sm font-bold inline-block transition duration-300"
+              className="bg-[#2c1662] hover:bg-[#2c136f]  text-white px-[20px] py-[10px] rounded-full text-sm font-bold inline-block transition duration-300"
             >
               Contact Us Now →
             </Link>

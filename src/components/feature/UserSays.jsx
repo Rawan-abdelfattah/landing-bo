@@ -1,5 +1,4 @@
-import React from "react";
-import { BsQuote } from "react-icons/bs";
+import React from "react"; 
 
 export const UserSays = ({ darkMode }) => {
   const testimonials = [
@@ -27,9 +26,8 @@ export const UserSays = ({ darkMode }) => {
   ];
 
   return (
-    <section className=" py-16 px-6 md:px-20  ">
-      <div className="max-w-6xl mx-auto">
-        <div className="text-center md:text-left">
+    <section className=" container  m-auto py-10">
+         <div className="text-center md:text-left">
           {" "}
           <p
             className={
@@ -50,24 +48,14 @@ export const UserSays = ({ darkMode }) => {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: index * 0.2 }}
-              className={`relative p-6 rounded-xl shadow-lg transition duration-300 hover:-translate-y-2 hover:shadow-lg hover:shadow-black/30 ${
-                testimonial.highlighted
-                  ? darkMode
-                    ? "bg-gray-900 hover:bg-gray-800"
-                    : "bg-gray-300 hover:bg-gray-400"
-                  : darkMode
-                  ? "bg-transparent"
-                  : "bg-gray-100 hover:bg-gray-200"
+              className={`relative p-6 rounded-xl shadow-lg transition duration-300 hover:-translate-y-2 hover:shadow-lg hover:shadow-black/30  ${
+                darkMode
+                  ? " text-white hover:bg-[#232323]"
+                  : " text-black hover:bg-bg-gray-200"
               }`}
             >
-              <div
-                className={`absolute -top-5 left-4 p-2 bg-darkGray text-white rounded-xl ${
-                  testimonial.highlighted
-                    ? " bg-gradient-to-r from-purple-500 to-pink-500 text"
-                    : "bg-blue-500"
-                }`}
-              >
-                <BsQuote size={28} className=" " />
+              <div className={` py-2  rounded-xl  `}>
+                <img src="quate-iocn.svg" alt="icon" />{" "}
               </div>
 
               <p className=" -300 mb-4">{testimonial.text}</p>
@@ -83,8 +71,7 @@ export const UserSays = ({ darkMode }) => {
               <p className=" -400 font-semibold">{testimonial.name}</p>
             </div>
           ))}
-        </div>
-      </div>
+        </div> 
     </section>
   );
 };

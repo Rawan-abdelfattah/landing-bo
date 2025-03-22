@@ -8,10 +8,10 @@ export const Navbar = ({ darkMode, setDarkMode }) => {
   return (
     <nav
       className={`${
-        darkMode ? "bg-[rgba(0,0,0,0.4)]" : "bg-[rgba(255,255,255,0.4)]"
+        darkMode ? "bg-[rgba(0,0,0,0.4)]" : "bg-white"
       } px-6 py-4 transition md:rounded-full rounded-xl`}
     >
-      <div className="mx-auto max-w-7xl flex items-center justify-between">
+      <div className="container  m-auto  flex items-center justify-between">
         <Link to="/" className="text-2xl font-bold">
           <img
             src={darkMode ? "/logo.png" : "/dark-logo.png"}
@@ -49,7 +49,7 @@ export const Navbar = ({ darkMode, setDarkMode }) => {
           </button>
           <Link
             to="https://user.boitr.com/"
-            className="text-white bg-blue-500 hover:bg-blue-600 px-4 py-2 md:block hidden rounded-full text-sm font-bold transition"
+            className="text-white bg-[#2c1662] hover:bg-[#2c136f] px-4 py-2 md:block hidden rounded-full text-sm font-bold transition"
           >
             Get Started Now →
           </Link>
@@ -106,7 +106,7 @@ export const Navbar = ({ darkMode, setDarkMode }) => {
           </Link>
           <Link
             to="https://user.boitr.com/"
-            className="mt-3 inline-block text-white bg-blue-500 hover:bg-blue-600 px-4 py-2 rounded-full text-sm font-bold transition"
+            className="mt-3 inline-block text-white bg-[#2c1662] hover:bg-[#2c136f] px-4 py-2 rounded-full text-sm font-bold transition"
           >
             Get Started Now →
           </Link>
