@@ -34,6 +34,7 @@ const AppRoutes = () => {
       "/dark-faq.png",
       "/dark-icons.png",
       "/dark-logo.png",
+      "/dark-pages-bg.png",
       "/light-bg.png",
       "/light-faq.png",
       "/light-icons.png",
