@@ -1,24 +1,23 @@
- import { FaInstagram, FaDribbble, FaGithub } from "react-icons/fa";
- 
+import { FaInstagram, FaDribbble, FaGithub } from "react-icons/fa";
+
 import { Navbar } from "../Navbar";
 import TextScroll from "../TextScroll";
 import { Link } from "react-router-dom";
 
-export default function Hero({darkMode, setDarkMode}) {
- 
+export const Hero = ({ darkMode, setDarkMode }) => {
   return (
     <header
-    className={`relative bg-darkG ray border border-[#2c1662] overflow-hidden 
+      className={`relative bg-darkG ray border border-[#2c1662] overflow-hidden 
   ${darkMode ? "bg-[url('/dark-bg.png')]" : "bg-[url('/light-bg.png')]"}  
   bg-cover bg-center rounded-3xl mx-5 my-5 px-6 pt-6`}
-  >
-    <Navbar darkMode={darkMode} setDarkMode={setDarkMode} />
-
-
+    >
+      <Navbar darkMode={darkMode} setDarkMode={setDarkMode} />
 
       <div className=" max-w-screen-xl mx-auto md:px-20 px-5 flex flex-col md:flex-row justify-between items-center pt-12">
-      <div className=" max-w-[458px]  md:mb-30 mb-5">
-      <h1 className="text-4xl font-bold ">Your Digital Identity, One Smart Link!</h1>
+        <div className=" max-w-[458px]  md:mb-30 mb-5">
+          <h1 className="text-4xl font-bold ">
+            Your Digital Identity, One Smart Link!
+          </h1>
           <div className="flex gap-4 my-5">
             <span className="border p-2 rounded-full ">
               <FaInstagram className="text-2xl cursor-pointer" />
@@ -43,13 +42,17 @@ export default function Hero({darkMode, setDarkMode}) {
         </div>
 
         <div className=" max-w-[408px]   space-y-4 md:mb-25 lg:mb-15 mb-5">
-          <p>Take control of your digital presence with Boitr — the ultimate platform to showcase everything that makes you, you.</p>
+          <p>
+            Take control of your digital presence with Boitr — the ultimate
+            platform to showcase everything that makes you, you.
+          </p>
           <Link
             to="https://user.boitr.com/"
             className=" bg-[#2c1662] text-white hover:bg-[#2c136f] px-4 py-2 rounded-full text-sm font-bold inline-block transition"
           >
             Create Your Boitr Now →
-          </Link>          <img src="/users.png" className="w-[110px]" alt="users" />
+          </Link>{" "}
+          <img src="/users.png" className="w-[110px]" alt="users" />
           <p className="text-xs">We have 18k+ customers worldwide</p>
         </div>
       </div>
@@ -66,4 +69,4 @@ export default function Hero({darkMode, setDarkMode}) {
       </div>
     </header>
   );
-}
+};

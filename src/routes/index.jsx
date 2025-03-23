@@ -6,7 +6,7 @@ import Pricing from "../pages/Pricing";
 import Support from "../pages/Support";
 import Home from "../pages/Home";
 import Loading from "../components/Loading";
- 
+
 const AppRoutes = () => {
   const storedTheme = localStorage.getItem("theme");
   const [darkMode, setDarkMode] = useState(
@@ -27,7 +27,6 @@ const AppRoutes = () => {
     }
   }, [darkMode]);
 
-  // ✅ Preload Images
   useEffect(() => {
     const imageSources = [
       "/dark-analysis-bg.png",
@@ -81,7 +80,7 @@ const AppRoutes = () => {
         }`}
       >
         {loading ? (
-          <Loading /> // Show loading animation while preloading
+          <Loading />  
         ) : (
           <Routes>
             <Route
@@ -90,19 +89,27 @@ const AppRoutes = () => {
             />
             <Route
               path="/feature"
-              element={<Feature darkMode={darkMode} setDarkMode={setDarkMode} />}
+              element={
+                <Feature darkMode={darkMode} setDarkMode={setDarkMode} />
+              }
             />
             <Route
               path="/gallery"
-              element={<Gallery darkMode={darkMode} setDarkMode={setDarkMode} />}
+              element={
+                <Gallery darkMode={darkMode} setDarkMode={setDarkMode} />
+              }
             />
             <Route
               path="/pricing"
-              element={<Pricing darkMode={darkMode} setDarkMode={setDarkMode} />}
+              element={
+                <Pricing darkMode={darkMode} setDarkMode={setDarkMode} />
+              }
             />
             <Route
               path="/support"
-              element={<Support darkMode={darkMode} setDarkMode={setDarkMode} />}
+              element={
+                <Support darkMode={darkMode} setDarkMode={setDarkMode} />
+              }
             />
             <Route path="*" element={<>404</>} />
           </Routes>
