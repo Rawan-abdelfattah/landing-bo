@@ -5,7 +5,8 @@ import Feature from "../pages/Feature";
 import Pricing from "../pages/Pricing";
 import Support from "../pages/Support";
 import Home from "../pages/Home";
-
+import Loading from "../components/Loading";
+ 
 const AppRoutes = () => {
   const storedTheme = localStorage.getItem("theme");
   const [darkMode, setDarkMode] = useState(
@@ -26,7 +27,7 @@ const AppRoutes = () => {
     }
   }, [darkMode]);
 
-  // ✅ Preload new images
+  // ✅ Preload Images
   useEffect(() => {
     const imageSources = [
       "/dark-analysis-bg.png",
@@ -80,9 +81,7 @@ const AppRoutes = () => {
         }`}
       >
         {loading ? (
-          <div className="flex justify-center items-center h-screen">
-            <p className="text-lg font-semibold">Loading...</p>
-          </div>
+          <Loading /> // Show loading animation while preloading
         ) : (
           <Routes>
             <Route

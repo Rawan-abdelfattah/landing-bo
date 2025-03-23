@@ -7,9 +7,9 @@ export const Footer = ({ darkMode }) => {
     <footer
       className={`border-[#2c1662] border relative overflow-hidden ${
         darkMode ? "bg-[url('/dark-bg.png')]" : "bg-[url('/light-bg.png')]"
-      }  bg-cover bg-center  rounded-3xl mx-5 my-5 py-10 px-20`}
+      }  bg-cover bg-center  rounded-3xl mx-5 my-5 py-10 md:px-20 px-5`}
     >
-      <div className=" lg:flex lg:flex-row max-w-screen-xl mx-auto px-20 lg:text-left lg:justify-between md:flex md:flex-col md:items-center md:justify-center md:text-center text-center  justify-between mb-3">
+      <div className=" lg:flex lg:flex-row max-w-screen-xl mx-auto md:px-20 px-5 lg:text-left lg:justify-between md:flex md:flex-col md:items-center md:justify-center md:text-center text-center  justify-between mb-3">
         <div className="mb-8 md:mb-0 ">
           <Link to="/" className="text-2xl font-bold  mb-4 inline-block">
             <img

@@ -25,7 +25,7 @@ export const Features = ({ darkMode }) => {
   const [hoveredImg, setHoveredImg] = useState(false);
 
   return (
-    <section className="max-w-screen-xl mx-auto px-20     relative">
+    <section className="max-w-screen-xl mx-auto md:px-20 px-5     relative">
       <div className="   text-center lg:text-left">
         <h2
           className={`${

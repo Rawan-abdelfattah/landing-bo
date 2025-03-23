@@ -16,7 +16,7 @@ export default function Hero({darkMode, setDarkMode}) {
 
 
 
-      <div className=" max-w-screen-xl mx-auto px-20 flex flex-col md:flex-row justify-between items-center pt-12">
+      <div className=" max-w-screen-xl mx-auto md:px-20 px-5 flex flex-col md:flex-row justify-between items-center pt-12">
       <div className=" max-w-[458px]  md:mb-30 mb-5">
       <h1 className="text-4xl font-bold ">Your Digital Identity, One Smart Link!</h1>
           <div className="flex gap-4 my-5">
