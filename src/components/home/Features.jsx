@@ -25,7 +25,7 @@ export const Features = ({ darkMode }) => {
   const [hoveredImg, setHoveredImg] = useState(false);
 
   return (
-    <section className="max-w-screen-xl mx-auto   m-auto relative">
+    <section className="max-w-screen-xl mx-auto px-20     relative">
       <div className="   text-center lg:text-left">
         <h2
           className={`${
@@ -36,7 +36,7 @@ export const Features = ({ darkMode }) => {
         </h2>
         <div className=" md:flex justify-between font-bold mb-6 py-5">
           <h2 className="max-w-[588px] text-2xl md:text-4xl pr-5">
-            {" "}
+              
             Powerful Features To Elevate Your Digital Presence
           </h2>
           <div className="  space-y-4">

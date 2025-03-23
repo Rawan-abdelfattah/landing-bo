@@ -37,7 +37,7 @@ const AppRoutes = () => {
           <Route
             path="/"
             element={<Home  darkMode={darkMode} setDarkMode={setDarkMode} />}
-          />{" "}
+          />  
           <Route
             path="/feature"
             element={<Feature  darkMode={darkMode} setDarkMode={setDarkMode} />}

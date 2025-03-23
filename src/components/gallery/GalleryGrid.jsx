@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 const GalleryGridCard = ({ name, role, profileImg, mainImg, darkMode }) => {
   return (
-    <div className="group h-[446px] relative  rounded-lg shadow-lg overflow-hidden transition-all duration-500 cursor-pointer hover:shadow-2xl w-[282px]">
+    <div className="group h-[446px] relative  rounded-lg shadow-lg overflow-hidden transition-all duration-500 cursor-pointer hover:shadow-2xl w-[270px]">
       <div
         className={` rounded-t-2xl ${
           darkMode
@@ -122,7 +122,7 @@ const GalleryGridSection = ({ darkMode }) => {
   ];
 
   return (
-    <div className="max-w-screen-xl mx-auto   m-auto">
+    <div className="max-w-screen-xl mx-auto px-20    ">
       <div className=" text-center lg:text-left">
         <h2
           className={`${
@@ -146,8 +146,8 @@ const GalleryGridSection = ({ darkMode }) => {
               Join Us Now →
             </Link>
           </div>
-        </div>{" "}
-        <div className="flex flex-wrap gap-6 xl:justify-between  justify-center  shadow  py-10">
+        </div>  
+        <div className="flex flex-wrap gap-3 xl:justify-between  justify-center  shadow  py-10">
           {profiles.map((profile, index) => (
             <GalleryGridCard darkMode={darkMode} key={index} {...profile} />
           ))}

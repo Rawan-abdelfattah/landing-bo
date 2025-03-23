@@ -10,9 +10,9 @@ export const Header = ({ darkMode, setDarkMode }) => {
           : "bg-[url('/light-pages-bg.png')]"
       }   rounded-3xl mx-5 my-5 px-6 pt-6  `}
     >
-      {" "}
+        
       <Navbar darkMode={darkMode} setDarkMode={setDarkMode} />
-      <div className="max-w-screen-xl mx-auto   m-auto flex flex-col gap-5 pt-10 pb-20">
+      <div className="max-w-screen-xl mx-auto px-20     flex flex-col gap-5 pt-10 pb-20">
         <h3>Home / Feature</h3>
         <h1 className="head-line">Feature</h1>
       </div>

@@ -1,41 +1,33 @@
-import React from "react";
-import {
-  FaXTwitter,
-  FaLinkedin,
-  FaFacebook,
-  FaInstagram,
-  FaSun,
-  FaRegMoon,
-} from "react-icons/fa6";
-import TextScroll from "../TextScroll";
+ import { FaInstagram, FaDribbble, FaGithub } from "react-icons/fa";
+ 
 import { Navbar } from "../Navbar";
+import TextScroll from "../TextScroll";
 import { Link } from "react-router-dom";
 
-export const Hero = ({ darkMode, setDarkMode }) => {
+export default function Hero({darkMode, setDarkMode}) {
+ 
   return (
     <header
-      className={`relative border border-[#2c1662] overflow-hidden 
-    ${darkMode ? "bg-[url('/dark-bg.png')]" : "bg-[url('/light-bg.png')]"}  
-    bg-cover bg-center rounded-3xl mx-5 my-5 px-6 pt-6`}
-    >
-      <Navbar darkMode={darkMode} setDarkMode={setDarkMode} />
+    className={`relative border border-[#2c1662] overflow-hidden 
+  ${darkMode ? "bg-[url('/dark-bg.png')]" : "bg-[url('/light-bg.png')]"}  
+  bg-cover bg-center rounded-3xl mx-5 my-5 px-6 pt-6`}
+  >
+    <Navbar darkMode={darkMode} setDarkMode={setDarkMode} />
 
-      <div className="max-w-screen-xl mx-auto  m-auto md:mb-20 mb-0 xl:mb-0 relative z-10 flex flex-col md:flex-row justify-between items-center  pt-12 lg:pt-12">
-        <div className="max-w-[511px] mb-8   ">
-          <h1 className="text-5xl font-bold mb-6">
-          Your Digital Identity, One Smart Link!          </h1>
+
+
+      <div className=" max-w-screen-xl mx-auto px-20 flex flex-col md:flex-row justify-between items-center pt-12">
+      <div className=" max-w-[458px] text-white md:mb-30 mb-5">
+      <h1 className="text-4xl font-bold text-white">Your Digital Identity, One Smart Link!</h1>
           <div className="flex gap-4 my-5">
-            <span className="border p-2 rounded-full">
-              <FaXTwitter className="text-2xl cursor-pointer hover: transition" />
+            <span className="border p-2 rounded-full text-white">
+              <FaInstagram className="text-2xl cursor-pointer" />
             </span>
-            <span className="border p-2 rounded-full">
-              <FaLinkedin className="text-2xl cursor-pointer hover: transition" />
+            <span className="border p-2 rounded-full text-white">
+              <FaDribbble className="text-2xl cursor-pointer" />
             </span>
-            <span className="border p-2 rounded-full">
-              <FaFacebook className="text-2xl cursor-pointer hover: transition" />
-            </span>
-            <span className="border p-2 rounded-full">
-              <FaInstagram className="text-2xl cursor-pointer hover: transition" />
+            <span className="border p-2 rounded-full text-white">
+              <FaGithub className="text-2xl cursor-pointer" />
             </span>
           </div>
         </div>
@@ -50,24 +42,21 @@ export const Hero = ({ darkMode, setDarkMode }) => {
           </div>
         </div>
 
-        <div className="max-w-[458px]  mb-8 md:mb-0 z-10 space-y-4  ">
-          <p className="leading-relaxed ">
-            Take control of your digital presence with Boitr — the ultimate
-            platform to showcase everything that makes you, you. Bring all your
-            social media, content, and links together in one beautiful,
-            customizable page.
-          </p>
+        <div className=" max-w-[408px] text-white  space-y-4 md:mb-25 lg:mb-15 mb-5">
+          <p>Take control of your digital presence with Boitr — the ultimate platform to showcase everything that makes you, you.</p>
           <Link
             to="https://user.boitr.com/"
             className="text-white bg-[#2c1662] hover:bg-[#2c136f] px-4 py-2 rounded-full text-sm font-bold inline-block transition"
           >
             Create Your Boitr Now →
-          </Link>{" "}
-          <img src="/users.png" className="w-[110px]" alt="users" />
-          <p className="text-xs  mt-4">We have 100k+ customers worldwide</p>
+          </Link>          <img src="/users.png" className="w-[110px]" alt="users" />
+          <p className="text-xs">We have 18k+ customers worldwide</p>
         </div>
       </div>
 
+      <div className="absolute w-full text-center text-white text-2xl font-bold">
+        One Link To Rule Them All – Connect, Share.
+      </div>
       <div className="absolute z-0w-full">
         <TextScroll
           className="absolute  "
@@ -77,4 +66,4 @@ export const Hero = ({ darkMode, setDarkMode }) => {
       </div>
     </header>
   );
-};
+}

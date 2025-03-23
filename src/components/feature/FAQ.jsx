@@ -29,7 +29,7 @@ export default function FAQSection({ darkMode }) {
   ];
 
   return (
-    <section className={`max-w-screen-xl mx-auto  py-10  m-auto`}>
+    <section className={`max-w-screen-xl mx-auto px-20 py-10    `}>
       <div className="  text-center lg:text-left">
         <h2
           className={`${
@@ -37,7 +37,7 @@ export default function FAQSection({ darkMode }) {
           } `}
         >
           03
-        </h2>{" "}
+        </h2>  
         <h2 className="text-xl md:text-3xl font-bold mb-6">FAQs</h2>
         <div className="p-6 rounded-lg mb-6 flex justify-between items-center cursor-pointer transition-transform hover:scale-105 duration-500 bg-[linear-gradient(45deg,_rgba(250,173,79,0.5)_14.61%,_rgba(221,42,123,0.5)_39.38%,_rgba(149,55,176,0.5)_58.49%,_rgba(81,91,212,0.5)_85.39%)] hover:shadow-lg">
           <div>

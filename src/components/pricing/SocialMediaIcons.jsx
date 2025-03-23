@@ -24,7 +24,7 @@ const SocialMediaIcons = ({ darkMode }) => {
           src={darkMode ? "/dark-icons.png" : "/light-icons.png"}
           alt="icons"
           className="pt-15"
-        />{" "}
+        />  
       </div>
     </section>
   );

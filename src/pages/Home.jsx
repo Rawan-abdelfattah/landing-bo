@@ -1,6 +1,6 @@
 import React, { useRef } from "react";
 import { motion, useInView } from "framer-motion";
-import { Hero } from "../components/home/Hero";
+import Hero  from "../components/home/Hero";
 import { Features } from "../components/home/Features";
 import { Showcase } from "../components/home/Showcase";
 import { Analytics } from "../components/home/Analytics";

@@ -9,7 +9,7 @@ export const Footer = ({ darkMode }) => {
         darkMode ? "bg-[url('/dark-bg.png')]" : "bg-[url('/light-bg.png')]"
       }  bg-cover bg-center  rounded-3xl mx-5 my-5 py-10 px-20`}
     >
-      <div className=" lg:flex lg:flex-row max-w-screen-xl mx-auto   m-auto lg:text-left lg:justify-between md:flex md:flex-col md:items-center md:justify-center md:text-center text-center  justify-between mb-3">
+      <div className=" lg:flex lg:flex-row max-w-screen-xl mx-auto px-20 lg:text-left lg:justify-between md:flex md:flex-col md:items-center md:justify-center md:text-center text-center  justify-between mb-3">
         <div className="mb-8 md:mb-0 ">
           <Link to="/" className="text-2xl font-bold  mb-4 inline-block">
             <img
@@ -75,7 +75,7 @@ export const Footer = ({ darkMode }) => {
                 href="#"
                 className=" w-full bg-[#2c1662] hover:bg-[#2c136f]  text-white px-4 py-2 rounded-full text-sm font-bold mt-2 inline-block"
               >
-                Subscribe →{" "}
+                Subscribe →
               </a>
             </div>
             <div className="flex justify-center gap-3 mt-6">
@@ -128,11 +128,13 @@ export const Footer = ({ darkMode }) => {
           </div>
         </div>
       </div>
-<div className="max-w-screen-xl mx-auto   relative overflow-hidden">   <TextScroll
-            darkMode={darkMode} 
-            text="One Link To Rule Them All – Connect, Share."
-          /> </div>
-   
+      <div className="max-w-screen-xl mx-auto  relative overflow-hidden">
+        <TextScroll
+          darkMode={darkMode}
+          text="One Link To Rule Them All – Connect, Share."
+        />
+      </div>
+
       <div className="text-center text-xs pt-6 border-t  ">
         Boitr © Copyright 2025. All rights reserved
       </div>

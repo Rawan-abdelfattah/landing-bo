@@ -26,9 +26,9 @@ export const UserSays = ({ darkMode }) => {
   ];
 
   return (
-    <section className=" max-w-screen-xl mx-auto   m-auto py-10">
+    <section className=" max-w-screen-xl mx-auto px-20     py-10">
          <div className="text-center md:text-left">
-          {" "}
+            
           <p
             className={
               darkMode ? "text-outline-dark-h1" : "text-outline-light-h1"
@@ -55,7 +55,7 @@ export const UserSays = ({ darkMode }) => {
               }`}
             >
               <div className={` py-2  rounded-xl  `}>
-                <img src="quate-iocn.svg" alt="icon" />{" "}
+                <img src="quate-iocn.svg" alt="icon" />  
               </div>
 
               <p className=" -300 mb-4">{testimonial.text}</p>

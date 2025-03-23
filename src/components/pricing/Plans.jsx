@@ -66,8 +66,8 @@ const Plans = ({ darkMode }) => {
         </h2>
         <div className="md:flex justify-between font-bold mb-6 py-5">
           <h2 className="text-2xl md:text-4xl ">
-            {" "}
-            Choose The Perfect Plan For You{" "}
+              
+            Choose The Perfect Plan For You  
           </h2>
           <h4 >
             Whether you're just getting started or ready to take your digital

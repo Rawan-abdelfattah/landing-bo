@@ -30,7 +30,7 @@ const supportOptions = [
 
 const SupportOptions = ({ darkMode }) => {
   return (
-    <section className="max-w-screen-xl mx-auto   m-auto">
+    <section className="max-w-screen-xl mx-auto px-20    ">
       <div className="  text-center lg:text-left">
         <h2
           className={`${

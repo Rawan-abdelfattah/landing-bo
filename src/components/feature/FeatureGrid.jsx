@@ -42,8 +42,8 @@ export default function FeatureGrid({ darkMode }) {
 
   return (
     <div className="relative overflow-hidden">
-      {" "}
-      <section className=" max-w-screen-xl mx-auto   m-auto">
+        
+      <section className=" max-w-screen-xl mx-auto px-20    ">
         <div className="text-center lg:text-left">
           <h2
             className={`${
@@ -88,7 +88,7 @@ export default function FeatureGrid({ darkMode }) {
             ))}
           </div>
         </div>
-      </section>{" "}
+      </section>  
       <div className="relative z-0 w-full">
         <TextScroll
           darkMode={darkMode}

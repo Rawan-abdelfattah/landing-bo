@@ -11,7 +11,7 @@ export const Navbar = ({ darkMode, setDarkMode }) => {
         darkMode ? "bg-[rgba(0,0,0,0.4)]" : "bg-white"
       } px-6 py-4 transition md:rounded-full rounded-xl`}
     >
-      <div className="max-w-screen-xl mx-auto   m-auto  flex items-center justify-between">
+      <div className="max-w-screen-xl mx-auto lg:px-20  flex items-center justify-between">
         <Link to="/" className="text-2xl font-bold">
           <img
             src={darkMode ? "/logo.png" : "/dark-logo.png"}

@@ -31,7 +31,7 @@ export const Showcase = ({ darkMode }) => {
     <section
       className={` ${darkMode ? "bg-[#161616]" : ""}`}
     >
-      <div className=" max-w-screen-xl mx-auto   m-auto pt-10 text-center lg:text-left">
+      <div className=" max-w-screen-xl mx-auto px-20     pt-10 text-center lg:text-left">
         <h2
           className={`${
             darkMode ? "text-outline-dark-h1" : "text-outline-light-h1"
@@ -41,7 +41,7 @@ export const Showcase = ({ darkMode }) => {
         </h2>
         <div className="md:flex justify-between font-bold mb-6 py-5">
           <h2 className="max-w-[550px] text-2xl md:text-4xl ">
-            {" "}
+              
             Your All-In-One Digital Showcase
           </h2>
           <div className="mt-6 md:mt-0 max-w-[482px] ">
