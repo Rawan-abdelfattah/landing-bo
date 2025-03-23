@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
- import Gallery  from "../pages/Gallery";
-import Feature  from "../pages/Feature";
-import Pricing  from "../pages/Pricing";
-import Support  from "../pages/Support";
+import Gallery from "../pages/Gallery";
+import Feature from "../pages/Feature";
+import Pricing from "../pages/Pricing";
+import Support from "../pages/Support";
 import Home from "../pages/Home";
 
 const AppRoutes = () => {
@@ -11,10 +11,10 @@ const AppRoutes = () => {
   const [darkMode, setDarkMode] = useState(
     storedTheme ? storedTheme === "dark" : true
   );
+  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
     const root = document.documentElement;
-
     if (darkMode) {
       root.classList.add("dark", "bg-black", "text-white");
       root.classList.remove("bg-white", "text-gray-900");
@@ -26,6 +26,51 @@ const AppRoutes = () => {
     }
   }, [darkMode]);
 
+  // ✅ Preload new images
+  useEffect(() => {
+    const imageSources = [
+      "/dark-analysis-bg.png",
+      "/dark-bg.png",
+      "/dark-faq.png",
+      "/dark-icons.png",
+      "/dark-logo.png",
+      "/light-bg.png",
+      "/light-faq.png",
+      "/light-icons.png",
+      "/light-pages-bg.png",
+      "/profile1.png",
+      "/profile2.png",
+      "/profile3.png",
+      "/profile4.png",
+      "/profile5.png",
+      "/profile6.png",
+      "/profile7.png",
+      "/profile8.png",
+      "/hand.png",
+      "/users.png",
+      "/user.jpg",
+      "/user2.png",
+      "/logo.png",
+      "/quate-icon.svg",
+    ];
+
+    const preloadImages = async () => {
+      await Promise.all(
+        imageSources.map((src) => {
+          return new Promise((resolve) => {
+            const img = new Image();
+            img.src = src;
+            img.onload = resolve;
+            img.onerror = resolve;
+          });
+        })
+      );
+      setLoading(false);
+    };
+
+    preloadImages();
+  }, []);
+
   return (
     <Router>
       <div
@@ -33,29 +78,35 @@ const AppRoutes = () => {
           darkMode ? "bg-black text-white" : "bg-white text-gray-900"
         }`}
       >
-        <Routes>
-          <Route
-            path="/"
-            element={<Home  darkMode={darkMode} setDarkMode={setDarkMode} />}
-          />  
-          <Route
-            path="/feature"
-            element={<Feature  darkMode={darkMode} setDarkMode={setDarkMode} />}
-          />
-          <Route
-            path="/gallery"
-            element={<Gallery  darkMode={darkMode} setDarkMode={setDarkMode} />}
-          />
-          <Route
-            path="/pricing"
-            element={<Pricing  darkMode={darkMode} setDarkMode={setDarkMode} />}
-          />
-          <Route
-            path="/support"
-            element={<Support  darkMode={darkMode} setDarkMode={setDarkMode} />}
-          />
-          <Route path="*" element={<>404</>} />
-        </Routes>
+        {loading ? (
+          <div className="flex justify-center items-center h-screen">
+            <p className="text-lg font-semibold">Loading...</p>
+          </div>
+        ) : (
+          <Routes>
+            <Route
+              path="/"
+              element={<Home darkMode={darkMode} setDarkMode={setDarkMode} />}
+            />
+            <Route
+              path="/feature"
+              element={<Feature darkMode={darkMode} setDarkMode={setDarkMode} />}
+            />
+            <Route
+              path="/gallery"
+              element={<Gallery darkMode={darkMode} setDarkMode={setDarkMode} />}
+            />
+            <Route
+              path="/pricing"
+              element={<Pricing darkMode={darkMode} setDarkMode={setDarkMode} />}
+            />
+            <Route
+              path="/support"
+              element={<Support darkMode={darkMode} setDarkMode={setDarkMode} />}
+            />
+            <Route path="*" element={<>404</>} />
+          </Routes>
+        )}
       </div>
     </Router>
   );
