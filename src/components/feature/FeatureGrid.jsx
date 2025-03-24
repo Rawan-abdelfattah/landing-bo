@@ -6,19 +6,19 @@ export default function FeatureGrid({ darkMode }) {
       title: "Unified Link-In-Bio Platform",
       description:
         "Links, content, and products — everything your audience needs in one sleek hub.",
-      image: "1.png",
+      image: "/1.mp4",
     },
     {
       title: "Custom Domain",
       description:
         "Make it official. Swap the generic URL for your own domain: 'yourname.com' never looked this good.",
-      image: "2.png",
+      image: "/2.png",
     },
     {
       title: "Sell Digital Products Like A Pro",
       description:
         "E-books, courses, templates — whatever you create, sell it directly from your page with secure payments.",
-      image: "3.png",
+      image: "/3.png",
     },
     {
       title: "Turn Visitors Into Superfans",
@@ -30,19 +30,18 @@ export default function FeatureGrid({ darkMode }) {
       title: "Blog, Share, Shine",
       description:
         "Blogging just got easy. Keep your audience engaged with updates, and stories all hosted on your page ",
-      image: "5.png",
+      image: "/5.png",
     },
     {
       title: "Email Marketing? Simplified",
       description:
         "Blogging just got easy. Keep your audience engaged with updates, and stories all hosted on your page ",
-      image: "6.png",
+      image: "/6.png",
     },
   ];
 
   return (
     <div className="relative overflow-hidden">
-        
       <section className=" max-w-screen-xl mx-auto md:px-20 px-5    ">
         <div className="text-center lg:text-left">
           <h2
@@ -78,17 +77,43 @@ export default function FeatureGrid({ darkMode }) {
                 <p className="opacity-80 flex-grow">{feature.description}</p>
 
                 <div className="  mt-auto">
-                  <img
-                    src={feature.image}
-                    className="w-full mt-3  object-cover rounded-xl shadow-md"
-                    alt={feature.title}
-                  />
+                {feature.image.endsWith(".mp4") ? (
+  <video
+    src={feature.image}
+    className="w-full mt-3 object-cover rounded-xl shadow-md"
+    muted
+    loop={false}
+    onMouseEnter={(e) => e.target.play()}
+    onMouseLeave={(e) => {
+      e.target.pause();
+      e.target.currentTime = 0;
+    }}
+  />
+) : feature.image.endsWith(".gif") ? (
+  <img
+    src={feature.image.replace(".gif", ".png")} // Replace with a static version
+    className="w-full mt-3 object-cover rounded-xl shadow-md"
+    alt={feature.title}
+    onMouseEnter={(e) => (e.target.src = feature.image)} // Show GIF on hover
+    onMouseLeave={(e) =>
+      (e.target.src = feature.image.replace(".gif", ".png"))
+    } // Revert to static image
+  />
+) : (
+  <img
+    src={feature.image}
+    className="w-full mt-3 object-cover rounded-xl shadow-md"
+    alt={feature.title}
+  />
+)}
+
+
                 </div>
               </div>
             ))}
           </div>
         </div>
-      </section>  
+      </section>
       <div className="relative z-0 w-full">
         <TextScroll
           darkMode={darkMode}
