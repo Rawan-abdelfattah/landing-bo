@@ -132,7 +132,7 @@ const GalleryGridSection = ({ darkMode }) => {
           01
         </h2>
         <div className="md:flex justify-between font-bold mb-6 py-X5">
-          <h2 className="text-2xl md:text-4xl ">See How Others Shine</h2>
+          <h2 className="text-2xl md:text-3xl ">See How Others Shine</h2>
           <div className="mt-6 md:mt-0 md:max-w-xl ">
             <p className="  mb-4">
               Discover how creators, brands, and businesses are using our

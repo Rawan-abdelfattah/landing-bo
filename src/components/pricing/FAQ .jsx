@@ -38,7 +38,7 @@ const FAQSection = () => {
       <div className="max-w-4xl mx-auto">
         {/* Section Title */}
         <h2 className="text-outline-light-h1 mb-2">04</h2>
-        <h2 className="text-3xl font-bold mb-8">FAQs</h2>
+        <h2 className="text-2xl md:text-3xl font-bold mb-8">FAQs</h2>
 
         {/* FAQ List */}
         <div className="space-y-4">
@@ -68,9 +68,7 @@ const FAQSection = () => {
                     }`}
                   />
                 </motion.div>
-              </div>
-
-              {/* Answer (Animated Expand/Collapse) */}
+              </div> 
               <motion.div
                 initial={{ height: 0, opacity: 0 }}
                 animate={

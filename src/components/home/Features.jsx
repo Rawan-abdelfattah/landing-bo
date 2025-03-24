@@ -36,7 +36,7 @@ export const Features = ({ darkMode }) => {
           01
         </h2>
         <div className=" md:flex justify-between font-bold mb-6 py-5">
-          <h2 className="max-w-[588px] text-2xl md:text-4xl pr-5">
+          <h2 className="max-w-[588px] text-2xl md:text-3xl pr-5">
               
             Powerful Features To Elevate Your Digital Presence
           </h2>

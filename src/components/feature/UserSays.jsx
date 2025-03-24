@@ -36,7 +36,7 @@ export const UserSays = ({ darkMode }) => {
           >
             04
           </p>
-          <h2 className="text-3xl font-bold leading-tight mb-20 ">
+          <h2 className="text-2xl md:text-3xl  font-bold leading-tight mb-20 ">
             What Our Users Are Saying
           </h2>
         </div>

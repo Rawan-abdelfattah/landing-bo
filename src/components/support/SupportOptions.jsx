@@ -32,7 +32,7 @@ const SupportOptions = ({ darkMode }) => {
       <h2 className={`${darkMode ? "text-outline-dark-h1" : "text-outline-light-h1"}`}>
         01
       </h2>
-      <h1 className="text-3xl lg:text-4xl font-bold mt-2">
+      <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold mt-2">
         We’re Here To Help You Every Step Of The Way
       </h1>
       <p className="mt-4 max-w-2xl">

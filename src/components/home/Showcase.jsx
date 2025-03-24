@@ -38,7 +38,7 @@ export const Showcase = ({ darkMode }) => {
           02
         </h2>
         <div className="md:flex justify-between font-bold mb-6 py-5">
-          <h2 className="max-w-[550px] text-2xl md:text-4xl ">
+          <h2 className="max-w-[550px] text-2xl md:text-3xl ">
             Your All-In-One Digital Showcase
           </h2>
           <div className="mt-6 md:mt-0 max-w-[482px] ">
@@ -77,11 +77,11 @@ export const Showcase = ({ darkMode }) => {
           ))}
         </div>
         <div className="flex flex-col sm:flex-row gap-5 pt-10">
-          {["profile1.png", "profile2.png", "profile3.png", "profile4.png"].map(
+          {["profile11.png", "profile22.png", "profile33.png", "profile44.png"].map(
             (src, index) => (
               <div
                 key={index}
-                className="group h-[195px] sm:h-[220px] md:h-[215px] relative  rounded-t-3xl shadow-lg overflow-hidden transition-all duration-500 cursor-pointer hover:shadow-2xl w-full mb-4 sm:mb-0"
+                className="group h-[195px] sm:h-[220px] md:h-[215px] relative shadow-lg overflow-hidden transition-all duration-500 cursor-pointer hover:shadow-2xl w-full mb-4 sm:mb-0"
               >
                 <div className="relative w-full overflow-hidden">
                   <img

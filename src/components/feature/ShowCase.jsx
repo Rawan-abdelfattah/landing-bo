@@ -16,7 +16,7 @@ export const Showcase = ({ darkMode }) => {
           02
         </h2>
         <div className="md:flex justify-between font-bold mb-6 py-5">
-          <h2 className="text-2xl md:text-4xl ">
+          <h2 className="text-2xl md:text-3xl ">
               
             Your All-In-One Digital Showcase
           </h2>
