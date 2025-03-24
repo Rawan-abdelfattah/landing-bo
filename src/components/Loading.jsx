@@ -3,9 +3,8 @@ import { motion } from "framer-motion";
 
 const Loading = () => {
   return (
-    <div className="flex flex-col justify-center items-center h-screen bg-black text-white">
-      {/* Animated Glowing Text "Boitr" */}
-      <motion.h1
+    <div className="flex flex-col justify-center items-center h-screen  ">
+       <motion.h1
         className="text-5xl font-bold tracking-wide mb-4"
         animate={{
           textShadow: [

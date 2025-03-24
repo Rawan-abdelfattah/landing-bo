@@ -6,31 +6,29 @@ const features = [
   {
     title: "Unified Presence",
     description: "Combine all your links in one sleek, organized space.",
-    icon: FiGrid,
+    icon: '/show-case.svg',
   },
   {
     title: "Fully Customizable",
     description: "Personalize your Boitr page to reflect your unique style.",
-    icon: FiSettings,
+    icon: '/show-case.svg',
   },
   {
     title: "Smart Insights",
     description:
       "Track clicks and engagement to know what your audience loves.",
-    icon: FiBarChart,
-  },
+      icon: '/show-case.svg',
+    },
   {
     title: "Easy & Fast Setup",
     description: "Create and share your Boitr page in just a few minutes.",
-    icon: FiZap,
+    icon: '/show-case.svg',
   },
 ];
 
 export const Showcase = ({ darkMode }) => {
   return (
-    <section
-      className={` ${darkMode ? "bg-[#161616]" : ""}`}
-    >
+    <section className={` ${darkMode ? "bg-[#161616]" : ""}`}>
       <div className=" max-w-screen-xl mx-auto md:px-20 px-5     pt-10 text-center lg:text-left">
         <h2
           className={`${
@@ -41,7 +39,6 @@ export const Showcase = ({ darkMode }) => {
         </h2>
         <div className="md:flex justify-between font-bold mb-6 py-5">
           <h2 className="max-w-[550px] text-2xl md:text-4xl ">
-              
             Your All-In-One Digital Showcase
           </h2>
           <div className="mt-6 md:mt-0 max-w-[482px] ">
@@ -65,38 +62,38 @@ export const Showcase = ({ darkMode }) => {
               className={`  p-6 rounded-xl transition duration-300 `}
             >
               <div className="relative inline-block mb-4">
-                <div
-                  className="absolute inset-0 blur-xl opacity-100 transition duration-300 group-hover:opacity-50"
-                  style={{
-                    background:
-                      " linear-gradient(45deg, rgba(250, 173, 79, 0.8) 14.61%, rgba(221, 42, 123, 0.8) 39.38%, rgba(149, 55, 176, 0.8) 58.49%, rgba(81, 91, 212, 0.8) 85.39%)",
-                  }}
-                ></div>
-                <feature.icon className="text-4xl mx-auto   relative z-10" />
+                {/* Glow Effect */}
+                <div className="absolute inset-0 w-[70px] h-[70px] rounded-full bg-gradient-to-br from-purple-600 via-pink-500 to-orange-500 blur-xl opacity-40"></div>
+
+                {/* Icon Container */}
+                <div className="relative  w-[55px] h-[55px] flex items-center left-[35px] top-[15px] justify-center rounded-xl">
+                  <img src= {feature.icon} alt="icon" className="text-white text-4xl" />
+                </div>
               </div>
-              <h3 className="text-lg font-semibold">{feature.title}</h3>
+
+              <h3 className="text-lg font-semibold mt-7">{feature.title}</h3>
               <p className="  text-sm mt-2">{feature.description}</p>
             </div>
           ))}
         </div>
-        <div className="flex flex-col sm:flex-row gap-5">
-  {["profile1.png", "profile2.png", "profile3.png", "profile4.png"].map((src, index) => (
-    <div
-      key={index}
-      className="group h-[180px] sm:h-[220px] md:h-[250px] relative rounded-t sm:rounded-t-3xl shadow-lg overflow-hidden transition-all duration-500 cursor-pointer hover:shadow-2xl w-full mb-4 sm:mb-0"
-    >
-      <div className="relative w-full overflow-hidden">
-        <img
-          src={src}
-          className="w-full h-full object-cover transform transition-transform duration-500 group-hover:-translate-y-1/3"
-          alt="Profile"
-        />
-      </div>
-    </div>
-  ))}
-</div>
-
-
+        <div className="flex flex-col sm:flex-row gap-5 pt-10">
+          {["profile1.png", "profile2.png", "profile3.png", "profile4.png"].map(
+            (src, index) => (
+              <div
+                key={index}
+                className="group h-[210px] sm:h-[220px] md:h-[215px] relative  rounded-t-3xl shadow-lg overflow-hidden transition-all duration-500 cursor-pointer hover:shadow-2xl w-full mb-4 sm:mb-0"
+              >
+                <div className="relative w-full overflow-hidden">
+                  <img
+                    src={src}
+                    className="w-full h-full object-cover transform transition-transform duration-500 group-hover:-translate-y-1/3"
+                    alt="Profile"
+                  />
+                </div>
+              </div>
+            )
+          )}
+        </div>
       </div>
     </section>
   );

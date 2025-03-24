@@ -96,7 +96,7 @@ export const Features = ({ darkMode }) => {
                 <img
                   src={feature.img}
                   alt={feature.title}
-                  className={`hidden md:block w-[18%] rounded-lg shadow-lg transition-transform duration-700 ease-in-out ${
+                  className={`hidden md:block w-[18%] rounded-xl shadow-lg transition-transform duration-700 ease-in-out ${
                     hoveredFeature === feature.id ? "opacity-100" : "opacity-0"
                   }`}
                   onMouseEnter={() => setHoveredImg(true)}

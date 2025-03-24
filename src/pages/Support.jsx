@@ -32,15 +32,15 @@ const Support = ({ darkMode, setDarkMode }) => {
     <div>
       <AnimatedSection>
         <Header darkMode={darkMode} setDarkMode={setDarkMode} />
-      </AnimatedSection> 
-
-      {/* <AnimatedSection>
-        <SupportOptions darkMode={darkMode}   />
-      </AnimatedSection> 
+      </AnimatedSection>
 
       <AnimatedSection>
-        <SupportGrid darkMode={darkMode}   />
-      </AnimatedSection>  */}
+        <SupportOptions darkMode={darkMode} />
+      </AnimatedSection>
+
+      <AnimatedSection>
+        <SupportGrid darkMode={darkMode} />
+      </AnimatedSection>
       <Footer darkMode={darkMode} />
     </div>
   );

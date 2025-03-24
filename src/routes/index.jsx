@@ -6,6 +6,7 @@ import Pricing from "../pages/Pricing";
 import Support from "../pages/Support";
 import Home from "../pages/Home";
 import Loading from "../components/Loading";
+import NotFound from "../components/NotFound";
 
 const AppRoutes = () => {
   const storedTheme = localStorage.getItem("theme");
@@ -80,7 +81,7 @@ const AppRoutes = () => {
         }`}
       >
         {loading ? (
-          <Loading />  
+          <Loading  />  
         ) : (
           <Routes>
             <Route
@@ -111,7 +112,7 @@ const AppRoutes = () => {
                 <Support darkMode={darkMode} setDarkMode={setDarkMode} />
               }
             />
-            <Route path="*" element={<>404</>} />
+            <Route path="*" element={<NotFound/>} />
           </Routes>
         )}
       </div>

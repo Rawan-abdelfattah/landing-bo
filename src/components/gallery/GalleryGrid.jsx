@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 const GalleryGridCard = ({ name, role, profileImg, mainImg, darkMode }) => {
   return (
-    <div className="group h-[446px] relative  rounded-lg shadow-lg overflow-hidden transition-all duration-500 cursor-pointer hover:shadow-2xl w-[270px]">
+    <div className="group h-[446px] relative  rounded-xl shadow-lg overflow-hidden transition-all duration-500 cursor-pointer hover:shadow-2xl w-[270px]">
       <div
         className={` rounded-t-2xl ${
           darkMode

@@ -1,79 +1,80 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
 @import "tailwindcss";
 
 :root {
- padding: 0;
- margin: 0;
+  padding: 0;
+  margin: 0;
+}
+body {
+  font-family: "Ubuntu";
 }
 @layer utilities {
   .bg-darkGray {
     background: linear-gradient(
-      45deg, 
+      45deg,
       rgba(81, 91, 212, 0.2) 14.61%,
       rgba(149, 55, 176, 0.3) 39.38%,
       rgba(221, 42, 123, 0.4) 58.49%,
       rgba(250, 173, 79, 0.5) 85.39%
-    ); 
-
-  }  
+    );
+  }
 }
 
 .text-light-outline {
   font-weight: 700;
-  font-size: 66px;  
+  font-size: 66px;
   font-weight: bold;
-  color: transparent; 
-  -webkit-text-stroke: 2px black; 
+  color: transparent;
+  -webkit-text-stroke: 2px black;
 }
 .text-dark-outline {
   font-weight: 700;
-  font-size: 66px;  
-    font-weight: bold;
-  color: transparent; 
-  -webkit-text-stroke: 2px white; 
+  font-size: 66px;
+  font-weight: bold;
+  color: transparent;
+  -webkit-text-stroke: 2px white;
 }
 
 .text-outline-dark-h1 {
-   font-size: 32px;
+  font-size: 32px;
   font-weight: 700;
   font-weight: bold;
-  color: transparent; 
-  -webkit-text-stroke: 2px white; 
+  color: transparent;
+  -webkit-text-stroke: 2px white;
 }
 
 .text-outline-light-h1 {
   font-weight: 700;
   font-size: 32px;
   font-weight: bold;
-  color: transparent; 
-  -webkit-text-stroke: 2px black; 
+  color: transparent;
+  -webkit-text-stroke: 2px black;
 }
 
 .text-outline-dark-h2 {
-  font-size: 28px;  
+  font-size: 28px;
   font-weight: 700;
   font-weight: bold;
-  color: transparent; 
-  -webkit-text-stroke: 2px white; 
+  color: transparent;
+  -webkit-text-stroke: 2px white;
 }
 
 .text-outline-light-h2 {
-  font-size: 28px; 
+  font-size: 28px;
   font-weight: 700;
   font-weight: bold;
-  color: transparent; 
-  -webkit-text-stroke: 2px black; 
+  color: transparent;
+  -webkit-text-stroke: 2px black;
 }
-.head-line{ 
-font-weight: 700;
-font-size: 52px;
-line-height: 100%;
-letter-spacing: 0px;
-text-transform: capitalize;
-
+.head-line {
+  font-weight: 700;
+  font-size: 52px;
+  line-height: 100%;
+  letter-spacing: 0px;
+  text-transform: capitalize;
 }
- 
 
-:root{
+:root {
   --clr-1: #fefae0;
   --clr-2: #dda15e;
   --clr-3: #bc6c25;
@@ -84,14 +85,13 @@ text-transform: capitalize;
 .animate-contain {
   height: 100svh;
   display: grid;
-  place-items: center; 
+  place-items: center;
 }
-#plane{
+#plane {
   display: grid;
   place-items: center;
   transform-style: preserve-3d;
-  perspective:1000px;
-
+  perspective: 1000px;
 }
 .card {
   transform-style: preserve-3d;
@@ -99,10 +99,9 @@ text-transform: capitalize;
   width: 50vmin;
   height: 50vmin;
   grid-column-start: 1;
-  grid-row-start: 1; 
+  grid-row-start: 1;
   border-radius: 999px;
   transition: all 500ms ease-in-out;
- 
 
   --local-rotation: 180deg;
   --local-scale: 0;
@@ -111,25 +110,24 @@ text-transform: capitalize;
 }
 
 .phone {
-  width:55%;
-  height:110%;
+  width: 55%;
+  height: 110%;
   position: absolute;
-  top:-5%;
-  left:50%;
+  top: -5%;
+  left: 50%;
   transform-style: preserve-3d;
   transform: translatex(-50%) translatez(1px);
   border-radius: 4vmin;
   animation: none;
   background: var(--clr-1);
-   display: flex;
+  display: flex;
   flex-direction: column;
   align-items: center;
   padding: 2vmin;
-  font-size: 2vmin
- 
+  font-size: 2vmin;
 }
 
-.phone-circle{
+.phone-circle {
   width: 50%;
   border-radius: 9999px;
   margin-bottom: 5%;
@@ -140,14 +138,18 @@ text-transform: capitalize;
   margin-top: auto;
 }
 .phone-pill {
-  width:100%;
-  height:10%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 10%;
   background-color: var(--accent-2);
   border-radius: 9999px;
   margin-bottom: 5%;
-  transform: translatez(10px)
+  transform: translatez(10px);
 }
-  
+
 .left-card {
   position: absolute;
   border-radius: 2vmin;
@@ -155,7 +157,7 @@ text-transform: capitalize;
   bottom: 10%;
   width: 30vmin;
   height: 20vmin;
-  background: var(--clr-2);
+  /* background: var(--clr-2); */
   transform: translatez(30px);
 }
 
@@ -166,7 +168,7 @@ text-transform: capitalize;
   top: 10%;
   width: 20vmin;
   height: 20vmin;
-  background: var(--clr-3);
+  /* background: var(--clr-3); */
   transform: translatez(-40px);
 }
 
@@ -179,78 +181,86 @@ text-transform: capitalize;
   align-items: center;
   transform: translatez(30px);
 }
-.circle:not(:last-child){
-  margin-right:2%;
+.circle:not(:last-child) {
+  margin-right: 2%;
 }
-.circle{
-  width:7vmin;
+.circle {
+  width: 7vmin;
   height: 7vmin;
   background: var(--clr-3);
+  display: flex;
+  justify-content: center;
+  align-items: center; 
   border-radius: 999px;
 }
 
-.fadein{
+.fadein {
   animation: fadein 500ms ease-out both;
 }
 @keyframes fadein {
-  from { opacity: 0; scale: 0.8 }
-  to {opacity: 1; scale: 1 }
+  from {
+    opacity: 0;
+    scale: 0.8;
+  }
+  to {
+    opacity: 1;
+    scale: 1;
+  }
 }
 
 /* changin colors of other cards */
 .card:nth-child(2) .phone {
-background: var(--accent-1); 
+  background: var(--accent-1);
 }
 
-.card:nth-child(2) :is(.phone-circle,.phone-pill) {
-background: var(--clr-1);
- }
+.card:nth-child(2) :is(.phone-circle, .phone-pill) {
+  background: var(--clr-1);
+}
 
-.card:nth-child(2) .left-card {
-background: var(--accent-2);
- }
+/* .card:nth-child(2) .left-card {
+  background: var(--accent-2);
+}
 .card:nth-child(2) .right-card {
-background: var(--accent-2);
- }
+  background: var(--accent-2);
+} */
 .card:nth-child(2) .circle {
-background: var(--clr-2); 
-}
-
+  background: var(--clr-2);
+} 
 /* 3 */
 
 .card:nth-child(3) .phone {
-background: var(--accent-2); 
+  background: var(--accent-2);
 }
 
-.card:nth-child(3) :is(.phone-circle,.phone-pill) {
-background: var(--clr-3); 
+.card:nth-child(3) :is(.phone-circle, .phone-pill) {
+  background: var(--clr-3);
 }
 
-.card:nth-child(3) .left-card {
-background: var(--clr-1); 
+/* .card:nth-child(3) .left-card {
+  background: var(--clr-1);
 }
 .card:nth-child(3) .right-card {
-background: var(--clr-3); 
-}
+  background: var(--clr-3);
+} */
 .card:nth-child(3) .circle {
-background: var(--accent-1); 
+  background: var(--accent-1);
 }
 /* 4 */
 
 .card:nth-child(4) .phone {
-background: white; 
+  background: white;
 }
 
-.card:nth-child(4) :is(.phone-circle,.phone-pill) {
-background: darkgray; 
+.card:nth-child(4) :is(.phone-circle, .phone-pill) {
+  background: darkgray;
 }
 
-.card:nth-child(4) .left-card {
-background: #363636; 
+/* .card:nth-child(4) .left-card {
+  background: #363636;
 }
 .card:nth-child(4) .right-card {
-background: #363636; 
-}
+  background: #363636;
+} */
 .card:nth-child(4) .circle {
-background: #363636; 
+  background: #363636;
 }
