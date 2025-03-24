@@ -4,6 +4,7 @@ import { Footer } from "../components/Footer";
 import { Header } from "../components/support/Header";
 import SupportOptions from "../components/support/SupportOptions";
 import SupportGrid from "../components/support/SupportGrid";
+import { Helmet } from "react-helmet";
 
 const fadeInUp = {
   hidden: { opacity: 0, y: 40 },
@@ -29,21 +30,29 @@ const AnimatedSection = ({ children }) => {
 
 const Support = ({ darkMode, setDarkMode }) => {
   return (
-    <div>
-      <AnimatedSection>
-        <Header darkMode={darkMode} setDarkMode={setDarkMode} />
-      </AnimatedSection>
+    <div className="flex flex-col min-h-screen">
+      <Helmet> 
+        <title>Boitr Support & Help Centre</title>
+      </Helmet>
 
-      <AnimatedSection>
-        <SupportOptions darkMode={darkMode} />
-      </AnimatedSection>
+      <div className="flex-grow">
+        <AnimatedSection>
+          <Header darkMode={darkMode} setDarkMode={setDarkMode} />
+        </AnimatedSection>
 
-      <AnimatedSection>
-        <SupportGrid darkMode={darkMode} />
-      </AnimatedSection>
+        <AnimatedSection>
+          <SupportOptions darkMode={darkMode} />
+        </AnimatedSection>
+
+        <AnimatedSection>
+          <SupportGrid darkMode={darkMode} />
+        </AnimatedSection>
+      </div>
+
       <Footer darkMode={darkMode} />
     </div>
   );
 };
+
 
 export default Support;

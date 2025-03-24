@@ -6,6 +6,7 @@ import FeatureGrid from "../components/feature/FeatureGrid";
 import FAQ from "../components/feature/FAQ";
 import { Showcase } from "../components/feature/ShowCase";
 import { UserSays } from "../components/feature/UserSays";
+import { Helmet } from "react-helmet";
 
 const fadeInUp = {
   hidden: { opacity: 0, y: 40 },
@@ -30,8 +31,14 @@ const AnimatedSection = ({ children }) => {
 };
 
 const Feature = ({ darkMode, setDarkMode }) => {
+  
   return (
-    <div>
+    <div className="flex flex-col min-h-screen">
+      <Helmet> 
+        <title>Link In Bio Tool Features | Boitr </title>
+      </Helmet>
+      <div className="flex-grow">
+
       <AnimatedSection>
         <Header darkMode={darkMode} setDarkMode={setDarkMode} />
       </AnimatedSection>
@@ -50,6 +57,8 @@ const Feature = ({ darkMode, setDarkMode }) => {
       <AnimatedSection>
         <UserSays darkMode={darkMode} />
       </AnimatedSection>
+      </div>
+
       <Footer darkMode={darkMode} />
     </div>
   );

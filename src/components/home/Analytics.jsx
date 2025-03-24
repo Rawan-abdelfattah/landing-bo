@@ -17,9 +17,9 @@ export const Analytics = ({ darkMode }) => {
       pills: ["johnson@email.com", "+1 (555) 123-4567", "Marketing Manager"],
       circles: [<FaFacebook />, <IoLogoInstagram />, <CiTwitter />],
       animationDelay: "150ms",
-      cardImageFront: "/1.png",
-      cardImageBack: "/2.png",
-      className:"text-gray-500"
+      cardImageBack: "/hat.png",
+      cardImageFront: "/cd.png",
+      className:"text-gray-900"
 
     },
     {
@@ -29,7 +29,7 @@ export const Analytics = ({ darkMode }) => {
       pills: ["smith@email.com", "+1 (555) 987-6543", "Software Engineer"],
       circles: [<FaLinkedin />, <IoLogoWhatsapp />, <RiDiscordFill />],
       animationDelay: "200ms",
-      cardImageFront: "/3.png",
+      cardImageFront: "/hat.png",
       cardImageBack: "/4.png",
       className:"text-gray-900"
     },
@@ -40,7 +40,7 @@ export const Analytics = ({ darkMode }) => {
       pills: ["lee@email.com", "+44 7890 123456", "Graphic Designer"],
       circles: [<FaSnapchatGhost />, <IoLogoTiktok />, <CiYoutube />],
       animationDelay: "250ms",
-      cardImageFront: "/5.png",
+      cardImageFront: "/hat.png",
       cardImageBack: "/6.png",
       className:"text-white"
 
@@ -52,7 +52,7 @@ export const Analytics = ({ darkMode }) => {
       pills: ["anderson@email.com", "+33 6 12 34 56 78", "Data Analyst"],
       circles: [<RiRedditFill />, <RiDiscordFill />, <FaFacebook />],
       animationDelay: "300ms",
-      cardImageFront: "/1.png",
+      cardImageFront: "/hat.png",
       cardImageBack: "/2.png",
       className:"text-gray-900"
 
@@ -222,7 +222,7 @@ export const Analytics = ({ darkMode }) => {
                         key={i}
                         data-animate
                         style={{ animationDelay: `${(i + 6) * 100}ms` }}
-                        className={`circle text-white ${
+                        className={`circle text-white text-2xl ${
                           selectedIndex === index ? "fadein" : ""
                         }`}
                       >

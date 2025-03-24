@@ -6,6 +6,7 @@ import { Showcase } from "../components/home/Showcase";
 import { Analytics } from "../components/home/Analytics";
 import { Footer } from "../components/Footer";
 import { UserSays } from "../components/home/UserSays";
+import { Helmet } from "react-helmet";
 
 const fadeInUp = {
   hidden: { opacity: 0, y: 40 },
@@ -31,7 +32,14 @@ const AnimatedSection = ({ children }) => {
 
 const Home = ({ darkMode, setDarkMode }) => {
   return (
-    <div>
+    <div className="flex flex-col min-h-screen">
+      <Helmet> 
+        <title> 
+          Boitr | A Single Page For Your Links | Linktree + Gumroad Alternative{" "}
+        </title>
+      </Helmet>
+      <div className="flex-grow">
+
       <AnimatedSection>
         <Hero darkMode={darkMode} setDarkMode={setDarkMode} />
       </AnimatedSection>
@@ -50,6 +58,8 @@ const Home = ({ darkMode, setDarkMode }) => {
       <AnimatedSection>
         <UserSays darkMode={darkMode} />
       </AnimatedSection>
+      </div>
+
       <Footer darkMode={darkMode} />
     </div>
   );

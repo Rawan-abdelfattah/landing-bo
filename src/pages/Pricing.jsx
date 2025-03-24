@@ -5,6 +5,7 @@ import { Header } from "../components/pricing/Header";
 import Plans from "../components/pricing/Plans";
 import SocialMediaIcons from "../components/pricing/SocialMediaIcons";
 import FAQ from "../components/pricing/FAQ ";
+import { Helmet } from "react-helmet";
 
 const fadeInUp = {
   hidden: { opacity: 0, y: 40 },
@@ -30,10 +31,15 @@ const AnimatedSection = ({ children }) => {
 
 const Pricing = ({ darkMode, setDarkMode }) => {
   return (
-    <div>
+    <div className="flex flex-col min-h-screen">
+      <Helmet> 
+        <title> Boitr Pro Pricing </title>
+      </Helmet>
+      <div className="flex-grow">
+
       <AnimatedSection>
         <Header darkMode={darkMode} setDarkMode={setDarkMode} />
-      </AnimatedSection> 
+      </AnimatedSection>
       {/* <AnimatedSection>
         <Plans darkMode={darkMode}   />
       </AnimatedSection> 
@@ -43,6 +49,8 @@ const Pricing = ({ darkMode, setDarkMode }) => {
       <AnimatedSection>
         <FAQ darkMode={darkMode}   />
       </AnimatedSection>  */}
+    </div>
+
       <Footer darkMode={darkMode} />
     </div>
   );
