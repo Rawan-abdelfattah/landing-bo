@@ -136,8 +136,7 @@ export const Analytics = ({ darkMode }) => {
               alt="icons"
               className="pt-15 max-w-[500px]"
             />
-          </div>
-
+          </div> 
           <div className="animate-contain">
             <div id="plane">
               {cardData.map((card, index) => (
