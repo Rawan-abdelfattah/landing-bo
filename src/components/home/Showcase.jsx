@@ -81,7 +81,7 @@ export const Showcase = ({ darkMode }) => {
             (src, index) => (
               <div
                 key={index}
-                className="group h-[210px] sm:h-[220px] md:h-[215px] relative  rounded-t-3xl shadow-lg overflow-hidden transition-all duration-500 cursor-pointer hover:shadow-2xl w-full mb-4 sm:mb-0"
+                className="group h-[195px] sm:h-[220px] md:h-[215px] relative  rounded-t-3xl shadow-lg overflow-hidden transition-all duration-500 cursor-pointer hover:shadow-2xl w-full mb-4 sm:mb-0"
               >
                 <div className="relative w-full overflow-hidden">
                   <img
