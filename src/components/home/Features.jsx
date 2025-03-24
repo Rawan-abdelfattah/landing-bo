@@ -1,5 +1,4 @@
-import React, { useState } from "react";
-import { FaArrowUp } from "react-icons/fa";
+import React, { useState } from "react"; 
 import { FaArrowUpLong } from "react-icons/fa6";
 import { Link } from "react-router-dom";
 
@@ -21,6 +20,8 @@ const features = [
 ];
 
 export const Features = ({ darkMode }) => {
+  console.log(darkMode);
+  
   const [hoveredFeature, setHoveredFeature] = useState(null);
   const [hoveredImg, setHoveredImg] = useState(false);
 
