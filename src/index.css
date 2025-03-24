@@ -83,7 +83,7 @@ body {
 }
 
 .animate-contain {
-  height: 100svh;
+  height: 70svh;
   display: grid;
   place-items: center;
 }
