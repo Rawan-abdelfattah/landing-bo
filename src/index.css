@@ -2,14 +2,13 @@
 @import "tailwindcss";
 
 :root {
-
-  --clr-1: #f4f1de;  
-  --clr-2: #5fb7e0;  
-  --clr-3: #f2cc8f ; 
-  --accent-1: rgb(255, 255, 22);  
-  --accent-2: #3d405b;  
+  --clr-1: #f4f1de;
+  --clr-2: #5fb7e0;
+  --clr-3: #f2cc8f;
+  --accent-1: rgb(255, 255, 22);
+  --accent-2: #3d405b;
 }
-body {  
+body {
   padding: 0;
   margin: 0;
   font-family: "Ubuntu";
@@ -23,6 +22,52 @@ body {
       rgba(221, 42, 123, 0.4) 58.49%,
       rgba(250, 173, 79, 0.5) 85.39%
     );
+  }
+  .bg-gradient {
+    background: linear-gradient(
+      227.14deg,
+      rgba(250, 173, 79, 0.7) 14.61%,
+      rgba(221, 42, 123, 0.7) 24.05%,
+      rgba(149, 55, 176, 0.7) 33.48%,
+      rgba(81, 91, 212, 0.7) 48.03%,
+      #101010 68.52%,
+      #000000 68.52%
+    );
+  }
+  .bg-gradient-light {
+    background: linear-gradient(
+      45deg,
+      rgba(255, 255, 255, 0.2) 20.61%,
+      rgba(250, 173, 79, 0.2) 30.61%,
+      rgba(221, 42, 123, 0.2) 39.38%,
+      rgba(149, 55, 176, 0.2) 58.49%,
+      rgba(81, 91, 212, 0.2) 85.39%
+    );
+  }
+  .bg-gradient-light::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    backdrop-filter: blur(200px);
+    height: 100%;
+    z-index: 0;
+  }
+  .bg-gradient::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    backdrop-filter: blur(200px);
+    height: 100%;
+    z-index: 0;
+  }
+
+  .content {
+    position: relative;
+    z-index: 1;
   }
 }
 
