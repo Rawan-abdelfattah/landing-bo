@@ -54,7 +54,7 @@ export const Navbar = ({ darkMode, setDarkMode }) => {
             Get Started Now →
           </Link>
           <button
-            className="sm:hidden p-2 text-white focus:outline-none"
+            className="sm:hidden p-2  focus:outline-none"
             onClick={() => setMenuOpen(!menuOpen)}
           >
             {menuOpen ? (
