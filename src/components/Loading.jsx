@@ -1,29 +1,24 @@
 import React from "react";
-import { motion } from "framer-motion";
+import { motion } from "framer-motion"; 
+import { ImSpinner2 } from "react-icons/im";  
 
-const Loading = () => {
+const Loading = ({darkMode}) => {
   return (
-    <div className="flex flex-col justify-center items-center h-screen  ">
-       <motion.h1
-        className="text-5xl font-bold tracking-wide mb-4"
+    <div className="flex flex-col justify-center items-center h-screen">
+      <motion.div
         animate={{
-          textShadow: [
-            "0px 0px 10px #6366F1",
-            "0px 0px 20px #EC4899",
-            "0px 0px 30px #F59E0B",
-            "0px 0px 40px #22D3EE",
-          ],
-          opacity: [0.7, 1, 0.7],
+          rotate: 360,
         }}
         transition={{
-          duration: 2,
+          duration: 1,
           repeat: Infinity,
-          ease: "easeInOut",
+          ease: "linear",
         }}
       >
-        Boitr
-      </motion.h1>
- 
+        <ImSpinner2 className={`text-5xl ${darkMode ? 'text-[#017CD4] '  :'text-[#2c1662]  '} `} />
+      </motion.div>
+      
+      
     </div>
   );
 };

@@ -14,7 +14,7 @@ export const Hero = ({ darkMode, setDarkMode }) => {
       <Navbar darkMode={darkMode} setDarkMode={setDarkMode} />
 
       <div className=" max-w-screen-xl mx-auto md:px-20 px-5 flex flex-col md:flex-row justify-between items-center pt-12">
-        <div className=" max-w-[458px]  md:mb-30 mb-5">
+        <div className=" max-w-[458px]  md:mb-30 lg:mb-40 mb-5">
           <h1 className="text-4xl font-bold ">
             Your Digital Identity, One Smart Link!
           </h1>
@@ -41,7 +41,7 @@ export const Hero = ({ darkMode, setDarkMode }) => {
           </div>
         </div>
 
-        <div className=" max-w-[408px]   space-y-4 md:mb-25 lg:mb-15 mb-5">
+        <div className=" max-w-[408px]   space-y-4 md:mb-25 lg:mb-25 mb-5">
           <p>
             Take control of your digital presence with Boitr — the ultimate
             platform to showcase everything that makes you, you.

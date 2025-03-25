@@ -2,15 +2,16 @@
 @import "tailwindcss";
 
 :root {
-  padding: 0;
-  margin: 0;
+
   --clr-1: #f4f1de;  
   --clr-2: #5fb7e0;  
   --clr-3: #f2cc8f ; 
   --accent-1: rgb(255, 255, 22);  
   --accent-2: #3d405b;  
 }
-body {
+body {  
+  padding: 0;
+  margin: 0;
   font-family: "Ubuntu";
 }
 @layer utilities {

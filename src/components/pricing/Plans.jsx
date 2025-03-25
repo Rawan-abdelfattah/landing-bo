@@ -117,9 +117,9 @@ const Plans = ({ darkMode }) => {
               </li>
             </ul>
           </div>{" "}
-          <div className="absolute bottom-5 right-5">
+          <div className="flex justify-end">
             <button className={`text-white ${darkMode ? 'bg-[#017CD4] hover:bg-[linear-gradient(90deg,rgba(56,155,233,0.5)_0%,rgba(177,63,188,0.5)_100%)]'  :'bg-[#2c1662] hover:bg-[#2c136f]'}  px-4 py-2 rounded-full hover:bg-blue-600 transition-all duration-500`}>
-              Create Your Page Now For Free{" "}
+              Create Your Page Now For Free 
             </button>
           </div>
         </div> 

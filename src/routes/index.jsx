@@ -81,7 +81,7 @@ const AppRoutes = () => {
         }`}
       >
         {loading ? (
-          <Loading  />  
+          <Loading darkMode={darkMode}  />  
         ) : (
           <Routes>
             <Route
@@ -112,7 +112,7 @@ const AppRoutes = () => {
                 <Support darkMode={darkMode} setDarkMode={setDarkMode} />
               }
             />
-            <Route path="*" element={<NotFound/>} />
+            <Route path="*" element={<NotFound darkMode={darkMode} />} />
           </Routes>
         )}
       </div>
