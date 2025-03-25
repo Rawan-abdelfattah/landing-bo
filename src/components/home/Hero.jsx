@@ -3,39 +3,12 @@ import { FaInstagram, FaDribbble, FaGithub } from "react-icons/fa";
 import { Navbar } from "../Navbar";
 import TextScroll from "../TextScroll";
 import { Link } from "react-router-dom";
-import { useEffect, useState } from "react";
-import Loading from "../Loading";
 
 export const Hero = ({ darkMode, setDarkMode }) => {
-  const [bgLoaded, setBgLoaded] = useState(false);
-
-  useEffect(() => {
-    const img = new Image();
-    img.src = darkMode ? "/dark-bg.webp" : "/light-bg.webp";
-    
-    img.onload = () => {
-      setBgLoaded(true);
-    };
-
-    return () => {
-      img.onload = null; // Clean up
-    };
-  }, [darkMode]);
-
   return (
     <header
-      className={`relative border overflow-hidden rounded-3xl mx-5 my-5 px-6 pt-6 transition-opacity duration-500 ${
-        darkMode ? "border-[#017CD4]" : "border-[#2c1662]"
-      } ${bgLoaded ? 'opacity-100' : 'opacity-0'}`}
-      style={{
-        backgroundImage: bgLoaded ? `url(${darkMode ? "/dark-bg.webp" : "/light-bg.webp"})` : 'none',
-        backgroundSize: "cover",
-        backgroundPosition: "center",
-      }}
+      className={`relative ${darkMode ? 'bg-gradient  border-[#017CD4] ': 'bg-gradient-light border-[#2c1662]'}   border  overflow-hidden rounded-3xl mx-5 my-5 px-6 pt-6`}
     >
-       {!bgLoaded && (
-           <Loading darkMode={darkMode} />
-       )}
       <div className="content">
         <Navbar darkMode={darkMode} setDarkMode={setDarkMode} />
 
