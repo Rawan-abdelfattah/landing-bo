@@ -7,7 +7,16 @@ import { Link } from "react-router-dom";
 export const Hero = ({ darkMode, setDarkMode }) => {
   return (
     <header
-      className={`relative ${darkMode ? 'bg-gradient': 'bg-gradient-light'}   border  overflow-hidden rounded-3xl mx-5 my-5 px-6 pt-6`}
+      className={`relative border overflow-hidden rounded-3xl mx-5 my-5 px-6 pt-6 ${
+        darkMode ? "border-[#017CD4]" : "border-[#2c1662]"
+      }`}
+      style={{
+        backgroundImage: `url(${
+          darkMode ? "/dark-bg.webp" : "/light-bg.webp"
+        })`,
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+      }}
     >
       <div className="content">
         <Navbar darkMode={darkMode} setDarkMode={setDarkMode} />

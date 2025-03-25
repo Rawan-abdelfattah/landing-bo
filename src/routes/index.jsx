@@ -13,7 +13,7 @@ const AppRoutes = () => {
   const [darkMode, setDarkMode] = useState(
     storedTheme ? storedTheme === "dark" : true
   );
-  const [loading, setLoading] = useState(true);
+  const [loading, setLoading] = useState(false);
 
   useEffect(() => {
     const root = document.documentElement;
@@ -27,52 +27,7 @@ const AppRoutes = () => {
       localStorage.setItem("theme", "light");
     }
   }, [darkMode]);
-
-  useEffect(() => {
-    const imageSources = [
-      "/dark-analysis-bg.png",
-      "/dark-bg.png",
-      "/dark-faq.png",
-      "/dark-icons.png",
-      "/dark-logo.png",
-      "/dark-pages-bg.png",
-      "/light-bg.png",
-      "/light-faq.png",
-      "/light-icons.png",
-      "/light-pages-bg.png",
-      "/profile1.png",
-      "/profile2.png",
-      "/profile3.png",
-      "/profile4.png",
-      "/profile5.png",
-      "/profile6.png",
-      "/profile7.png",
-      "/profile8.png",
-      "/hand.png",
-      "/users.png",
-      "/user.jpg",
-      "/user2.png",
-      "/logo.png",
-      "/quate-icon.svg",
-    ];
-
-    const preloadImages = async () => {
-      await Promise.all(
-        imageSources.map((src) => {
-          return new Promise((resolve) => {
-            const img = new Image();
-            img.src = src;
-            img.onload = resolve;
-            img.onerror = resolve;
-          });
-        })
-      );
-      setLoading(false);
-    };
-
-    preloadImages();
-  }, []);
-
+ 
   return (
     <Router>
       <div
