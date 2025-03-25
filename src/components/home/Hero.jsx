@@ -5,10 +5,10 @@ import TextScroll from "../TextScroll";
 import { Link } from "react-router-dom";
 
 export const Hero = ({ darkMode, setDarkMode }) => {
-  return (
+  return ( 
     <header
-      className={`relative bg-darkG ray border border-[#2c1662] overflow-hidden 
-  ${darkMode ? "bg-[url('/dark-bg.png')]" : "bg-[url('/light-bg.png')]"}  
+      className={`relative bg-darkG ray border  overflow-hidden 
+  ${darkMode ? "bg-[url('/dark-bg.png')] border-[#017CD4]" : "bg-[url('/light-bg.png')] border-[#2c1662]"}  
   bg-cover bg-center rounded-3xl mx-5 my-5 px-6 pt-6`}
     >
       <Navbar darkMode={darkMode} setDarkMode={setDarkMode} />
@@ -32,7 +32,7 @@ export const Hero = ({ darkMode, setDarkMode }) => {
         </div>
 
         <div className="relative xl:mt-30 z-10 flex flex-col items-center max-w-full order-last md:order-none">
-          <div className="z-20 transition-transform duration-500 ease-in-out hover:-translate-x-2 hover:-translate-y-1 hover:-rotate-50">
+          <div className="z-20 transition-all -transform duration-500 ease-in-out hover:-translate-x-2 hover:-translate-y-1 hover:-rotate-50">
             <img
               src="/hand.png"
               alt="Robot hand pointing"
@@ -48,7 +48,7 @@ export const Hero = ({ darkMode, setDarkMode }) => {
           </p>
           <Link
             to="https://user.boitr.com/"
-            className=" bg-[#2c1662] text-white hover:bg-[#2c136f] px-4 py-2 rounded-full text-sm font-bold inline-block transition"
+            className={` transition-all duration-500 ${darkMode ? 'bg-[#017CD4] hover:bg-[linear-gradient(90deg,rgba(56,155,233,0.5)_0%,rgba(177,63,188,0.5)_100%)]'  :'bg-[#2c1662] hover:bg-[#2c136f]'}  text-white   px-4 py-2 rounded-full text-sm font-bold inline-block transition-all`}
           >
             Create Your Boitr Now →
           </Link>{" "}

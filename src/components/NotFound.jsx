@@ -33,7 +33,7 @@ const NotFound = () => {
       <motion.div whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
         <Link
           to="/"
-          className="px-6 py-3 bg-gradient-to-r from-purple-500 to-pink-500 text-white font-semibold rounded-xl shadow-lg transition duration-300 hover:shadow-xl"
+          className="px-6 py-3 bg-gradient-to-r from-purple-500 to-pink-500 text-white font-semibold rounded-xl shadow-lg transition-all duration-500 hover:shadow-xl"
         >
           Return to Home
         </Link>

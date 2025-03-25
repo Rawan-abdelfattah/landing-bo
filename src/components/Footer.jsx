@@ -3,10 +3,10 @@ import { Link } from "react-router-dom";
 import TextScroll from "./TextScroll";
 
 export const Footer = ({ darkMode }) => {
-  return (
+  return ( 
     <footer
-      className={`border-[#2c1662] border relative overflow-hidden ${
-        darkMode ? "bg-[url('/dark-bg.png')]" : "bg-[url('/light-bg.png')]"
+      className={` border relative overflow-hidden ${
+        darkMode ? "bg-[url('/dark-bg.png')] border-[#017CD4] " : "bg-[url('/light-bg.png')] border-[#2c1662]"
       }  bg-cover bg-center  rounded-3xl mx-5 my-5 py-10 md:px-20 px-5`}
     >
       <div className=" lg:flex lg:flex-row max-w-screen-xl mx-auto md:px-20 px-5 lg:text-left lg:justify-between md:flex md:flex-col md:items-center md:justify-center md:text-center text-center  justify-between mb-3">
@@ -26,7 +26,7 @@ export const Footer = ({ darkMode }) => {
 
           <Link
             to="https://user.boitr.com/"
-            className="bg-[#2c1662] hover:bg-[#2c136f]  text-white px-4 py-2 rounded-full text-sm font-bold mt-2 inline-block"
+            className={`transition-all duration-500 ${darkMode ? 'bg-[#017CD4] hover:bg-[linear-gradient(90deg,rgba(56,155,233,0.5)_0%,rgba(177,63,188,0.5)_100%)]'  :'bg-[#2c1662] hover:bg-[#2c136f]'}  text-white px-4 py-2 rounded-full text-sm font-bold mt-2 inline-block`}
           >
             Get Started Now →
           </Link>
@@ -73,7 +73,7 @@ export const Footer = ({ darkMode }) => {
               />
               <a
                 href="#"
-                className=" w-full bg-[#2c1662] hover:bg-[#2c136f]  text-white px-4 py-2 rounded-full text-sm font-bold mt-2 inline-block"
+                className={`transition-all duration-500 w-full ${darkMode ? 'bg-[#017CD4] hover:bg-[linear-gradient(90deg,rgba(56,155,233,0.5)_0%,rgba(177,63,188,0.5)_100%)]'  :'bg-[#2c1662] hover:bg-[#2c136f]'}   text-white px-4 py-2 rounded-full text-sm font-bold mt-2 inline-block`}
               >
                 Subscribe →
               </a>

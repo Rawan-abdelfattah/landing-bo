@@ -38,8 +38,8 @@ export default function FAQSection({ darkMode }) {
         >
           03
         </h2>  
-        <h2 className="text-2xl md:text-3xl font-bold mb-6">FAQs</h2>
-        <div className="p-6 rounded-xl mb-6 flex justify-between items-center cursor-pointer transition-transform hover:scale-105 duration-500 bg-[linear-gradient(45deg,_rgba(250,173,79,0.5)_14.61%,_rgba(221,42,123,0.5)_39.38%,_rgba(149,55,176,0.5)_58.49%,_rgba(81,91,212,0.5)_85.39%)] hover:shadow-lg">
+        <h2 className="text-2xl md:text-4xl font-bold mb-6">FAQs</h2>
+        <div className="p-6 rounded-xl mb-6 flex justify-between items-center cursor-pointer transition-all -transform hover:scale-105 duration-500 bg-[linear-gradient(45deg,_rgba(250,173,79,0.5)_14.61%,_rgba(221,42,123,0.5)_39.38%,_rgba(149,55,176,0.5)_58.49%,_rgba(81,91,212,0.5)_85.39%)] hover:shadow-lg">
           <div>
             <h3 className="text-lg font-semibold">
               What Is Included In The Website Design And Development Package?
@@ -65,7 +65,7 @@ export default function FAQSection({ darkMode }) {
             <div className="flex justify-between items-center">
               <h3 className="text-lg font-semibold">{faq.question}</h3>
               <FaArrowUp
-                className={`text-xl transition-transform duration-300 ${
+                className={`text-xl transition-all -transform duration-500 ${
                   openIndex === index ? "rotate-90" : ""
                 }`}
               />

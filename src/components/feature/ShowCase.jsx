@@ -16,7 +16,7 @@ export const Showcase = ({ darkMode }) => {
           02
         </h2>
         <div className="md:flex justify-between font-bold mb-6 py-5">
-          <h2 className="text-2xl md:text-3xl ">
+          <h2 className="text-2xl md:text-4xl ">
               
             Your All-In-One Digital Showcase
           </h2>
@@ -28,7 +28,7 @@ export const Showcase = ({ darkMode }) => {
             </p>
             <Link
               to="/support"
-              className="bg-[#2c1662] hover:bg-[#2c136f]  text-white px-[20px] py-[10px] rounded-full text-sm font-bold inline-block transition duration-300"
+              className={`${darkMode ? 'bg-[#017CD4] hover:bg-[linear-gradient(90deg,rgba(56,155,233,0.5)_0%,rgba(177,63,188,0.5)_100%)]'  :'bg-[#2c1662] hover:bg-[#2c136f]'} text-white px-[20px] py-[10px] rounded-full text-sm font-bold inline-block transition-all duration-500`}
             >
               Contact Us Now →
             </Link>
@@ -38,11 +38,11 @@ export const Showcase = ({ darkMode }) => {
           {features.map((feature, index) => (
             <div
               key={index}
-              className={`text-center p-6 rounded-xl transition duration-300 `}
+              className={`text-center p-6 rounded-xl transition-all duration-500 `}
             >
               <div className="relative inline-block mb-4">
                 <div
-                  className="absolute inset-0 blur-xl opacity-100 transition duration-300 group-hover:opacity-50"
+                  className="absolute inset-0 blur-xl opacity-100 transition-all duration-500 group-hover:opacity-50"
                   style={{
                     background:
                       " linear-gradient(45deg, rgba(250, 173, 79, 0.8) 14.61%, rgba(221, 42, 123, 0.8) 39.38%, rgba(149, 55, 176, 0.8) 58.49%, rgba(81, 91, 212, 0.8) 85.39%)",

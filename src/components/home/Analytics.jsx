@@ -25,7 +25,7 @@ export const Analytics = ({ darkMode }) => {
             >
               03
             </p>
-            <h2 className="text-2xl md:text-3xl font-bold leading-tight mb-4">
+            <h2 className="text-2xl md:text-4xl font-bold leading-tight mb-4">
               Analyze Your Audience And <br /> Keep Your Followers Engaged
             </h2>
             <p className=" max-w-[520px] mb-6">
@@ -35,7 +35,7 @@ export const Analytics = ({ darkMode }) => {
             </p>
             <Link
               to="/feature"
-              className="text-white bg-[#2c1662] hover:bg-[#2c136f]   px-[20px] py-[10px] rounded-full text-sm font-bold inline-block transition-all duration-300 ease-in-out"
+              className={`text-white ${darkMode ? 'bg-[#017CD4] hover:bg-[linear-gradient(90deg,rgba(56,155,233,0.5)_0%,rgba(177,63,188,0.5)_100%)]'  :'bg-[#2c1662] hover:bg-[#2c136f]'}  px-[20px] py-[10px] rounded-full text-sm font-bold inline-block transition-all duration-500 ease-in-out`}
             >
               Discover Our Features →
             </Link>

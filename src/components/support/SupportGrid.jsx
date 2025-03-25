@@ -42,7 +42,7 @@ const SupportGrid = ({ darkMode }) => {
         >
           02
         </h2>
-        <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold mt-2">
+        <h1 className="text-2xl md:text-4xl lg:text-4xl font-bold mt-2">
           Your Boitr Journey Starts Here!
         </h1>
 
@@ -59,7 +59,7 @@ const SupportGrid = ({ darkMode }) => {
                     darkMode
                       ? "bg-[#232323]  hover:bg-gradient-to-r from-gray-700 to-gray-900"
                       : "bg-gray-200 hover:bg-gradient-to-r from-gray-100 to-gray-300"
-                  } p-4 rounded-xl shadow-md hover:shadow-xl transition-all duration-300 cursor-pointer`}
+                  } p-4 rounded-xl shadow-md hover:shadow-xl transition duration-500 cursor-pointer`}
                 >
                   <div className="w-10 h-10 text-white flex  rounded-xl  ">
                     <img src={item.icon} alt="icon" />

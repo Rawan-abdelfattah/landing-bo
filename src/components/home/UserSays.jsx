@@ -48,7 +48,7 @@ export const UserSays = ({ darkMode }) => {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: index * 0.2 }}
-            className={`relative p-6 rounded-xl shadow-lg transition duration-300 hover:-translate-y-2 hover:shadow-lg hover:shadow-black/30  ${
+            className={`relative p-6 rounded-xl shadow-lg transition-all duration-500 hover:-translate-y-2 hover:shadow-lg hover:shadow-black/30  ${
               darkMode
                 ? " text-white hover:bg-[#232323]"
                 : " text-black hover:bg-bg-gray-200"

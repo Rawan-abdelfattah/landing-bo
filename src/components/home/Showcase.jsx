@@ -38,7 +38,7 @@ export const Showcase = ({ darkMode }) => {
           02
         </h2>
         <div className="md:flex justify-between font-bold mb-6 py-5">
-          <h2 className="max-w-[550px] text-2xl md:text-3xl ">
+          <h2 className="max-w-[550px] text-2xl md:text-4xl ">
             Your All-In-One Digital Showcase
           </h2>
           <div className="mt-6 md:mt-0 max-w-[482px] ">
@@ -49,7 +49,7 @@ export const Showcase = ({ darkMode }) => {
             </p>
             <Link
               to="/support"
-              className="bg-[#2c1662] hover:bg-[#2c136f]  text-white px-[20px] py-[10px] rounded-full text-sm font-bold inline-block transition duration-300"
+              className={`${darkMode ? 'bg-[#017CD4] hover:bg-[linear-gradient(90deg,rgba(56,155,233,0.5)_0%,rgba(177,63,188,0.5)_100%)]'  :'bg-[#2c1662] hover:bg-[#2c136f]'}  text-white px-[20px] py-[10px] rounded-full text-sm font-bold inline-block transition-all duration-500`}
             >
               Contact Us Now →
             </Link>
@@ -59,7 +59,7 @@ export const Showcase = ({ darkMode }) => {
           {features.map((feature, index) => (
             <div
               key={index}
-              className={`  p-6 rounded-xl transition duration-300 `}
+              className={`  p-6 rounded-xl transition-all duration-500 `}
             >
               <div className="relative inline-block mb-4">
                 {/* Glow Effect */}
@@ -86,7 +86,7 @@ export const Showcase = ({ darkMode }) => {
                 <div className="relative w-full overflow-hidden">
                   <img
                     src={src}
-                    className="w-full h-full object-cover transform transition-transform duration-500 group-hover:-translate-y-1/3"
+                    className="w-full h-full object-cover transform transition-all -transform duration-500 group-hover:-translate-y-1/3"
                     alt="Profile"
                   />
                 </div>

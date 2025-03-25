@@ -40,15 +40,15 @@ const Pricing = ({ darkMode, setDarkMode }) => {
       <AnimatedSection>
         <Header darkMode={darkMode} setDarkMode={setDarkMode} />
       </AnimatedSection>
-      {/* <AnimatedSection>
+       <AnimatedSection>
         <Plans darkMode={darkMode}   />
       </AnimatedSection> 
-      <AnimatedSection>
+      {/* <AnimatedSection>
         <SocialMediaIcons darkMode={darkMode}   />
       </AnimatedSection>
       <AnimatedSection>
         <FAQ darkMode={darkMode}   />
-      </AnimatedSection>  */}
+      </AnimatedSection>    */}
     </div>
 
       <Footer darkMode={darkMode} />

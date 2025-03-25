@@ -52,7 +52,7 @@ export default function FeatureGrid({ darkMode }) {
             01
           </h2>
           <div className="md:flex justify-between font-bold mb-6 py-5">
-            <h2 className="text-2xl md:text-3xl ">
+            <h2 className="text-2xl md:text-4xl ">
               Turn Your Passion into Profit with These Our Features
             </h2>
             <h4>

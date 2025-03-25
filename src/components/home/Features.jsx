@@ -1,4 +1,4 @@
-import React, { useState } from "react"; 
+import React, { useState } from "react";
 import { FaArrowUpLong } from "react-icons/fa6";
 import { Link } from "react-router-dom";
 
@@ -21,7 +21,7 @@ const features = [
 
 export const Features = ({ darkMode }) => {
   console.log(darkMode);
-  
+
   const [hoveredFeature, setHoveredFeature] = useState(null);
   const [hoveredImg, setHoveredImg] = useState(false);
 
@@ -36,8 +36,7 @@ export const Features = ({ darkMode }) => {
           01
         </h2>
         <div className=" md:flex justify-between font-bold mb-6 py-5">
-          <h2 className="max-w-[588px] text-2xl md:text-3xl pr-5">
-              
+          <h2 className="max-w-[588px] text-2xl md:text-4xl pr-5">
             Powerful Features To Elevate Your Digital Presence
           </h2>
           <div className="  space-y-4">
@@ -48,7 +47,11 @@ export const Features = ({ darkMode }) => {
 
             <Link
               to="/feature"
-              className="bg-[#2c1662] hover:bg-[#2c136f] text-white px-4 py-2 rounded-full text-sm font-bold inline-block transition"
+              className={`${
+                darkMode
+                  ? "bg-[#017CD4] hover:bg-[linear-gradient(90deg,rgba(56,155,233,0.5)_0%,rgba(177,63,188,0.5)_100%)]"
+                  : "bg-[#2c1662] hover:bg-[#2c136f]"
+              }  text-white px-4 py-2 rounded-full text-sm font-bold inline-block transition-all duration-500`}
             >
               Discover Our Features →
             </Link>
@@ -60,7 +63,9 @@ export const Features = ({ darkMode }) => {
           <div
             key={feature.id}
             className={`relative border-b border-gray-700 p-4 py-10 my-10 cursor-pointer transition-all duration-700
-       hover:text-white hover:border-[#2c1662] hover:rounded-2xl hover:border ease-in-out bg-transparent bg-cover bg-center
+       hover:text-white ${
+         darkMode ? "  hover:border-[#0163A8]" : " hover:border-[#2c136f]"
+       }  hover:rounded-2xl hover:border ease-in-out bg-transparent bg-cover bg-center
        ${
          hoveredFeature === feature.id
            ? "bg-[url('/dark-faq.png')]"
@@ -82,14 +87,14 @@ export const Features = ({ darkMode }) => {
                 {feature.title}
               </h1>
               <p
-                className={`w-[400px] text-sm leading-relaxed max-w-lg transition-opacity duration-500 ease-in-out  ${
+                className={`w-[400px] text-sm leading-relaxed max-w-lg transition-all -opacity duration-500 ease-in-out  ${
                   hoveredFeature === feature.id ? "opacity-100" : "opacity-0"
                 }`}
               >
                 {feature.description}
               </p>
               <FaArrowUpLong
-                className={`transition-transform duration-500 ease-in-out ${
+                className={`transition-all -transform duration-500 ease-in-out ${
                   hoveredFeature === feature.id ? "rotate-90" : ""
                 }`}
               />
@@ -97,7 +102,7 @@ export const Features = ({ darkMode }) => {
                 <img
                   src={feature.img}
                   alt={feature.title}
-                  className={`hidden md:block w-[18%] rounded-xl shadow-lg transition-transform duration-700 ease-in-out ${
+                  className={`hidden md:block w-[18%] rounded-xl shadow-lg transition-all -transform duration-700 ease-in-out ${
                     hoveredFeature === feature.id ? "opacity-100" : "opacity-0"
                   }`}
                   onMouseEnter={() => setHoveredImg(true)}

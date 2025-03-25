@@ -38,14 +38,14 @@ const FAQSection = () => {
       <div className="max-w-4xl mx-auto">
         {/* Section Title */}
         <h2 className="text-outline-light-h1 mb-2">04</h2>
-        <h2 className="text-2xl md:text-3xl font-bold mb-8">FAQs</h2>
+        <h2 className="text-2xl md:text-4xl font-bold mb-8">FAQs</h2>
 
         {/* FAQ List */}
         <div className="space-y-4">
           {faqs.map((faq, index) => (
             <div
               key={index}
-              className={`p-5 rounded-xl transition-all duration-300 border cursor-pointer ${
+              className={`p-5 rounded-xl transition-all duration-500 border cursor-pointer ${
                 openIndex === index
                   ? "border-none bg-gradient-to-r from-blue-500 to-pink-500 text-white"
                   : "border-gray-700 hover:border-gray-500"

@@ -9,7 +9,7 @@ export const Navbar = ({ darkMode, setDarkMode }) => {
     <nav
       className={`${
         darkMode ? "bg-[rgba(0,0,0,0.4)]" : "bg-white"
-      } px-6 py-4 transition md:rounded-full rounded-xl`}
+      } px-6 py-4 transition-all duration-500 md:rounded-full rounded-xl`}
     >
       <div className="max-w-screen-xl mx-auto lg:md:px-20 px-5  flex items-center justify-between">
         <Link to="/" className="text-2xl font-bold">
@@ -39,7 +39,7 @@ export const Navbar = ({ darkMode, setDarkMode }) => {
         <div className="flex items-center gap-3">
           <button
             onClick={() => setDarkMode(!darkMode)}
-            className="p-3 rounded-full text-xl bg-transparent border border-gray-400 hover:bg-gray-600 transition"
+            className="p-3 rounded-full text-xl bg-transparent border border-gray-400 hover:bg-gray-600 transition-all duration-500"
           >
             {darkMode ? (
               <FaSun className="text-white" />
@@ -49,7 +49,7 @@ export const Navbar = ({ darkMode, setDarkMode }) => {
           </button>
           <Link
             to="https://user.boitr.com/"
-            className="text-white bg-[#2c1662] hover:bg-[#2c136f] px-4 py-2 md:block hidden rounded-full text-sm font-bold transition"
+            className={`text-white ${darkMode ? 'bg-[#017CD4] hover:bg-[linear-gradient(90deg,rgba(56,155,233,0.5)_0%,rgba(177,63,188,0.5)_100%)]'  :'bg-[#2c1662] hover:bg-[#2c136f]'}  px-4 py-2 md:block hidden rounded-full text-sm font-bold transition-all duration-500`}
           >
             Get Started Now →
           </Link>
@@ -106,7 +106,7 @@ export const Navbar = ({ darkMode, setDarkMode }) => {
           </Link>
           <Link
             to="https://user.boitr.com/"
-            className="mt-3 inline-block text-white bg-[#2c1662] hover:bg-[#2c136f] px-4 py-2 rounded-full text-sm font-bold transition"
+            className={`mt-3 inline-block text-white ${darkMode ? 'bg-[#017CD4] hover:bg-[linear-gradient(90deg,rgba(56,155,233,0.5)_0%,rgba(177,63,188,0.5)_100%)]'  :'bg-[#2c1662] hover:bg-[#2c136f]'}  px-4 py-2 rounded-full text-sm font-bold transition-all duration-500`}
           >
             Get Started Now →
           </Link>
