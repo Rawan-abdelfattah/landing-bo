@@ -40,7 +40,7 @@ export const Analytics = ({ darkMode }) => {
               Discover Our Features →
             </Link>
              <img src="/social_media.gif"   alt="icons"
-              className="pt-5 max-w-[580px] m-auto h-full" />
+              className="pt-5 min-w-[580px] m-auto h-full" />
 
           </div>
           <Phone />
