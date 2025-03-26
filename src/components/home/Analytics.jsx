@@ -35,13 +35,19 @@ export const Analytics = ({ darkMode }) => {
             </p>
             <Link
               to="/feature"
-              className={`text-white ${darkMode ? 'bg-[#017CD4] hover:bg-[linear-gradient(90deg,rgba(56,155,233,0.5)_0%,rgba(177,63,188,0.5)_100%)]'  :'bg-[#2c1662] hover:bg-[#2c136f]'}  px-[20px] py-[10px] rounded-full text-sm font-bold inline-block transition-all duration-500 ease-in-out`}
+              className={`text-white ${
+                darkMode
+                  ? "bg-[#017CD4] hover:bg-[linear-gradient(90deg,rgba(56,155,233,0.5)_0%,rgba(177,63,188,0.5)_100%)]"
+                  : "bg-[#2c1662] hover:bg-[#2c136f]"
+              }  px-[20px] py-[10px] rounded-full text-sm font-bold inline-block transition-all duration-500 ease-in-out`}
             >
               Discover Our Features →
             </Link>
-             <img src="/social_media.gif"   alt="icons"
-              className="pt-5 md:min-w-[580px] w-full m-auto h-full" />
-
+            <img
+              src="/social_media.gif"
+              alt="icons"
+              className="pt-5 md:min-w-[580px] w-full m-auto h-full"
+            />
           </div>
           <Phone />
         </div>

@@ -16,8 +16,8 @@ export const Phone = () => {
         circles: [<FaFacebook />, <IoLogoInstagram />, <CiTwitter />],
         animationDelay: "150ms",
         bg:'/profile11.png',
-        cardImageBack: "/hat.png",
-        cardImageFront: "/cd.png",
+        cardImageBack: "/design2.png",
+        cardImageFront: "/design.png",
         className:"text-gray-900"
   
       },
@@ -29,8 +29,8 @@ export const Phone = () => {
         circles: [<FaLinkedin />, <IoLogoWhatsapp />, <RiDiscordFill />],
         animationDelay: "200ms",
         bg:'/profile22.png',
-        cardImageBack: "/cd.png",
-        cardImageFront: "/hat.png",
+        cardImageBack: "/interial1.png",
+        cardImageFront: "/interial2.png",
         className:"text-gray-900"
       },
       {
@@ -41,8 +41,8 @@ export const Phone = () => {
         circles: [<FaSnapchatGhost />, <IoLogoTiktok />, <CiYoutube />],
         bg:'/profile33.png',
         animationDelay: "250ms",
-        cardImageBack: "/hat.png",
-        cardImageFront: "/cd.png",
+        cardImageBack: "/fitness2.png",
+        cardImageFront: "/fitness.png",
         className:"text-white"
   
       },

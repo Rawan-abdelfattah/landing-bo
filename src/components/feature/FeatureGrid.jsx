@@ -6,7 +6,7 @@ export default function FeatureGrid({ darkMode }) {
       title: "Unified Link-In-Bio Platform",
       description:
         "Links, content, and products — everything your audience needs in one sleek hub.",
-      image: "/1.mp4",
+      image: "/1.gif",
     },
     {
       title: "Custom Domain",
