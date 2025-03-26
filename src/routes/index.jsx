@@ -31,7 +31,7 @@ const AppRoutes = () => {
   return (
     <Router>
       <div
-        className={`min-h-screen transition-colors duration-300 ${
+        className={`min-h-screen transition-colors duration-500 ${
           darkMode ? "bg-black text-white" : "bg-white text-gray-900"
         }`}
       >

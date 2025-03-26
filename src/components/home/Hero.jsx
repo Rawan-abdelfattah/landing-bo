@@ -7,7 +7,11 @@ import { Link } from "react-router-dom";
 export const Hero = ({ darkMode, setDarkMode }) => {
   return (
     <header
-      className={`relative ${darkMode ? 'bg-gradient  border-[#017CD4] ': 'bg-gradient-light border-[#2c1662]'}   border  overflow-hidden rounded-3xl mx-5 my-5 px-6 pt-6`}
+      className={`relative ${
+        darkMode
+          ? "bg-gradient  border-[#017CD4] "
+          : "bg-gradient-light border-[#2c1662]"
+      }   border  overflow-hidden rounded-3xl mx-5 my-5 px-6 pt-6`}
     >
       <div className="content">
         <Navbar darkMode={darkMode} setDarkMode={setDarkMode} />
@@ -30,12 +34,13 @@ export const Hero = ({ darkMode, setDarkMode }) => {
             </div>
           </div>
 
-          <div className="relative xl:mt-30 z-10 flex flex-col items-center max-w-full order-last md:order-none">
-            <div className="z-20 transition-all -transform duration-500 ease-in-out hover:-translate-x-2 hover:-translate-y-1 hover:-rotate-50">
+          <div className="relative xl:mt-30 z-10 flex flex-col items-center max-w-full order-last md:order-none overflow-visible">
+            <div className="z-20 transition-all transform duration-1000 ease-in-out hover:translate-x-2 hover:translate-y-1 hover:rotate-[-50deg] origin-bottom">
               <img
                 src="/hand.png"
                 alt="Robot hand pointing"
-                className=" block xl:block md:hidden w-[300px] sm:w-[400px] md:w-[600px]"
+                className="block xl:block md:hidden w-[300px] sm:w-[400px] md:w-[600px] relative"
+                style={{ bottom: "-30px" }}
               />
             </div>
           </div>
@@ -43,7 +48,9 @@ export const Hero = ({ darkMode, setDarkMode }) => {
           <div className=" max-w-[408px]   space-y-4 md:mb-25 lg:mb-25 mb-5">
             <p>
               Take control of your digital presence with Boitr — the ultimate
-              platform to showcase everything that makes you, you.
+              platform to showcase everything that makes you, you. Bring all
+              your social media, content, and links together in one beautiful,
+              customizable page.
             </p>
             <Link
               to="https://user.boitr.com/"
@@ -60,16 +67,11 @@ export const Hero = ({ darkMode, setDarkMode }) => {
           </div>
         </div>
 
-        <div className="absolute w-full text-center  text-2xl font-bold">
-          One Link To Rule Them All – Connect, Share.
-        </div>
-        <div className="absolute z-0w-full">
-          <TextScroll
-            className="absolute  "
-            darkMode={darkMode}
-            text="One Link To Rule Them All – Connect, Share."
-          />
-        </div>
+        <TextScroll
+          className="absolute"
+          darkMode={darkMode}
+          text="One Link To Rule Them All – Connect, Share."
+        />
       </div>
     </header>
   );

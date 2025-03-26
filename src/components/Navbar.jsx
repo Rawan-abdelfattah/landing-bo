@@ -9,9 +9,9 @@ export const Navbar = ({ darkMode, setDarkMode }) => {
     <nav
       className={`${
         darkMode ? "bg-[rgba(0,0,0,0.4)]" : "bg-white"
-      } px-6 py-4 transition-all duration-500 md:rounded-full rounded-xl`}
+      } px-6 py-4 md:w-[91%] m-auto transition-all duration-500 md:rounded-full rounded-xl`}
     >
-      <div className="max-w-screen-xl mx-auto lg:md:px-20 px-5  flex items-center justify-between">
+      <div className="max-w-screen-xl mx-auto lg:md:px-15 px-5  flex items-center justify-between">
         <Link to="/" className="text-2xl font-bold">
           <img
             src={darkMode ? "/logo.png" : "/dark-logo.png"}
@@ -19,7 +19,7 @@ export const Navbar = ({ darkMode, setDarkMode }) => {
             alt="logo"
           />
         </Link>
-        <div className="flex items-center gap-6">
+        <div className="flex items-center gap-6 pl-15  ">
           <div className="hidden sm:flex space-x-6 ">
             <Link to="/feature">
               Features

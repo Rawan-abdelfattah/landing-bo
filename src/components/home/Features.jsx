@@ -8,7 +8,7 @@ const features = [
     title: "AUTO-SYNC",
     description:
       "Keep your content always fresh and up-to-date without the extra effort. Boitr automatically syncs with your social media and platforms so your audience always sees the latest.",
-    img: "1.png",
+    img: "1.gif",
   },
   {
     id: "02",
@@ -16,6 +16,34 @@ const features = [
     description:
       "Easily manage and categorize your content by using folders, making it simpler to organize your links.",
     img: "2.png",
+  },
+  {
+    id: "03",
+    title: "Publish Blog Posts",
+    description:
+      "Easily manage and categorize your content by using folders, making it simpler to organize your links.",
+    img: "3.png",
+  },
+  {
+    id: "04",
+    title: "Ditch the Boring Links",
+    description:
+      "Easily manage and categorize your content by using folders, making it simpler to organize your links.",
+    img: "4.png",
+  },
+  {
+    id: "05",
+    title: "Start Building Your Email List",
+    description:
+      "Easily manage and categorize your content by using folders, making it simpler to organize your links.",
+    img: "5.png",
+  },
+  {
+    id: "06",
+    title: "Make It Yours with a Custom Domain",
+    description:
+      "Easily manage and categorize your content by using folders, making it simpler to organize your links.",
+    img: "6.png",
   },
 ];
 
@@ -26,7 +54,7 @@ export const Features = ({ darkMode }) => {
   const [hoveredImg, setHoveredImg] = useState(false);
 
   return (
-    <section className="max-w-screen-xl mx-auto md:px-20 px-5     relative">
+    <section className="max-w-screen-xl mx-auto md:px-20 px-5 py-20 relative">
       <div className="   text-center lg:text-left">
         <h2
           className={`${

@@ -29,7 +29,7 @@ const features = [
 export const Showcase = ({ darkMode }) => {
   return (
     <section className={` ${darkMode ? "bg-[#161616]" : ""}`}>
-      <div className=" max-w-screen-xl mx-auto md:px-20 px-5     pt-10 text-center lg:text-left">
+      <div className=" max-w-screen-xl mx-auto md:px-20 px-5   pt-20 text-center lg:text-left">
         <h2
           className={`${
             darkMode ? "text-outline-dark-h1" : "text-outline-light-h1"

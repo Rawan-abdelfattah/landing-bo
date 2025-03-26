@@ -25,7 +25,7 @@ export const Analytics = ({ darkMode }) => {
             >
               03
             </p>
-            <h2 className="text-2xl md:text-4xl font-bold leading-tight mb-4">
+            <h2 className="text-2xl md:text-4xl min-w-[560px] font-bold leading-tight mb-4">
               Analyze Your Audience And <br /> Keep Your Followers Engaged
             </h2>
             <p className=" max-w-[520px] mb-6">
@@ -39,11 +39,9 @@ export const Analytics = ({ darkMode }) => {
             >
               Discover Our Features →
             </Link>
-            <img
-              src={darkMode ? "/dark-icons.png" : "/light-icons.png"}
-              alt="icons"
-              className="pt-15 max-w-[400px]"
-            />
+             <img src="/social_media.gif"   alt="icons"
+              className="pt-5 max-w-[400px] h-full" />
+
           </div>
           <Phone />
         </div>
