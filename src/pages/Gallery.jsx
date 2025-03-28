@@ -2,7 +2,7 @@ import React, { useRef } from "react";
 import { motion, useInView } from "framer-motion";
 import { Footer } from "../components/Footer";
 import { Header } from "../components/gallery/Header";
-import GalleryGridSection from "../components/gallery/GalleryGrid";
+import GalleryGrid from "../components/gallery/GalleryGrid";
 import { Helmet } from "react-helmet";
 
 const fadeInUp = {
@@ -30,17 +30,16 @@ const AnimatedSection = ({ children }) => {
 const Gallery = ({ darkMode, setDarkMode }) => {
   return (
     <div className="flex flex-col min-h-screen">
-      <Helmet> 
+      <Helmet>
         <title>Made With Boitr | Best Bio Link Examples </title>
       </Helmet>
       <div className="flex-grow">
-
-      <AnimatedSection>
-        <Header darkMode={darkMode} setDarkMode={setDarkMode} />
-      </AnimatedSection>
-      <AnimatedSection>
-        <GalleryGridSection darkMode={darkMode} />
-      </AnimatedSection>
+        <AnimatedSection>
+          <Header darkMode={darkMode} setDarkMode={setDarkMode} />
+        </AnimatedSection>
+        <AnimatedSection>
+          <GalleryGrid darkMode={darkMode} />
+        </AnimatedSection>
       </div>
 
       <Footer darkMode={darkMode} />

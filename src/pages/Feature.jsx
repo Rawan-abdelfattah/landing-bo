@@ -4,9 +4,9 @@ import { Footer } from "../components/Footer";
 import { Header } from "../components/feature/Header";
 import FeatureGrid from "../components/feature/FeatureGrid";
 import FAQ from "../components/feature/FAQ";
-import { Showcase } from "../components/feature/ShowCase";
-import { UserSays } from "../components/feature/UserSays";
 import { Helmet } from "react-helmet";
+import { UserSays } from "../components/UserSays";
+import { Showcase } from "../components/Showcase";
 
 const fadeInUp = {
   hidden: { opacity: 0, y: 40 },
@@ -31,32 +31,30 @@ const AnimatedSection = ({ children }) => {
 };
 
 const Feature = ({ darkMode, setDarkMode }) => {
-  
   return (
     <div className="flex flex-col min-h-screen">
-      <Helmet> 
+      <Helmet>
         <title>Link In Bio Tool Features | Boitr </title>
       </Helmet>
       <div className="flex-grow">
+        <AnimatedSection>
+          <Header darkMode={darkMode} setDarkMode={setDarkMode} />
+        </AnimatedSection>
 
-      <AnimatedSection>
-        <Header darkMode={darkMode} setDarkMode={setDarkMode} />
-      </AnimatedSection>
+        <AnimatedSection>
+          <FeatureGrid darkMode={darkMode} />
+        </AnimatedSection>
 
-      <AnimatedSection>
-        <FeatureGrid darkMode={darkMode} />
-      </AnimatedSection>
+        <AnimatedSection>
+          <Showcase darkMode={darkMode} setDarkMode={setDarkMode} />
+        </AnimatedSection>
+        <AnimatedSection>
+          <FAQ darkMode={darkMode} />
+        </AnimatedSection>
 
-      <AnimatedSection>
-        <Showcase darkMode={darkMode} setDarkMode={setDarkMode} />
-      </AnimatedSection>
-      <AnimatedSection>
-        <FAQ darkMode={darkMode} />
-      </AnimatedSection>
-
-      <AnimatedSection>
-        <UserSays darkMode={darkMode} />
-      </AnimatedSection>
+        <AnimatedSection>
+          <UserSays darkMode={darkMode} />
+        </AnimatedSection>
       </div>
 
       <Footer darkMode={darkMode} />

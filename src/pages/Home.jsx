@@ -2,11 +2,11 @@ import React, { useRef } from "react";
 import { motion, useInView } from "framer-motion";
 import { Hero } from "../components/home/Hero";
 import { Features } from "../components/home/Features";
-import { Showcase } from "../components/home/Showcase";
+import { Showcase } from "../components/Showcase";
 import { Analytics } from "../components/home/Analytics";
 import { Footer } from "../components/Footer";
-import { UserSays } from "../components/home/UserSays";
 import { Helmet } from "react-helmet";
+import { UserSays } from "../components/UserSays";
 
 const fadeInUp = {
   hidden: { opacity: 0, y: 40 },
@@ -33,31 +33,30 @@ const AnimatedSection = ({ children }) => {
 const Home = ({ darkMode, setDarkMode }) => {
   return (
     <div className="flex flex-col min-h-screen">
-      <Helmet> 
-        <title> 
+      <Helmet>
+        <title>
           Boitr | A Single Page For Your Links | Linktree + Gumroad Alternative{" "}
         </title>
       </Helmet>
       <div className="flex-grow">
+        <AnimatedSection>
+          <Hero darkMode={darkMode} setDarkMode={setDarkMode} />
+        </AnimatedSection>
 
-      <AnimatedSection>
-        <Hero darkMode={darkMode} setDarkMode={setDarkMode} />
-      </AnimatedSection>
+        <AnimatedSection>
+          <Features darkMode={darkMode} />
+        </AnimatedSection>
 
-      <AnimatedSection>
-        <Features darkMode={darkMode} />
-      </AnimatedSection>
+        <AnimatedSection>
+          <Showcase darkMode={darkMode} />
+        </AnimatedSection>
+        <AnimatedSection>
+          <Analytics darkMode={darkMode} />
+        </AnimatedSection>
 
-      <AnimatedSection>
-        <Showcase darkMode={darkMode} />
-      </AnimatedSection>
-      <AnimatedSection>
-        <Analytics darkMode={darkMode} />
-      </AnimatedSection>
-
-      <AnimatedSection>
-        <UserSays darkMode={darkMode} />
-      </AnimatedSection>
+        <AnimatedSection>
+          <UserSays darkMode={darkMode} />
+        </AnimatedSection>
       </div>
 
       <Footer darkMode={darkMode} />

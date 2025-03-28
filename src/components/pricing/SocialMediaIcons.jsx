@@ -22,9 +22,9 @@ const SocialMediaIcons = ({ darkMode }) => {
           Create Your Page Now →
         </button>
         <img
-          src={darkMode ? "/dark-icons.png" : "/light-icons.png"}
+          src={  "social_media.gif"}
           alt="icons"
-          className="max-w-[500px] m-auto pt-15"
+          className="max-w-[600px] m-auto pr-11 pt-15"
         />  
       </div>
     </section>

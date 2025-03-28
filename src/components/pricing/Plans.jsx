@@ -56,8 +56,7 @@ const plans = [
 
 const Plans = ({ darkMode }) => {
   return (
-    <section className="py-16 px-6 ">
-      {/* Header Section */}
+    <section className="py-16 px-6 "> 
       <div className="max-w-6xl mx-auto text-center lg:text-left">
         <h2
           className={`${
@@ -86,13 +85,11 @@ const Plans = ({ darkMode }) => {
         <p>Free Plan</p>
         <h2 className="font-bold text-2xl">$0 / Forever</h2>
         <p>Perfect for individuals exploring their digital presence.</p>
-
-        {/* Expandable Content */}
+ 
         <div
-          className="max-h-0 overflow-hidden transition-all duration-500 ease-in-out 
+          className="max-h-0 overflow-hidden transition-all duration-1000 ease-in-out 
       group-hover:max-h-60 group-hover:py-3"
-        >
-          {/* Two Column Layout */}
+        > 
           <div className="grid grid-cols-2 gap-4">
             <ul className="space-y-1">
               <li className="flex gap-2">
@@ -154,7 +151,7 @@ const Plans = ({ darkMode }) => {
             </div>
 
             <div className="p-4  text-center">
-              <button className={`w-full ${darkMode ? 'bg-[#017CD4] hover:bg-[linear-gradient(90deg,rgba(56,155,233,0.5)_0%,rgba(177,63,188,0.5)_100%)]'  :'bg-[#2c1662] hover:bg-[#2c136f]'}  text-white font-semibold py-2 rounded-full transition-all duration-500`}>
+              <button className={`w-full transition duration-300 ease-in-out  ${darkMode ? 'bg-[#017CD4] hover:bg-[linear-gradient(90deg,rgba(56,155,233,0.5)_0%,rgba(177,63,188,0.5)_100%)]'  :'bg-[#2c1662] hover:bg-[#2c136f]'}  text-white font-semibold py-2 rounded-full transition-all duration-500`}>
                 Get Started Now →
               </button>
             </div>

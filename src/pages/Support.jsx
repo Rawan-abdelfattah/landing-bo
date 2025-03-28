@@ -31,7 +31,7 @@ const AnimatedSection = ({ children }) => {
 const Support = ({ darkMode, setDarkMode }) => {
   return (
     <div className="flex flex-col min-h-screen">
-      <Helmet> 
+      <Helmet>
         <title>Boitr Support & Help Centre</title>
       </Helmet>
 
@@ -53,6 +53,5 @@ const Support = ({ darkMode, setDarkMode }) => {
     </div>
   );
 };
-
 
 export default Support;

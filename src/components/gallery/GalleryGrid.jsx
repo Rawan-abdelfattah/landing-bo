@@ -33,7 +33,7 @@ const GalleryGridCard = ({ name, role, profileImg, mainImg, darkMode }) => {
   );
 };
 
-const GalleryGridSection = ({ darkMode }) => {
+const GalleryGrid = ({ darkMode }) => {
   const profiles = [
     {
       name: "Emma Clarke",
@@ -157,4 +157,4 @@ const GalleryGridSection = ({ darkMode }) => {
   );
 };
 
-export default GalleryGridSection;
+export default GalleryGrid;
