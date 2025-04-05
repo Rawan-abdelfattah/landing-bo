@@ -7,7 +7,7 @@ export const Navbar = ({ darkMode, setDarkMode }) => {
 
   return (
     <nav
-      className={`${darkMode ? "bg-[rgba(0,0,0,0.4)]" : "bg-white"} rounded-2xl md:rounded-full  py-4 md:w-[95%] m-auto transition-all duration-500 `}
+      className={`${darkMode ? "bg-[rgba(0,0,0,0.4)]" : "bg-white"} rounded-[45px]    py-4 md:w-[95%] m-auto transition-all duration-500 `}
     >
       <div className="mx-auto lg:md:px-[40px] px-5 flex items-center justify-between">
         <Link to="/" className="text-2xl font-bold">
