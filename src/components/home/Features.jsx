@@ -61,7 +61,7 @@ export const Features = ({ darkMode }) => {
           01
         </h2>
         <div className=" md:flex justify-between font-bold mb-6 py-5">
-          <h2 className="max-w-[588px]  text-[36px] leading-[50px] md:text-[38px] pr-5">
+          <h2 className="max-w-[588px]  text-[36px] leading-[50px] md:text-[38px] font-[700] pr-5">
             Powerful Features To Elevate Your Digital Presence
           </h2>
           <div className="  space-y-4">
@@ -74,7 +74,7 @@ export const Features = ({ darkMode }) => {
               to="/feature"
               className={`${
                 darkMode
-                  ? "bg-[#017CD4] hover:bg-[linear-gradient(90deg,rgba(56,155,233,0.5)_0%,rgba(177,63,188,0.5)_100%)]"
+                  ? "bg-[#017CD4] hover:bg-[#017CD4] hover:bg-[linear-gradient(90deg,_#389BE9_0%,_#B13FBC_100%)]"
                   : "bg-[#2c1662] hover:bg-[#2c136f]"
               }  text-white px-4 py-2 rounded-full text-sm font-bold  inline-flex  items-center gap-2 transition-all duration-500`}
             >

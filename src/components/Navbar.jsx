@@ -8,10 +8,12 @@ export const Navbar = ({ darkMode, setDarkMode }) => {
 
   return (
     <nav
-      className={`${darkMode ? "bg-[rgba(0,0,0,0.4)]" : "bg-white"} rounded-[45px]    py-4 md:w-[95%] m-auto transition-all duration-500 `}
+      className={`${
+        darkMode ? "bg-[rgba(0,0,0,0.4)]" : "bg-white"
+      } rounded-[45px]    py-4 md:w-[95%] m-auto transition-all duration-500 `}
     >
       <div className="mx-auto lg:md:px-[40px] px-5 flex items-center justify-between">
-        <Link to="/" className="text-2xl font-bold">
+        <Link to="/">
           <img
             src={darkMode ? "/logo.png" : "/dark-logo.png"}
             className="w-[100px]"
@@ -19,7 +21,7 @@ export const Navbar = ({ darkMode, setDarkMode }) => {
           />
         </Link>
         <div className="flex items-center gap-6 pl-15">
-          <div className="hidden lg:flex space-x-6">
+          <div className="hidden lg:flex text-[18px] space-x-6">
             <Link to="/feature">Features</Link>
             <Link to="/pricing">Pricing</Link>
             <Link to="/gallery">Gallery</Link>
@@ -52,18 +54,18 @@ export const Navbar = ({ darkMode, setDarkMode }) => {
           </button>
 
           <Link
-  to="https://user.boitr.com/"
-  target="_blank"
-  rel="noopener noreferrer"
-  className={`text-white lg:flex items-center gap-2 hidden  ${
-    darkMode
-      ? "bg-[#017CD4] hover:bg-[linear-gradient(90deg,rgba(56,155,233,0.5)_0%,rgba(177,63,188,0.5)_100%)]"
-      : "bg-[#2c1662] hover:bg-[#2c136f]"
-  } px-4 py-2 rounded-full text-sm font-bold transition-all duration-500`}
->
-  Get Started Now
-  <BsArrowUpRight   />
-</Link>
+            to="https://user.boitr.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className={`text-white lg:flex items-center gap-2 hidden  ${
+              darkMode
+                ? "bg-[#017CD4] hover:bg-[#017CD4] hover:bg-[linear-gradient(90deg,_#389BE9_0%,_#B13FBC_100%)]"
+                : "bg-[#2c1662] hover:bg-[#2c136f]"
+            } px-4 py-2 rounded-full text-[16px] font-bold transition-all duration-500`}
+          >
+            Get Started Now
+            <BsArrowUpRight />
+          </Link>
           <button
             className="lg:hidden p-2 focus:outline-none"
             onClick={() => setMenuOpen(!menuOpen)}
@@ -102,21 +104,20 @@ export const Navbar = ({ darkMode, setDarkMode }) => {
       </div>
 
       {menuOpen && (
-        <div className="lg:hidden mt-3 flex flex-col space-y-2 text-center py-4">
+        <div className="lg:hidden mt-3 flex flex-col space-y-2 text-center  text-[18px]  py-4">
           <Link to="/feature">Features</Link>
           <Link to="/pricing">Pricing</Link>
           <Link to="/gallery">Gallery</Link>
           <Link to="/support">Support</Link>
           <Link
             to="https://user.boitr.com/"
-            className={`mt-3 mx-2 flex justify-center items-center gap-2 text-white ${
+            className={`mt-3 mx-2 inline-flex justify-center items-center gap-2 text-white ${
               darkMode
-                ? "bg-[#017CD4] hover:bg-[linear-gradient(90deg,rgba(56,155,233,0.5)_0%,rgba(177,63,188,0.5)_100%)]"
+                ? "bg-[#017CD4] hover:bg-[#017CD4] hover:bg-[linear-gradient(90deg,_#389BE9_0%,_#B13FBC_100%)]"
                 : "bg-[#2c1662] hover:bg-[#2c136f]"
-            } px-4 py-2 rounded-full text-sm font-bold transition-all duration-500`}
+            } px-4 py-2 rounded-full text-[16px] font-bold transition-all duration-500`}
           >
             Get Started Now <BsArrowUpRight />
-
           </Link>
         </div>
       )}

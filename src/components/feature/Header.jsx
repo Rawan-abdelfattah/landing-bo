@@ -12,9 +12,9 @@ export const Header = ({ darkMode, setDarkMode }) => {
     >
         
       <Navbar darkMode={darkMode} setDarkMode={setDarkMode} />
-      <div className="max-w-screen-xl mx-auto md:px-13 px-5     flex flex-col gap-5 pt-10 pb-20">
-        <h3>Home / Feature</h3>
-        <h1 className="head-line">Feature</h1>
+      <div className="max-w-screen-xl mx-auto md:px-13 px-5 flex flex-col gap-5 pt-10 pb-20">
+        <span className="text-[16px] leading-[20px] font-[500]">Home / Feature</span>
+        <span  className="text-[45px] leading-[65px] md:text-[52px] font-[700]">Feature</span>
       </div>
     </header>
   );

@@ -9,7 +9,7 @@ export const Analytics = ({ darkMode }) => {
       <div className="relative z-0 w-full">
         <TextScroll
           darkMode={darkMode}
-          className={"my-20"}
+          className={"my-[80px]"}
           text="One Link To Rule Them All – Connect, Share."
         />
       </div>
@@ -42,7 +42,7 @@ export const Analytics = ({ darkMode }) => {
         to="/feature"
         className={`text-white text-[16px] mb-[40px] ${
           darkMode
-            ? "bg-[#017CD4] hover:bg-[linear-gradient(90deg,rgba(56,155,233,0.5)_0%,rgba(177,63,188,0.5)_100%)]"
+            ? "bg-[#017CD4] hover:bg-[#017CD4] hover:bg-[linear-gradient(90deg,_#389BE9_0%,_#B13FBC_100%)]"
             : "bg-[#2c1662] hover:bg-[#2c136f]"
         }  px-[20px] py-[10px] rounded-full text-sm font-bold  inline-flex  items-center gap-2 transition-all duration-500 ease-in-out`}
       >

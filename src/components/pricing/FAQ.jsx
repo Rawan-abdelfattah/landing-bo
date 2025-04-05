@@ -35,7 +35,7 @@ export default function FAQS({ darkMode }) {
   ];
 
   return (
-    <section className="max-w-screen-xl mx-auto md:px-13 px-5 pt-30">
+    <section className="max-w-screen-xl mx-auto md:px-13 px-5 py-[40px]">
       <div className="text-center lg:text-left">
         <h2
           className={`${
@@ -44,7 +44,7 @@ export default function FAQS({ darkMode }) {
         >
           03
         </h2>
-        <h2 className="text-[36px] leading-[50px] md:text-[38px] font-bold mb-6">FAQs</h2>
+        <h2 className="text-[36px] leading-[50px] md:text-[38px] font-[700] font-bold mb-6">FAQs</h2>
 
         {faqs.map((faq, index) => (
           <div

@@ -8,8 +8,8 @@ const GalleryGridCard = ({ name, role, profileImg, mainImg, darkMode }) => {
       <div
         className={` rounded-t-2xl ${
           darkMode
-            ? "bg-[#232323] text-white hover:bg-gradient-to-r from-gray-700 to-gray-900"
-            : "bg-gray-200 text-black hover:bg-gradient-to-r from-gray-100 to-gray-300"
+            ? "bg-[#232323] text-white  "
+            : "bg-gray-200 text-black "
         } p-4 flex items-center`}
       >
         <img
@@ -39,87 +39,59 @@ const GalleryGrid = ({ darkMode }) => {
     {
       name: "Emma Clarke",
       role: "Digital Marketer",
-      profileImg: "/user.jpg",
+      profileImg: "/profile1-user.png",
       mainImg: "/profile1.png",
       followers: "15K",
     },
     {
       name: "Sophia Lane",
       role: "Content Creator",
-      profileImg: "/user.jpg",
+      profileImg: "/profile2-user.png",
       mainImg: "/profile2.png",
       followers: "12K",
     },
     {
       name: "Liam Carter",
       role: "Fitness Coach",
-      profileImg: "/user.jpg",
+      profileImg: "/profile3-user.png",
       mainImg: "/profile3.png",
       followers: "20K",
     },
     {
       name: "Liam Carter",
       role: "Fitness Coach",
-      profileImg: "/user.jpg",
+      profileImg: "/profile4-user.png",
       mainImg: "/profile4.png",
       followers: "20K",
     },
     {
       name: "Emma Clarke",
       role: "Digital Marketer",
-      profileImg: "/user.jpg",
+      profileImg: "/profile5-user.png",
       mainImg: "/profile5.png",
       followers: "15K",
     },
     {
       name: "Sophia Lane",
       role: "Content Creator",
-      profileImg: "/user.jpg",
+      profileImg: "/profile6-user.png",
       mainImg: "/profile6.png",
       followers: "12K",
     },
     {
       name: "Liam Carter",
       role: "Fitness Coach",
-      profileImg: "/user.jpg",
+      profileImg: "/profile7-user.png",
       mainImg: "/profile7.png",
       followers: "20K",
     },
     {
       name: "Liam Carter",
       role: "Fitness Coach",
-      profileImg: "/user.jpg",
+      profileImg: "/profile8-user.png",
       mainImg: "/profile8.png",
       followers: "20K",
-    },
-    {
-      name: "Emma Clarke",
-      role: "Digital Marketer",
-      profileImg: "/user.jpg",
-      mainImg: "/profile1.png",
-      followers: "15K",
-    },
-    {
-      name: "Sophia Lane",
-      role: "Content Creator",
-      profileImg: "/user.jpg",
-      mainImg: "/profile2.png",
-      followers: "12K",
-    },
-    {
-      name: "Liam Carter",
-      role: "Fitness Coach",
-      profileImg: "/user.jpg",
-      mainImg: "/profile3.png",
-      followers: "20K",
-    },
-    {
-      name: "Liam Carter",
-      role: "Fitness Coach",
-      profileImg: "/user.jpg",
-      mainImg: "/profile4.png",
-      followers: "20K",
-    },
+    } 
   ];
 
   return (
@@ -133,7 +105,7 @@ const GalleryGrid = ({ darkMode }) => {
           01
         </h2>
         <div className="md:flex justify-between font-bold mb-6 py-X5">
-          <h2 className="text-[36px] leading-[50px] md:text-[38px] ">See How Others Shine</h2>
+          <h2 className="text-[36px] leading-[50px] md:text-[38px] font-[700] ">See How Others Shine</h2>
           <div className="mt-6 md:mt-0 md:max-w-xl ">
             <p className="  mb-4">
               Discover how creators, brands, and businesses are using our
@@ -142,7 +114,7 @@ const GalleryGrid = ({ darkMode }) => {
             </p>
             <Link
               to="https://user.boitr.com/"
-              className={`${darkMode ? 'bg-[#017CD4] hover:bg-[linear-gradient(90deg,rgba(56,155,233,0.5)_0%,rgba(177,63,188,0.5)_100%)]'  :'bg-[#2c1662] hover:bg-[#2c136f]'}   text-white px-[20px] py-[10px] rounded-full text-sm font-bold   inline-flex  items-center gap-2 transition-all duration-500`}
+              className={`${darkMode ? 'bg-[#017CD4] hover:bg-[#017CD4] hover:bg-[linear-gradient(90deg,_#389BE9_0%,_#B13FBC_100%)]'  :'bg-[#2c1662] hover:bg-[#2c136f]'}   text-white px-[20px] py-[10px] rounded-full text-sm font-bold   inline-flex  items-center gap-2 transition-all duration-500`}
             >
               Join Us Now <BsArrowUpRight />
             </Link>
