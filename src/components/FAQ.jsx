@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { FaArrowUpLong } from "react-icons/fa6";
 
-export default function FAQSection({ darkMode }) {
+export default function FAQS({ darkMode }) {
   const [hoveredFeature, setHoveredFeature] = useState(null);
 
   const faqs = [

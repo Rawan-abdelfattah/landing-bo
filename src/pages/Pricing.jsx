@@ -6,8 +6,8 @@ import Plans from "../components/pricing/Plans";
 import SocialMediaIcons from "../components/pricing/SocialMediaIcons"; 
 import { Helmet } from "react-helmet";
 import { UserSays } from "../components/UserSays";
-import FAQ from "../components/pricing/FAQ";
-
+import FAQ from "../components/FAQ";
+ 
 const fadeInUp = {
   hidden: { opacity: 0, y: 40 },
   visible: { opacity: 1, y: 0, transition: { duration: 0.6 } },

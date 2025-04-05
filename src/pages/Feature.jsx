@@ -3,10 +3,10 @@ import { motion, useInView } from "framer-motion";
 import { Footer } from "../components/Footer";
 import { Header } from "../components/feature/Header";
 import FeatureGrid from "../components/feature/FeatureGrid";
-import FAQ from "../components/feature/FAQ";
-import { Helmet } from "react-helmet";
+ import { Helmet } from "react-helmet";
 import { UserSays } from "../components/UserSays";
 import { Showcase } from "../components/Showcase";
+import FAQ from "../components/FAQ";
 
 const fadeInUp = {
   hidden: { opacity: 0, y: 40 },
