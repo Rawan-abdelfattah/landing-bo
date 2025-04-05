@@ -17,7 +17,7 @@ export const Phone = () => {
         animationDelay: "150ms",
         bg:'/profile11.png',
         cardImageBack: "/design2.png",
-        cardImageFront: "/design.png",
+        cardImageFront: "/design1.png",
         className:"text-gray-900"
   
       },
@@ -42,7 +42,7 @@ export const Phone = () => {
         bg:'/profile33.png',
         animationDelay: "250ms",
         cardImageBack: "/fitness2.png",
-        cardImageFront: "/fitness.png",
+        cardImageFront: "/fitness1.png",
         className:"text-white"
   
       },
@@ -54,8 +54,8 @@ export const Phone = () => {
         circles: [<RiRedditFill />, <RiDiscordFill />, <FaFacebook />],
         animationDelay: "300ms",
         bg:'/profile44.png',
-        cardImageBack: "/cd.png",
-        cardImageFront: "/hat.png",
+        cardImageBack: "/marketing1.png",
+        cardImageFront: "/marketing2.png",
         className:"text-gray-900"
   
       },

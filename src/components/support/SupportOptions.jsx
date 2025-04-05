@@ -37,7 +37,7 @@ const SupportOptions = ({ darkMode }) => {
         >
           01
         </h2>
-        <h1 className="text-[36px] md:text-[38px] lg:text-4xl font-bold mt-2">
+        <h1 className="text-[36px] leading-[50px] md:text-[38px] lg:text-4xl font-bold mt-2">
           We’re Here To Help You Every Step Of The Way
         </h1>
         <p className="mt-4 max-w-2xl">

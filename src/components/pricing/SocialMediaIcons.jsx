@@ -11,7 +11,7 @@ const SocialMediaIcons = ({ darkMode }) => {
             darkMode ? "text-outline-dark-h1" : "text-outline-light-h1"
           }`}
         >02</h2>
-        <h2 className="text-[36px] md:text-[38px] font-bold mb-4">
+        <h2 className="text-[36px] leading-[50px] md:text-[38px] font-bold mb-4">
           Ready To Elevate Your Brand? Join Boitr Today!
         </h2>
         <p className="  max-w-2xl mx-auto mb-6">

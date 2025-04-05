@@ -38,8 +38,8 @@ export const Showcase = ({ darkMode }) => {
         >
           02
         </span>
-        <div className="md:flex justify-between font-bold mb-[40px] py-5">
-          <span className="max-w-[550px] text-[36px] md:text-[38px] ">
+        <div className="md:flex justify-between font-bold mb-[20px] py-5">
+          <span className="max-w-[550px] text-[36px] leading-[50px] md:text-[38px] ">
             Your All-In-One Digital Showcase
           </span>
           <div className="mt-6 md:mt-0 max-w-[482px] ">

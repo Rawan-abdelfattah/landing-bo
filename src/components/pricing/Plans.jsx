@@ -67,7 +67,7 @@ const Plans = ({ darkMode }) => {
           01
         </h2>
         <div className="md:flex justify-between font-bold mb-6 py-5">
-          <h2 className="max-w-[588px] text-[36px] md:text-[38px] ">
+          <h2 className="max-w-[588px] text-[36px] leading-[50px] md:text-[38px] ">
             Choose The Perfect Plan For You
           </h2>
           <p className="max-w-[482px]">

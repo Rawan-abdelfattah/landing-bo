@@ -14,8 +14,7 @@ export const Analytics = ({ darkMode }) => {
         />
       </div>
       <section className="relative mx-auto md:px-13 md:rounded-3xl max-w-screen-xl">
-{/* 🔥 Centered Glowing Gradient Blob */}
-<div
+ <div
   className="absolute inset-0 w-[450px] h-[450px] rounded-full blur-[70px] opacity-50 pointer-events-none mx-auto"
   style={{
     background:' linear-gradient(225deg, rgba(250, 173, 79, 0.7) 14.61%, rgba(221, 42, 123, 0.7) 39.38%, rgba(149, 55, 176, 0.7) 58.49%, rgba(81, 91, 212, 0.7) 85.39%)'
@@ -23,8 +22,7 @@ export const Analytics = ({ darkMode }) => {
   }}
 ></div>
 
-
-  {/* Main content section */}
+ 
   <div
     className={`relative z-10 bg-cover bg-center flex flex-col md:flex-row items-center justify-between gap-10`}
   >
@@ -32,7 +30,7 @@ export const Analytics = ({ darkMode }) => {
       <p className={darkMode ? "text-outline-dark-h1" : "text-outline-light-h1"}>
         03
       </p>
-      <h2 className="text-[36px] md:text-[38px] max-w-[560px] font-bold leading-tight mb-4 pb-[40px]">
+      <h2 className="text-[36px] md:text-[38px] max-w-[550px] font-bold leading-[50px] mb-4 pb-[40px]">
         Analyze Your Audience And <br /> Keep Your Followers Engaged
       </h2>
       <p className="text-[18px] max-w-[520px] mb-6">
@@ -50,14 +48,16 @@ export const Analytics = ({ darkMode }) => {
       >
         Discover Our Features <BsArrowUpRight />
       </Link>
-      <img
+      {/* <img
         src="/social_media.gif"
         alt="icons"
         className="pt-5 md:min-w-[504px] w-full m-auto h-[90px]"
-      />
+      /> */}
     </div>
+<div className=" mr-10">
 
     <Phone />
+</div>
   </div>
 </section>
 

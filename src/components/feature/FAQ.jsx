@@ -38,7 +38,7 @@ export default function FAQSection({ darkMode }) {
         >
           03
         </h2>  
-        <h2 className="text-[36px] md:text-[38px] font-bold mb-6">FAQs</h2>
+        <h2 className="text-[36px] leading-[50px] md:text-[38px] font-bold mb-6">FAQs</h2>
         <div className="p-6 rounded-xl mb-6 flex justify-between items-center cursor-pointer transition-all -transform hover:scale-105 duration-500 bg-[linear-gradient(45deg,_rgba(250,173,79,0.5)_14.61%,_rgba(221,42,123,0.5)_39.38%,_rgba(149,55,176,0.5)_58.49%,_rgba(81,91,212,0.5)_85.39%)] hover:shadow-lg">
           <div>
             <h3 className="text-lg font-semibold">

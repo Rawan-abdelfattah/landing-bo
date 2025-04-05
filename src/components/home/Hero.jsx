@@ -20,7 +20,7 @@ export const Hero = ({ darkMode, setDarkMode }) => {
   
       <div className="max-w-screen-xl mx-auto md:px-13 px-2 flex flex-col md:flex-row justify-between items-center md:items-center text-center md:text-left pt-12 lg:pt-1">
         <div className="max-w-[608px] md:mb-30 lg:mb-40 mb-5 mx-auto md:mx-0">
-          <span className="text-[36px] md:text-[52px] font-bold">
+          <span className="text-[36px] leading-[65px] md:text-[52px] font-bold ">
             Your Digital Identity, One Smart Link!
           </span>
           <div className="flex gap-4 my-5 justify-center md:justify-start">
@@ -50,9 +50,8 @@ export const Hero = ({ darkMode, setDarkMode }) => {
         </div>
   
         <div className="max-w-[440px] space-y-4 md:mb-25 lg:mb-25 mb-5 mx-auto md:mx-0">
-          <p className="text-[18px]">
-            Take control of your digital presence with Boitr — the ultimate
-            platform to showcase everything that makes you, you.
+          <p className="text-[16px]">
+          Take control of your digital presence with Boitr — the ultimate platform to showcase everything that makes you, you. Bring all your social media, content, and links together in one beautiful, customizable page. 
           </p>
           <Link
             to="https://user.boitr.com/"

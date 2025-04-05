@@ -61,7 +61,7 @@ export const Features = ({ darkMode }) => {
           01
         </h2>
         <div className=" md:flex justify-between font-bold mb-6 py-5">
-          <h2 className="max-w-[588px]  text-[36px] md:text-[38px] pr-5">
+          <h2 className="max-w-[588px]  text-[36px] leading-[50px] md:text-[38px] pr-5">
             Powerful Features To Elevate Your Digital Presence
           </h2>
           <div className="  space-y-4">
@@ -78,7 +78,7 @@ export const Features = ({ darkMode }) => {
                   : "bg-[#2c1662] hover:bg-[#2c136f]"
               }  text-white px-4 py-2 rounded-full text-sm font-bold  inline-flex  items-center gap-2 transition-all duration-500`}
             >
-              Discover Our Features 
+              Discover Our Features
             </Link>
           </div>
         </div>
@@ -90,67 +90,72 @@ export const Features = ({ darkMode }) => {
             (hoveredFeature === null && index === 0);
 
           return (
-            <div
-              key={feature.id}
-              className={`relative border-b border-gray-700 p-4 py-10 my-10 cursor-pointer transition-all duration-700
-    hover:text-white
-    ${darkMode ? "hover:border-[#0163A8]" : "hover:border-[#2c136f]"}
-    hover:rounded-2xl hover:border ease-in-out bg-transparent bg-cover bg-center
-    ${
-      isHovered
-        ? "bg-[url('/dark-faq.png')] border rounded-2xl "
-        : "bg-[url('/light-faq.png')] "
-    }
-  `}
-              onMouseEnter={() => setHoveredFeature(feature.id)}
-              onMouseLeave={() => setHoveredFeature(null)}
-            >
-              <div className="flex flex-col md:flex-row items-start md:items-center  relative gap-4">
-                <span className="text-[26px] font-[700]">
-                  <span
-                    className={`${
-                      darkMode
-                        ? "text-outline-dark-h2"
-                        : "text-outline-light-h2"
-                    } text-xl font-bold px-1`}
-                  >
-                    {feature.id}
-                  </span>
-                  <br />
-                  {feature.title}
-                </span>
-                <p
-                  className={`lg:w-[500px] ml-[70px] text-[16px] font-[500] max-w-lg transition-all duration-500 ease-in-out ${
-                    isHovered ? "flex" : "hidden"
-                  }`}
-                >
-                  {feature.description}
-                </p>
-                <div className="ml-auto flex items-center"> 
-                  <FaArrowUpLong
-                    className={`md:flex hidden transition-all w-[37px] h-[25px] duration-500 ease-in-out ${
-                      isHovered ? "rotate-90" : ""
-                    }`}
-                  />
-                </div>
-                <div className="absolute top-1/2 left-[48%] transform -translate-x-1/2 -translate-y-1/2 flex justify-end items-center w-full p-5">
-                  <img
-                    src={feature.img}
-                    alt={feature.title}
-                    className={`hidden xl:block w-[210px] h-[200px] rounded-xl shadow-lg transition-all duration-700 ease-in-out ${
-                      isHovered ? "opacity-100" : "opacity-0"
-                    }`}
-                    onMouseEnter={() => setHoveredImg(true)}
-                    onMouseLeave={() => setHoveredImg(false)}
-                    style={{
-                      animation: hoveredImg
-                        ? "vibrate 0.3s ease-in-out infinite"
-                        : "none",
-                    }}
-                  />
-                </div>
-              </div>
-            </div>
+            <>
+            <React.Fragment key={feature.id}>
+    <div
+      className={`relative rounded-2xl border-gray-700 p-4 my-4 cursor-pointer transition-all duration-700
+        hover:text-white
+        ${darkMode ? "hover:border-[#0163A8]" : "hover:border-[#2c136f]"}
+        hover:rounded-2xl hover:border ease-in-out bg-transparent bg-cover bg-center
+        ${
+          isHovered
+            ? "bg-[url('/dark-faq.png')] border py-10 my-6 "
+            : "bg-[url('/light-faq.png')] "
+        }
+      `}
+      onMouseEnter={() => setHoveredFeature(feature.id)}
+      onMouseLeave={() => setHoveredFeature(null)}
+    >
+      <div className="flex flex-col md:flex-row items-start md:items-center  relative gap-4">
+        <span className="text-[26px] font-[700]">
+          <span
+            className={`${
+              darkMode
+                ? "text-outline-dark-h2"
+                : "text-outline-light-h2"
+            } text-xl font-bold px-1`}
+          >
+            {feature.id}
+          </span>
+          <br />
+          {feature.title}
+        </span>
+        <p
+          className={`lg:w-[500px] ml-[70px] text-[16px] font-[500] max-w-lg transition-all duration-500 ease-in-out ${
+            isHovered ? "flex" : "hidden"
+          }`}
+        >
+          {feature.description}
+        </p>
+        <div className="ml-auto flex items-center">
+          <FaArrowUpLong
+            className={`md:flex hidden transition-all w-[37px] h-[25px] duration-500 ease-in-out ${
+              isHovered ? "rotate-90" : ""
+            }`}
+          />
+        </div>
+        <div className="absolute top-1/2 left-[48%] transform -translate-x-1/2 -translate-y-1/2 flex justify-end items-center w-full p-5">
+          <img
+            src={feature.img}
+            alt={feature.title}
+            className={`hidden xl:block w-[210px] h-[200px] rounded-xl shadow-lg transition-all duration-700 ease-in-out ${
+              isHovered ? "opacity-100" : "opacity-0"
+            }`}
+            onMouseEnter={() => setHoveredImg(true)}
+            onMouseLeave={() => setHoveredImg(false)}
+            style={{
+              animation: hoveredImg
+                ? "vibrate 0.3s ease-in-out infinite"
+                : "none",
+            }}
+          />
+        </div>
+      </div>
+    </div>
+    {/* Only show <hr /> if it's not the last item */}
+    {index !== features.length - 1 && <hr />}
+  </React.Fragment>
+            </>
           );
         })}
       </div>
