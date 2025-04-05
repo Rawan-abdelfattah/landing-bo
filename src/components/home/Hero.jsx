@@ -10,7 +10,7 @@ export const Hero = ({ darkMode, setDarkMode }) => {
     <header
     className={`relative ${
       darkMode ? "border-[#017CD4]" : "border-[#2c1662]"
-    } overflow-hidden rounded-3xl m-[40px] px-6 pt-6 border`}
+    } overflow-hidden rounded-[40px] md:rounded-3xl  m-[10px] md:m-[40px] px-6 pt-6 border`}
   >
     <div className="bg-outer-container">
       <div className={`${darkMode ? "bg-dark" : "bg-light"}`} />
@@ -40,7 +40,7 @@ export const Hero = ({ darkMode, setDarkMode }) => {
         </div>
   
         <div className="z-10 md:hidden xl:flex flex flex-col items-center order-last md:order-none min-h-[300px]">
-          <div className="w-full h-[400px] md:h-[510px]">
+          <div className="w-full h-[250px] md:h-[510px]">
             <img
               src="/hand.png"
               alt="Robot hand pointing"

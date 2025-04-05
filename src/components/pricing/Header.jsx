@@ -8,7 +8,7 @@ export const Header = ({ darkMode, setDarkMode }) => {
         darkMode
           ? "bg-[url('/dark-pages-bg.png')] border-[#017CD4]"
           : "bg-[url('/light-pages-bg.png')] border-[#2c1662]"
-      }   rounded-3xl px-8 m-[40px] pt-6`}
+      }  rounded-[40px] md:rounded-3xl px-8  m-[10px] md:m-[40px] pt-6`}
     >
         
       <Navbar darkMode={darkMode} setDarkMode={setDarkMode} />

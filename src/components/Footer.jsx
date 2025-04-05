@@ -8,7 +8,7 @@ export const Footer = ({ darkMode }) => {
     <footer
       className={` border relative overflow-hidden ${
         darkMode ? "  border-[#017CD4] " : "  border-[#2c1662]"
-      }   bg-cover bg-center  rounded-3xl  m-[40px] py-10 md:px-13 px-5`}
+      }   bg-cover bg-center rounded-[40px] md:rounded-3xl m-[10px] md:m-[40px] py-10 md:px-13 px-5`}
     >
       <div className="bg-outer-container">
         <div
