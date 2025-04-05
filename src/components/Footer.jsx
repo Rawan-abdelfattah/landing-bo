@@ -6,13 +6,16 @@ export const Footer = ({ darkMode }) => {
   return (
     <footer
       className={` border relative overflow-hidden ${
-        darkMode
-          ? "bg-gradient  border-[#017CD4] "
-          : "bg-gradient-light border-[#2c1662]"
-      }    bg-cover bg-center  rounded-3xl mx-5 my-5 py-10 md:px-20 px-5`}
+        darkMode ? "  border-[#017CD4] " : "  border-[#2c1662]"
+      }   bg-cover bg-center  rounded-3xl  m-[40px] py-10 md:px-13 px-5`}
     >
-      <div className="content"> 
-        <div className=" lg:flex lg:flex-row max-w-screen-xl mx-auto md:px-20 px-5 lg:text-left lg:justify-between md:flex md:flex-col md:items-center md:justify-center md:text-center text-center  justify-between mb-3">
+            <div className="bg-outer-container">
+        <div
+          className={`${darkMode ? "bg-dark  " : "bg-light"} 
+        `}
+        />
+      </div>
+         <div className="relative z-10 lg:flex lg:flex-row max-w-screen-xl mx-auto md:px-13 px-5 lg:text-left lg:justify-between md:flex md:flex-col md:items-center md:justify-center md:text-center text-center  justify-between mb-3">
           <div className="mb-8 md:mb-0 ">
             <Link to="/" className="text-2xl font-bold  mb-4 inline-block">
               <img
@@ -21,27 +24,26 @@ export const Footer = ({ darkMode }) => {
                 alt="logo"
               />
             </Link>
-            <p className="text-xs my-4 max-w-[460px] ">
-              Boitr is collecting links and effortlessly displaying them, to
-              enhance presence, fix growth, and stay, and get the word out. Get
-              started today!
+            <p className="text-xs my-4 max-w-[460px] text-[18px] ">
+              Boitr is collecting links and attractively displaying them, to
+              manage products the services are easy, and will not be connected
+              to a secure and effective payment gateway.
             </p>
 
             <Link
               to="https://user.boitr.com/"
-              className={`transition-all duration-500 ${
+              className={`transition-all duration-500  flex items-center  ${
                 darkMode
                   ? "bg-[#017CD4] hover:bg-[linear-gradient(90deg,rgba(56,155,233,0.5)_0%,rgba(177,63,188,0.5)_100%)]"
                   : "bg-[#2c1662] hover:bg-[#2c136f]"
-              }  text-white px-4 py-2 rounded-full text-sm font-bold mt-2 inline-block`}
-            >
-              Get Started Now →
+              }  text-white px-4 py-2 rounded-full text-sm font-bold mt-2 inline-block text-[16px]`}
+            >  Get Started Now   ↗
             </Link>
           </div>
           <div className="flex flex-col md:flex-row gap-12">
             <div>
-              <h4 className="font-bold mb-4">Pages</h4>
-              <ul>
+              <h4 className="font-bold mb-4 text-[20px]">Pages</h4>
+              <ul className="text-[18px]">
                 <li className="mb-2">
                   <Link to="/">Home</Link>
                 </li>
@@ -60,9 +62,9 @@ export const Footer = ({ darkMode }) => {
               </ul>
             </div>
             <div>
-              <h4 className="font-bold mb-4">Trust &amp; Legal</h4>
-              <ul>
-                <li className="mb-2">
+              <h4 className="font-bold mb-4 text-[20px]">Trust &amp; Legal</h4>
+              <ul className="text-[18px]">
+                <li className="mb-2 ">
                   <a href="#">Terms &amp; Conditions</a>
                 </li>
                 <li className="mb-2">
@@ -71,70 +73,35 @@ export const Footer = ({ darkMode }) => {
               </ul>
             </div>
             <div className="">
-              <h4 className="font-bold mb-4">Subscribe To Our Newsletter</h4>
+              <h4 className="font-bold mb-4 text-[20px]">Subscribe To Our Newsletter</h4>
               <div className=" border-b my-4  pb-5 justify-center">
                 <input
                   type="email"
                   placeholder="Email Address"
-                  className={`border w-full  rounded-full px-4 py-2 text-sm w-48 placeholder-gray-500`}
+                  className={`border w-full  rounded-full px-4 py-2 text-sm w-48  text-[16px]  ${
+      darkMode
+        ? "placeholder-white"
+        : "placeholder-black"
+    } `}
                 />
-                <a
+                <Link
                   href="#"
-                  className={`transition-all duration-500 w-full ${
-                    darkMode
-                      ? "bg-[#017CD4] hover:bg-[linear-gradient(90deg,rgba(56,155,233,0.5)_0%,rgba(177,63,188,0.5)_100%)]"
-                      : "bg-[#2c1662] hover:bg-[#2c136f]"
-                  }   text-white px-4 py-2 rounded-full text-sm font-bold mt-2 inline-block`}
-                >
-                  Subscribe →
-                </a>
+                  className={`transition-all duration-300 ease-in-out w-full flex items-center gap-2 ${ darkMode
+        ? "bg-[#017CD4] hover:bg-gradient-to-r from-[#389BE9]/50 to-[#B13FBC]/50"
+        : "bg-[#2c1662] hover:bg-[#2c136f]"
+    }
+    text-white px-6 py-2 rounded-full text-sm font-semibold mt-2 shadow-md hover:shadow-lg text-[16px]`}
+                > Subscribe ↗ 
+                </Link>
               </div>
-              <div className="flex justify-center gap-3 mt-6">
-                <a
-                  href="#"
-                  className={` ${
-                    darkMode ? "bg-white text-gray-900" : "bg-dark text-white"
-                  } w-8 h-8  rounded-full flex items-center justify-center`}
-                >
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    className="h-4 w-4"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth={2}
-                      d="M13 10V3L4 14h7v7l9-11h-7z"
-                    />
-                  </svg>
-                </a>
-                <a
-                  href="#"
-                  className={` ${
-                    darkMode ? "bg-white text-gray-900" : "bg-dark text-white"
-                  } w-8 h-8  rounded-full flex items-center justify-center`}
-                >
-                  f
-                </a>
-                <a
-                  href="#"
-                  className={` ${
-                    darkMode ? "bg-white text-gray-900" : "bg-dark text-white"
-                  } w-8 h-8  rounded-full flex items-center justify-center`}
-                >
-                  X
-                </a>
-                <a
-                  href="#"
-                  className={` ${
-                    darkMode ? "bg-white text-gray-900" : "bg-dark text-white"
-                  } w-8 h-8  rounded-full flex items-center justify-center`}
-                >
-                  in
-                </a>
+              <div className=" border-b my-4 flex gap-3  pb-5 ">
+             <img src="/lang.png" alt="lang"  className="w-6 h-6" />  Arabic
+              </div>
+              <div className="flex  gap-5 mt-6">
+                <img src="/linkedIn.png" className="w-5 h-5" alt="social media" />
+                <img src="/f.png" className="w-5 h-5" alt="social media" />
+                <img src="/whatsapp.png" className="w-5 h-5" alt="social media" />
+                <img src="/instagram.png" className="w-5 h-5" alt="social media" />
               </div>
             </div>
           </div>
@@ -145,10 +112,9 @@ export const Footer = ({ darkMode }) => {
             text="One Link To Rule Them All – Connect, Share. One Link To Rule Them All – Connect, Share.One Link To Rule Them All – Connect, Share."
           />
         </div>
-        <div className="text-center text-xs pt-6 border-t  ">
+        <div className="relative z-10 text-center text-xs pt-6 border-t text-[18px] ">
           Boitr © Copyright 2025. All rights reserved
         </div>
-      </div>
-    </footer>
+     </footer>
   );
 };

@@ -66,7 +66,7 @@ const Plans = ({ darkMode }) => {
           01
         </h2>
         <div className="md:flex justify-between font-bold mb-6 py-5">
-          <h2 className="max-w-[588px] text-2xl md:text-4xl ">
+          <h2 className="max-w-[588px] text-[36px] md:text-[38px] ">
             Choose The Perfect Plan For You
           </h2>
           <p className="max-w-[482px]">
@@ -152,7 +152,7 @@ const Plans = ({ darkMode }) => {
 
             <div className="p-4  text-center">
               <button className={`w-full transition duration-300 ease-in-out  ${darkMode ? 'bg-[#017CD4] hover:bg-[linear-gradient(90deg,rgba(56,155,233,0.5)_0%,rgba(177,63,188,0.5)_100%)]'  :'bg-[#2c1662] hover:bg-[#2c136f]'}  text-white font-semibold py-2 rounded-full transition-all duration-500`}>
-                Get Started Now →
+                Get Started Now ↗
               </button>
             </div>
           </div>

@@ -9,9 +9,9 @@ export const Navbar = ({ darkMode, setDarkMode }) => {
     <nav
       className={`${
         darkMode ? "bg-[rgba(0,0,0,0.4)]" : "bg-white"
-      } px-6 py-4 md:w-[91%] m-auto transition-all duration-500 md:rounded-full rounded-xl`}
+      }   py-4 md:w-[95%] m-auto transition-all duration-500 md:rounded-full rounded-xl`}
     >
-      <div className="max-w-screen-xl mx-auto lg:md:px-15 px-5  flex items-center justify-between">
+      <div className="  mx-auto lg:md:px-[40px] px-5  flex items-center justify-between">
         <Link to="/" className="text-2xl font-bold">
           <img
             src={darkMode ? "/logo.png" : "/dark-logo.png"}
@@ -51,7 +51,7 @@ export const Navbar = ({ darkMode, setDarkMode }) => {
             to="https://user.boitr.com/"
             className={`text-white ${darkMode ? 'bg-[#017CD4] hover:bg-[linear-gradient(90deg,rgba(56,155,233,0.5)_0%,rgba(177,63,188,0.5)_100%)]'  :'bg-[#2c1662] hover:bg-[#2c136f]'}  px-4 py-2 md:block hidden rounded-full text-sm font-bold transition-all duration-500`}
           >
-            Get Started Now →
+            Get Started Now ↗
           </Link>
           <button
             className="sm:hidden p-2  focus:outline-none"
@@ -108,7 +108,7 @@ export const Navbar = ({ darkMode, setDarkMode }) => {
             to="https://user.boitr.com/"
             className={`mt-3 inline-block text-white ${darkMode ? 'bg-[#017CD4] hover:bg-[linear-gradient(90deg,rgba(56,155,233,0.5)_0%,rgba(177,63,188,0.5)_100%)]'  :'bg-[#2c1662] hover:bg-[#2c136f]'}  px-4 py-2 rounded-full text-sm font-bold transition-all duration-500`}
           >
-            Get Started Now →
+            Get Started Now ↗
           </Link>
         </div>
       )}

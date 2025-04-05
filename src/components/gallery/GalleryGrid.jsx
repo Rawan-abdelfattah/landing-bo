@@ -132,7 +132,7 @@ const GalleryGrid = ({ darkMode }) => {
           01
         </h2>
         <div className="md:flex justify-between font-bold mb-6 py-X5">
-          <h2 className="text-2xl md:text-4xl ">See How Others Shine</h2>
+          <h2 className="text-[36px] md:text-[38px] ">See How Others Shine</h2>
           <div className="mt-6 md:mt-0 md:max-w-xl ">
             <p className="  mb-4">
               Discover how creators, brands, and businesses are using our
@@ -143,7 +143,7 @@ const GalleryGrid = ({ darkMode }) => {
               to="https://user.boitr.com/"
               className={`${darkMode ? 'bg-[#017CD4] hover:bg-[linear-gradient(90deg,rgba(56,155,233,0.5)_0%,rgba(177,63,188,0.5)_100%)]'  :'bg-[#2c1662] hover:bg-[#2c136f]'}   text-white px-[20px] py-[10px] rounded-full text-sm font-bold inline-block transition-all duration-500`}
             >
-              Join Us Now →
+              Join Us Now ↗
             </Link>
           </div>
         </div>  

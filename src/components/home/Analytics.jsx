@@ -4,7 +4,7 @@ import { Phone } from "./phone-effect/Phone";
 
 export const Analytics = ({ darkMode }) => {
   return (
-    <div className="text-gray-100 relative overflow-hidden">
+    <div className="  relative overflow-hidden">
       <div className="relative z-0 w-full">
         <TextScroll
           darkMode={darkMode}
@@ -12,46 +12,54 @@ export const Analytics = ({ darkMode }) => {
           text="One Link To Rule Them All – Connect, Share."
         />
       </div>
-      <section className="bg-[url('/dark-analysis-bg.png')] bg-cover  mx-auto md:px-20  md:rounded-3xl  max-w-screen-xl  ">
-        <div
-          className={`bg-cover bg-center 
-            flex flex-col md:flex-row items-center justify-between gap-10`}
-        >
-          <div className=" text-center md:text-left">
-            <p
-              className={
-                darkMode ? "text-outline-dark-h1" : "text-outline-light-h1"
-              }
-            >
-              03
-            </p>
-            <h2 className="text-2xl md:text-4xl min-w-[560px] font-bold leading-tight mb-4">
-              Analyze Your Audience And <br /> Keep Your Followers Engaged
-            </h2>
-            <p className=" max-w-[520px] mb-6">
-              Boitr is your all-in-one digital hub — a single, shareable link
-              that brings together your social media, websites, and content on a
-              sleek, customizable page.
-            </p>
-            <Link
-              to="/feature"
-              className={`text-white ${
-                darkMode
-                  ? "bg-[#017CD4] hover:bg-[linear-gradient(90deg,rgba(56,155,233,0.5)_0%,rgba(177,63,188,0.5)_100%)]"
-                  : "bg-[#2c1662] hover:bg-[#2c136f]"
-              }  px-[20px] py-[10px] rounded-full text-sm font-bold inline-block transition-all duration-500 ease-in-out`}
-            >
-              Discover Our Features →
-            </Link>
-            <img
-              src="/social_media.gif"
-              alt="icons"
-              className="pt-5 md:min-w-[580px] w-full m-auto h-full"
-            />
-          </div>
-          <Phone />
-        </div>
-      </section>
+      <section className="relative mx-auto md:px-13 md:rounded-3xl max-w-screen-xl">
+{/* 🔥 Centered Glowing Gradient Blob */}
+<div
+  className="absolute inset-0 w-[450px] h-[450px] rounded-full blur-[70px] opacity-50 pointer-events-none mx-auto"
+  style={{
+    background:' linear-gradient(225deg, rgba(250, 173, 79, 0.7) 14.61%, rgba(221, 42, 123, 0.7) 39.38%, rgba(149, 55, 176, 0.7) 58.49%, rgba(81, 91, 212, 0.7) 85.39%)'
+    ,
+  }}
+></div>
+
+
+  {/* Main content section */}
+  <div
+    className={`relative z-10 bg-cover bg-center flex flex-col md:flex-row items-center justify-between gap-10`}
+  >
+    <div className="text-center md:text-left">
+      <p className={darkMode ? "text-outline-dark-h1" : "text-outline-light-h1"}>
+        03
+      </p>
+      <h2 className="text-[36px] md:text-[38px] max-w-[560px] font-bold leading-tight mb-4 pb-[40px]">
+        Analyze Your Audience And <br /> Keep Your Followers Engaged
+      </h2>
+      <p className="text-[18px] max-w-[520px] mb-6">
+        Boitr is your all-in-one digital hub — a single, shareable link
+        that brings together your social media, websites, and content on a
+        sleek, customizable page.
+      </p>
+      <Link
+        to="/feature"
+        className={`text-white text-[16px] mb-[40px] ${
+          darkMode
+            ? "bg-[#017CD4] hover:bg-[linear-gradient(90deg,rgba(56,155,233,0.5)_0%,rgba(177,63,188,0.5)_100%)]"
+            : "bg-[#2c1662] hover:bg-[#2c136f]"
+        }  px-[20px] py-[10px] rounded-full text-sm font-bold inline-block transition-all duration-500 ease-in-out`}
+      >
+        Discover Our Features ↗
+      </Link>
+      <img
+        src="/social_media.gif"
+        alt="icons"
+        className="pt-5 md:min-w-[504px] w-full m-auto h-[90px]"
+      />
+    </div>
+
+    <Phone />
+  </div>
+</section>
+
     </div>
   );
 };

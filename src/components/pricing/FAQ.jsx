@@ -44,7 +44,7 @@ export default function FAQS({ darkMode }) {
         >
           03
         </h2>
-        <h2 className="text-2xl md:text-4xl font-bold mb-6">FAQs</h2>
+        <h2 className="text-[36px] md:text-[38px] font-bold mb-6">FAQs</h2>
 
         {faqs.map((faq, index) => (
           <div

@@ -42,7 +42,7 @@ const SupportGrid = ({ darkMode }) => {
         >
           02
         </h2>
-        <h1 className="text-2xl md:text-4xl lg:text-4xl font-bold mt-2">
+        <h1 className="text-[36px] md:text-[38px] lg:text-4xl font-bold mt-2">
           Your Boitr Journey Starts Here!
         </h1>
 
