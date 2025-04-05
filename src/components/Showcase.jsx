@@ -90,7 +90,7 @@ export const Showcase = ({ darkMode }) => {
             </div>
           ))}
         </div>
-        <div className="flex flex-col sm:flex-row gap-5 pt-10">
+        <div className="sm:flex sm:flex-row hidden gap-5 pt-10">
           {[
             "profile11.png",
             "profile22.png",
@@ -111,7 +111,12 @@ export const Showcase = ({ darkMode }) => {
             </div>
           ))}
         </div>
-      </div>
+      </div>{" "}
+      <img
+        src="/show-case.png"
+        className=" w-full flex sm:hidden bg-cover bg-center"
+        alt="show case"
+      />
     </section>
   );
 };
