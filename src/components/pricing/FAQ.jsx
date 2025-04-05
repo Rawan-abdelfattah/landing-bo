@@ -35,7 +35,7 @@ export default function FAQS({ darkMode }) {
   ];
 
   return (
-    <section className="max-w-screen-xl mx-auto md:px-20 px-5 pt-30">
+    <section className="max-w-screen-xl mx-auto md:px-13 px-5 pt-30">
       <div className="text-center lg:text-left">
         <h2
           className={`${

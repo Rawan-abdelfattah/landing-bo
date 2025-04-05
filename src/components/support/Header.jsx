@@ -8,11 +8,11 @@ export const Header = ({ darkMode, setDarkMode }) => {
         darkMode
           ? "bg-[url('/dark-pages-bg.png')] border-[#017CD4]"
           : "bg-[url('/light-pages-bg.png')] border-[#2c1662]"
-      }   rounded-3xl mx-5 my-5 px-6 pt-6  `}
+      }   rounded-3xl px-8 m-[40px] pt-6`}
     >
         
       <Navbar darkMode={darkMode} setDarkMode={setDarkMode} />
-      <div className="max-w-screen-xl mx-auto md:px-20 px-5     flex flex-col gap-5  pt-10 pb-20">
+      <div className="max-w-screen-xl mx-auto md:px-13 px-5     flex flex-col gap-5  pt-10 pb-20">
         <h3>Home / Support</h3>
         <h1 className="head-line">Support</h1>
       </div>
