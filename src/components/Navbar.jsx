@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { BsArrowUpRight } from "react-icons/bs";
 import { FaSun, FaRegMoon } from "react-icons/fa6";
 import { Link } from "react-router-dom";
 
@@ -51,15 +52,18 @@ export const Navbar = ({ darkMode, setDarkMode }) => {
           </button>
 
           <Link
-            to="https://user.boitr.com/"
-            className={`text-white lg:flex hidden ${
-              darkMode
-                ? "bg-[#017CD4] hover:bg-[linear-gradient(90deg,rgba(56,155,233,0.5)_0%,rgba(177,63,188,0.5)_100%)]"
-                : "bg-[#2c1662] hover:bg-[#2c136f]"
-            } px-4 py-2  rounded-full text-sm font-bold transition-all duration-500`}
-          >
-            Get Started Now ↗
-          </Link>
+  to="https://user.boitr.com/"
+  target="_blank"
+  rel="noopener noreferrer"
+  className={`text-white lg:flex items-center gap-2 hidden  ${
+    darkMode
+      ? "bg-[#017CD4] hover:bg-[linear-gradient(90deg,rgba(56,155,233,0.5)_0%,rgba(177,63,188,0.5)_100%)]"
+      : "bg-[#2c1662] hover:bg-[#2c136f]"
+  } px-4 py-2 rounded-full text-sm font-bold transition-all duration-500`}
+>
+  Get Started Now
+  <BsArrowUpRight   />
+</Link>
           <button
             className="lg:hidden p-2 focus:outline-none"
             onClick={() => setMenuOpen(!menuOpen)}
@@ -105,13 +109,14 @@ export const Navbar = ({ darkMode, setDarkMode }) => {
           <Link to="/support">Support</Link>
           <Link
             to="https://user.boitr.com/"
-            className={`mt-3 mx-2 inline-block text-white ${
+            className={`mt-3 mx-2 flex justify-center items-center gap-2 text-white ${
               darkMode
                 ? "bg-[#017CD4] hover:bg-[linear-gradient(90deg,rgba(56,155,233,0.5)_0%,rgba(177,63,188,0.5)_100%)]"
                 : "bg-[#2c1662] hover:bg-[#2c136f]"
             } px-4 py-2 rounded-full text-sm font-bold transition-all duration-500`}
           >
-            Get Started Now ↗
+            Get Started Now <BsArrowUpRight />
+
           </Link>
         </div>
       )}

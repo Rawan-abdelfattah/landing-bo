@@ -3,6 +3,7 @@ import { Navbar } from "../Navbar";
 import TextScroll from "../TextScroll";
 import { Link } from "react-router-dom";
 import { FaBehance } from "react-icons/fa6";
+import { BsArrowUpRight } from "react-icons/bs";
 
 export const Hero = ({ darkMode, setDarkMode }) => {
   return (
@@ -59,9 +60,9 @@ export const Hero = ({ darkMode, setDarkMode }) => {
               darkMode
                 ? "bg-[#017CD4] hover:bg-[linear-gradient(90deg,rgba(56,155,233,0.5)_0%,rgba(177,63,188,0.5)_100%)]"
                 : "bg-[#2c1662] hover:bg-[#2c136f]"
-            } text-white px-4 py-2 rounded-full text-[16px] font-bold inline-block`}
+            } text-white px-4 py-2 rounded-full text-[16px] font-bold  inline-flex  items-center gap-2`}
           >
-            Create Your Boitr Now ↗
+            Create Your Boitr Now <BsArrowUpRight />
           </Link>
           <img
             src="/users.png"

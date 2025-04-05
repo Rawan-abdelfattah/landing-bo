@@ -1,4 +1,5 @@
 import React from "react";
+import { BsArrowUpRight } from "react-icons/bs";
 import { Link } from "react-router-dom";
 
 const GalleryGridCard = ({ name, role, profileImg, mainImg, darkMode }) => {
@@ -141,9 +142,9 @@ const GalleryGrid = ({ darkMode }) => {
             </p>
             <Link
               to="https://user.boitr.com/"
-              className={`${darkMode ? 'bg-[#017CD4] hover:bg-[linear-gradient(90deg,rgba(56,155,233,0.5)_0%,rgba(177,63,188,0.5)_100%)]'  :'bg-[#2c1662] hover:bg-[#2c136f]'}   text-white px-[20px] py-[10px] rounded-full text-sm font-bold inline-block transition-all duration-500`}
+              className={`${darkMode ? 'bg-[#017CD4] hover:bg-[linear-gradient(90deg,rgba(56,155,233,0.5)_0%,rgba(177,63,188,0.5)_100%)]'  :'bg-[#2c1662] hover:bg-[#2c136f]'}   text-white px-[20px] py-[10px] rounded-full text-sm font-bold   inline-flex  items-center gap-2 transition-all duration-500`}
             >
-              Join Us Now ↗
+              Join Us Now <BsArrowUpRight />
             </Link>
           </div>
         </div>  

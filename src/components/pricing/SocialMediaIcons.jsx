@@ -1,4 +1,5 @@
 import React from "react";
+import { BsArrowUpRight } from "react-icons/bs";
 
 const SocialMediaIcons = ({ darkMode }) => {
   return (
@@ -18,8 +19,8 @@ const SocialMediaIcons = ({ darkMode }) => {
           to grow smarter and faster. Track your audience, boost engagement, and
           maximize your revenue — all in one place.
         </p>
-        <button className={`${darkMode ? 'bg-[#017CD4] hover:bg-[linear-gradient(90deg,rgba(56,155,233,0.5)_0%,rgba(177,63,188,0.5)_100%)]'  :'bg-[#2c1662] hover:bg-[#2c136f]'}  text-white font-semibold py-3 px-6 rounded-full transition duration-500`}>
-          Create Your Page Now ↗
+        <button className={` inline-flex  items-center gap-2 ${darkMode ? 'bg-[#017CD4] hover:bg-[linear-gradient(90deg,rgba(56,155,233,0.5)_0%,rgba(177,63,188,0.5)_100%)]'  :'bg-[#2c1662] hover:bg-[#2c136f]'}  text-white font-semibold py-3 px-6 rounded-full transition duration-500`}>
+          Create Your Page Now <BsArrowUpRight />
         </button>
         <img
           src={  "social_media.gif"}

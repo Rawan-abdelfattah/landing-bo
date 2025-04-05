@@ -1,4 +1,5 @@
 import React from "react";
+import { BsArrowUpRight } from "react-icons/bs";
 import { FaCheck } from "react-icons/fa";
 
 const plans = [
@@ -151,8 +152,8 @@ const Plans = ({ darkMode }) => {
             </div>
 
             <div className="p-4  text-center">
-              <button className={`w-full transition duration-300 ease-in-out  ${darkMode ? 'bg-[#017CD4] hover:bg-[linear-gradient(90deg,rgba(56,155,233,0.5)_0%,rgba(177,63,188,0.5)_100%)]'  :'bg-[#2c1662] hover:bg-[#2c136f]'}  text-white font-semibold py-2 rounded-full transition-all duration-500`}>
-                Get Started Now ↗
+              <button className={`w-full flex justify-center items-center gap-2 transition duration-300 ease-in-out  ${darkMode ? 'bg-[#017CD4] hover:bg-[linear-gradient(90deg,rgba(56,155,233,0.5)_0%,rgba(177,63,188,0.5)_100%)]'  :'bg-[#2c1662] hover:bg-[#2c136f]'}  text-white font-semibold py-2 rounded-full transition-all duration-500`}>
+                Get Started Now <BsArrowUpRight />
               </button>
             </div>
           </div>

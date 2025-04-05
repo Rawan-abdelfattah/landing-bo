@@ -1,4 +1,5 @@
 import React from "react";
+import { BsArrowUpRight } from "react-icons/bs";
 import { FaHeadset, FaEnvelope, FaBook } from "react-icons/fa";
 
 const supportOptions = [
@@ -67,14 +68,14 @@ const SupportOptions = ({ darkMode }) => {
             <p className="mt-2 mb-5">{option.description}</p>
 
             <button
-              className={`mt-auto  px-4 py-2 text-white ${
+              className={`mt-auto   inline-flex  items-center gap-2 px-4 py-2 text-white ${
                 darkMode
                   ? "bg-[#017CD4] hover:bg-[linear-gradient(90deg,rgba(56,155,233,0.5)_0%,rgba(177,63,188,0.5)_100%)]"
                   : "bg-[#2c1662] hover:bg-[#2c136f]"
               }  
             rounded-full transition-all duration-500 ${option.buttonColor}`}
             >
-              {option.buttonLabel} ↗
+              {option.buttonLabel} <BsArrowUpRight />
             </button>
           </div>
         ))}

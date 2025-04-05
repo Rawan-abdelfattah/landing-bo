@@ -1,4 +1,5 @@
 import React from "react";
+import { BsArrowUpRight } from "react-icons/bs";
 import { FiGrid, FiSettings, FiBarChart, FiZap } from "react-icons/fi";
 import { Link } from "react-router-dom";
 
@@ -53,9 +54,9 @@ export const Showcase = ({ darkMode }) => {
                 darkMode
                   ? "bg-[#017CD4] hover:bg-[linear-gradient(90deg,rgba(56,155,233,0.5)_0%,rgba(177,63,188,0.5)_100%)]"
                   : "bg-[#2c1662] hover:bg-[#2c136f]"
-              }  text-white px-[20px] py-[10px] rounded-full text-sm font-bold inline-block transition-all duration-500`}
+              }  text-white px-[20px] py-[10px] rounded-full text-sm font-bold inline-flex  items-center gap-2 transition-all duration-500`}
             >
-              Contact Us Now ↗
+              Contact Us Now <BsArrowUpRight />
             </Link>
           </div>
         </div>

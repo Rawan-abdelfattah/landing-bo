@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import TextScroll from "../TextScroll";
 import { Phone } from "./phone-effect/Phone";
+import { BsArrowUpRight } from "react-icons/bs";
 
 export const Analytics = ({ darkMode }) => {
   return (
@@ -45,9 +46,9 @@ export const Analytics = ({ darkMode }) => {
           darkMode
             ? "bg-[#017CD4] hover:bg-[linear-gradient(90deg,rgba(56,155,233,0.5)_0%,rgba(177,63,188,0.5)_100%)]"
             : "bg-[#2c1662] hover:bg-[#2c136f]"
-        }  px-[20px] py-[10px] rounded-full text-sm font-bold inline-block transition-all duration-500 ease-in-out`}
+        }  px-[20px] py-[10px] rounded-full text-sm font-bold  inline-flex  items-center gap-2 transition-all duration-500 ease-in-out`}
       >
-        Discover Our Features ↗
+        Discover Our Features <BsArrowUpRight />
       </Link>
       <img
         src="/social_media.gif"
