@@ -38,13 +38,16 @@ const SupportOptions = ({ darkMode }) => {
         >
           01
         </h2>
-        <h1 className="text-[36px] leading-[50px] md:text-[38px] font-[700] lg:text-4xl font-bold mt-2">
+        <div className="md:flex justify-between font-bold mb-6 py-X5">
+               <h1 className="max-w-[588px] text-[36px] leading-[50px] md:text-[38px] font-[700] font-bold mt-2">
           We’re Here To Help You Every Step Of The Way
         </h1>
-        <p className="mt-4 max-w-2xl">
+        <p className="mt-4 max-w-[490px] text-[18px] leading-[22px] font-[500]">
           Got a question? Need a hand? Our support team is ready to make your
           Boitr experience smooth and stress-free.
         </p>
+        </div>
+   
       </div> 
       <div className="mt-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
         {supportOptions.map((option, index) => (
@@ -61,17 +64,17 @@ const SupportOptions = ({ darkMode }) => {
              <div className="w-12 h-12 flex items-center justify-center rounded-xl mb-4">
               <img src={option.icon} alt="icon" />
             </div>
-            <h3 className="text-xl font-semibold">{option.title}</h3>
+            <span className="text-[22px] leading-[30px] font-[700]">{option.title}</span>
 
-            <p className="mt-2 mb-5">{option.description}</p>
+            <span className="mt-2 mb-5 text-[16px] leading-[20px] font-[500]">{option.description}</span>
 
             <Link
-              className={`mt-auto inline-flex  items-center gap-2 px-4 py-2 text-white ${
+              className={`mt-auto inline-flex  items-center gap-2 px-4 py-2 text-white text-[16px] leading-[20px] font-[500] ${
                 darkMode
                   ? "bg-[#017CD4] hover:bg-[#017CD4] hover:bg-[linear-gradient(90deg,_#389BE9_0%,_#B13FBC_100%)]"
                   : "bg-[#2c1662] hover:bg-[#2c136f]"
               }  
-            rounded-full transition-all duration-500 `}
+            rounded-full w-fit transition-all duration-500 `}
             >
               {option.buttonLabel} <BsArrowUpRight />
             </Link>

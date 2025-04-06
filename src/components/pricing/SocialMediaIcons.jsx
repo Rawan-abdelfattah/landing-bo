@@ -14,12 +14,12 @@ const SocialMediaIcons = ({ darkMode }) => {
         <h2 className="text-[36px] leading-[50px] md:text-[38px] font-[700] font-bold mb-4">
           Ready To Elevate Your Brand? Join Boitr Today!
         </h2>
-        <p className="  max-w-2xl mx-auto mb-6">
+        <p className="text-[18px] font-[500] leading-[22px]   max-w-2xl mx-auto mb-6">
           Discover the ultimate platform built for creators and brands who want
           to grow smarter and faster. Track your audience, boost engagement, and
           maximize your revenue — all in one place.
         </p>
-        <button className={` inline-flex  items-center gap-2 ${darkMode ? 'bg-[#017CD4] hover:bg-[#017CD4] hover:bg-[linear-gradient(90deg,_#389BE9_0%,_#B13FBC_100%)]'  :'bg-[#2c1662] hover:bg-[#2c136f]'}  text-white font-semibold py-3 px-6 rounded-full transition duration-500`}>
+        <button className={`text-[16px] font-[500] leading-[22px] inline-flex  items-center gap-2 ${darkMode ? 'bg-[#017CD4] hover:bg-[#017CD4] hover:bg-[linear-gradient(90deg,_#389BE9_0%,_#B13FBC_100%)]'  :'bg-[#2c1662] hover:bg-[#2c136f]'}  text-white font-semibold py-3 px-6 rounded-full transition duration-500`}>
           Create Your Page Now <BsArrowUpRight />
         </button>
         <img

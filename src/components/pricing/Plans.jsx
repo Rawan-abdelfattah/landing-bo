@@ -57,7 +57,7 @@ const plans = [
 
 const Plans = ({ darkMode }) => {
   return (
-    <section className="py-16 px-6 "> 
+    <section className="py-16 px-6 ">
       <div className="max-w-6xl mx-auto text-center lg:text-left">
         <h2
           className={`${
@@ -70,7 +70,7 @@ const Plans = ({ darkMode }) => {
           <h2 className="max-w-[588px] text-[36px] leading-[50px] md:text-[38px] font-[700] ">
             Choose The Perfect Plan For You
           </h2>
-          <p className="max-w-[482px]">
+          <p className="max-w-[482px] text-[18px] font-[500] leading-[22px]">
             Whether you're just getting started or ready to take your digital
             presence to the next level, Boitr has a plan designed for your
             needs.
@@ -83,65 +83,71 @@ const Plans = ({ darkMode }) => {
     ${darkMode ? "bg-[#161616]" : "bg-gray-100"} 
     hover:bg-[url('/pricing-hover-bg.png')] hover:bg-cover hover:bg-center`}
       >
-        <p>Free Plan</p>
-        <h2 className="font-bold text-2xl">$0 / Forever</h2>
-        <p>Perfect for individuals exploring their digital presence.</p>
- 
+        <p className="text-[16px] font-[500] leading-[22px] ">Free Plan</p>
+        <h2 className="text-[32px] font-[700] leading-[40px] my-5">$0 / Forever</h2>
+        <p className="text-[18px] font-[500] leading-[22px]">Perfect for individuals exploring their digital presence.</p>
+
         <div
           className="max-h-0 overflow-hidden transition-all duration-1000 ease-in-out 
       group-hover:max-h-60 group-hover:py-3"
-        > 
+        >
           <div className="grid grid-cols-2 gap-4">
-            <ul className="space-y-1">
-              <li className="flex gap-2">
-                <img src="/pricing-icon.svg" alt="icon" /> Unlimited Links
-              </li>
-              <li className="flex gap-2">
-                <img src="/pricing-icon.svg" alt="icon" /> Social Icons
-              </li>
-              <li className="flex gap-2">
-                <img src="/pricing-icon.svg" alt="icon" /> Email Collection
-              </li>
-            </ul>
-            <ul className="space-y-1">
-              <li className="flex gap-2">
-                <img src="/pricing-icon.svg" alt="icon" /> Link Clicks Analytics
-              </li>
-              <li className="flex gap-2">
-                <img src="/pricing-icon.svg" alt="icon" /> Custom Theme
-              </li>
-              <li className="flex gap-2">
-                <img src="/pricing-icon.svg" alt="icon" /> Link Folders
-              </li>
-            </ul>
-          </div>{" "}
+            {[
+              ["Unlimited Links", "Social Icons", "Email Collection"],
+              ["Link Clicks Analytics", "Custom Theme", "Link Folders"],
+            ].map((column, colIdx) => (
+              <ul key={colIdx} className="space-y-1">
+                {column.map((feature, idx) => (
+                  <li key={idx} className="flex text-[18px] font-[500] leading-[22px] gap-2">
+                    <img src="/pricing-icon.svg" alt="icon" /> {feature}
+                  </li>
+                ))}
+              </ul>
+            ))}
+          </div>
           <div className="flex justify-end">
-            <button className={`text-white ${darkMode ? 'bg-[#017CD4] hover:bg-[#017CD4] hover:bg-[linear-gradient(90deg,_#389BE9_0%,_#B13FBC_100%)]'  :'bg-[#2c1662] hover:bg-[#2c136f]'}  px-4 py-2 rounded-full hover:bg-blue-600 transition-all duration-500`}>
-              Create Your Page Now For Free 
+            <button
+              className={`text-white text-[16px] font-[500] leading-[22px]  ${
+                darkMode
+                  ? "bg-[#017CD4] hover:bg-[#017CD4] hover:bg-[linear-gradient(90deg,_#389BE9_0%,_#B13FBC_100%)]"
+                  : "bg-[#2c1662] hover:bg-[#2c136f]"
+              }  px-4 py-2 mt-5 rounded-full hover:bg-blue-600 transition-all duration-500`}
+            >
+              Create Your Page Now For Free
             </button>
           </div>
-        </div> 
+        </div>
       </div>
 
       <div className="mt-10 grid gap-6 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 max-w-6xl mx-auto">
         {plans.map((plan, index) => (
           <div
             key={index}
-            className={`rounded-3xl shadow-lg hover:shadow-xl transition-all duration-500 border ${darkMode ? 'border-[#017CD4]  '  :'border-[#2c1662] '}  overflow-hidden flex flex-col`}
+            className={`rounded-3xl shadow-lg hover:shadow-xl transition-all duration-500 border ${
+              darkMode ? "border-[#017CD4]  " : "border-[#2c1662] "
+            }  overflow-hidden flex flex-col`}
           >
             <div className={`p-6 text-white ${plan.gradient}`}>
-              <h3 className="text-lg font-semibold">{plan.name}</h3>
-              <p className="text-2xl font-bold">{plan.price}</p>
-              <p className=" mt-1">{plan.description}</p>
+              <h3 className="text-[16px] font-[500] leading-[22px] mb-3">
+                {plan.name}
+              </h3>
+              <p className="text-2xl font-bold text-[32px] font-[700] leading-[40px] ">
+                {plan.price}
+              </p>
+              <p className=" mt-1 text-[16px] font-[500] leading-[22px] ">
+                {plan.description}
+              </p>
             </div>
 
             <div className="p-6 flex-1 ">
               {plan.features.length > 0 ? (
                 <ul className="space-y-3 text-sm">
                   {plan.features.map((feature, i) => (
-                    <li key={i} className="flex items-start gap-2">
+                    <li
+                      key={i}
+                      className="flex items-start gap-2 text-[18px] font-[500] leading-[22px] "
+                    >
                       <img src="/pricing-icon.svg" alt="icon" />
-
                       {feature}
                     </li>
                   ))}
@@ -152,7 +158,13 @@ const Plans = ({ darkMode }) => {
             </div>
 
             <div className="p-4  text-center">
-              <button className={`w-full flex justify-center items-center gap-2 transition duration-300 ease-in-out  ${darkMode ? 'bg-[#017CD4] hover:bg-[#017CD4] hover:bg-[linear-gradient(90deg,_#389BE9_0%,_#B13FBC_100%)]'  :'bg-[#2c1662] hover:bg-[#2c136f]'}  text-white font-semibold py-2 rounded-full transition-all duration-500`}>
+              <button
+                className={`text-[16px] font-[500] leading-[22px]  w-full flex justify-center items-center gap-2 transition duration-300 ease-in-out  ${
+                  darkMode
+                    ? "bg-[#017CD4] hover:bg-[#017CD4] hover:bg-[linear-gradient(90deg,_#389BE9_0%,_#B13FBC_100%)]"
+                    : "bg-[#2c1662] hover:bg-[#2c136f]"
+                }  text-white font-semibold py-2 rounded-full transition-all duration-500`}
+              >
                 Get Started Now <BsArrowUpRight />
               </button>
             </div>

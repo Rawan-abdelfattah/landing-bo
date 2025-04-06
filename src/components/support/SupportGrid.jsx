@@ -131,7 +131,7 @@ const SupportGrid = ({ darkMode }) => {
 
         {Welcome.map((section, index) => (
           <div key={index} className="mt-10">
-            <h3 className="w-full py-4 text-lg font-semibold text-white px-4 py-2 rounded-xl [background:linear-gradient(270deg,#5F2866_0%,#2A4A74_100%)] inline-block">
+            <h3 className="w-full py-4 text-[26px] font-[700] text-white px-4 py-2 rounded-xl [background:linear-gradient(270deg,#5F2866_0%,#2A4A74_100%)] inline-block">
               {section.title}
             </h3>
             <div className="mt-4 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
@@ -145,7 +145,7 @@ const SupportGrid = ({ darkMode }) => {
                   <div className="w-10 h-10 text-white flex  rounded-xl  ">
                     <img src={item.icon} alt="icon" />
                   </div>
-                  <span>{item.label}</span>
+                  <span className=" text-[22px] leading-[30px] font-[700]">{item.label}</span>
                 </div>
               ))}
             </div>
@@ -153,8 +153,8 @@ const SupportGrid = ({ darkMode }) => {
         ))}
         {Design.map((section, index) => (
           <div key={index} className="mt-10">
-            <h3 className="w-full py-4 text-lg font-semibold text-white px-4 py-2 rounded-xl [background:linear-gradient(270deg,#5F2866_0%,#2A4A74_100%)] inline-block">
-              {section.title}
+            <h3 className="w-full py-4 text-[26px] font-[700] text-white px-4 py-2 rounded-xl [background:linear-gradient(270deg,#5F2866_0%,#2A4A74_100%)] inline-block">
+            {section.title}
             </h3>
             <div className="mt-4 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4">
               {section.items.map((item, idx) => (
@@ -167,7 +167,7 @@ const SupportGrid = ({ darkMode }) => {
                   <div className="w-10 h-10 text-white flex  rounded-xl  ">
                     <img src={item.icon} alt="icon" />
                   </div>
-                  <span>{item.label}</span>
+                  <span className=" text-[22px] leading-[30px] font-[700]">{item.label}</span>
                 </div>
               ))}
             </div>
@@ -175,8 +175,8 @@ const SupportGrid = ({ darkMode }) => {
         ))}
         {Selling.map((section, index) => (
           <div key={index} className="mt-10">
-            <h3 className="w-full py-4 text-lg font-semibold text-white px-4 py-2 rounded-xl [background:linear-gradient(270deg,#5F2866_0%,#2A4A74_100%)] inline-block">
-              {section.title}
+            <h3 className="w-full py-4 text-[26px] font-[700] text-white px-4 py-2 rounded-xl [background:linear-gradient(270deg,#5F2866_0%,#2A4A74_100%)] inline-block">
+            {section.title}
             </h3>
             <div className="mt-4 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4">
               {section.items.map((item, idx) => (
@@ -189,7 +189,7 @@ const SupportGrid = ({ darkMode }) => {
                   <div className="w-10 h-10 text-white flex  rounded-xl  ">
                     <img src={item.icon} alt="icon" />
                   </div>
-                  <span>{item.label}</span>
+                  <span className=" text-[22px] leading-[30px] font-[700]">{item.label}</span>
                 </div>
               ))}
             </div>
@@ -197,8 +197,8 @@ const SupportGrid = ({ darkMode }) => {
         ))}
         {Marketing.map((section, index) => (
           <div key={index} className="mt-10">
-            <h3 className="w-full py-4 text-lg font-semibold text-white px-4 py-2 rounded-xl [background:linear-gradient(270deg,#5F2866_0%,#2A4A74_100%)] inline-block">
-              {section.title}
+            <h3 className="w-full py-4 text-[26px] font-[700] text-white px-4 py-2 rounded-xl [background:linear-gradient(270deg,#5F2866_0%,#2A4A74_100%)] inline-block">
+            {section.title}
             </h3>
             <div className="mt-4 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
               {section.items.map((item, idx) => (
@@ -211,7 +211,7 @@ const SupportGrid = ({ darkMode }) => {
                   <div className="w-10 h-10 text-white flex  rounded-xl  ">
                     <img src={item.icon} alt="icon" />
                   </div>
-                  <span>{item.label}</span>
+                  <span className=" text-[22px] leading-[30px] font-[700]">{item.label}</span>
                 </div>
               ))}
             </div>
@@ -219,8 +219,8 @@ const SupportGrid = ({ darkMode }) => {
         ))}
         {Integrations.map((section, index) => (
           <div key={index} className="mt-10">
-            <h3 className="w-full py-4 text-lg font-semibold text-white px-4 py-2 rounded-xl [background:linear-gradient(270deg,#5F2866_0%,#2A4A74_100%)] inline-block">
-              {section.title}
+            <h3 className="w-full py-4 text-[26px] font-[700] text-white px-4 py-2 rounded-xl [background:linear-gradient(270deg,#5F2866_0%,#2A4A74_100%)] inline-block">
+            {section.title}
             </h3>
             <div className="mt-4 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4">
               {section.items.map((item, idx) => (
@@ -233,7 +233,7 @@ const SupportGrid = ({ darkMode }) => {
                   <div className="w-10 h-10 text-white flex  rounded-xl  ">
                     <img src={item.icon} alt="icon" />
                   </div>
-                  <span>{item.label}</span>
+                  <span className=" text-[22px] leading-[30px] font-[700]">{item.label}</span>
                 </div>
               ))}
             </div>
@@ -241,8 +241,8 @@ const SupportGrid = ({ darkMode }) => {
         ))}
         {Account.map((section, index) => (
           <div key={index} className="mt-10">
-            <h3 className="w-full py-4 text-lg font-semibold text-white px-4 py-2 rounded-xl [background:linear-gradient(270deg,#5F2866_0%,#2A4A74_100%)] inline-block">
-              {section.title}
+            <h3 className="w-full py-4 text-[26px] font-[700] text-white px-4 py-2 rounded-xl [background:linear-gradient(270deg,#5F2866_0%,#2A4A74_100%)] inline-block">
+            {section.title}
             </h3>
             <div className="mt-4 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
               {section.items.map((item, idx) => (
@@ -255,7 +255,7 @@ const SupportGrid = ({ darkMode }) => {
                   <div className="w-10 h-10 text-white flex  rounded-xl  ">
                     <img src={item.icon} alt="icon" />
                   </div>
-                  <span>{item.label}</span>
+                  <span className=" text-[22px] leading-[30px] font-[700]">{item.label}</span>
                 </div>
               ))}
             </div>
@@ -263,8 +263,8 @@ const SupportGrid = ({ darkMode }) => {
         ))}
         {Misc.map((section, index) => (
           <div key={index} className="mt-10">
-            <h3 className="w-full py-4 text-lg font-semibold text-white px-4 py-2 rounded-xl [background:linear-gradient(270deg,#5F2866_0%,#2A4A74_100%)] inline-block">
-              {section.title}
+            <h3 className="w-full py-4 text-[26px] font-[700] text-white px-4 py-2 rounded-xl [background:linear-gradient(270deg,#5F2866_0%,#2A4A74_100%)] inline-block">
+            {section.title}
             </h3>
             <div className="mt-4 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
               {section.items.map((item, idx) => (
@@ -277,7 +277,7 @@ const SupportGrid = ({ darkMode }) => {
                   <div className="w-10 h-10 text-white flex  rounded-xl  ">
                     <img src={item.icon} alt="icon" />
                   </div>
-                  <span>{item.label}</span>
+                  <span className=" text-[22px] leading-[30px] font-[700]">{item.label}</span>
                 </div>
               ))}
             </div>
