@@ -83,10 +83,10 @@
       /* overflow: hidden; */
     position: absolute;
     border-radius: 16px;
-    right: -50px;
+    right: -150px;
     top: 60px;
-    width: 120px;
-    height: 120px;
+    width: 200px;
+    height: 200px;
     transform: translatez(-40px); 
     z-index: 1;
   }

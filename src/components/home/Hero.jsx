@@ -20,7 +20,7 @@ export const Hero = ({ darkMode, setDarkMode }) => {
   
       <div className="max-w-screen-xl mx-auto md:px-13 px-2 flex flex-col md:flex-row justify-between items-center md:items-center text-center md:text-left pt-12 lg:pt-1">
         <div className="max-w-[608px] md:mb-30 lg:mb-40 mb-5 mx-auto md:mx-0">
-          <span className="text-[45px] leading-[65px] md:text-[52px] font-bold ">
+          <span className="text-[35px] leading-[40px] leading-[65px] md:text-[52px] font-bold ">
             Your Digital Identity, One Smart Link!
           </span>
           <div className="flex gap-4 my-5 justify-center md:justify-start">
@@ -58,7 +58,7 @@ export const Hero = ({ darkMode, setDarkMode }) => {
             className={`transition-all duration-500 ${
               darkMode
                 ? "bg-[#017CD4] hover:bg-[#017CD4] hover:bg-[linear-gradient(90deg,_#389BE9_0%,_#B13FBC_100%)]"
-                : "bg-[#2c1662] hover:bg-[#2c136f]"
+                : "bg-[#2c1662] hover:bg-[#2c1662] hover:bg-[linear-gradient(90deg,_#2c1662_0%,_#B13FBC_100%)]"
             } text-white px-4 py-2 rounded-full text-[16px] font-bold  inline-flex  items-center gap-2`}
           >
             Create Your Boitr Now <BsArrowUpRight />

@@ -54,7 +54,7 @@ export default function FeatureGrid({ darkMode }) {
             01
           </span>
           <div className="md:flex justify-between font-bold mb-6 py-5">
-            <span className="md:max-w-[588px] text-[36px] leading-[50px] md:text-[38px] font-[700] ">
+            <span className="md:max-w-[588px] text-[32px] leading-[50px] md:text-[38px] font-[700] ">
               Turn Your Passion into Profit with These Our Features
             </span>
             <div>
@@ -63,7 +63,7 @@ export default function FeatureGrid({ darkMode }) {
                 className={`transition-all duration-500  inline-flex  items-center gap-2 ${
                   darkMode
                     ? "bg-[#017CD4] hover:bg-[#017CD4] hover:bg-[linear-gradient(90deg,_#389BE9_0%,_#B13FBC_100%)]"
-                    : "bg-[#2c1662] hover:bg-[#2c136f]"
+                    : "bg-[#2c1662] hover:bg-[#2c1662] hover:bg-[linear-gradient(90deg,_#2c1662_0%,_#B13FBC_100%)]"
                 }  text-white px-4 py-2 rounded-full text-sm font-bold mt-2  text-[16px]`}
               >
                 Join Us Now <BsArrowUpRight />

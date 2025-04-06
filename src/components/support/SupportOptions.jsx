@@ -39,7 +39,7 @@ const SupportOptions = ({ darkMode }) => {
           01
         </h2>
         <div className="md:flex justify-between font-bold mb-6 py-X5">
-               <h1 className="max-w-[588px] text-[36px] leading-[50px] md:text-[38px] font-[700] font-bold mt-2">
+               <h1 className="max-w-[588px] text-[32px] leading-[50px] md:text-[38px] font-[700] font-bold mt-2">
           We’re Here To Help You Every Step Of The Way
         </h1>
         <p className="mt-4 max-w-[490px] text-[18px] leading-[22px] font-[500]">
@@ -61,9 +61,7 @@ const SupportOptions = ({ darkMode }) => {
           } 
           p-6 rounded-xl shadow-lg hover:shadow-2xl transition-all duration-500`}
           >
-             <div className="w-12 h-12 flex items-center justify-center rounded-xl mb-4">
-              <img src={option.icon} alt="icon" />
-            </div>
+               <img src={option.icon} className='w-[50px] h-[50px] mb-4' alt="icon" />
             <span className="text-[22px] leading-[30px] font-[700]">{option.title}</span>
 
             <span className="mt-2 mb-5 text-[16px] leading-[20px] font-[500]">{option.description}</span>
@@ -72,7 +70,7 @@ const SupportOptions = ({ darkMode }) => {
               className={`mt-auto inline-flex  items-center gap-2 px-4 py-2 text-white text-[16px] leading-[20px] font-[500] ${
                 darkMode
                   ? "bg-[#017CD4] hover:bg-[#017CD4] hover:bg-[linear-gradient(90deg,_#389BE9_0%,_#B13FBC_100%)]"
-                  : "bg-[#2c1662] hover:bg-[#2c136f]"
+                  : "bg-[#2c1662] hover:bg-[#2c1662] hover:bg-[linear-gradient(90deg,_#2c1662_0%,_#B13FBC_100%)]"
               }  
             rounded-full w-fit transition-all duration-500 `}
             >

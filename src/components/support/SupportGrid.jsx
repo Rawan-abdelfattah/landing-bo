@@ -125,7 +125,7 @@ const SupportGrid = ({ darkMode }) => {
         >
           02
         </h2>
-        <h1 className="text-[36px] leading-[50px] md:text-[38px] font-[700] lg:text-4xl font-bold mt-2">
+        <h1 className="text-[32px] leading-[50px] md:text-[38px] font-[700] lg:text-4xl font-bold mt-2">
           Your Boitr Journey Starts Here!
         </h1>
 
@@ -150,10 +150,10 @@ const SupportGrid = ({ darkMode }) => {
                     darkMode ? "bg-[#232323]" : "bg-[#F1F1F1]"
                   } p-4 rounded-xl shadow-md hover:shadow-xl transition duration-500 cursor-pointer`}
                 >
-                  <div className="w-10 h-10 text-white flex  rounded-xl  ">
-                    <img src={item.icon} alt="icon" />
-                  </div>
-                  <span className=" text-[22px] leading-[30px] font-[700]">
+                  
+                    <img src={item.icon} className='w-[50px] h-[50px]' alt="icon" />
+                 
+                  <span className=" md:text-[22px] md:leading-[30px]  text-[20px] leading-[27px] font-[700] ">
                     {item.label}
                   </span>
                 </div>
@@ -182,10 +182,10 @@ const SupportGrid = ({ darkMode }) => {
                     darkMode ? "bg-[#232323]" : "bg-[#F1F1F1]"
                   } p-4 rounded-xl shadow-md hover:shadow-xl transition duration-500 cursor-pointer`}
                 >
-                  <div className="w-10 h-10 text-white flex  rounded-xl  ">
-                    <img src={item.icon} alt="icon" />
-                  </div>
-                  <span className=" text-[22px] leading-[30px] font-[700]">
+                  
+                    <img src={item.icon} className='w-[50px] h-[50px]' alt="icon" />
+                 
+                  <span className=" md:text-[22px] md:leading-[30px]  text-[20px] leading-[27px] font-[700] ">
                     {item.label}
                   </span>
                 </div>
@@ -214,10 +214,10 @@ const SupportGrid = ({ darkMode }) => {
                     darkMode ? "bg-[#232323]" : "bg-[#F1F1F1]"
                   } p-4 rounded-xl shadow-md hover:shadow-xl transition duration-500 cursor-pointer`}
                 >
-                  <div className="w-10 h-10 text-white flex  rounded-xl  ">
-                    <img src={item.icon} alt="icon" />
-                  </div>
-                  <span className=" text-[22px] leading-[30px] font-[700]">
+                  
+                    <img src={item.icon} className='w-[50px] h-[50px]' alt="icon" />
+                 
+                  <span className=" md:text-[22px] md:leading-[30px]  text-[20px] leading-[27px] font-[700] ">
                     {item.label}
                   </span>
                 </div>
@@ -246,10 +246,10 @@ const SupportGrid = ({ darkMode }) => {
                     darkMode ? "bg-[#232323]" : "bg-[#F1F1F1]"
                   } p-4 rounded-xl shadow-md hover:shadow-xl transition duration-500 cursor-pointer`}
                 >
-                  <div className="w-10 h-10 text-white flex  rounded-xl  ">
-                    <img src={item.icon} alt="icon" />
-                  </div>
-                  <span className=" text-[22px] leading-[30px] font-[700]">
+                  
+                    <img src={item.icon} className='w-[50px] h-[50px]' alt="icon" />
+                 
+                  <span className=" md:text-[22px] md:leading-[30px]  text-[20px] leading-[27px] font-[700] ">
                     {item.label}
                   </span>
                 </div>
@@ -278,10 +278,10 @@ const SupportGrid = ({ darkMode }) => {
                     darkMode ? "bg-[#232323]" : "bg-[#F1F1F1]"
                   } p-4 rounded-xl shadow-md hover:shadow-xl transition duration-500 cursor-pointer`}
                 >
-                  <div className="w-10 h-10 text-white flex  rounded-xl  ">
-                    <img src={item.icon} alt="icon" />
-                  </div>
-                  <span className=" text-[22px] leading-[30px] font-[700]">
+                  
+                    <img src={item.icon} className='w-[50px] h-[50px]' alt="icon" />
+                 
+                  <span className=" md:text-[22px] md:leading-[30px]  text-[20px] leading-[27px] font-[700] ">
                     {item.label}
                   </span>
                 </div>
@@ -310,10 +310,10 @@ const SupportGrid = ({ darkMode }) => {
                     darkMode ? "bg-[#232323]" : "bg-[#F1F1F1]"
                   } p-4 rounded-xl shadow-md hover:shadow-xl transition duration-500 cursor-pointer`}
                 >
-                  <div className="w-10 h-10 text-white flex  rounded-xl  ">
-                    <img src={item.icon} alt="icon" />
-                  </div>
-                  <span className=" text-[22px] leading-[30px] font-[700]">
+                  
+                    <img src={item.icon} className='w-[50px] h-[50px]' alt="icon" />
+                 
+                  <span className=" md:text-[22px] md:leading-[30px]  text-[20px] leading-[27px] font-[700] ">
                     {item.label}
                   </span>
                 </div>
@@ -342,10 +342,10 @@ const SupportGrid = ({ darkMode }) => {
                     darkMode ? "bg-[#232323]" : "bg-[#F1F1F1]"
                   } p-4 rounded-xl shadow-md hover:shadow-xl transition duration-500 cursor-pointer`}
                 >
-                  <div className="w-10 h-10 text-white flex  rounded-xl  ">
-                    <img src={item.icon} alt="icon" />
-                  </div>
-                  <span className=" text-[22px] leading-[30px] font-[700]">
+                  
+                    <img src={item.icon} className='w-[50px] h-[50px]' alt="icon" />
+                 
+                  <span className=" md:text-[22px] md:leading-[30px]  text-[20px] leading-[27px] font-[700] ">
                     {item.label}
                   </span>
                 </div>

@@ -87,7 +87,7 @@ const NotFound = ({ darkMode }) => {
             flex items-center gap-2 ${
               darkMode
                 ? "bg-[#017CD4] hover:bg-[#017CD4] hover:bg-[linear-gradient(90deg,_#389BE9_0%,_#B13FBC_100%)]"
-                : "text-white bg-[#2c1662] hover:bg-[#2c136f]"
+                : "text-white bg-[#2c1662] hover:bg-[#2c1662] hover:bg-[linear-gradient(90deg,_#2c1662_0%,_#B13FBC_100%)]"
             }  `}
           >
             Back to Home

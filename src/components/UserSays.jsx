@@ -37,7 +37,7 @@ export const UserSays = ({ darkMode }) => {
         >
           04
         </p>
-        <span className="text-[36px] leading-[50px] md:text-[38px] font-[700] font-bold  mb-20">
+        <span className="text-[32px] leading-[50px] md:text-[38px] font-[700] font-bold  mb-20">
           What Our Users Are Saying
         </span>
       </div>

@@ -140,7 +140,7 @@ export const Phone = () => {
                   >
                     <img
                       src={card.cardImageBack}
-                      className="rounded-2xl"
+                      className="rounded-2xl w-[300px]"
                       alt="card img"
                     />
                   </div>

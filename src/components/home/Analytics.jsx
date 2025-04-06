@@ -30,8 +30,8 @@ export const Analytics = ({ darkMode }) => {
       <p className={darkMode ? "text-outline-dark-h1" : "text-outline-light-h1"}>
         03
       </p>
-      <h2 className="text-[36px] md:text-[38px] max-w-[550px] font-bold leading-[50px] mb-4 pb-[40px]">
-        Analyze Your Audience And <br /> Keep Your Followers Engaged
+      <h2 className="text-[32px] md:text-[38px] max-w-[550px] font-bold leading-[50px] mb-4 pb-[40px]">
+        Analyze Your Audience And Keep Your Followers Engaged
       </h2>
       <p className="text-[18px] max-w-[520px] mb-6">
         Boitr is your all-in-one digital hub — a single, shareable link
@@ -43,7 +43,7 @@ export const Analytics = ({ darkMode }) => {
         className={`text-white text-[16px] mb-[40px] ${
           darkMode
             ? "bg-[#017CD4] hover:bg-[#017CD4] hover:bg-[linear-gradient(90deg,_#389BE9_0%,_#B13FBC_100%)]"
-            : "bg-[#2c1662] hover:bg-[#2c136f]"
+            : "bg-[#2c1662] hover:bg-[#2c1662] hover:bg-[linear-gradient(90deg,_#2c1662_0%,_#B13FBC_100%)]"
         }  px-[20px] py-[10px] rounded-full text-sm font-bold  inline-flex  items-center gap-2 transition-all duration-500 ease-in-out`}
       >
         Discover Our Features <BsArrowUpRight />

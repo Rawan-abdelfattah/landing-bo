@@ -76,7 +76,7 @@ export const Navbar = ({ darkMode, setDarkMode }) => {
             className={`text-white lg:flex items-center gap-2 hidden ${
               darkMode
                 ? "bg-[#017CD4] hover:bg-[#017CD4] hover:bg-[linear-gradient(90deg,_#389BE9_0%,_#B13FBC_100%)]"
-                : "bg-[#2c1662] hover:bg-[#2c136f]"
+                : "bg-[#2c1662] hover:bg-[#2c1662] hover:bg-[linear-gradient(90deg,_#2c1662_0%,_#B13FBC_100%)]"
             } px-4 py-2 rounded-full text-[16px] font-bold transition-all duration-500`}
           >
             Get Started Now
@@ -121,7 +121,7 @@ export const Navbar = ({ darkMode, setDarkMode }) => {
       </div>
 
       {menuOpen && (
-        <div className="lg:hidden mt-3 flex flex-col space-y-2 text-center text-[18px] py-4">
+        <div className="lg:hidden mt-3 flex flex-col space-y-5 text-center text-[18px] py-4">
           <Link to="/feature" className={isActive("/feature")}>
             Features
           </Link>
@@ -134,16 +134,19 @@ export const Navbar = ({ darkMode, setDarkMode }) => {
           <Link to="/support" className={isActive("/support")}>
             Support
           </Link>
-          <Link
+          <div className="flex justify-center  "> 
+                 <Link
             to="https://user.boitr.com/"
-            className={`mt-3 mx-2 inline-flex justify-center items-center gap-2 text-white ${
+            className={`mt-3 mx-2 flex items-center gap-2 w-fit m-auto text-white ${
               darkMode
                 ? "bg-[#017CD4] hover:bg-[#017CD4] hover:bg-[linear-gradient(90deg,_#389BE9_0%,_#B13FBC_100%)]"
-                : "bg-[#2c1662] hover:bg-[#2c136f]"
+                : "bg-[#2c1662] hover:bg-[#2c1662] hover:bg-[linear-gradient(90deg,_#2c1662_0%,_#B13FBC_100%)]"
             } px-4 py-2 rounded-full text-[16px] font-bold transition-all duration-500`}
           >
             Get Started Now <BsArrowUpRight />
-          </Link>
+          </Link> 
+          </div>
+    
         </div>
       )}
     </nav>

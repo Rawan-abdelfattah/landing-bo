@@ -29,7 +29,7 @@ const TextScroll = ({ text, darkMode, className }) => {
           darkMode ? "text-dark-outline" : "text-light-outline"
         } text-3xl font-bold`}
         style={{
-          animation: `seamlessScroll 20s linear infinite`,
+          animation: `seamlessScroll 12s linear infinite`,
         }}
       >
         <span className="pr-20">{text}</span>
