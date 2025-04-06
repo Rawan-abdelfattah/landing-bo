@@ -94,7 +94,7 @@ export const Features = ({ darkMode }) => {
               <React.Fragment key={feature.id}>
               <div
   className={`
-    relative rounded-2xl p-4 my-4 cursor-pointer transition-all duration-700 ease-in-out
+    relative rounded-2xl p-4 my-2 cursor-pointer transition-all duration-700 ease-in-out
     bg-cover bg-center
     ${darkMode ? "hover:border-[#0163A8] hover:text-white" : "hover:border-[#2c136f]"}
     hover:border hover:rounded-2xl
