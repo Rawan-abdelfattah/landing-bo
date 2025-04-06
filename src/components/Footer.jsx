@@ -2,6 +2,10 @@ import React from "react";
 import { Link } from "react-router-dom";
 import TextScroll from "./TextScroll";
 import { BsArrowUpRight } from "react-icons/bs";
+import { MdLanguage } from "react-icons/md";
+import { FaFacebook, FaLinkedin } from "react-icons/fa6";
+import { RiWhatsappFill } from "react-icons/ri";
+import { BiLogoInstagramAlt } from "react-icons/bi";
 
 export const Footer = ({ darkMode }) => {
   return (
@@ -99,17 +103,16 @@ export const Footer = ({ darkMode }) => {
                 Subscribe <BsArrowUpRight />
               </Link>
             </div>
-            <div className=" border-b my-4 flex gap-3  pb-5 ">
-              <img src="/lang.png" alt="lang" className="w-6 h-6" /> Arabic
+            <div className=" border-b my-4 flex gap-2  pb-5 ">
+              <MdLanguage className="w-6 h-6" /> Arabic
             </div>
             <div className="flex  gap-5 mt-6">
-              <img src="/linkedIn.png" className="w-5 h-5" alt="social media" />
-              <img src="/f.png" className="w-5 h-5" alt="social media" />
-              <img src="/whatsapp.png" className="w-5 h-5" alt="social media" />
-              <img
-                src="/instagram.png"
-                className="w-5 h-5"
-                alt="social media"
+              <FaLinkedin  className="w-5 h-5"  />
+              <FaFacebook  className="w-5 h-5"  />
+              <RiWhatsappFill  className="w-6 h-6"  />
+              <BiLogoInstagramAlt  
+                className="w-6 h-6 rounded-full"
+                
               />
             </div>
           </div>

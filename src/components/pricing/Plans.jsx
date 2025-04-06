@@ -78,7 +78,7 @@ const Plans = ({ darkMode }) => {
         </div>
       </div>
       <div
-        className={`max-w-6xl mx-auto rounded-2xl p-5 transition-all duration-500 overflow-hidden 
+        className={`max-w-6xl mx-auto rounded-[16px] p-5 transition-all duration-500 overflow-hidden 
     bg-cover bg-center group relative
     ${darkMode ? "bg-[#161616]" : "bg-gray-100"} 
     hover:bg-[url('/pricing-hover-bg.png')] hover:bg-cover hover:bg-center`}
@@ -123,7 +123,7 @@ const Plans = ({ darkMode }) => {
         {plans.map((plan, index) => (
           <div
             key={index}
-            className={`rounded-3xl shadow-lg hover:shadow-xl transition-all duration-500 border ${
+            className={`rounded-[16px] shadow-lg hover:shadow-xl transition-all duration-500 border ${
               darkMode ? "border-[#017CD4]  " : "border-[#2c1662] "
             }  overflow-hidden flex flex-col`}
           >

@@ -8,22 +8,26 @@ const features = [
     title: "Unified Presence",
     description: "Combine all your links in one sleek, organized space.",
     icon: "/show-case.svg",
+    lightIcon: "/light-show-case.svg",
   },
   {
     title: "Fully Customizable",
     description: "Personalize your Boitr page to reflect your unique style.",
-    icon: "/show-case2.svg",
+    icon: "/show-case2.svg",    lightIcon: "/light-show-case2.svg",
+
   },
   {
     title: "Smart Insights",
     description:
       "Track clicks and engagement to know what your audience loves.",
-    icon: "/show-case3.svg",
+    icon: "/show-case3.svg",    lightIcon: "/light-show-case3.svg",
+
   },
   {
     title: "Easy & Fast Setup",
     description: "Create and share your Boitr page in just a few minutes.",
-    icon: "/show-case4.svg",
+    icon: "/show-case4.svg",    lightIcon: "/light-show-case4.svg",
+
   },
 ];
 
@@ -77,7 +81,7 @@ export const Showcase = ({ darkMode }) => {
 
                 <div className="relative  w-[55px] h-[55px] flex items-center left-[35px] top-[15px] justify-center rounded-xl">
                   <img
-                    src={feature.icon}
+                    src={darkMode ? feature.icon : feature.lightIcon}
                     alt="icon"
                     className="text-white text-4xl"
                   />

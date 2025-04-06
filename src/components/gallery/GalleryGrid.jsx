@@ -130,7 +130,7 @@ const GalleryGrid = ({ darkMode }) => {
             </Link>
           </div>
         </div>
-        <div className="flex flex-wrap gap-3 xl:justify-between  justify-center  shadow  py-10">
+        <div className="flex flex-wrap gap-3 xl:justify-between  justify-center py-10">
           {profiles.map((profile, index) => (
             <GalleryGridCard darkMode={darkMode} key={index} {...profile} />
           ))}

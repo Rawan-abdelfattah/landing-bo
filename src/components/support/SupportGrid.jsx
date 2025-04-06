@@ -131,15 +131,16 @@ const SupportGrid = ({ darkMode }) => {
 
         {Welcome.map((section, index) => (
           <div key={index} className="mt-10">
-         <h3
-  className={`w-full px-4 py-4 text-[26px] font-[700] text-white rounded-xl 
-    ${darkMode 
-      ? '[background:linear-gradient(270deg,#5F2866_0%,#2A4A74_100%)]' 
-      : '[background:linear-gradient(90deg,#389BE9_0%,#B13FBC_100%)]'
+            <h3
+              className={`w-full px-4 py-4 text-[26px] font-[700] text-white rounded-xl 
+    ${
+      darkMode
+        ? "[background:linear-gradient(270deg,#5F2866_0%,#2A4A74_100%)]"
+        : "[background:linear-gradient(90deg,#389BE9_0%,#B13FBC_100%)]"
     }`}
->
-  {section.title}
-</h3>
+            >
+              {section.title}
+            </h3>
 
             <div className="mt-4 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
               {section.items.map((item, idx) => (
@@ -152,7 +153,9 @@ const SupportGrid = ({ darkMode }) => {
                   <div className="w-10 h-10 text-white flex  rounded-xl  ">
                     <img src={item.icon} alt="icon" />
                   </div>
-                  <span className=" text-[22px] leading-[30px] font-[700]">{item.label}</span>
+                  <span className=" text-[22px] leading-[30px] font-[700]">
+                    {item.label}
+                  </span>
                 </div>
               ))}
             </div>
@@ -160,15 +163,16 @@ const SupportGrid = ({ darkMode }) => {
         ))}
         {Design.map((section, index) => (
           <div key={index} className="mt-10">
-          <h3
-  className={`w-full px-4 py-4 text-[26px] font-[700] text-white rounded-xl 
-    ${darkMode 
-      ? '[background:linear-gradient(270deg,#5F2866_0%,#2A4A74_100%)]' 
-      : '[background:linear-gradient(90deg,#389BE9_0%,#B13FBC_100%)]'
+            <h3
+              className={`w-full px-4 py-4 text-[26px] font-[700] text-white rounded-xl 
+    ${
+      darkMode
+        ? "[background:linear-gradient(270deg,#5F2866_0%,#2A4A74_100%)]"
+        : "[background:linear-gradient(90deg,#389BE9_0%,#B13FBC_100%)]"
     }`}
->
-  {section.title}
-</h3>
+            >
+              {section.title}
+            </h3>
 
             <div className="mt-4 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4">
               {section.items.map((item, idx) => (
@@ -181,7 +185,9 @@ const SupportGrid = ({ darkMode }) => {
                   <div className="w-10 h-10 text-white flex  rounded-xl  ">
                     <img src={item.icon} alt="icon" />
                   </div>
-                  <span className=" text-[22px] leading-[30px] font-[700]">{item.label}</span>
+                  <span className=" text-[22px] leading-[30px] font-[700]">
+                    {item.label}
+                  </span>
                 </div>
               ))}
             </div>
@@ -189,15 +195,16 @@ const SupportGrid = ({ darkMode }) => {
         ))}
         {Selling.map((section, index) => (
           <div key={index} className="mt-10">
-           <h3
-  className={`w-full px-4 py-4 text-[26px] font-[700] text-white rounded-xl 
-    ${darkMode 
-      ? '[background:linear-gradient(270deg,#5F2866_0%,#2A4A74_100%)]' 
-      : '[background:linear-gradient(90deg,#389BE9_0%,#B13FBC_100%)]'
+            <h3
+              className={`w-full px-4 py-4 text-[26px] font-[700] text-white rounded-xl 
+    ${
+      darkMode
+        ? "[background:linear-gradient(270deg,#5F2866_0%,#2A4A74_100%)]"
+        : "[background:linear-gradient(90deg,#389BE9_0%,#B13FBC_100%)]"
     }`}
->
-  {section.title}
-</h3>
+            >
+              {section.title}
+            </h3>
 
             <div className="mt-4 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4">
               {section.items.map((item, idx) => (
@@ -210,7 +217,9 @@ const SupportGrid = ({ darkMode }) => {
                   <div className="w-10 h-10 text-white flex  rounded-xl  ">
                     <img src={item.icon} alt="icon" />
                   </div>
-                  <span className=" text-[22px] leading-[30px] font-[700]">{item.label}</span>
+                  <span className=" text-[22px] leading-[30px] font-[700]">
+                    {item.label}
+                  </span>
                 </div>
               ))}
             </div>
@@ -218,15 +227,16 @@ const SupportGrid = ({ darkMode }) => {
         ))}
         {Marketing.map((section, index) => (
           <div key={index} className="mt-10">
-           <h3
-  className={`w-full px-4 py-4 text-[26px] font-[700] text-white rounded-xl 
-    ${darkMode 
-      ? '[background:linear-gradient(270deg,#5F2866_0%,#2A4A74_100%)]' 
-      : '[background:linear-gradient(90deg,#389BE9_0%,#B13FBC_100%)]'
+            <h3
+              className={`w-full px-4 py-4 text-[26px] font-[700] text-white rounded-xl 
+    ${
+      darkMode
+        ? "[background:linear-gradient(270deg,#5F2866_0%,#2A4A74_100%)]"
+        : "[background:linear-gradient(90deg,#389BE9_0%,#B13FBC_100%)]"
     }`}
->
-  {section.title}
-</h3>
+            >
+              {section.title}
+            </h3>
 
             <div className="mt-4 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
               {section.items.map((item, idx) => (
@@ -239,7 +249,9 @@ const SupportGrid = ({ darkMode }) => {
                   <div className="w-10 h-10 text-white flex  rounded-xl  ">
                     <img src={item.icon} alt="icon" />
                   </div>
-                  <span className=" text-[22px] leading-[30px] font-[700]">{item.label}</span>
+                  <span className=" text-[22px] leading-[30px] font-[700]">
+                    {item.label}
+                  </span>
                 </div>
               ))}
             </div>
@@ -247,15 +259,16 @@ const SupportGrid = ({ darkMode }) => {
         ))}
         {Integrations.map((section, index) => (
           <div key={index} className="mt-10">
-           <h3
-  className={`w-full px-4 py-4 text-[26px] font-[700] text-white rounded-xl 
-    ${darkMode 
-      ? '[background:linear-gradient(270deg,#5F2866_0%,#2A4A74_100%)]' 
-      : '[background:linear-gradient(90deg,#389BE9_0%,#B13FBC_100%)]'
+            <h3
+              className={`w-full px-4 py-4 text-[26px] font-[700] text-white rounded-xl 
+    ${
+      darkMode
+        ? "[background:linear-gradient(270deg,#5F2866_0%,#2A4A74_100%)]"
+        : "[background:linear-gradient(90deg,#389BE9_0%,#B13FBC_100%)]"
     }`}
->
-  {section.title}
-</h3>
+            >
+              {section.title}
+            </h3>
 
             <div className="mt-4 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4">
               {section.items.map((item, idx) => (
@@ -268,7 +281,9 @@ const SupportGrid = ({ darkMode }) => {
                   <div className="w-10 h-10 text-white flex  rounded-xl  ">
                     <img src={item.icon} alt="icon" />
                   </div>
-                  <span className=" text-[22px] leading-[30px] font-[700]">{item.label}</span>
+                  <span className=" text-[22px] leading-[30px] font-[700]">
+                    {item.label}
+                  </span>
                 </div>
               ))}
             </div>
@@ -276,15 +291,16 @@ const SupportGrid = ({ darkMode }) => {
         ))}
         {Account.map((section, index) => (
           <div key={index} className="mt-10">
-           <h3
-  className={`w-full px-4 py-4 text-[26px] font-[700] text-white rounded-xl 
-    ${darkMode 
-      ? '[background:linear-gradient(270deg,#5F2866_0%,#2A4A74_100%)]' 
-      : '[background:linear-gradient(90deg,#389BE9_0%,#B13FBC_100%)]'
+            <h3
+              className={`w-full px-4 py-4 text-[26px] font-[700] text-white rounded-xl 
+    ${
+      darkMode
+        ? "[background:linear-gradient(270deg,#5F2866_0%,#2A4A74_100%)]"
+        : "[background:linear-gradient(90deg,#389BE9_0%,#B13FBC_100%)]"
     }`}
->
-  {section.title}
-</h3>
+            >
+              {section.title}
+            </h3>
 
             <div className="mt-4 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
               {section.items.map((item, idx) => (
@@ -297,7 +313,9 @@ const SupportGrid = ({ darkMode }) => {
                   <div className="w-10 h-10 text-white flex  rounded-xl  ">
                     <img src={item.icon} alt="icon" />
                   </div>
-                  <span className=" text-[22px] leading-[30px] font-[700]">{item.label}</span>
+                  <span className=" text-[22px] leading-[30px] font-[700]">
+                    {item.label}
+                  </span>
                 </div>
               ))}
             </div>
@@ -305,15 +323,16 @@ const SupportGrid = ({ darkMode }) => {
         ))}
         {Misc.map((section, index) => (
           <div key={index} className="mt-10">
-          <h3
-  className={`w-full px-4 py-4 text-[26px] font-[700] text-white rounded-xl 
-    ${darkMode 
-      ? '[background:linear-gradient(270deg,#5F2866_0%,#2A4A74_100%)]' 
-      : '[background:linear-gradient(90deg,#389BE9_0%,#B13FBC_100%)]'
+            <h3
+              className={`w-full px-4 py-4 text-[26px] font-[700] text-white rounded-xl 
+    ${
+      darkMode
+        ? "[background:linear-gradient(270deg,#5F2866_0%,#2A4A74_100%)]"
+        : "[background:linear-gradient(90deg,#389BE9_0%,#B13FBC_100%)]"
     }`}
->
-  {section.title}
-</h3>
+            >
+              {section.title}
+            </h3>
 
             <div className="mt-4 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
               {section.items.map((item, idx) => (
@@ -326,7 +345,9 @@ const SupportGrid = ({ darkMode }) => {
                   <div className="w-10 h-10 text-white flex  rounded-xl  ">
                     <img src={item.icon} alt="icon" />
                   </div>
-                  <span className=" text-[22px] leading-[30px] font-[700]">{item.label}</span>
+                  <span className=" text-[22px] leading-[30px] font-[700]">
+                    {item.label}
+                  </span>
                 </div>
               ))}
             </div>
