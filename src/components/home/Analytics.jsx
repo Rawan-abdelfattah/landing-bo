@@ -15,7 +15,7 @@ export const Analytics = ({ darkMode }) => {
       </div>
       <section className="relative mx-auto md:px-13 md:rounded-3xl max-w-screen-xl">
  <div
-  className="absolute inset-0 w-[450px] h-[450px] rounded-full blur-[70px] opacity-50 pointer-events-none mx-auto"
+  className="absolute bottom-10 inset-0 md:w-[750px] md:h-[500px] h-[790px] w-[400px] rounded-full blur-[70px] opacity-50 pointer-events-none mx-auto"
   style={{
     background:' linear-gradient(225deg, rgba(250, 173, 79, 0.7) 14.61%, rgba(221, 42, 123, 0.7) 39.38%, rgba(149, 55, 176, 0.7) 58.49%, rgba(81, 91, 212, 0.7) 85.39%)'
     ,

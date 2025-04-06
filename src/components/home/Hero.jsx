@@ -40,7 +40,7 @@ export const Hero = ({ darkMode, setDarkMode }) => {
         </div>
   
         <div className="z-10 md:hidden xl:flex flex flex-col items-center order-last md:order-none min-h-[300px]">
-          <div className="w-full sm:h-[400px] h-[270px] md:h-[510px]">
+          <div className="w-full sm:h-[300px] h-[270px] md:h-[500px]">
             <img
               src="/hand.png"
               alt="Robot hand pointing"

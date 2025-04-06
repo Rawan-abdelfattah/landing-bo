@@ -126,7 +126,7 @@ export const Features = ({ darkMode }) => {
                       {feature.title}
                     </span>
                     <p
-                      className={`lg:w-[500px] ml-[70px] text-[16px] font-[500] max-w-lg transition-all duration-500 ease-in-out ${
+                      className={`lg:w-[500px] md:ml-[70px] text-[16px] font-[500] max-w-lg transition-all duration-500 ease-in-out ${
                         isHovered ? "flex" : "hidden"
                       }`}
                     >
