@@ -87,7 +87,7 @@ export default function FeatureGrid({ darkMode }) {
                 <h3 className="text-xl text-[22px] leading-[30px] font-[700]  mb-2">{feature.title}</h3>
                 <p className=" text-[16px] leading-[20px] font-[500] flex-grow">{feature.description}</p>
 
-                <div className=" mt-auto ">
+                <div className=" mt-auto  translate-y-9">
                   {feature.image.endsWith(".mp4") ? (
                     <video
                       src={feature.image}
