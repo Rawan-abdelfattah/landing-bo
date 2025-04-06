@@ -71,14 +71,14 @@ export const UserSays = ({ darkMode }) => {
               </div>
 
               <p className=" mb-4">{testimonial.text}</p>
-
-              <div className="flex mb-2">
+<img src={darkMode ?"/starts.png":'/light-starts.png'} className="w-[130px]" alt="starts" />
+              {/* <div className="flex mb-2">
                 {Array.from({ length: testimonial.rating }, (_, i) => (
                   <span key={i} className={`${darkMode ? '   text-[#017CD4] ': ' text-[#2c1662]'} text-xl`}>
                     ★
                   </span>
                 ))}
-              </div>
+              </div> */}
 
               <p className=" font-[700] text-[18px]">{testimonial.name}</p>
             </div>
