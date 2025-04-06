@@ -62,7 +62,7 @@ export const UserSays = ({ darkMode }) => {
                     ? "bg-[#232323] text-white"
                     : "text-white"
                   : isHovered
-                  ? "bg-gray-200 text-black"
+                  ? "bg-[#F1F1F1] text-black"
                   : "text-black"
               }`}
             >

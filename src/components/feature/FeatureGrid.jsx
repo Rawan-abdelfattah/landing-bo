@@ -79,7 +79,7 @@ export default function FeatureGrid({ darkMode }) {
                ${
                  darkMode
                    ? "bg-[#232323] text-white "
-                   : "bg-gray-200 text-black "
+                   : "bg-[#F1F1F1] text-black "
                }
                hover:-translate-y-2 hover:shadow-lg hover:shadow-black/30 flex-1`}
                 style={{ minHeight: "100%" }} 

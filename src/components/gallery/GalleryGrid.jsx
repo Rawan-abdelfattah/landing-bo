@@ -13,7 +13,7 @@ const GalleryGridCard = ({
     <div className="group h-[446px] relative  rounded-xl shadow-lg overflow-hidden transition-all duration-500 cursor-pointer hover:shadow-2xl w-[270px]">
       <div
         className={` rounded-t-2xl ${
-          darkMode ? "bg-[#232323] text-white  " : "bg-gray-200 text-black "
+          darkMode ? "bg-[#232323] text-white  " : "bg-[#F1F1F1] text-black "
         } p-4 flex items-center`}
       >
         <img

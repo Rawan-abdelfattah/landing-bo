@@ -43,16 +43,24 @@ export default function FAQS({ darkMode }) {
             <div key={faq.id}>
               <div
                 className={`
-          relative rounded-2xl border-gray-700 p-4 my-4 cursor-pointer transition-all duration-700
-          hover:text-white
-          ${darkMode ? " hover:border-[#0163A8]" : " hover:border-[#2c136f]"}
-          bg-transparent bg-cover bg-center ease-in-out
-          ${
-            isHovered
-              ? "bg-[url('/dark-faq.png')] border py-10 my-6"
-              : "bg-[url('/light-faq.png')]"
-          }
-        `}
+    relative rounded-2xl p-4 my-4 cursor-pointer transition-all duration-700 ease-in-out
+    bg-cover bg-center
+    ${
+      darkMode
+        ? "hover:border-[#0163A8] hover:text-white"
+        : "hover:border-[#2c136f]"
+    }
+    hover:border hover:rounded-2xl
+    ${
+      isHovered
+        ? `${
+            darkMode
+              ? "bg-[url('/dark-faq.png')] border border-[#0163A8]"
+              : "bg-[url('/light-faq.png')] border border-[#2c136f]"
+          } py-10 my-6`
+        : "bg-transparent "
+    }
+  `}
                 onMouseEnter={() => setHoveredFeature(faq.id)}
                 onMouseLeave={() => setHoveredFeature(null)}
               >

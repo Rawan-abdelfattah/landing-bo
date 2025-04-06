@@ -131,15 +131,22 @@ const SupportGrid = ({ darkMode }) => {
 
         {Welcome.map((section, index) => (
           <div key={index} className="mt-10">
-            <h3 className="w-full py-4 text-[26px] font-[700] text-white px-4 py-2 rounded-xl [background:linear-gradient(270deg,#5F2866_0%,#2A4A74_100%)] inline-block">
-              {section.title}
-            </h3>
+         <h3
+  className={`w-full px-4 py-4 text-[26px] font-[700] text-white rounded-xl 
+    ${darkMode 
+      ? '[background:linear-gradient(270deg,#5F2866_0%,#2A4A74_100%)]' 
+      : '[background:linear-gradient(90deg,#389BE9_0%,#B13FBC_100%)]'
+    }`}
+>
+  {section.title}
+</h3>
+
             <div className="mt-4 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
               {section.items.map((item, idx) => (
                 <div
                   key={idx}
                   className={`flex lg:flex-col lg:items-start  items-center  gap-3  hover:-translate-y-2 hover:shadow-lg hover:shadow-black/30 ${
-                    darkMode ? "bg-[#232323]" : "bg-gray-200"
+                    darkMode ? "bg-[#232323]" : "bg-[#F1F1F1]"
                   } p-4 rounded-xl shadow-md hover:shadow-xl transition duration-500 cursor-pointer`}
                 >
                   <div className="w-10 h-10 text-white flex  rounded-xl  ">
@@ -153,15 +160,22 @@ const SupportGrid = ({ darkMode }) => {
         ))}
         {Design.map((section, index) => (
           <div key={index} className="mt-10">
-            <h3 className="w-full py-4 text-[26px] font-[700] text-white px-4 py-2 rounded-xl [background:linear-gradient(270deg,#5F2866_0%,#2A4A74_100%)] inline-block">
-            {section.title}
-            </h3>
+          <h3
+  className={`w-full px-4 py-4 text-[26px] font-[700] text-white rounded-xl 
+    ${darkMode 
+      ? '[background:linear-gradient(270deg,#5F2866_0%,#2A4A74_100%)]' 
+      : '[background:linear-gradient(90deg,#389BE9_0%,#B13FBC_100%)]'
+    }`}
+>
+  {section.title}
+</h3>
+
             <div className="mt-4 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4">
               {section.items.map((item, idx) => (
                 <div
                   key={idx}
                   className={`flex lg:flex-col lg:items-start  items-center  gap-3  hover:-translate-y-2 hover:shadow-lg hover:shadow-black/30 ${
-                    darkMode ? "bg-[#232323]" : "bg-gray-200"
+                    darkMode ? "bg-[#232323]" : "bg-[#F1F1F1]"
                   } p-4 rounded-xl shadow-md hover:shadow-xl transition duration-500 cursor-pointer`}
                 >
                   <div className="w-10 h-10 text-white flex  rounded-xl  ">
@@ -175,15 +189,22 @@ const SupportGrid = ({ darkMode }) => {
         ))}
         {Selling.map((section, index) => (
           <div key={index} className="mt-10">
-            <h3 className="w-full py-4 text-[26px] font-[700] text-white px-4 py-2 rounded-xl [background:linear-gradient(270deg,#5F2866_0%,#2A4A74_100%)] inline-block">
-            {section.title}
-            </h3>
+           <h3
+  className={`w-full px-4 py-4 text-[26px] font-[700] text-white rounded-xl 
+    ${darkMode 
+      ? '[background:linear-gradient(270deg,#5F2866_0%,#2A4A74_100%)]' 
+      : '[background:linear-gradient(90deg,#389BE9_0%,#B13FBC_100%)]'
+    }`}
+>
+  {section.title}
+</h3>
+
             <div className="mt-4 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4">
               {section.items.map((item, idx) => (
                 <div
                   key={idx}
                   className={`flex lg:flex-col lg:items-start  items-center  gap-3  hover:-translate-y-2 hover:shadow-lg hover:shadow-black/30 ${
-                    darkMode ? "bg-[#232323]" : "bg-gray-200"
+                    darkMode ? "bg-[#232323]" : "bg-[#F1F1F1]"
                   } p-4 rounded-xl shadow-md hover:shadow-xl transition duration-500 cursor-pointer`}
                 >
                   <div className="w-10 h-10 text-white flex  rounded-xl  ">
@@ -197,15 +218,22 @@ const SupportGrid = ({ darkMode }) => {
         ))}
         {Marketing.map((section, index) => (
           <div key={index} className="mt-10">
-            <h3 className="w-full py-4 text-[26px] font-[700] text-white px-4 py-2 rounded-xl [background:linear-gradient(270deg,#5F2866_0%,#2A4A74_100%)] inline-block">
-            {section.title}
-            </h3>
+           <h3
+  className={`w-full px-4 py-4 text-[26px] font-[700] text-white rounded-xl 
+    ${darkMode 
+      ? '[background:linear-gradient(270deg,#5F2866_0%,#2A4A74_100%)]' 
+      : '[background:linear-gradient(90deg,#389BE9_0%,#B13FBC_100%)]'
+    }`}
+>
+  {section.title}
+</h3>
+
             <div className="mt-4 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
               {section.items.map((item, idx) => (
                 <div
                   key={idx}
                   className={`flex lg:flex-col lg:items-start  items-center  gap-3  hover:-translate-y-2 hover:shadow-lg hover:shadow-black/30 ${
-                    darkMode ? "bg-[#232323]" : "bg-gray-200"
+                    darkMode ? "bg-[#232323]" : "bg-[#F1F1F1]"
                   } p-4 rounded-xl shadow-md hover:shadow-xl transition duration-500 cursor-pointer`}
                 >
                   <div className="w-10 h-10 text-white flex  rounded-xl  ">
@@ -219,15 +247,22 @@ const SupportGrid = ({ darkMode }) => {
         ))}
         {Integrations.map((section, index) => (
           <div key={index} className="mt-10">
-            <h3 className="w-full py-4 text-[26px] font-[700] text-white px-4 py-2 rounded-xl [background:linear-gradient(270deg,#5F2866_0%,#2A4A74_100%)] inline-block">
-            {section.title}
-            </h3>
+           <h3
+  className={`w-full px-4 py-4 text-[26px] font-[700] text-white rounded-xl 
+    ${darkMode 
+      ? '[background:linear-gradient(270deg,#5F2866_0%,#2A4A74_100%)]' 
+      : '[background:linear-gradient(90deg,#389BE9_0%,#B13FBC_100%)]'
+    }`}
+>
+  {section.title}
+</h3>
+
             <div className="mt-4 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4">
               {section.items.map((item, idx) => (
                 <div
                   key={idx}
                   className={`flex lg:flex-col lg:items-start  items-center  gap-3  hover:-translate-y-2 hover:shadow-lg hover:shadow-black/30 ${
-                    darkMode ? "bg-[#232323]" : "bg-gray-200"
+                    darkMode ? "bg-[#232323]" : "bg-[#F1F1F1]"
                   } p-4 rounded-xl shadow-md hover:shadow-xl transition duration-500 cursor-pointer`}
                 >
                   <div className="w-10 h-10 text-white flex  rounded-xl  ">
@@ -241,15 +276,22 @@ const SupportGrid = ({ darkMode }) => {
         ))}
         {Account.map((section, index) => (
           <div key={index} className="mt-10">
-            <h3 className="w-full py-4 text-[26px] font-[700] text-white px-4 py-2 rounded-xl [background:linear-gradient(270deg,#5F2866_0%,#2A4A74_100%)] inline-block">
-            {section.title}
-            </h3>
+           <h3
+  className={`w-full px-4 py-4 text-[26px] font-[700] text-white rounded-xl 
+    ${darkMode 
+      ? '[background:linear-gradient(270deg,#5F2866_0%,#2A4A74_100%)]' 
+      : '[background:linear-gradient(90deg,#389BE9_0%,#B13FBC_100%)]'
+    }`}
+>
+  {section.title}
+</h3>
+
             <div className="mt-4 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
               {section.items.map((item, idx) => (
                 <div
                   key={idx}
                   className={`flex lg:flex-col lg:items-start  items-center  gap-3  hover:-translate-y-2 hover:shadow-lg hover:shadow-black/30 ${
-                    darkMode ? "bg-[#232323]" : "bg-gray-200"
+                    darkMode ? "bg-[#232323]" : "bg-[#F1F1F1]"
                   } p-4 rounded-xl shadow-md hover:shadow-xl transition duration-500 cursor-pointer`}
                 >
                   <div className="w-10 h-10 text-white flex  rounded-xl  ">
@@ -263,15 +305,22 @@ const SupportGrid = ({ darkMode }) => {
         ))}
         {Misc.map((section, index) => (
           <div key={index} className="mt-10">
-            <h3 className="w-full py-4 text-[26px] font-[700] text-white px-4 py-2 rounded-xl [background:linear-gradient(270deg,#5F2866_0%,#2A4A74_100%)] inline-block">
-            {section.title}
-            </h3>
+          <h3
+  className={`w-full px-4 py-4 text-[26px] font-[700] text-white rounded-xl 
+    ${darkMode 
+      ? '[background:linear-gradient(270deg,#5F2866_0%,#2A4A74_100%)]' 
+      : '[background:linear-gradient(90deg,#389BE9_0%,#B13FBC_100%)]'
+    }`}
+>
+  {section.title}
+</h3>
+
             <div className="mt-4 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
               {section.items.map((item, idx) => (
                 <div
                   key={idx}
                   className={`flex lg:flex-col lg:items-start  items-center  gap-3  hover:-translate-y-2 hover:shadow-lg hover:shadow-black/30 ${
-                    darkMode ? "bg-[#232323]" : "bg-gray-200"
+                    darkMode ? "bg-[#232323]" : "bg-[#F1F1F1]"
                   } p-4 rounded-xl shadow-md hover:shadow-xl transition duration-500 cursor-pointer`}
                 >
                   <div className="w-10 h-10 text-white flex  rounded-xl  ">

@@ -57,7 +57,7 @@ const SupportOptions = ({ darkMode }) => {
           ${
             darkMode
               ? "bg-[#232323]"
-              : "bg-gray-200"
+              : "bg-[#F1F1F1]"
           } 
           p-6 rounded-xl shadow-lg hover:shadow-2xl transition-all duration-500`}
           >
