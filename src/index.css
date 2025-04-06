@@ -11,7 +11,7 @@
 body {
   padding: 0;
   margin: 0;
-  font-family: "Arimo";
+  font-family: "Arimo", sans-serif;
 }  
 .text-light-outline {
   font-weight: 700;
