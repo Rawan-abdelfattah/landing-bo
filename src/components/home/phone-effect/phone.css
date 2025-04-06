@@ -174,8 +174,7 @@
     background: var(--accent-2);
     /* color: white; */
   }
-  
-  /* Media queries for responsive design */
+   
   @media (max-width: 992px) {
     .card {
       width: 280px;
@@ -205,7 +204,9 @@
       width: 240px;
       height: 400px;
     }
-    
+    .animate-contain { 
+      height: 60vh; 
+    }
     .phone {
       width: 200px;
       height: 400px;
@@ -243,7 +244,9 @@
       width: 220px;
       height: 380px;
     }
-    
+    .animate-contain { 
+      height: 60vh; 
+    }
     .phone {
       width: 180px;
       height: 380px;
@@ -280,9 +283,7 @@
       height: 30px;
       margin-right: 5px;
     }
-  }
-  
-  /* Add a global transform scale for zoomed-out views */
+  } 
   @media (max-height: 700px), (max-width: 380px) {
     #plane {
       transform: scale(0.85);
