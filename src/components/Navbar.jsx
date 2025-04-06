@@ -1,16 +1,23 @@
-import React, { useState } from "react"; 
+import React, { useState } from "react";
 import { BsArrowUpRight } from "react-icons/bs";
-import { FaCircle, FaMoon } from "react-icons/fa"; 
-import { Link } from "react-router-dom";
+import { FaCircle, FaMoon } from "react-icons/fa";
+import { Link, useLocation } from "react-router-dom";
 
 export const Navbar = ({ darkMode, setDarkMode }) => {
   const [menuOpen, setMenuOpen] = useState(false);
+  const location = useLocation();
+
+  const isActive = (path) =>
+    location.pathname === path
+      ? `${darkMode ? "" : ""}`
+      : "";
+  
 
   return (
     <nav
       className={`${
         darkMode ? "bg-[rgba(0,0,0,0.4)]" : "bg-white"
-      } rounded-[45px]    py-4 md:w-[95%] m-auto transition-all duration-500 `}
+      } rounded-[45px] py-4 md:w-[95%] m-auto transition-all duration-500`}
     >
       <div className="mx-auto lg:md:px-[40px] px-5 flex items-center justify-between">
         <Link to="/">
@@ -20,44 +27,53 @@ export const Navbar = ({ darkMode, setDarkMode }) => {
             alt="logo"
           />
         </Link>
+
         <div className="flex items-center gap-6 pl-15">
           <div className="hidden lg:flex text-[18px] space-x-6">
-            <Link to="/feature">Features</Link>
-            <Link to="/pricing">Pricing</Link>
-            <Link to="/gallery">Gallery</Link>
-            <Link to="/support">Support</Link>
+            <Link to="/feature" className={isActive("/feature")}>
+              Features
+            </Link>
+            <Link to="/pricing" className={isActive("/pricing")}>
+              Pricing
+            </Link>
+            <Link to="/gallery" className={isActive("/gallery")}>
+              Gallery
+            </Link>
+            <Link to="/support" className={isActive("/support")}>
+              Support
+            </Link>
           </div>
         </div>
 
         <div className="flex items-center gap-3">
-        <button
-  onClick={() => setDarkMode(!darkMode)}
-  className="relative inline-flex items-center h-6 rounded-full w-12 transition-colors duration-500 focus:outline-none"
-  style={{
-    backgroundColor: darkMode ? "white" : "black",
-  }}
->
-  <span
-    className="absolute transform transition-all duration-500"
-    style={{
-      left: darkMode ? "0.25rem" : "calc(100% - 1.25rem)",
-      right: darkMode ? "calc(100% - 1.25rem)" : "0.25rem",
-    }}
-  >
-    {darkMode ? (
-      <FaCircle className="text-[#0091F8] text-lg" />
-    ) : (
-      <FaMoon    className="text-[#0091F8] rotate-230 text-lg" />
-    )}
-  </span>
-  <span className="sr-only">Toggle dark mode</span>
-</button>
+          <button
+            onClick={() => setDarkMode(!darkMode)}
+            className="relative inline-flex items-center h-6 rounded-full w-12 transition-colors duration-500 focus:outline-none"
+            style={{
+              backgroundColor: darkMode ? "white" : "black",
+            }}
+          >
+            <span
+              className="absolute transform transition-all duration-500"
+              style={{
+                left: darkMode ? "0.25rem" : "calc(100% - 1.25rem)",
+                right: darkMode ? "calc(100% - 1.25rem)" : "0.25rem",
+              }}
+            >
+              {darkMode ? (
+                <FaCircle className="text-[#0091F8] text-lg" />
+              ) : (
+                <FaMoon className="text-[#0091F8] rotate-230 text-lg" />
+              )}
+            </span>
+            <span className="sr-only">Toggle dark mode</span>
+          </button>
 
           <Link
             to="https://user.boitr.com/"
             target="_blank"
             rel="noopener noreferrer"
-            className={`text-white lg:flex items-center gap-2 hidden  ${
+            className={`text-white lg:flex items-center gap-2 hidden ${
               darkMode
                 ? "bg-[#017CD4] hover:bg-[#017CD4] hover:bg-[linear-gradient(90deg,_#389BE9_0%,_#B13FBC_100%)]"
                 : "bg-[#2c1662] hover:bg-[#2c136f]"
@@ -66,6 +82,7 @@ export const Navbar = ({ darkMode, setDarkMode }) => {
             Get Started Now
             <BsArrowUpRight />
           </Link>
+
           <button
             className="lg:hidden p-2 focus:outline-none"
             onClick={() => setMenuOpen(!menuOpen)}
@@ -104,11 +121,19 @@ export const Navbar = ({ darkMode, setDarkMode }) => {
       </div>
 
       {menuOpen && (
-        <div className="lg:hidden mt-3 flex flex-col space-y-2 text-center  text-[18px]  py-4">
-          <Link to="/feature">Features</Link>
-          <Link to="/pricing">Pricing</Link>
-          <Link to="/gallery">Gallery</Link>
-          <Link to="/support">Support</Link>
+        <div className="lg:hidden mt-3 flex flex-col space-y-2 text-center text-[18px] py-4">
+          <Link to="/feature" className={isActive("/feature")}>
+            Features
+          </Link>
+          <Link to="/pricing" className={isActive("/pricing")}>
+            Pricing
+          </Link>
+          <Link to="/gallery" className={isActive("/gallery")}>
+            Gallery
+          </Link>
+          <Link to="/support" className={isActive("/support")}>
+            Support
+          </Link>
           <Link
             to="https://user.boitr.com/"
             className={`mt-3 mx-2 inline-flex justify-center items-center gap-2 text-white ${
