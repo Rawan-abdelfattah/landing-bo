@@ -115,7 +115,7 @@ export const Footer = ({ darkMode }) => {
           </div>
         </div>
       </div>
-      <div className="max-w-screen-xl md:mx-20 relative overflow-hidden">
+      <div className="max-w-screen-xl md:mx-13 relative overflow-hidden">
         <TextScroll
           darkMode={darkMode}
           text="One Link To Rule Them All – Connect, Share. One Link To Rule Them All – Connect, Share.One Link To Rule Them All – Connect, Share."
