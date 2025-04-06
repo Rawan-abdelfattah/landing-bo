@@ -17,7 +17,7 @@ export const Navbar = ({ darkMode, setDarkMode }) => {
     <nav
       className={`${
         darkMode ? "bg-[rgba(0,0,0,0.4)]" : "bg-white"
-      } rounded-[45px] py-4 md:w-[95%] m-auto transition-all duration-500`}
+      } rounded-[45px] py-4 md:w-[90%] m-auto transition-all duration-500`}
     >
       <div className="mx-auto lg:md:px-[40px] px-5 flex items-center justify-between">
         <Link to="/">
