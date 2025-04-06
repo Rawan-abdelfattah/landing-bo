@@ -1,6 +1,6 @@
-import React, { useState } from "react";
+import React, { useState } from "react"; 
 import { BsArrowUpRight } from "react-icons/bs";
-import { FaSun, FaRegMoon } from "react-icons/fa6";
+import { FaCircle, FaMoon } from "react-icons/fa"; 
 import { Link } from "react-router-dom";
 
 export const Navbar = ({ darkMode, setDarkMode }) => {
@@ -30,28 +30,28 @@ export const Navbar = ({ darkMode, setDarkMode }) => {
         </div>
 
         <div className="flex items-center gap-3">
-          <button
-            onClick={() => setDarkMode(!darkMode)}
-            className="relative inline-flex items-center h-6 rounded-full w-12 transition-colors duration-500 focus:outline-none"
-            style={{
-              backgroundColor: darkMode ? "#3B82F6" : "#D1D5DB",
-            }}
-          >
-            <span
-              className="absolute transform transition-all duration-500"
-              style={{
-                left: darkMode ? "calc(100% - 1.25rem)" : "0.25rem",
-                right: darkMode ? "0.25rem" : "calc(100% - 1.25rem)",
-              }}
-            >
-              {darkMode ? (
-                <FaSun className="text-yellow-300 text-sm" />
-              ) : (
-                <FaRegMoon className="text-gray-600 text-sm" />
-              )}
-            </span>
-            <span className="sr-only">Toggle dark mode</span>
-          </button>
+        <button
+  onClick={() => setDarkMode(!darkMode)}
+  className="relative inline-flex items-center h-6 rounded-full w-12 transition-colors duration-500 focus:outline-none"
+  style={{
+    backgroundColor: darkMode ? "white" : "black",
+  }}
+>
+  <span
+    className="absolute transform transition-all duration-500"
+    style={{
+      left: darkMode ? "0.25rem" : "calc(100% - 1.25rem)",
+      right: darkMode ? "calc(100% - 1.25rem)" : "0.25rem",
+    }}
+  >
+    {darkMode ? (
+      <FaCircle className="text-[#0091F8] text-lg" />
+    ) : (
+      <FaMoon    className="text-[#0091F8] rotate-230 text-lg" />
+    )}
+  </span>
+  <span className="sr-only">Toggle dark mode</span>
+</button>
 
           <Link
             to="https://user.boitr.com/"
