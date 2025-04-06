@@ -45,7 +45,7 @@ export default function FAQS({ darkMode }) {
                 className={`
           relative rounded-2xl border-gray-700 p-4 my-4 cursor-pointer transition-all duration-700
           hover:text-white
-          ${darkMode ? "hover:border-[#0163A8]" : "hover:border-[#2c136f]"}
+          ${darkMode ? " hover:border-[#0163A8]" : " hover:border-[#2c136f]"}
           bg-transparent bg-cover bg-center ease-in-out
           ${
             isHovered

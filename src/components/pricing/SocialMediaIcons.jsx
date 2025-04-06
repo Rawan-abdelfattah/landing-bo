@@ -19,7 +19,7 @@ const SocialMediaIcons = ({ darkMode }) => {
           to grow smarter and faster. Track your audience, boost engagement, and
           maximize your revenue — all in one place.
         </p>
-        <button className={`text-[16px] font-[500] leading-[22px] inline-flex  items-center gap-2 ${darkMode ? 'bg-[#017CD4] hover:bg-[#017CD4] hover:bg-[linear-gradient(90deg,_#389BE9_0%,_#B13FBC_100%)]'  :'bg-[#2c1662] hover:bg-[#2c136f]'}  text-white font-semibold py-3 px-6 rounded-full transition duration-500`}>
+        <button className={`text-[16px] font-[500] leading-[22px] inline-flex  items-center gap-2 ${darkMode ? 'bg-[#017CD4] hover:bg-[#017CD4] hover:bg-[linear-gradient(90deg,_#389BE9_0%,_#B13FBC_100%)]'  :'bg-[#2c1662] hover:bg-[#2c136f]'}  text-white py-3 px-6 rounded-full transition duration-500`}>
           Create Your Page Now <BsArrowUpRight />
         </button>
         <img

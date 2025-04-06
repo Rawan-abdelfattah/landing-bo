@@ -93,7 +93,7 @@ export const Footer = ({ darkMode }) => {
                     ? "bg-[#017CD4] hover:bg-gradient-to-r from-[#389BE9]/50 to-[#B13FBC]/50"
                     : "bg-[#2c1662] hover:bg-[#2c136f]"
                 }
-    text-white px-6 py-2 rounded-full text-sm font-semibold mt-2 shadow-md hover:shadow-lg text-[16px]`}
+    text-white px-6 py-2 rounded-full text-sm font-[500] mt-2 shadow-md hover:shadow-lg text-[16px]`}
               >
                 {" "}
                 Subscribe <BsArrowUpRight />

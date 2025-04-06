@@ -80,7 +80,7 @@ export const UserSays = ({ darkMode }) => {
                 ))}
               </div>
 
-              <p className=" font-semibold">{testimonial.name}</p>
+              <p className=" font-[700] text-[18px]">{testimonial.name}</p>
             </div>
           );
         })}

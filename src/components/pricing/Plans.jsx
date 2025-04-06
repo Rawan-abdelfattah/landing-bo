@@ -163,7 +163,7 @@ const Plans = ({ darkMode }) => {
                   darkMode
                     ? "bg-[#017CD4] hover:bg-[#017CD4] hover:bg-[linear-gradient(90deg,_#389BE9_0%,_#B13FBC_100%)]"
                     : "bg-[#2c1662] hover:bg-[#2c136f]"
-                }  text-white font-semibold py-2 rounded-full transition-all duration-500`}
+                }  text-white font-[700] py-2 rounded-full transition-all duration-500`}
               >
                 Get Started Now <BsArrowUpRight />
               </button>

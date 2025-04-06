@@ -84,7 +84,7 @@ export const Showcase = ({ darkMode }) => {
                 </div>
               </div>
 
-              <h3 className="text-[22px] font-semibold mt-7">
+              <h3 className="text-[22px] font-[700] mt-7">
                 {feature.title}
               </h3>
               <p className="  text-[16px] mt-2">{feature.description}</p>
