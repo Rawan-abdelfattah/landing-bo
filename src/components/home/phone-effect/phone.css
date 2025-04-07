@@ -1,297 +1,297 @@
- 
-  .animate-contain {
-    user-select: none;
-    height: 80vh;
-    display: grid;
-    place-items: center;
-    width: 100%;
-    /* overflow: hidden; */
-    position: relative;
-  }
-  
-  #plane {
-    display: grid;
-    place-items: center;
-    transform-style: preserve-3d;
-    perspective: 1200px;
-    width: 100%;
-    max-width: 1400px;
-    margin: 0 auto;
-    position: relative;
-  }
-  
-  .card {
-    user-select: none;
-    transform-style: preserve-3d;
-    position: relative;
-    width: 320px;
-    height: 500px;
-    
-    grid-column-start: 1;
-    grid-row-start: 1;
-    transition: all 500ms ease-in-out;
-    --local-rotation: 180deg;
-    --local-scale: 0;
-    transform: rotatey(var(--local-rotation)) scale(var(--local-scale));
-  }
-  
-  .phone {
-    width: 260px;
-    height: 500px;
-    position: absolute;
-    top: 0;
-    left: 50%;
-    transform-style: preserve-3d;
-    transform: translatex(-50%) translatez(1px);
-    border-radius: 24px;
-    animation: none;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 20px;
-    background-size: contain;
-    background-repeat: no-repeat;
-    font-size: 16px;
-    /* box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15); */
-    /* background: var(--clr-1); */
-    /* overflow: hidden; */
-  }  
-  .mt-auto {
-    margin-top: auto;
-  } 
-  
-  .left-card {
-      /* overflow: hidden; */
-    position: absolute;
-    border-radius: 16px;
-    left: -100px;
-    bottom: 60px;
-    width: 180px;
-    height: 180px;
-    transform: translatez(30px); 
-    z-index: 2;
-  }
-  
-  .left-card img {
-    /* width: 100%;
-    height: 100%;
-    object-fit: cover; */
-    user-select: none;
-  }
-  
-  .right-card {
-      /* overflow: hidden; */
-    position: absolute;
-    border-radius: 16px;
-    right: -150px;
-    top: 60px;
-    width: 200px;
-    height: 200px;
-    transform: translatez(-40px); 
-    z-index: 1;
-  }
-  
-  .right-card img {
-    /* width: 100%;
-    height: 100%;
-    object-fit: cover; */
-    user-select: none;
-  }
-  
-  .circles {
-    position: absolute;
-    right: -40px;
-    bottom: 40px;
-    display: flex;
-    align-items: center;
-    transform: translatez(30px);
-    z-index: 3;
-  }
-  
-  .circle:not(:last-child) {
-    margin-right: 10px;
-  }
-  
-  .circle {
-    width: 40px;
-    height: 40px;
-    background: var(--clr-3);
-    color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 50%;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  }
-  
-  .fadein {
-    animation: fadein 500ms ease-out both;
-  }
-  
-  @keyframes fadein {
-    from {
-      opacity: 0;
-      scale: 0.8;
-    }
-    to {
-      opacity: 1;
-      scale: 1;
-    }
-  }
-  
-  /* Card color variants */
-  .card:nth-child(2) .phone {
-    /* background: var(--accent-1); */
-    /* color: var(--clr-1); */
-    background-size: contain;
+.animate-contain {
+  user-select: none;
+  height: 80vh;
+  display: grid;
+  place-items: center;
+  width: 100%;
+  /* overflow: hidden; */
+  position: relative;
+}
+
+#plane {
+  display: grid;
+  place-items: center;
+  transform-style: preserve-3d;
+  perspective: 1200px;
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.card {
+  user-select: none;
+  transform-style: preserve-3d;
+  position: relative;
+  width: 320px;
+  height: 500px;
+
+  grid-column-start: 1;
+  grid-row-start: 1;
+  transition: all 500ms ease-in-out;
+  --local-rotation: 180deg;
+  --local-scale: 0;
+  transform: rotatey(var(--local-rotation)) scale(var(--local-scale));
+}
+
+.phone {
+  width: 260px;
+  height: 500px;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform-style: preserve-3d;
+  transform: translatex(-50%) translatez(1px);
+  border-radius: 24px;
+  animation: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  background-size: contain;
   background-repeat: no-repeat;
-  
+  font-size: 16px;
+  /* box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15); */
+  /* background: var(--clr-1); */
+  /* overflow: hidden; */
+}
+.mt-auto {
+  margin-top: auto;
+}
+
+.left-card {
+  /* overflow: hidden; */
+  position: absolute;
+  border-radius: 16px;
+  left: -100px;
+  bottom: 60px;
+  width: 180px;
+  height: 180px;
+  transform: translatez(30px);
+  z-index: 2;
+}
+
+.left-card img {
+  /* width: 100%;
+    height: 100%;
+    object-fit: cover; */
+  user-select: none;
+}
+
+.right-card {
+  /* overflow: hidden; */
+  position: absolute;
+  border-radius: 16px;
+  right: -230px;
+  left: 220px;
+  top: 60px;
+  width: 180px;
+  height: 180px;
+  transform: translatez(-40px);
+  z-index: 1;
+}
+
+.right-card img {
+  /* width: 100%;
+    height: 100%;
+    object-fit: cover; */
+  user-select: none;
+}
+
+.circles {
+  position: absolute;
+  right: -40px;
+  bottom: 40px;
+  display: flex;
+  align-items: center;
+  transform: translatez(30px);
+  z-index: 3;
+}
+
+.circle:not(:last-child) {
+  margin-right: 10px;
+}
+
+.circle {
+  width: 40px;
+  height: 40px;
+  background: var(--clr-3);
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.fadein {
+  animation: fadein 500ms ease-out both;
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+    scale: 0.8;
+  }
+  to {
+    opacity: 1;
+    scale: 1;
+  }
+}
+
+/* Card color variants */
+.card:nth-child(2) .phone {
+  /* background: var(--accent-1); */
+  /* color: var(--clr-1); */
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.card:nth-child(2) .circle {
+  background: var(--clr-2);
+}
+
+.card:nth-child(3) .phone {
+  /* background: var(--accent-2); */
+  /* color: var(--clr-1); */
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.card:nth-child(3) .circle {
+  background: var(--accent-1);
+}
+
+.card:nth-child(4) .phone {
+  /* background: white; */
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.card:nth-child(4) .circle {
+  background: var(--accent-2);
+  /* color: white; */
+}
+
+@media (max-width: 992px) {
+  .card {
+    width: 280px;
+    height: 450px;
+  }
+
+  .phone {
+    width: 230px;
+    height: 450px;
+  }
+
+  .left-card {
+    left: -80px;
+    width: 160px;
+    height: 160px;
+  }
+
+  .right-card {
+    right: -40px;
+    width: 100px;
+    height: 100px;
+  }
+}
+
+@media (max-width: 768px) {
+  .card {
+    width: 240px;
+    height: 400px;
+  }
+  .animate-contain {
+    height: 60vh;
+  }
+  .right-card img {  
+    left: 220px; 
+    width: 100px; 
+  }
+  .phone {
+    width: 200px;
+    height: 400px;
+    padding: 15px;
+  }
+
+  .left-card {
+    left: -60px;
+    bottom: 50px;
+    width: 140px;
+    height: 140px;
+  }
+
+  .right-card {
+    right: -30px;
+    top: 50px;
+    width: 90px;
+    height: 90px;
+  }
+
+  .circles {
+    right: -30px;
+    bottom: 30px;
+  }
+
+  .circle {
+    width: 35px;
+    height: 35px;
+  }
+}
+
+@media (max-width: 480px) {
+  .card {
+    width: 220px;
+    height: 380px;
+  }
+  .animate-contain {
+    height: 60vh;
   } 
-  
-  .card:nth-child(2) .circle {
-    background: var(--clr-2);
+  .phone {
+    width: 180px;
+    height: 380px;
+    padding: 12px;
   }
-  
-  .card:nth-child(3) .phone {
-    /* background: var(--accent-2); */
-    /* color: var(--clr-1); */
-    background-size: contain;
-    background-repeat: no-repeat;
-    
-  } 
-  
-  .card:nth-child(3) .circle {
-    background: var(--accent-1);
+
+  .phone-pill {
+    height: 38px;
+    margin-bottom: 10px;
+    font-size: 12px;
   }
-  
-  .card:nth-child(4) .phone {
-    /* background: white; */
-    background-size: contain;
-    background-repeat: no-repeat;
-    
-  } 
-  .card:nth-child(4) .circle {
-    background: var(--accent-2);
-    /* color: white; */
+
+  .left-card {
+    left: -50px;
+    bottom: 40px;
+    width: 120px;
+    height: 120px;
   }
-   
-  @media (max-width: 992px) {
-    .card {
-      width: 280px;
-      height: 450px;
-    }
-    
-    .phone {
-      width: 230px;
-      height: 450px;
-    }
-    
-    .left-card {
-      left: -80px;
-      width: 160px;
-      height: 160px;
-    }
-    
-    .right-card {
-      right: -40px;
-      width: 100px;
-      height: 100px;
-    }
+
+  .right-card {
+    right: -25px;
+    top: 40px;
+    width: 80px;
+    height: 80px;
   }
-  
-  @media (max-width: 768px) {
-    .card {
-      width: 240px;
-      height: 400px;
-    }
-    .animate-contain { 
-      height: 60vh; 
-    }
-    .phone {
-      width: 200px;
-      height: 400px;
-      padding: 15px;
-    }
-     
-    
-    .left-card {
-      left: -60px;
-      bottom: 50px;
-      width: 140px;
-      height: 140px;
-    }
-    
-    .right-card {
-      right: -30px;
-      top: 50px;
-      width: 90px;
-      height: 90px;
-    }
-    
-    .circles {
-      right: -30px;
-      bottom: 30px;
-    }
-    
-    .circle {
-      width: 35px;
-      height: 35px;
-    }
+
+  .circles {
+    right: -20px;
+    bottom: 20px;
   }
-  
-  @media (max-width: 480px) {
-    .card {
-      width: 220px;
-      height: 380px;
-    }
-    .animate-contain { 
-      height: 60vh; 
-    }
-    .phone {
-      width: 180px;
-      height: 380px;
-      padding: 12px;
-    }
-     
-    .phone-pill {
-      height: 38px;
-      margin-bottom: 10px;
-      font-size: 12px;
-    }
-    
-    .left-card {
-      left: -50px;
-      bottom: 40px;
-      width: 120px;
-      height: 120px;
-    }
-    
-    .right-card {
-      right: -25px;
-      top: 40px;
-      width: 80px;
-      height: 80px;
-    }
-    
-    .circles {
-      right: -20px;
-      bottom: 20px;
-    }
-    
-    .circle {
-      width: 30px;
-      height: 30px;
-      margin-right: 5px;
-    }
-  } 
-  @media (max-height: 700px), (max-width: 380px) {
-    #plane {
-      transform: scale(0.85);
-    }
+
+  .circle {
+    width: 30px;
+    height: 30px;
+    margin-right: 5px;
   }
-  
-  @media (max-height: 600px), (max-width: 340px) {
-    #plane {
-      transform: scale(0.75);
-    }
+}
+@media (max-height: 700px), (max-width: 380px) {
+  #plane {
+    transform: scale(0.85);
   }
+}
+
+@media (max-height: 600px), (max-width: 340px) {
+  #plane {
+    transform: scale(0.75);
+  }
+}

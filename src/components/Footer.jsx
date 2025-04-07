@@ -42,12 +42,12 @@ export const Footer = ({ darkMode }) => {
                 ? "bg-[#017CD4] hover:bg-[#017CD4] hover:bg-[linear-gradient(90deg,_#389BE9_0%,_#B13FBC_100%)]"
                 : "bg-[#2c1662] hover:bg-[#2c1662] hover:bg-[linear-gradient(90deg,_#2c1662_0%,_#B13FBC_100%)]"
             }  text-white px-4 py-2 rounded-full text-sm font-bold mt-2  text-[16px]`}
-          > 
+          >
             Get Started Now <BsArrowUpRight />
           </Link>
         </div>
         <div className="flex flex-col md:flex-row gap-12">
-           <div>
+          <div>
             <h4 className="font-bold mb-4 text-[20px]">Pages</h4>
             <ul className="text-[18px]">
               <li className="mb-2">
@@ -107,13 +107,10 @@ export const Footer = ({ darkMode }) => {
               <MdLanguage className="w-6 h-6" /> Arabic
             </div>
             <div className="flex md:justify-start justify-center gap-5 mt-6">
-              <FaLinkedin  className="w-5 h-5"  />
-              <FaFacebook  className="w-5 h-5"  />
-              <RiWhatsappFill  className="w-6 h-6"  />
-              <BiLogoInstagramAlt  
-                className="w-6 h-6 rounded-full"
-                
-              />
+              <FaLinkedin className="w-5 h-5" />
+              <FaFacebook className="w-5 h-5" />
+              <RiWhatsappFill className="w-6 h-6" />
+              <BiLogoInstagramAlt className="w-6 h-6 rounded-full" />
             </div>
           </div>
         </div>
