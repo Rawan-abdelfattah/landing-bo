@@ -22,7 +22,7 @@ export const Footer = ({ darkMode }) => {
       </div>
       <div className="relative z-10 lg:flex lg:flex-row max-w-screen-xl mx-auto md:px-13 px-5 lg:text-left lg:justify-between md:flex md:flex-col md:items-center md:justify-center md:text-center text-center  justify-between mb-3">
         <div className="mb-8 md:mb-0 ">
-          <Link to="/" className="text-2xl font-bold  mb-4 inline-block">
+          <Link to="/" className="mb-4 inline-block">
             <img
               src={darkMode ? "/logo.png" : "/dark-logo.png"}
               className="w-[158px]"
@@ -41,15 +41,16 @@ export const Footer = ({ darkMode }) => {
               darkMode
                 ? "bg-[#017CD4] hover:bg-[#017CD4] hover:bg-[linear-gradient(90deg,_#389BE9_0%,_#B13FBC_100%)]"
                 : "bg-[#2c1662] hover:bg-[#2c1662] hover:bg-[linear-gradient(90deg,_#2c1662_0%,_#B13FBC_100%)]"
-            }  text-white px-4 py-2 rounded-full text-sm font-bold mt-2  text-[16px]`}
+            }  text-white px-4 py-2 rounded-full text-sm font-[700] mt-2  text-[16px]`}
           >
             Get Started Now <BsArrowUpRight />
           </Link>
         </div>
         <div className="flex flex-col md:flex-row gap-12">
+          <div className="flex justify-between md:hidden flex">
           <div>
-            <h4 className="font-bold mb-4 text-[20px]">Pages</h4>
-            <ul className="text-[18px]">
+            <h4 className="font-[700] mb-4 text-[20px]">Pages</h4>
+            <ul className="text-[18px] font-[500] ">
               <li className="mb-2">
                 <Link to="/">Home</Link>
               </li>
@@ -68,8 +69,8 @@ export const Footer = ({ darkMode }) => {
             </ul>
           </div>
           <div>
-            <h4 className="font-bold mb-4 text-[20px]">Trust &amp; Legal</h4>
-            <ul className="text-[18px]">
+            <h4 className="font-[700] mb-4 text-[20px]">Trust &amp; Legal</h4>
+            <ul className="text-[18px] font-[500] ">
               <li className="mb-2 ">
                 <a href="#">Terms &amp; Conditions</a>
               </li>
@@ -78,11 +79,43 @@ export const Footer = ({ darkMode }) => {
               </li>
             </ul>
           </div>
-          <div className="">
-            <h4 className="font-bold mb-4 text-[20px]">
+          </div>
+          <div className="hidden md:block">
+            <h4 className="font-[700] mb-4 text-[20px]">Pages</h4>
+            <ul className="text-[18px] font-[500] ">
+              <li className="mb-2">
+                <Link to="/">Home</Link>
+              </li>
+              <li className="mb-2">
+                <Link to="/feature">Features</Link>
+              </li>
+              <li className="mb-2">
+                <Link to="/pricing">Pricing</Link>
+              </li>
+              <li className="mb-2">
+                <Link to="/gallery">Gallery</Link>
+              </li>
+              <li className="mb-2">
+                <Link to="/support">Support</Link>
+              </li>
+            </ul>
+          </div>
+          <div  className="hidden md:block">
+            <h4 className="font-[700] mb-4 text-[20px]">Trust &amp; Legal</h4>
+            <ul className="text-[18px] font-[500] ">
+              <li className="mb-2 ">
+                <a href="#">Terms &amp; Conditions</a>
+              </li>
+              <li className="mb-2">
+                <a href="#">Privacy Policy</a>
+              </li>
+            </ul>
+          </div>
+          <div >
+            <h4 className="font-[700] mb-4 text-[20px]">
               Subscribe To Our Newsletter
             </h4>
-            <div className=" border-b max-w-[285px] m-auto my-4 pb-5 justify-center">
+            <div className=" border-b max-w-[300px] m-auto my-4 pb-5 justify-center">
               <input
                 type="email"
                 placeholder="Email Address"
@@ -103,7 +136,7 @@ export const Footer = ({ darkMode }) => {
                 Subscribe <BsArrowUpRight />
               </Link>
             </div>
-            <div className=" max-w-[285px] m-auto border-b my-4 flex md:justify-start justify-center gap-2  pb-5 ">
+            <div className=" max-w-[300px] m-auto border-b my-4 flex md:justify-start justify-center gap-2  pb-5 ">
               <MdLanguage className="w-6 h-6" /> Arabic
             </div>
             <div className="flex md:justify-start justify-center gap-5 mt-6">
