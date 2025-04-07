@@ -82,7 +82,7 @@ export const Footer = ({ darkMode }) => {
             <h4 className="font-bold mb-4 text-[20px]">
               Subscribe To Our Newsletter
             </h4>
-            <div className=" border-b my-4 pb-5 justify-center">
+            <div className=" border-b max-w-[285px] m-auto my-4 pb-5 justify-center">
               <input
                 type="email"
                 placeholder="Email Address"
@@ -103,7 +103,7 @@ export const Footer = ({ darkMode }) => {
                 Subscribe <BsArrowUpRight />
               </Link>
             </div>
-            <div className=" border-b my-4 flex md:justify-start justify-center gap-2  pb-5 ">
+            <div className=" max-w-[285px] m-auto border-b my-4 flex md:justify-start justify-center gap-2  pb-5 ">
               <MdLanguage className="w-6 h-6" /> Arabic
             </div>
             <div className="flex md:justify-start justify-center gap-5 mt-6">
