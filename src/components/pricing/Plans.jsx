@@ -88,6 +88,7 @@ const Plans = ({ darkMode }) => {
       onClick={handleToggle}
       className={`max-w-6xl mx-auto rounded-[16px] p-5 transition-all duration-500 overflow-hidden 
         bg-cover bg-center group relative cursor-pointer
+        ${isMobileOpen && "bg-[url('/pricing-hover-bg.png')]" }
         ${darkMode ? "bg-[#161616]" : "bg-gray-100"} 
         hover:bg-[url('/pricing-hover-bg.png')] hover:bg-cover hover:bg-center`}
     >
