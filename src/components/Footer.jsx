@@ -111,11 +111,11 @@ export const Footer = ({ darkMode }) => {
               </li>
             </ul>
           </div>
-          <div >
+          <div className="max-w-[285px] m-auto" >
             <h4 className="font-[700] mb-4 text-[20px]">
               Subscribe To Our Newsletter
             </h4>
-            <div className=" border-b max-w-[300px] m-auto my-4 pb-5 justify-center">
+            <div className=" border-b my-4 pb-5 justify-center">
               <input
                 type="email"
                 placeholder="Email Address"
@@ -136,7 +136,7 @@ export const Footer = ({ darkMode }) => {
                 Subscribe <BsArrowUpRight />
               </Link>
             </div>
-            <div className=" max-w-[300px] m-auto border-b my-4 flex md:justify-start justify-center gap-2  pb-5 ">
+            <div className="border-b my-4 flex md:justify-start justify-center gap-2  pb-5 ">
               <MdLanguage className="w-6 h-6" /> Arabic
             </div>
             <div className="flex md:justify-start justify-center gap-5 mt-6">
