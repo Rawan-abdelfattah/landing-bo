@@ -12,7 +12,7 @@ body {
   padding: 0;
   margin: 0;
   font-family: "Arimo", sans-serif;
-}  
+}
 .text-light-outline {
   font-weight: 700;
   font-size: 66px;
@@ -68,15 +68,15 @@ body {
 }
 
 .bg-outer-container {
-  position: absolute; 
+  position: absolute;
   z-index: 0;
-  inset: 0; 
+  inset: 0;
   filter: blur(100px);
 }
 
 .bg-dark {
   position: absolute;
-  inset: 0; 
+  inset: 0;
   background: linear-gradient(
     225deg,
     rgba(250, 173, 79, 0.7) 10.61%,
@@ -84,11 +84,24 @@ body {
     rgba(149, 55, 176, 0.7) 50.49%,
     rgba(81, 91, 212, 0.7) 70.39%,
     #101010 40.52%,
-    #000000 48.52%  );
+    #000000 48.52%
+  );
+}
+.bg-section-dark {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    227.14deg,
+    #faad4f 14.61%,
+    #dd2a7b 24.05%,
+    #9537b0 33.48%,
+    #515bd4 48.03%,
+    #101010 68.52%
+  );
 }
 .bg-light {
   position: absolute;
-  inset: 0; 
+  inset: 0;
   background: linear-gradient(
     45deg,
     rgba(255, 255, 255, 0.2) 20.61%,

@@ -9,7 +9,7 @@ export const Header = ({ darkMode, setDarkMode }) => {
       } overflow-hidden rounded-[40px] md:rounded-3xl  m-[10px] md:m-[40px] px-6 pt-6 border`}
     >
       <div className="bg-outer-container">
-        <div className={`${darkMode ? "bg-dark" : "bg-light"}`} />
+        <div className={`${darkMode ? "bg-section-dark" : "bg-light"}`} />
       </div>
       <div className="relative z-10">
         <Navbar darkMode={darkMode} setDarkMode={setDarkMode} />

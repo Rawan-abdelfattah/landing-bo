@@ -43,45 +43,51 @@ export default function FAQS({ darkMode }) {
             <div key={faq.id}>
               <div
                 className={`
-    relative rounded-2xl p-4 my-4 cursor-pointer transition-all duration-700 ease-in-out
-    bg-cover bg-center
-    ${
-      darkMode
-        ? "hover:border-[#0163A8] hover:text-white"
-        : "hover:border-[#2c136f]"
-    }
-    hover:border hover:rounded-2xl
-    ${
-      isHovered
-        ? `${
-            darkMode
-              ? "bg-[url('/dark-faq.png')] border border-[#0163A8]"
-              : "bg-[url('/light-faq.png')] border border-[#2c136f]"
-          } py-10 my-6`
-        : "bg-transparent "
-    }
-  `}
+                relative rounded-2xl p-4 my-4 cursor-pointer transition-all duration-700 ease-in-out
+                bg-cover bg-center overflow-hidden
+                hover:border hover:rounded-2xl
+                ${
+                  isHovered
+                    ? `${
+                        darkMode
+                          ? " border border-[#0163A8]"
+                          : " border border-[#2c136f]"
+                      } py-10 my-6`
+                    : "bg-transparent "
+                }
+                ${isHovered ? "py-10 my-6" : ""}
+              `}
                 onMouseEnter={() => setHoveredFeature(faq.id)}
                 onMouseLeave={() => setHoveredFeature(null)}
               >
-                <span className="flex text-[26px] font-[700] items-center">
+                {isHovered && (
+                  <div className="bg-outer-container">
+                    <div className={darkMode ? "bg-section-dark" : "bg-light"} />
+                  </div>
+                )}
+
+                <span className="flex text-[26px] font-[700] items-center relative z-10">
                   {faq.title}
-                  <div className={`ml-auto flex items-center relative`}>
+                  <div className="ml-auto flex items-center relative">
                     <FaArrowUpLong
                       className={`
-                md:flex hidden transition-all duration-500 ease-in-out
-                w-[37px] h-[25px]
-                ${isHovered ? "rotate-90 absolute top-[20px] left-[-40px]" : ""}
-              `}
+                      md:flex hidden transition-all duration-500 ease-in-out
+                      w-[37px] h-[25px]
+                      ${
+                        isHovered
+                          ? "rotate-90 absolute top-[20px] left-[-40px]"
+                          : ""
+                      }
+                    `}
                     />
                   </div>
                 </span>
 
                 <p
                   className={`
-            lg:w-[500px] text-[16px] font-[500] mt-2 transition-all duration-500 ease-in-out
-            ${isHovered ? "flex" : "hidden"}
-          `}
+                  lg:w-[500px] text-[16px] font-[500] mt-2 transition-all duration-500 ease-in-out z-10 relative
+                  ${isHovered ? "flex" : "hidden"}
+                `}
                 >
                   {faq.description}
                 </p>

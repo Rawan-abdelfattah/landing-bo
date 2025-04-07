@@ -92,11 +92,15 @@ export const Features = ({ darkMode }) => {
           return (
             <>
               <React.Fragment key={feature.id}>
-              <div
-  className={`
+                <div
+                  className={`
     relative rounded-2xl p-4 my-2 cursor-pointer transition-all duration-700 ease-in-out
     bg-cover bg-center
-    ${darkMode ? "hover:border-[#0163A8] hover:text-white" : "hover:border-[#2c136f]"}
+    ${
+      darkMode
+        ? "hover:border-[#0163A8] hover:text-white"
+        : "hover:border-[#2c136f]"
+    }
     hover:border hover:rounded-2xl
     ${
       isHovered
@@ -108,9 +112,9 @@ export const Features = ({ darkMode }) => {
         : "bg-transparent "
     }
   `}
-  onMouseEnter={() => setHoveredFeature(feature.id)}
-  onMouseLeave={() => setHoveredFeature(null)}
->
+                  onMouseEnter={() => setHoveredFeature(feature.id)}
+                  onMouseLeave={() => setHoveredFeature(null)}
+                >
                   <div className="flex flex-col md:flex-row items-start md:items-center  relative gap-4">
                     <span className="text-[26px] font-[700]">
                       <span
