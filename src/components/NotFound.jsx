@@ -83,7 +83,7 @@ const NotFound = ({ darkMode }) => {
         >
           <Link
             to="/"
-            className={`px-8 py-3 rounded-lg font-medium transition-all duration-500 shadow-lg
+            className={`px-[20px] py-[10px] rounded-lg font-medium transition-all duration-500 shadow-lg
             flex items-center gap-2 ${
               darkMode
                 ? "bg-[#017CD4] hover:bg-[#017CD4] hover:bg-[linear-gradient(90deg,_#389BE9_0%,_#B13FBC_100%)]"

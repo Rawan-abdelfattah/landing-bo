@@ -67,7 +67,7 @@ const SupportOptions = ({ darkMode }) => {
             <span className="mt-2 mb-5 text-[16px] leading-[20px] font-[500]">{option.description}</span>
 
             <Link
-              className={`mt-auto inline-flex  items-center gap-2 px-4 py-2 text-white text-[16px] leading-[20px] font-[500] ${
+              className={`mt-auto inline-flex  items-center gap-2 px-[20px] py-[10px] text-white text-[16px] leading-[20px] font-[500] ${
                 darkMode
                   ? "bg-[#017CD4] hover:bg-[#017CD4] hover:bg-[linear-gradient(90deg,_#389BE9_0%,_#B13FBC_100%)]"
                   : "bg-[#2c1662] hover:bg-[#2c1662] hover:bg-[linear-gradient(90deg,_#2c1662_0%,_#B13FBC_100%)]"

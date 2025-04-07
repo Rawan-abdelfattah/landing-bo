@@ -41,44 +41,44 @@ export const Footer = ({ darkMode }) => {
               darkMode
                 ? "bg-[#017CD4] hover:bg-[#017CD4] hover:bg-[linear-gradient(90deg,_#389BE9_0%,_#B13FBC_100%)]"
                 : "bg-[#2c1662] hover:bg-[#2c1662] hover:bg-[linear-gradient(90deg,_#2c1662_0%,_#B13FBC_100%)]"
-            }  text-white px-4 py-2 rounded-full text-sm font-[700] mt-2  text-[16px]`}
+            }  text-white px-[20px] py-[10px] rounded-full text-sm font-[700] mt-2  text-[16px]`}
           >
             Get Started Now <BsArrowUpRight />
           </Link>
         </div>
         <div className="flex flex-col md:flex-row gap-12">
           <div className="flex justify-between md:hidden flex">
-          <div>
-            <h4 className="font-[700] mb-4 text-[20px]">Pages</h4>
-            <ul className="text-[18px] font-[500] ">
-              <li className="mb-2">
-                <Link to="/">Home</Link>
-              </li>
-              <li className="mb-2">
-                <Link to="/feature">Features</Link>
-              </li>
-              <li className="mb-2">
-                <Link to="/pricing">Pricing</Link>
-              </li>
-              <li className="mb-2">
-                <Link to="/gallery">Gallery</Link>
-              </li>
-              <li className="mb-2">
-                <Link to="/support">Support</Link>
-              </li>
-            </ul>
-          </div>
-          <div>
-            <h4 className="font-[700] mb-4 text-[20px]">Trust &amp; Legal</h4>
-            <ul className="text-[18px] font-[500] ">
-              <li className="mb-2 ">
-                <a href="#">Terms &amp; Conditions</a>
-              </li>
-              <li className="mb-2">
-                <a href="#">Privacy Policy</a>
-              </li>
-            </ul>
-          </div>
+            <div>
+              <h4 className="font-[700] mb-4 text-[20px]">Pages</h4>
+              <ul className="text-[18px] font-[500] ">
+                <li className="mb-2">
+                  <Link to="/">Home</Link>
+                </li>
+                <li className="mb-2">
+                  <Link to="/feature">Features</Link>
+                </li>
+                <li className="mb-2">
+                  <Link to="/pricing">Pricing</Link>
+                </li>
+                <li className="mb-2">
+                  <Link to="/gallery">Gallery</Link>
+                </li>
+                <li className="mb-2">
+                  <Link to="/support">Support</Link>
+                </li>
+              </ul>
+            </div>
+            <div>
+              <h4 className="font-[700] mb-4 text-[20px]">Trust &amp; Legal</h4>
+              <ul className="text-[18px] font-[500] ">
+                <li className="mb-2 ">
+                  <a href="#">Terms &amp; Conditions</a>
+                </li>
+                <li className="mb-2">
+                  <a href="#">Privacy Policy</a>
+                </li>
+              </ul>
+            </div>
           </div>
           <div className="hidden md:block">
             <h4 className="font-[700] mb-4 text-[20px]">Pages</h4>
@@ -100,7 +100,7 @@ export const Footer = ({ darkMode }) => {
               </li>
             </ul>
           </div>
-          <div  className="hidden md:block">
+          <div className="hidden md:block">
             <h4 className="font-[700] mb-4 text-[20px]">Trust &amp; Legal</h4>
             <ul className="text-[18px] font-[500] ">
               <li className="mb-2 ">
@@ -111,7 +111,7 @@ export const Footer = ({ darkMode }) => {
               </li>
             </ul>
           </div>
-          <div className="max-w-[285px] m-auto" >
+          <div className="max-w-[285px] m-auto">
             <h4 className="font-[700] mb-4 text-[20px]">
               Subscribe To Our Newsletter
             </h4>
@@ -119,7 +119,7 @@ export const Footer = ({ darkMode }) => {
               <input
                 type="email"
                 placeholder="Email Address"
-                className={`border w-full  rounded-full px-4 py-2 text-sm w-48  text-[16px]  ${
+                className={`border w-full  rounded-full px-[20px] py-[10px] text-sm w-48  text-[16px]  ${
                   darkMode ? "placeholder-white" : "placeholder-black"
                 } `}
               />
@@ -130,7 +130,7 @@ export const Footer = ({ darkMode }) => {
                     ? "bg-[#017CD4] hover:bg-gradient-to-r from-[#389BE9]/50 to-[#B13FBC]/50"
                     : "bg-[#2c1662] hover:bg-[#2c1662] hover:bg-[linear-gradient(90deg,_#2c1662_0%,_#B13FBC_100%)]"
                 }
-    text-white px-6 py-2 rounded-full text-sm font-[500] mt-2 shadow-md hover:shadow-lg text-[16px]`}
+    text-white px-[20px] py-[10px] rounded-full text-sm font-[500] mt-2 shadow-md hover:shadow-lg text-[16px]`}
               >
                 {" "}
                 Subscribe <BsArrowUpRight />

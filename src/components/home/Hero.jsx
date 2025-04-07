@@ -59,7 +59,7 @@ export const Hero = ({ darkMode, setDarkMode }) => {
               darkMode
                 ? "bg-[#017CD4] hover:bg-[#017CD4] hover:bg-[linear-gradient(90deg,_#389BE9_0%,_#B13FBC_100%)]"
                 : "bg-[#2c1662] hover:bg-[#2c1662] hover:bg-[linear-gradient(90deg,_#2c1662_0%,_#B13FBC_100%)]"
-            } text-white px-4 py-2 rounded-full text-[16px] font-bold  inline-flex  items-center gap-2`}
+            } text-white px-[20px] py-[10px] rounded-full text-[16px] font-bold  inline-flex  items-center gap-2`}
           >
             Create Your Boitr Now <BsArrowUpRight />
           </Link>

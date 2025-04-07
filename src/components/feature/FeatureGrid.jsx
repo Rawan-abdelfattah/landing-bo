@@ -64,7 +64,7 @@ export default function FeatureGrid({ darkMode }) {
                   darkMode
                     ? "bg-[#017CD4] hover:bg-[#017CD4] hover:bg-[linear-gradient(90deg,_#389BE9_0%,_#B13FBC_100%)]"
                     : "bg-[#2c1662] hover:bg-[#2c1662] hover:bg-[linear-gradient(90deg,_#2c1662_0%,_#B13FBC_100%)]"
-                }  text-white px-4 py-2 rounded-full text-sm font-bold mt-2  text-[16px]`}
+                }  text-white px-[20px] py-[10px] rounded-full text-sm font-bold mt-2  text-[16px]`}
               >
                 Join Us Now <BsArrowUpRight />
               </Link>

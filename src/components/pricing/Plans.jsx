@@ -127,7 +127,7 @@ const Plans = ({ darkMode }) => {
               darkMode
                 ? "bg-[#017CD4] hover:bg-[#017CD4] hover:bg-[linear-gradient(90deg,_#389BE9_0%,_#B13FBC_100%)]"
                 : "bg-[#2c1662] hover:bg-[#2c1662] hover:bg-[linear-gradient(90deg,_#2c1662_0%,_#B13FBC_100%)]"
-            }  px-4 py-2 mt-5 rounded-full hover:bg-blue-600 transition-all duration-500`}
+            }  px-[20px] py-[10px] mt-5 rounded-full hover:bg-blue-600 transition-all duration-500`}
           >
             Create Your Page Now For Free
           </button>

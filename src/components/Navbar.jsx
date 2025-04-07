@@ -77,7 +77,7 @@ export const Navbar = ({ darkMode, setDarkMode }) => {
               darkMode
                 ? "bg-[#017CD4] hover:bg-[#017CD4] hover:bg-[linear-gradient(90deg,_#389BE9_0%,_#B13FBC_100%)]"
                 : "bg-[#2c1662] hover:bg-[#2c1662] hover:bg-[linear-gradient(90deg,_#2c1662_0%,_#B13FBC_100%)]"
-            } px-4 py-2 rounded-full text-[16px] font-bold transition-all duration-500`}
+            } px-[20px] py-[10px] rounded-full text-[16px] font-bold transition-all duration-500`}
           >
             Get Started Now
             <BsArrowUpRight />
@@ -141,7 +141,7 @@ export const Navbar = ({ darkMode, setDarkMode }) => {
               darkMode
                 ? "bg-[#017CD4] hover:bg-[#017CD4] hover:bg-[linear-gradient(90deg,_#389BE9_0%,_#B13FBC_100%)]"
                 : "bg-[#2c1662] hover:bg-[#2c1662] hover:bg-[linear-gradient(90deg,_#2c1662_0%,_#B13FBC_100%)]"
-            } px-4 py-2 rounded-full text-[16px] font-bold transition-all duration-500`}
+            } px-[20px] py-[10px] rounded-full text-[16px] font-bold transition-all duration-500`}
           >
             Get Started Now <BsArrowUpRight />
           </Link> 
