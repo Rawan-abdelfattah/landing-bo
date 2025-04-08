@@ -14,7 +14,7 @@ export default function FeatureGrid({ darkMode }) {
       title: "Custom Domain",
       description:
         "Make it official. Swap the generic URL for your own domain: 'yourname.com' never looked this good.",
-      image: "/3.png",
+      image: "/3.gif",
     },
     {
       title: "Sell Digital Products Like A Pro",

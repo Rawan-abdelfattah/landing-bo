@@ -22,7 +22,7 @@ const features = [
     title: "Publish Blog Posts",
     description:
       "Easily manage and categorize your content by using folders, making it simpler to organize your links.",
-    img: "3.png",
+    img: "3.gif",
   },
   {
     id: "04",
