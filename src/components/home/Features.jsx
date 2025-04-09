@@ -35,7 +35,7 @@ const features = [
     id: "05",
     title: "Start Building Your Email List",
     description: "Easily manage and categorize your content by using folders ",
-    img: "5.png",
+    img: "5.gif",
   },
   {
     id: "06",

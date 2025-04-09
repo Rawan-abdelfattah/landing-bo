@@ -32,7 +32,7 @@ export default function FeatureGrid({ darkMode }) {
       title: "Blog, Share, Shine",
       description:
         "Blogging just got easy. Keep your audience engaged with updates, and stories all hosted on your page ",
-      image: "/5.png",
+      image: "/5.gif",
     },
     {
       title: "Email Marketing? Simplified",
