@@ -17,6 +17,8 @@ export const Phone = () => {
         animationDelay: "150ms",
         bg:'/profile11.png',
         cardImageBack: "/design2.png",
+        cardImageBackCss: "w-[820px] h-[220px]",
+
         cardImageFront: "/design1.png",
         className:"text-gray-900"
   
@@ -56,6 +58,7 @@ export const Phone = () => {
         bg:'/profile44.png',
         cardImageBack: "/marketing1.png",
         cardImageFront: "/marketing2.png",
+        cardImageBackCss: "w-[700px] h-[100%]",
         className:"text-gray-900"
   
       },
@@ -140,7 +143,7 @@ export const Phone = () => {
                   >
                     <img
                       src={card.cardImageBack}
-                      className="rounded-2xl w-[300px]"
+                      className=  {`rounded-2xl w-[300px] ${card.cardImageBackCss}   `}
                       alt="card img"
                     />
                   </div>
