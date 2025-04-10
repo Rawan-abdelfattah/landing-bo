@@ -2,7 +2,13 @@ import React, { useState } from "react";
 import { BsArrowUpRight } from "react-icons/bs";
 import { Link } from "react-router-dom";
 
-const GalleryGridCard = ({ name, followers, profileImg, mainImg, darkMode }) => {
+const GalleryGridCard = ({
+  name,
+  followers,
+  profileImg,
+  mainImg,
+  darkMode,
+}) => {
   const [isClicked, setIsClicked] = useState(false);
 
   const handleImageClick = () => {
@@ -33,7 +39,10 @@ const GalleryGridCard = ({ name, followers, profileImg, mainImg, darkMode }) => 
         </div>
       </div>
 
-      <div className="relative w-full overflow-hidden" onClick={handleImageClick}>
+      <div
+        className="relative w-full overflow-hidden"
+        onClick={handleImageClick}
+      >
         <img
           src={mainImg}
           className={`w-full h-full object-cover transform transition-all duration-500
@@ -137,7 +146,7 @@ const GalleryGrid = ({ darkMode }) => {
             </Link>
           </div>
         </div>
-        <div className="flex flex-wrap md:gap-3 gap-5 xl:justify-between  justify-center py-10">
+        <div className="flex flex-wrap md:gap-3 gap-5 xl:justify-between  justify-center py-[40px]">
           {profiles.map((profile, index) => (
             <GalleryGridCard darkMode={darkMode} key={index} {...profile} />
           ))}

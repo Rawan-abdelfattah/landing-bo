@@ -8,10 +8,7 @@ export const Navbar = ({ darkMode, setDarkMode }) => {
   const location = useLocation();
 
   const isActive = (path) =>
-    location.pathname === path
-      ? `${darkMode ? "" : ""}`
-      : "";
-  
+    location.pathname === path ? `${darkMode ? "" : ""}` : "";
 
   return (
     <nav
@@ -38,6 +35,9 @@ export const Navbar = ({ darkMode, setDarkMode }) => {
             </Link>
             <Link to="/gallery" className={isActive("/gallery")}>
               Gallery
+            </Link>
+            <Link to="/blogs" className={isActive("/blogs")}>
+              Blogs
             </Link>
             <Link to="/support" className={isActive("/support")}>
               Support
@@ -131,22 +131,24 @@ export const Navbar = ({ darkMode, setDarkMode }) => {
           <Link to="/gallery" className={isActive("/gallery")}>
             Gallery
           </Link>
+          <Link to="/blogs" className={isActive("/blogs")}>
+            Blogs
+          </Link>
           <Link to="/support" className={isActive("/support")}>
             Support
           </Link>
-          <div className="flex justify-center  "> 
-                 <Link
-            to="https://user.boitr.com/"
-            className={`mt-3 mx-2 flex items-center gap-2 w-fit m-auto text-white ${
-              darkMode
-                ? "bg-[#017CD4] hover:bg-[#017CD4] hover:bg-[linear-gradient(90deg,_#389BE9_0%,_#B13FBC_100%)]"
-                : "bg-[#2c1662] hover:bg-[#2c1662] hover:bg-[linear-gradient(90deg,_#2c1662_0%,_#B13FBC_100%)]"
-            } px-[20px] py-[10px] rounded-full text-[16px] font-bold transition-all duration-500`}
-          >
-            Get Started Now <BsArrowUpRight />
-          </Link> 
+          <div className="flex justify-center  ">
+            <Link
+              to="https://user.boitr.com/"
+              className={`mt-3 mx-2 flex items-center gap-2 w-fit m-auto text-white ${
+                darkMode
+                  ? "bg-[#017CD4] hover:bg-[#017CD4] hover:bg-[linear-gradient(90deg,_#389BE9_0%,_#B13FBC_100%)]"
+                  : "bg-[#2c1662] hover:bg-[#2c1662] hover:bg-[linear-gradient(90deg,_#2c1662_0%,_#B13FBC_100%)]"
+              } px-[20px] py-[10px] rounded-full text-[16px] font-bold transition-all duration-500`}
+            >
+              Get Started Now <BsArrowUpRight />
+            </Link>
           </div>
-    
         </div>
       )}
     </nav>

@@ -7,6 +7,7 @@ import Support from "../pages/Support";
 import Home from "../pages/Home";
 import Loading from "../components/Loading";
 import NotFound from "../components/NotFound";
+import Blogs from "../pages/Blogs";
 
 const AppRoutes = () => {
   const storedTheme = localStorage.getItem("theme");
@@ -65,6 +66,12 @@ const AppRoutes = () => {
               path="/support"
               element={
                 <Support darkMode={darkMode} setDarkMode={setDarkMode} />
+              }
+            />
+              <Route
+              path="/blogs"
+              element={
+                <Blogs darkMode={darkMode} setDarkMode={setDarkMode} />
               }
             />
             <Route path="*" element={<NotFound darkMode={darkMode} />} />
