@@ -3,8 +3,6 @@ import { BsArrowUpRight } from "react-icons/bs";
 import { Link } from "react-router-dom";
 
 const BlogsGridCard = ({ darkMode, title, date, img }) => {
-
-  
   return (
     <div
       className={`${
@@ -26,12 +24,15 @@ const BlogsGridCard = ({ darkMode, title, date, img }) => {
 
         {/* Content */}
         <div className="mt-[10px] flex flex-col justify-between flex-1">
-        <p className={`text-[14px] font-[500] ${darkMode ? 'text-[#FFFFFF]' : 'text-[#1a1a1a]'}`}>{date}</p>
-        <h4 className="text-[22px] font-[700] leading-[30px] mb-2">
+          <p
+            className={`text-[14px] font-[500] `}
+          >
+            {date}
+          </p>
+          <h4 className="text-[22px] font-[700] leading-[30px] mb-2">
             {title}
           </h4>
 
-          {/* Link with gradient text on hover */}
           <Link
             to="#"
             className={`text-[16px]  ${
