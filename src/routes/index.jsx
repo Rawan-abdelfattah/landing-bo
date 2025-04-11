@@ -8,6 +8,7 @@ import Home from "../pages/Home";
 import Loading from "../components/Loading";
 import NotFound from "../components/NotFound";
 import Blogs from "../pages/Blogs";
+import BlogsDetails from "../pages/BlogsDetails";
 
 const AppRoutes = () => {
   const storedTheme = localStorage.getItem("theme");
@@ -28,7 +29,7 @@ const AppRoutes = () => {
       localStorage.setItem("theme", "light");
     }
   }, [darkMode]);
- 
+
   return (
     <Router>
       <div
@@ -37,7 +38,7 @@ const AppRoutes = () => {
         }`}
       >
         {loading ? (
-          <Loading darkMode={darkMode}  />  
+          <Loading darkMode={darkMode} />
         ) : (
           <Routes>
             <Route
@@ -68,12 +69,12 @@ const AppRoutes = () => {
                 <Support darkMode={darkMode} setDarkMode={setDarkMode} />
               }
             />
-              <Route
+            <Route
               path="/blogs"
-              element={
-                <Blogs darkMode={darkMode} setDarkMode={setDarkMode} />
-              }
+              element={<Blogs darkMode={darkMode} setDarkMode={setDarkMode} />}
             />
+            <Route path="/blog/:id" element={<BlogsDetails darkMode={darkMode} setDarkMode={setDarkMode}  />} />
+
             <Route path="*" element={<NotFound darkMode={darkMode} />} />
           </Routes>
         )}

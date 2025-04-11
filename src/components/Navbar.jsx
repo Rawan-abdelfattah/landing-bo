@@ -8,7 +8,9 @@ export const Navbar = ({ darkMode, setDarkMode }) => {
   const location = useLocation();
 
   const isActive = (path) =>
-    location.pathname === path ? `${darkMode ? "" : ""}` : "";
+    location.pathname === path
+      ? `${darkMode ? "text-[#017CD4] font-[700]" : "text-[#2c1662]  font-[700] "}`
+      : "";
 
   return (
     <nav

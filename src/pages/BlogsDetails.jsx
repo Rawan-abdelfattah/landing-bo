@@ -4,6 +4,7 @@ import { Footer } from "../components/Footer";
 import { Header } from "../components/blogs/Header";
 import BlogsGrid from "../components/blogs/BlogsGrid";
 import { Helmet } from "react-helmet";
+import BlogDetails from "../components/blogs/BlogDetails";
 
 const fadeInUp = {
   hidden: { opacity: 0, y: 40 },
@@ -27,7 +28,7 @@ const AnimatedSection = ({ children }) => {
   );
 };
 
-const Blogs = ({ darkMode, setDarkMode }) => {
+const BlogsDetails = ({ darkMode, setDarkMode }) => {
   return (
     <div className="flex flex-col min-h-screen">
       <Helmet>
@@ -38,7 +39,7 @@ const Blogs = ({ darkMode, setDarkMode }) => {
           <Header darkMode={darkMode} setDarkMode={setDarkMode} />
         </AnimatedSection>
         <AnimatedSection>
-          <BlogsGrid darkMode={darkMode} />
+          <BlogDetails darkMode={darkMode} />
         </AnimatedSection>
       </div>
       <Footer darkMode={darkMode} />
@@ -46,4 +47,4 @@ const Blogs = ({ darkMode, setDarkMode }) => {
   );
 };
 
-export default Blogs;
+export default BlogsDetails;

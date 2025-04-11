@@ -1,8 +1,10 @@
 import React, { useState } from "react";
 import { BsArrowUpRight } from "react-icons/bs";
 import { Link } from "react-router-dom";
+import { blogs } from "./blogs";
 
-const BlogsGridCard = ({ darkMode, title, date, img }) => {
+const BlogsGridCard = ({ darkMode, title, date, id, img }) => {
+  
   return (
     <div
       className={`${
@@ -10,31 +12,24 @@ const BlogsGridCard = ({ darkMode, title, date, img }) => {
       } p-[10px] flex flex-col justify-between rounded-xl shadow-lg overflow-hidden transition-all duration-500 cursor-pointer hover:shadow-2xl w-full h-full`}
     >
       <div className="p-2 relative flex flex-col h-full">
-        {/* Tag with hover gradient background fix */}
         <span
           className={`absolute ${
             darkMode ? "bg-[#017CD4]" : "bg-[#2c1662]"
-          }  top-3 left-3 text-sm px-[10px] py-[5px] rounded-full text-xs z-10 text-white`}
+          }  top-3 left-3 text-sm px-[10px] py-[10px] rounded-full text-xs z-10 text-white`}
         >
           Technology
         </span>
 
-        {/* Image */}
         <img src={img} className="w-full rounded-md" />
 
-        {/* Content */}
         <div className="mt-[10px] flex flex-col justify-between flex-1">
-          <p
-            className={`text-[14px] font-[500] `}
-          >
-            {date}
-          </p>
+          <p className={`text-[14px] font-[500] `}>{date}</p>
           <h4 className="text-[22px] font-[700] leading-[30px] mb-2">
             {title}
           </h4>
 
           <Link
-            to="#"
+            to={`/blog/${id}`}
             className={`text-[16px]  ${
               darkMode
                 ? "text-[#017CD4] hover:text-[#005fa3]"
@@ -51,76 +46,6 @@ const BlogsGridCard = ({ darkMode, title, date, img }) => {
 
 const BlogsGrid = ({ darkMode }) => {
   const [visibleCount, setVisibleCount] = useState(6); // Show 6 initially
-
-  const blogs = [
-    {
-      title: "Turn Your Link Page Into A Business",
-      date: "March 21, 2024",
-      author: "Sarah Lin",
-      img: "/blog.png",
-      role: "Marketing Lead",
-    },
-    {
-      title: "Boost Engagement With Better UI/UX",
-      date: "March 23, 2024",
-      author: "David Clark",
-      img: "/blog2.png",
-
-      role: "Content Strategist",
-    },
-    {
-      title: "Why Performance Matters for SEO",
-      date: "March 24, 2024",
-      img: "/blog3.png",
-
-      author: "Emily Zhao",
-      role: "Tech Writer",
-    },
-    {
-      title: "How To Monetize With Link Pages",
-      date: "March 25, 2024",
-      author: "James Ko",
-      img: "/blog.png",
-
-      role: "Digital Marketer",
-    },
-    {
-      title: "Learn from Top Creators' Strategies",
-      date: "March 26, 2024",
-      author: "Nina Ford",
-      img: "/blog2.png",
-      role: "Growth Expert",
-    },
-    {
-      title: "Top 5 Tools for Your Business Stack",
-      date: "March 27, 2024",
-      author: "Leo Chan",
-      role: "Startup Coach",
-      img: "/blog3.png",
-    },
-    {
-      title: "Build Your Brand in 5 Easy Steps",
-      date: "March 28, 2024",
-      author: "Lena Ray",
-      role: "Brand Designer",
-      img: "/blog.png",
-    },
-    {
-      title: "Creator Economy in 2024",
-      date: "March 29, 2024",
-      author: "Ali Youssef",
-      img: "/blog2.png",
-      role: "Influencer Manager",
-    },
-    {
-      title: "Beginner’s Guide to Analytics",
-      date: "March 30, 2024",
-      author: "Ava Gomez",
-      img: "/blog3.png",
-
-      role: "Data Analyst",
-    },
-  ];
 
   const handleShowMore = () => {
     setVisibleCount((prev) => prev + 3); // Show 3 more on each click
