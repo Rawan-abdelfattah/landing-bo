@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { BsArrowUpRight } from "react-icons/bs";
 import { Link } from "react-router-dom";
-import { blogs } from "./blogs";
+import { blogsData } from "./blogsData";
 
 const BlogsGridCard = ({ darkMode, title, date, id, img }) => {
   
@@ -74,12 +74,12 @@ const BlogsGrid = ({ darkMode }) => {
         </div>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 py-[40px]">
-          {blogs.slice(0, visibleCount).map((profile, index) => (
+          {blogsData.slice(0, visibleCount).map((profile, index) => (
             <BlogsGridCard darkMode={darkMode} key={index} {...profile} />
           ))}
         </div>
 
-        {visibleCount < blogs.length && (
+        {visibleCount < blogsData.length && (
           <div className="flex justify-center">
             <button
               onClick={handleShowMore}

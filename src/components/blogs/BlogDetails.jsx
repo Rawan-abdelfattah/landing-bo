@@ -1,5 +1,5 @@
 import { useNavigate, useParams } from "react-router-dom";
-import { blogs } from "./blogs";
+import { blogsData } from "./blogsData";
 import {
   FaLinkedinIn,
   FaFacebookF,
@@ -10,20 +10,20 @@ import {
 const BlogDetails = ({ darkMode }) => {
   const { id } = useParams();
   const navigate = useNavigate();
-  const currentIndex = blogs.findIndex((b) => b.id === parseInt(id));
-  const blog = blogs[currentIndex];
+  const currentIndex = blogsData.findIndex((b) => b.id === parseInt(id));
+  const blog = blogsData[currentIndex];
 
   if (!blog) return <p className="text-center mt-20">Blog not found</p>;
 
   const handlePrev = () => {
     if (currentIndex > 0) {
-      navigate(`/blog/${blogs[currentIndex - 1].id}`);
+      navigate(`/blog/${blogsData[currentIndex - 1].id}`);
     }
   };
 
   const handleNext = () => {
-    if (currentIndex < blogs.length - 1) {
-      navigate(`/blog/${blogs[currentIndex + 1].id}`);
+    if (currentIndex < blogsData.length - 1) {
+      navigate(`/blog/${blogsData[currentIndex + 1].id}`);
     }
   };
  
@@ -138,9 +138,9 @@ const BlogDetails = ({ darkMode }) => {
         </button>
         <button
           onClick={handleNext}
-          disabled={currentIndex === blogs.length - 1}
+          disabled={currentIndex === blogsData.length - 1}
           className={`hover:underline ${
-            currentIndex === blogs.length - 1
+            currentIndex === blogsData.length - 1
               ? "opacity-50 cursor-not-allowed"
               : ""
           }`}

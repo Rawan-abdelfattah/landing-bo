@@ -1,4 +1,4 @@
-export const blogs = [
+export const blogsData = [
   {
     id: 1,
     title: "Turn Your Link Page Into A Business",

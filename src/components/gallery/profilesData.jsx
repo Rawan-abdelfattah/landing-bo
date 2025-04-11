@@ -1,0 +1,58 @@
+export   const profilesData = [
+    {
+      name: "Emma Clarke",
+      role: "Digital Marketer",
+      profileImg: "/profile1-user.png",
+      mainImg: "/profile1.png",
+      followers: "150K Follower",
+    },
+    {
+      name: "Sophia Lane",
+      role: "Content Creator",
+      profileImg: "/profile2-user.png",
+      mainImg: "/profile2.png",
+      followers: "150K Follower",
+    },
+    {
+      name: "Liam Carter",
+      role: "Fitness Coach",
+      profileImg: "/profile3-user.png",
+      mainImg: "/profile3.png",
+      followers: "150K Follower",
+    },
+    {
+      name: "Liam Carter",
+      role: "Fitness Coach",
+      profileImg: "/profile4-user.png",
+      mainImg: "/profile4.png",
+      followers: "150K Follower",
+    },
+    {
+      name: "Emma Clarke",
+      role: "Digital Marketer",
+      profileImg: "/profile5-user.png",
+      mainImg: "/profile5.png",
+      followers: "150K Follower",
+    },
+    {
+      name: "Sophia Lane",
+      role: "Content Creator",
+      profileImg: "/profile6-user.png",
+      mainImg: "/profile6.png",
+      followers: "150K Follower",
+    },
+    {
+      name: "Liam Carter",
+      role: "Fitness Coach",
+      profileImg: "/profile7-user.png",
+      mainImg: "/profile7.png",
+      followers: "150K Follower",
+    },
+    {
+      name: "Liam Carter",
+      role: "Fitness Coach",
+      profileImg: "/profile8-user.png",
+      mainImg: "/profile8.png",
+      followers: "150K Follower",
+    },
+  ];

@@ -1,46 +1,10 @@
 import { Link } from "react-router-dom";
 import TextScroll from "../TextScroll";
 import { BsArrowUpRight } from "react-icons/bs";
+import { featuresData } from "./featuresData";
 
 export default function FeatureGrid({ darkMode }) {
-  const features = [
-    {
-      title: "Unified Link-in-Bio Platform",
-      description:
-        "Links, content, and products — everything your audience needs in one sleek hub.",
-      image: "/1.gif",
-    },
-    {
-      title: "Custom Domain",
-      description:
-        "Make it official. Swap the generic URL for your own domain: 'yourname.com' never looked this good.",
-      image: "/3.gif",
-    },
-    {
-      title: "Sell Digital Products Like A Pro",
-      description:
-        "E-books, courses, templates — whatever you create, sell it directly from your page with secure payments.",
-      image: "/4.png",
-    },
-    {
-      title: "Turn Visitors Into Superfans",
-      description:
-        "Capture emails, grow your list, and offer irresistible value with built-in lead magnet tools.",
-      image: "2.png",
-    },
-    {
-      title: "Blog, Share, Shine",
-      description:
-        "Blogging just got easy. Keep your audience engaged with updates, and stories all hosted on your page ",
-      image: "/5.gif",
-    },
-    {
-      title: "Email Marketing? Simplified",
-      description:
-        "Send campaigns and nurture your community, all in one place.",
-      image: "/6.png",
-    },
-  ];
+
 
   return (
     <div className="relative overflow-hidden py-[40px]">
@@ -72,7 +36,7 @@ export default function FeatureGrid({ darkMode }) {
           </div>
 
           <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-            {features.map((feature, index) => (
+            {featuresData.map((feature, index) => (
               <div
                 key={index}
                 className={`p-6 rounded-2xl shadow-lg text-left flex flex-col transition-all duration-500 transform
