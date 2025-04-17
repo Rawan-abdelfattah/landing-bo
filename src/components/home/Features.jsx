@@ -43,7 +43,7 @@ const features = [
     title: "Start Building Your Email List",
     description:
       "Send campaigns and nurture your community, all in one place.",
-    img: "/6.png",
+    img: "/6.gif",
   },
 ];
 

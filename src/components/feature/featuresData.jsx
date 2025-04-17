@@ -33,6 +33,6 @@ export const featuresData = [
       title: "Email Marketing? Simplified",
       description:
         "Send campaigns and nurture your community, all in one place.",
-      image: "/6.png",
+      image: "/6.gif",
     },
   ];
