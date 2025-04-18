@@ -8,42 +8,42 @@ const features = [
     title: "Unified Link-in-Bio Platform",
     description:
       "Links, content, and products — everything your audience needs in one sleek hub.",
-    img: "1.gif",
+    img: "links.gif",
   },
   {
     id: "02",
     title: "Make It Yours with a Custom Domain",
     description:
       "Make it official. Swap the generic URL for your own domain: 'yourname.com' never looked this good.",
-    img: "3.gif",
+    img: "/domain.gif",
   },
   {
     id: "03",
     title: "Sell Digital Products Like A Pro",
     description:
       "E-books, courses, templates — whatever you create, sell it directly from your page with secure payments.",
-    img: "/4.png",
+    img: "/sell.png",
   },
   {
     id: "04",
     title: "Turn Visitors Into Superfans",
     description:
       "Capture emails, grow your list, and offer irresistible value with built-in lead magnet tools.",
-    img: "2.png",
+    img: "/tools.gif",
   },
   {
     id: "05",
     title: "Publish Blog Posts",
     description:
       "Blogging just got easy. Keep your audience engaged with updates, and stories all hosted on your page ",
-    img: "/5.gif",
+    img: "/blogs.gif",
   },
   {
     id: "06",
     title: "Start Building Your Email List",
     description:
       "Send campaigns and nurture your community, all in one place.",
-    img: "/6.gif",
+    img: "/email.gif",
   },
 ];
 
